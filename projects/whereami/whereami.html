@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Georgios Gousios - Where am I? </title>
+    <meta name="Author" content="Georgios Gousios"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="homepage.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script src="js/coords.js"></script>
+    <script src="http://maps.google.com/maps?file=api&v=2.x&key=ABQIAAAAs7zxKP55zHlKrd9RkWrDQBTm24TVhLYtfp8NzQR3Yruif91m2xQ7eEHLSPbnE3OMvzvAQp55HUFOyQ"
+    type="text/javascript"></script>
+    <script type="text/javascript">
+
+    function initialize() {
+        var text=" I am here!" +
+            "<div><b>Speed:</b> " + speed +
+            " km/h </div>" + 
+            "<div><b>Altitude:</b>" + alt +
+            "m</div>";
+      if (GBrowserIsCompatible()) {
+        var map = new GMap2(document.getElementById("map"));
+        map.addControl(new GSmallMapControl());
+        map.addControl(new GMapTypeControl());
+        map.setCenter(new GLatLng(lat, lon), 13);
+        map.openInfoWindowHtml(map.getCenter(),text); 
+
+      }
+    }
+    </script>
+</head>
+<body onload="initialize()" onunload="GUnload()">
+    <!--incl:MENU--> 
+    <div id="body" class="body">
+        <h1>Where am I?</h1>
+        <hr/>
+        <p>
+        I love geolocation. I 've recently acuired a 3G mobile phone along  
+        with the cheapest data plan I could find. 
+        Unfortunately, the phone does not include a GPS
+        receiver. Fortunately, I have a spare Bluetooth one. The combination
+        of 3G, GPS and Google Maps became apparent as soon as I got all 
+        devices in my hands. 
+        </p>     
+        <div id="map"style="width: 500px; height: 300px"></div> 
+        <div id="lastupdate">Last update: </div>
+        <h2>How it works</h2>
+        <p>
+        I 've implemented a simple Perl script that runs in a CGI 
+        (or preferebly <tt>mod_perl</tt>) web server and
+        accepts plain NMEA input that looks line this: 
+        <pre>
+$GPGGA,163843.060,3759.588,N,02348.412,E,0,00,0.0,302.100,M,0.0,M,,*67
+$GPVTG,0.000,T,0,M,0.000,N,0.000,K*50
+$GPRMC,163844.070,V,3759.588,N,02348.412,E,0.00,0.00,081108,,*18
+        </pre>
+        The script processes <tt>GPGGA</tt> (location update) and 
+        <tt>GPRMC</tt> (movement update) lines and logs the output to a 
+        plain text file.
+        </p>
+   <!--incl:FOOTER-->
+</body>
+</html>

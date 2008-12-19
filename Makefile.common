@@ -1,0 +1,30 @@
+include ${TOP_DIR}/Makefile.conf
+
+build: build-subdirs
+
+ifeq ($(SUBDIRS),)
+build-subdirs :
+else
+build-subdirs :
+	for i in $(SUBDIRS) ; do ( cd $$i && echo "# Building in `pwd`" >&2  && $(MAKE) build) || exit 1; done
+endif
+
+install : install-subdirs
+
+ifeq ($(SUBDIRS),)
+install-subdirs :
+else
+install-subdirs :
+	for i in $(SUBDIRS) ; do ( cd $$i && echo "# Installing in `pwd`" >&2 && $(MAKE) install) || exit 1; done
+endif
+
+clean : clean-subdirs
+
+ifeq ($(SUBDIRS),)
+clean-subdirs :
+else
+clean-subdirs :
+	for i in $(SUBDIRS) ; do ( cd $$i && $(MAKE) clean ) || exit 1; done
+endif
+
+

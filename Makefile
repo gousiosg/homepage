@@ -2,9 +2,11 @@
 # Makefile for building home page
 #
 
-include Makefile.conf
+SUBDIRS=projects labs toplevel
+TOP_DIR=.
 
-DIRS=toplevel labs projects img
+include Makefile.conf
+include $(TOP_DIR)/Makefile.common
 
 .PHONY: all dist
 .DEFAULT: all
@@ -12,31 +14,6 @@ DIRS=toplevel labs projects img
 all: build install 
 
 build : build-subdirs
-
-ifeq ($(SUBDIRS),)
-build-subdirs :
-else
-build-subdirs :
-	for i in $(SUBDIRS) ; do ( cd $$i && $(MAKE) build) || exit 1; done
-endif
-
-install : install-subdirs
-
-ifeq ($(SUBDIRS),)
-install-subdirs :
-else
-install-subdirs :
-	for i in $(SUBDIRS) ; do ( cd $$i && $(MAKE) install) || exit 1; done
-endif
-
-clean : clean-subdirs
-
-ifeq ($(SUBDIRS),)
-clean-subdirs :
-else
-clean-subdirs :
-	for i in $(SUBDIRS) ; do ( cd $$i && $(MAKE) clean ) || exit 1; done
-endif
 
 distclean : clean 
 	-rm -rf ${OUTPUTDIR}/* 

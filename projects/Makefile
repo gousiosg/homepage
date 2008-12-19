@@ -1,6 +1,6 @@
-build:
+TOP_DIR=..
+SUBDIRS=whereami jdt
+TOP_DIR=..
 
-install:
-
-clean:
+include $(TOP_DIR)/Makefile.common
 

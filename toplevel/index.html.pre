@@ -36,38 +36,43 @@
             </ul>
         </td>
             <td>
-                <img alt="Logo" width="70%" align="right" src="img/moi.jpg"/>
+                <img alt="Picture of Georgios Gousios" width="90%" align="right" src="img/moi.jpg"/>
             </td>
         </tr>
         <tr>
             <td valign="top">
-            My collegue <a href="http://www.spinellis.gr">Diomidis Spinellis</a>
-            and me worked together with a team of brilliant engineers to put on
-            paper
+            My collegue (and PhD supervisor) 
+            <a href="http://www.spinellis.gr">Diomidis Spinellis</a>
+            and I worked together with a team of brilliant engineers to put on
+            paper their experience on building software systems. The 
+            result is <em>Beautiful Architecture</em>, a collection of essays on
+            how software can be designed to be aesthetically and functionally
+            beautiful.
             <p>
             You can find more information from the publisher's 
             <a href="http://oreilly.com/catalog/9780596517984/">book web site</a>.
             </p>
             <p>
-            You can also order it
+            The book will be available mid January 2009. You can pre-order it
             (<a href="http://www.amazon.com/Beautiful-Architecture-Leading-Thinkers-Software/dp/059651798X/">Amazon</a>, 
             <a href="http://www.papasotiriou.gr/product.ebook.asp?pfid=1816872&prid=1071106">Papasotiriou</a>,
             <a href="http://www.play.com/Books/Books/4-/8270906/Beautiful-Architecture/Product.html">Play</a>), 
-            and thus help a good cause, as the royalties for the book will be 
+            and help a good cause, as the royalties for the book will be 
             donated to the 
             <a href="http://www.msf.org"><em>Medecins Sans Frontieres</em></a>.
             </p>
             </td>
             <td>
                 <img alt="Beautiful Architecture" 
-                width="50%" align="right" src="img/ba.jpg"/>
+                width="80%" align="right" src="img/ba.jpg"/>
             </td>
         </tr>
     </table>
         <p> 
         Hot New Stuff:
         <ul>
-            <li>Dec 2008: Beautiful Architecture is done!</li> 
+            <li>19 Dec 2008: Initial version of my new home page</li>
+            <li>12 Dec 2008: Beautiful Architecture is done</li> 
             <li>June 2008: <a href="http://www.sqo-oss.org">SQO-OSS</a> released its first public version</li>
             <li>May 2008: I am working on a <a href="http://code.google.com/soc/2008/jikesrvm/appinfo.html?csaid=F3903F8C63321112">Google Summer of Code 2008</a> project</li>
         </ul>

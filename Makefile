@@ -2,7 +2,7 @@
 # Makefile for building home page
 #
 
-SUBDIRS=projects labs toplevel
+SUBDIRS=projects labs toplevel pubs img
 TOP_DIR=.
 
 include Makefile.conf
@@ -11,7 +11,10 @@ include $(TOP_DIR)/Makefile.common
 .PHONY: all dist
 .DEFAULT: all
 
-all: build install 
+all: output build install
+
+output:
+	mkdir -p ${OUTPUTDIR} 
 
 build : build-subdirs
 

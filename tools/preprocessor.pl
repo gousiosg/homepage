@@ -49,7 +49,7 @@ while ($replaced) {
       print OUT include($1);
       $replaced = 1;
     } elsif ($_ =~ /<!--(changed.*)-->/) {
-      print OUT changed($1);
+      print OUT changed($inputfile);
       $replaced = 1;
     } else {
       print OUT $_;
@@ -81,6 +81,18 @@ sub include {
   return $result;
 }
 
+#get the date a file was changed from the SCM 
 sub changed {
-  
+    my $arg = shift;
+    my $date = `LANG=C svn info $arg| grep \"Date\"`; 
+    if ( $date =~ /\((.*)\)/) {
+        return $1;
+    } else {
+        (
+             my $sec,  my $min,  my $hour, my $mday, my $mon,
+              my $year, my $wday, my $yday, my $isdst
+        )
+         = localtime(time);        
+      return $mday/$mon/$year ;
+    }
 }

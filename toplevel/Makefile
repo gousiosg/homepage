@@ -8,5 +8,3 @@ include $(TOP_DIR)/Makefile.common
 
 install: $(OUTPUT) copy-files 
 
-clean: 
-	

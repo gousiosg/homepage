@@ -73,7 +73,8 @@ sub include {
   
   $incl = lc($incl); 
   my $result="";
-  open (INPUT, "< $INCLUDEDIR/$incl.inc") or die "Cannot find include file:" + $incl;
+  open (INPUT, "< $INCLUDEDIR/$incl.inc") or
+    die "Cannot find include file: $INCLUDEDIR/$incl.inc";
   while(<INPUT>) {
     $result = $result.$_;  
   }

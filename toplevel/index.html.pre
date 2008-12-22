@@ -19,7 +19,7 @@
         Welcome to my home page.
         <p>
         I am Georgios Gousios.
-        At the moment, I am a researcher at the 
+        I am a researcher at the 
         <a href="http://www.dmst.aueb.gr">
             Department of Management Science and Technology</a>,
         <a href="http://www.aueb.gr">
@@ -34,6 +34,8 @@
                 <li>Operating systems architectures</li>
                 <li>Virtual Machines</li>
             </ul>
+            At the moment, I am working full-time on my PhD in the area of 
+            Software Quality. The plan is to have the thesis written by end 2009.
         </td>
             <td>
                 <img alt="Picture of Georgios Gousios" width="90%" align="right" src="img/moi.jpg"/>
@@ -41,7 +43,7 @@
         </tr>
         <tr>
             <td valign="top">
-            My collegue (and PhD supervisor) 
+            My PhD supervisor 
             <a href="http://www.spinellis.gr">Diomidis Spinellis</a>
             and I worked together with a team of brilliant engineers to put on
             paper their experience on building software systems. The 

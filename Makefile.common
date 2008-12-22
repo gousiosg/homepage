@@ -27,4 +27,16 @@ clean-subdirs :
 	for i in $(SUBDIRS) ; do ( cd $$i && $(MAKE) clean ) || exit 1; done
 endif
 
+ifeq ($(COPYFILES),)
+copy-files :
+else
+copy-files :
+	(for file in ${COPYFILES}; do cp -v $$file ${OUTPUTDIR}/$$file; done)||exit 1;	
+endif
+
+#Implicit rules for tools
+#Preprocessor
+${OUTPUTDIR}/%.html: %.html.pre
+	@echo Processing $@
+	@INCL=$(INCLUDE) ${TOOLS}/preprocessor.pl $(shell pwd)/$< $@ 
 

@@ -33,7 +33,7 @@
         <a href="http://www.facebook.com/people/Georgios-Gousios/544933039">
             <img alt="facebook profile" src="img/fb.jpg" height=23/> 
         </a>
-        <a href="http://www.facebook.com/people/Georgios-Gousios/544933039">
+        <a href="/gousiosg-news.xml">
             <img alt="rss feed" src="img/rss.png" height=23/> 
         </a>
         <br/>

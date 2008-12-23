@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+ <channel>
+  <title>Georgios Gousios News </title>
+  <link>http://istlab.dmst.aueb.gr/gousiosg-news.xml</link>
+  <description>Georgios Gousios's blog</description>
+  <language>en-gb</language>
+  <pubDate>Thu, 1 Jan 2009 0:00:00 UTC</pubDate>
+  <lastBuildDate>
+<!--news:update-->
+  </lastBuildDate>
+  <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+  <generator>
+<!--news:version-->
+  </generator>
+  <managingEditor>Georgios Gousios</managingEditor>
+  <image>
+   <url>http://istlab.dmst.aueb.gr/~george/img/gousiosg.gif</url>
+   <title>gousiosg</title>
+   <link>http://www.gousios.gr</link>
+  </image>
+<!--news:next-->
+  <item>
+   <title></title>
+   <link></link>
+   <description></description>
+   <category></category>
+   <pubDate></pubDate>
+   <guid></guid>
+  </item>
+ </channel>
+</rss>

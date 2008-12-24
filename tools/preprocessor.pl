@@ -26,73 +26,88 @@
 use strict;
 use File::Copy;
 
-my $INCLUDEDIR=$ENV{'INCL'};
+my $INCLUDEDIR = $ENV{'INCL'};
 
-my $inputfile = $ARGV[0];
+my $inputfile  = $ARGV[0];
 my $outputfile = $ARGV[1];
 
-if (! -e $inputfile) {die "$inputfile: No such file";}
-if (! -T $inputfile) {die "$inputfile: Not a text file";}
+if ( !-e $inputfile ) { die "$inputfile: No such file"; }
+if ( !-T $inputfile ) { die "$inputfile: Not a text file"; }
+
 #if (! -d $inputfile) {die "$inputfile is a directory, file expected";}
 
-copy($inputfile, "$inputfile.tmp");
+#Global time resolution, seems useful more often than not
+(
+  my $sec,  my $min,  my $hour, my $mday, my $mon,
+  my $year, my $wday, my $yday, my $isdst
+  )
+  = localtime(time);
+
+copy( $inputfile, "$inputfile.tmp" );
 
 my $replaced = 1;
 
 while ($replaced) {
   $replaced = 0;
-  open (IN, "< $inputfile.tmp") or die "Could not open file $inputfile.tmp";
-  open (OUT, "> $inputfile.tmp.out") or die "Could not open file $inputfile.tmp.out";
-  
-  while(<IN>) {
-    if ($_ =~ /<!--(incl.*)-->/) {
+  open( IN, "< $inputfile.tmp" ) or die "Could not open file $inputfile.tmp";
+  open( OUT, "> $inputfile.tmp.out" )
+    or die "Could not open file $inputfile.tmp.out";
+
+  while (<IN>) {
+    if ( $_ =~ /<!--(incl.*)-->/ ) {
       print OUT include($1);
       $replaced = 1;
-    } elsif ($_ =~ /<!--(changed.*)-->/) {
+    }
+    elsif ( $_ =~ /<!--(changed.*)-->/ ) {
       print OUT changed($inputfile);
       $replaced = 1;
-    } else {
+    }
+    elsif ( $_ =~ /<!--(news.*)-->/ ) {
+      print OUT news($1);
+      $replaced = 1;
+    }
+    else {
       print OUT $_;
     }
   }
-  
+
   close IN;
   close OUT;
-  move ("$inputfile.tmp.out", "$inputfile.tmp");
+  move( "$inputfile.tmp.out", "$inputfile.tmp" );
 }
 
-move("$inputfile.tmp", $outputfile);
+move( "$inputfile.tmp", $outputfile ) || die "Cannot create file $outputfile";
 
-#include a file from the include directory 
-#at the designated location. 
+#include a file from the include directory
+#at the designated location.
 # argument format:
 # incl:FILENAME
 sub include {
   my $arg = shift;
-  (my $cmd, my $incl) = split(/:/, $arg);
-  
-  $incl = lc($incl); 
-  my $result="";
-  open (INPUT, "< $INCLUDEDIR/$incl.inc") or
-    die "Cannot find include file: $INCLUDEDIR/$incl.inc";
-  while(<INPUT>) {
-    $result = $result.$_;  
+  ( my $cmd, my $incl ) = split( /:/, $arg );
+
+  $incl = lc($incl);
+  my $result = "";
+  open( INPUT, "< $INCLUDEDIR/$incl.inc" )
+    or die "Cannot find include file: $INCLUDEDIR/$incl.inc";
+  while (<INPUT>) {
+    $result = $result . $_;
   }
   return $result;
 }
 
-#get the date a file was changed from the SCM 
+#get the date a file was changed from the SCM
 sub changed {
-    my $arg = shift;
-    my $date = `LANG=C svn info $arg| grep \"Date\"`; 
-    if ( $date =~ /\((.*)\)/) {
-        return $1;
-    } else {
-        (
-             my $sec,  my $min,  my $hour, my $mday, my $mon,
-              my $year, my $wday, my $yday, my $isdst
-        )
-         = localtime(time);        
-      return $mday/$mon/$year ;
-    }
+  my $arg  = shift;
+  my $date = `LANG=C svn info $arg| grep \"Date\"`;
+  if ( $date =~ /\((.*)\)/ ) {
+    return $1;
+  }
+  else {
+    return $mday / $mon / $year;
+  }
+}
+
+sub news {
+  
 }

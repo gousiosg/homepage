@@ -7,15 +7,13 @@
             <a href="http://sense.eltrun.gr/publications/m_gousios-publications.html">Publications</a>
         </div>
         <div class="menuitem">
-            <!--<a href="/res">Research</a>-->
+            <a href="/res">Research</a>
         </div>
         <div class="menuitem">
-            <!--<a href="/sw">Software</a>-->
-            Software
+            <a href="/sw">Software</a>
         </div>
         <div class="menuitem">
-            <!--<a href="/research">Projects</a>-->
-            Projects
+            <a href="/projects">Projects</a>
         </div>
         <div class="menuitem">
             <a href="/labs">Labs</a>
@@ -31,15 +29,15 @@
             <img alt="linkedin profile" src="img/linkedin.gif"/>
         </a>
         <a href="http://www.facebook.com/people/Georgios-Gousios/544933039">
-            <img alt="facebook profile" src="img/fb.jpg" height=23/> 
+            <img alt="facebook profile" src="img/fb.jpg" height='23' border='0'/> 
         </a>
         <a href="/gousiosg-news.xml">
-            <img alt="rss feed" src="img/rss.png" height=23/> 
+            <img alt="rss feed" src="img/rss.png" height='23'  border='0'/> 
         </a>
         <br/>
         <a href='http://www.ohloh.net/accounts/21690?ref=Detailed'>
         <img alt='Ohloh profile for gousiosg' height='23' 
-            src='http://www.ohloh.net/accounts/21690/widgets/account_detailed.gif' width='95' />
+            src="http://www.ohloh.net/accounts/21690/widgets/account_detailed.gif" width='95'  border='0'/>
         </a>
         <hr width="100%"/>
         <div class="menuitem">

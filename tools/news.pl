@@ -24,4 +24,6 @@
 # POSSIBILITY OF SUCH DAMAGE
 #
 
+use strict;
+use File::Copy;
 

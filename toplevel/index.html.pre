@@ -73,7 +73,7 @@
     </table>
         <p> 
             News:
-            <!--news:3-->
+            <!--incl:news-->
         <ul>
             <li>12 Dec 2008: Beautiful Architecture is done</li> 
             <li>June 2008: <a href="http://www.sqo-oss.org">SQO-OSS</a> released its first public version</li>

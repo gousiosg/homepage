@@ -2,7 +2,7 @@
 # Makefile for building home page
 #
 
-SUBDIRS=pubs projects labs toplevel img
+SUBDIRS=pubs projects labs news toplevel img
 TOP_DIR=.
 
 include Makefile.conf

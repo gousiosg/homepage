@@ -27,3 +27,10 @@
 use strict;
 use File::Copy;
 
+my $inputfile  = $ARGV[0];
+my $outputfile = $ARGV[1];
+
+
+if ( !-e $inputfile ) { die "$inputfile: No such file"; }
+if ( !-T $inputfile ) { die "$inputfile: Not a text file"; }
+

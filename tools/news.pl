@@ -27,10 +27,60 @@
 use strict;
 use File::Copy;
 
-my $inputfile  = $ARGV[0];
-my $outputfile = $ARGV[1];
+my $NEWSDIR = $ENV{'NEWS'};
+
+my $rsstmpl = <<END;
+<item>
+   <title>%s</title>
+   <link>%s</link>
+   <description>%s</description>
+   <category>%s</category>
+   <pubDate>%s</pubDate>
+   <guid>%s</guid>
+</item>
+END
+
+my $htmltmpl = <<END;
+
+END
+
+my $newstmpl = <<END;
+  <li>%s: %s</li>
+END
+
+my $version = '$Id:$';
+
+my $news = "$NEWSDIR/news.html.pre";
+my $html = "$NEWSDIR/news.html.pre";
+my $rss = "$NEWSDIR/gousiosg-news.xml";
+my $incl = "$NEWSDIR/news.inc.pre";
+
+my $rssout = $ARGV[0];
+my $inclout = $ARGV[1];
+my $htmlout = $ARGV[2];
+
+if ( !-e $html) { die "$html: No such file"; }
+if ( !-e $rss) { die "$rss: No such file"; }
+if ( !-e $incl) { die "$incl: No such file"; }
+
+#Open all files
+open(IN, "< $news") || die "Cannot open file $news";
+open(RSS, " > $rssout") || die "Cannot open file $rssout";
+open(INCL, " > $inclout") || die "Cannot open file $inclout";
+open(HTML, " > $htmlout") || die "Cannot open file $htmlout";
+
+#Adjust file pointers appropriately
 
 
-if ( !-e $inputfile ) { die "$inputfile: No such file"; }
-if ( !-T $inputfile ) { die "$inputfile: Not a text file"; }
+
+
+
+
+
+
+
+
+
+
+
 

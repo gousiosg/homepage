@@ -41,16 +41,18 @@ my $rsstmpl = <<END;
 END
 
 my $htmltmpl = <<END;
-
+  <div id="date" class="news.date">%s</div>
+  <div id="content" class="news.content">%s</div>
+  <br/>
 END
 
 my $newstmpl = <<END;
   <li>%s: %s</li>
 END
 
-my $version = '$Id:$';
+my $version = '$Id$';
 
-my $news = "$NEWSDIR/news.html.pre";
+my $news = "$NEWSDIR/news.pre";
 my $html = "$NEWSDIR/news.html.pre";
 my $rss = "$NEWSDIR/gousiosg-news.xml";
 my $incl = "$NEWSDIR/news.inc.pre";
@@ -64,14 +66,50 @@ if ( !-e $rss) { die "$rss: No such file"; }
 if ( !-e $incl) { die "$incl: No such file"; }
 
 #Open all files
-open(IN, "< $news") || die "Cannot open file $news";
+open(NEWS, "< $news") || die "Cannot open file $news";
+open(RSSIN, " $rss") || die "Cannot open file $rss";
+open(INCLIN, " $incl") || die "Cannot open file $incl";
+open(HTMLIN, " $html") || die "Cannot open file $incl";
 open(RSS, " > $rssout") || die "Cannot open file $rssout";
 open(INCL, " > $inclout") || die "Cannot open file $inclout";
 open(HTML, " > $htmlout") || die "Cannot open file $htmlout";
 
 #Adjust file pointers appropriately
+while (<RSSIN>) {
+  if (/news:update/) {
+    print RSS $_;
+  } elsif (/news:version/) {
+    print RSS $version;
+  }  elsif (/news:next/) {
+    last;
+  } else {
+    print RSS $_;
+  }
+}
 
+while (<HTMLIN>) {
+  if (/news:news/) {
+    last;
+  }
+  print HTML $_;
+} 
 
+while (<INCLIN>) {
+  if (/news:news/) {
+    last;
+  }
+  print INCL $_;
+} 
+
+#Start processing news
+my $parsing;
+while (<NEWS>) {
+  /\#\%/ && next;
+  /\#\#\%/ && next;
+  
+  
+  
+}
 
 
 

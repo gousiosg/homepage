@@ -13,8 +13,7 @@
     <div id="body" class="body">
         <h1>News</h1>
         <hr />
-    <div id="date" class="news.date"></div>
-    <div id="content" class="news.content"></div>
+        <!==news:news-->
     </div>
     <!--incl:FOOTER-->
 </body>

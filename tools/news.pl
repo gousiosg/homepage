@@ -26,6 +26,7 @@
 
 use strict;
 use File::Copy;
+use POSIX qw(strftime);
 
 my $NEWSDIR = $ENV{'NEWS'};
 
@@ -107,70 +108,84 @@ while (<INCLIN>) {
 
 #Processing news
 my $parsing, my $date, my $news, my $numnews;
-my $link, my $type;
-while (<NEWS>) {
+my $link, my $type; my $line;
+
+my $sec,  my $min,  my $hour, my $mday, my $mon,
+  my $year, my $wday, my $yday, my $isdst;
+
+
+while ($line = <NEWS>) {
+
+  #Stop parsing when news item terminator is found
+  if ( $line =~ /\#\#\%/ ) {
+    $parsing = 0;
+    
+    #Fill in templates.
+    if ( !($date eq '') && !($news eq '')) {
+      if ($numnews < 4) {
+        print INCL sprintf($newstmpl, 
+          strftime("%a, %d %B %Y", $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst), 
+          $news);
+      }
+      
+      if ($numnews < 16) {
+        print RSS sprintf("$rsstmpl", "Site news $mday $mon $year", $link, 
+          $news, $type,  
+          strftime("%a, %d %B %Y %R:%M:%S %Z", $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst), 
+          $link );
+      }
+      
+      print HTML sprintf($htmltmpl, 
+        strftime("%a, %d %B %Y", $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst), 
+        $news);
+    }
+    next;
+  }
 
   #Start parsing
-  if ( $_ =~ /\#\%/ ) {
+  if ( $line =~ /\#\%/ ) {
     $parsing = 1;
     $date = ''; $news = '';
     $link = ''; $type = '';
     next;
   }
 
-  #Stop parsing when news item terminator is found
-  if ( $_ = /\#\#\%/ ) {
-    $parsing = 0;
-    next;
-  }
-
-  #Ignore shell style nine comments
-  if ( $_ =~ /^\#/ ) {
+  #Ignore shell style line comments
+  if ( $line =~ /^\#/ ) {
     next;
   }
 
   #If we reached here when not in parsing mode there is 
   #a format error
   if ( !$parsing ) {
-    print STDERR "Bogus news line: $_";
+    print STDERR "Bogus news line: $_ \n";
     next;
   }
 
   #In parsing mode, read date and news item
   if ($parsing) {
-    if ( $_ =~ /DATE/ ) {
-      ( my $lbl, $date ) = split( /:/, $_ );
+    if ( $line =~ /DATE/ ) {
+      ( my $lbl, $date ) = split( /:/, $line );
       chomp $date;
-      $date = localtime($date);
+      ($sec,  $min, $hour, $mday, $mon,
+      $year, $wday, $yday, $isdst) = localtime($date);
+      $year = 1900 + $year;
     }
 
-    if ( $_ =~ /ITEM/ ) {
-      ( my $lbl, $news ) = split( /:/, $_ );
+    if ( $line =~ /ITEM/ ) {
+      ( my $lbl, $news ) = split( /:/, $line );
       chomp $news;
       $numnews++;
     }
     
-    if ( $_ =~ /TYPE/ ) {
-      ( my $lbl, $type ) = split( /:/, $_ );
+    if ( $line =~ /TYPE/ ) {
+      ( my $lbl, $type ) = split( /:/, $line );
       chomp $type;
     }
     
-    if ( $_ =~ /LINK/ ) {
-      ( my $lbl, $link ) = split( /:/, $_ );
+    if ( $line =~ /LINK/ ) {
+      ( my $lbl, $link ) = split( /:/, $line );
       chomp $link;
-    }
-
-    #Fill in templates.
-    if ( $date != '' && $news != '' ) {
-      if ($numnews < 3) {
-        print INCL sprintf($newstmpl, $date, $news);
-      }
-      
-      if ($numnews < 15) {
-        print RSS sprintf($rsstmpl );
-      }
-      
-      print HTML sprintf($htmltmpl, $date, $news);
     }
   }
 }

@@ -104,7 +104,7 @@ sub changed {
     return $1;
   }
   else {
-    return $mday / $mon / $year;
+    return '$mday / $mon / $year';
   }
 }
 

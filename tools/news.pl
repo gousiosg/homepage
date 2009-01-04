@@ -116,6 +116,8 @@ my $sec,  my $min,  my $hour, my $mday, my $mon,
 
 while ($line = <NEWS>) {
 
+  $line =~ s/"/\"/g;
+
   #Stop parsing when news item terminator is found
   if ( $line =~ /\#\#\%/ ) {
     $parsing = 0;
@@ -129,14 +131,16 @@ while ($line = <NEWS>) {
       }
       
       if ($numnews < 16) {
-        print RSS sprintf("$rsstmpl", "Site news $mday $mon $year", $link, 
-          $news, $type,  
+        print RSS sprintf("$rsstmpl", 
+          "Site news ". strftime("%d/%m/%Y", $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst),
+          $link, $news, $type,  
           strftime("%a, %d %B %Y %R:%M:%S %Z", $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst), 
           $link );
       }
       
       print HTML sprintf($htmltmpl, 
-        strftime("%a, %d %B %Y", $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst), 
+        strftime("%a, %d %B %Y", $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst),
+        $type,  
         $news);
     }
     next;
@@ -169,7 +173,6 @@ while ($line = <NEWS>) {
       chomp $date;
       ($sec,  $min, $hour, $mday, $mon,
       $year, $wday, $yday, $isdst) = localtime($date);
-      $year = 1900 + $year;
     }
 
     if ( $line =~ /ITEM/ ) {

@@ -72,13 +72,8 @@
         </tr>
     </table>
         <p> 
-            News:
+            <b><a href="/news.html">News:</a></b>
             <!--incl:news-->
-        <ul>
-            <li>12 Dec 2008: Beautiful Architecture is done</li> 
-            <li>June 2008: <a href="http://www.sqo-oss.org">SQO-OSS</a> released its first public version</li>
-            <li>May 2008: I am working on a <a href="http://code.google.com/soc/2008/jikesrvm/appinfo.html?csaid=F3903F8C63321112">Google Summer of Code 2008</a> project</li>
-        </ul>
     </div>
     <!--incl:FOOTER-->
 </body>

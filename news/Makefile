@@ -14,6 +14,8 @@ install: $(OUTPUT)
 
 $(OUTPUT) : $(PROCESS)
 	@echo "#Generating site news feeds and includes" 
-	@INCL=$(INCLUDE) NEWS=$(shell pwd) ${TOOLS}/news.pl $(NEWSRSS) $(NEWSINCL) $(NEWSHTML)
+	@INCL=$(INCLUDE) LANG=C NEWS=$(shell pwd) ${TOOLS}/news.pl $(NEWSRSS) $(NEWSINCL) $(NEWSHTML)
 
+clean:
+	-rm  $(NEWSRSS) $(NEWSINCL) $(NEWSHTML)
 

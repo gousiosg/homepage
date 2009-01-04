@@ -1,7 +1,7 @@
 TOP_DIR=..
 SUBDIRS=
 COPYFILES=homepage.css
-PROCESS=contact.html.pre index.html.pre links.html.pre 
+PROCESS=$(shell ls *.pre)
 OUTPUT=$(patsubst %.html.pre,%.html,$(addprefix ${OUTPUTDIR}/,$(PROCESS))) 
 
 include $(TOP_DIR)/Makefile.common

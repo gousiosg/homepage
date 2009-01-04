@@ -36,12 +36,13 @@ my $rsstmpl = <<END;
    <description>%s</description>
    <category>%s</category>
    <pubDate>%s</pubDate>
-   <guid>%s</guid>
+   <guid isPermalink="true">%s</guid>
 </item>
 END
 
 my $htmltmpl = <<END;
   <div id="date" class="news.date">%s</div>
+  <div id="type" class="news.type">%s</div>
   <div id="content" class="news.content">%s</div>
   <br/>
 END
@@ -50,39 +51,42 @@ my $newstmpl = <<END;
   <li>%s: %s</li>
 END
 
-my $version = '$Id$';
+my $version = '$Id$\n';
 
 my $news = "$NEWSDIR/news.pre";
 my $html = "$NEWSDIR/news.html.pre";
-my $rss = "$NEWSDIR/gousiosg-news.xml";
+my $rss  = "$NEWSDIR/gousiosg-news.xml";
 my $incl = "$NEWSDIR/news.inc.pre";
 
-my $rssout = $ARGV[0];
+my $rssout  = $ARGV[0];
 my $inclout = $ARGV[1];
 my $htmlout = $ARGV[2];
 
-if ( !-e $html) { die "$html: No such file"; }
-if ( !-e $rss) { die "$rss: No such file"; }
-if ( !-e $incl) { die "$incl: No such file"; }
+if ( !-e $html ) { die "$html: No such file"; }
+if ( !-e $rss )  { die "$rss: No such file"; }
+if ( !-e $incl ) { die "$incl: No such file"; }
 
 #Open all files
-open(NEWS, "< $news") || die "Cannot open file $news";
-open(RSSIN, " $rss") || die "Cannot open file $rss";
-open(INCLIN, " $incl") || die "Cannot open file $incl";
-open(HTMLIN, " $html") || die "Cannot open file $incl";
-open(RSS, " > $rssout") || die "Cannot open file $rssout";
-open(INCL, " > $inclout") || die "Cannot open file $inclout";
-open(HTML, " > $htmlout") || die "Cannot open file $htmlout";
+open( NEWS,   "< $news" )     || die "Cannot open file $news";
+open( RSSIN,  " $rss" )       || die "Cannot open file $rss";
+open( INCLIN, " $incl" )      || die "Cannot open file $incl";
+open( HTMLIN, " $html" )      || die "Cannot open file $incl";
+open( RSS,    " > $rssout" )  || die "Cannot open file $rssout";
+open( INCL,   " > $inclout" ) || die "Cannot open file $inclout";
+open( HTML,   " > $htmlout" ) || die "Cannot open file $htmlout";
 
 #Adjust file pointers appropriately
 while (<RSSIN>) {
   if (/news:update/) {
-    print RSS $_;
-  } elsif (/news:version/) {
+    print RSS time();
+  }
+  elsif (/news:version/) {
     print RSS $version;
-  }  elsif (/news:next/) {
+  }
+  elsif (/news:next/) {
     last;
-  } else {
+  }
+  else {
     print RSS $_;
   }
 }
@@ -92,33 +96,95 @@ while (<HTMLIN>) {
     last;
   }
   print HTML $_;
-} 
+}
 
 while (<INCLIN>) {
   if (/news:news/) {
     last;
   }
   print INCL $_;
-} 
-
-#Start processing news
-my $parsing;
-while (<NEWS>) {
-  /\#\%/ && next;
-  /\#\#\%/ && next;
-  
-  
-  
 }
 
+#Processing news
+my $parsing, my $date, my $news, my $numnews;
+my $link, my $type;
+while (<NEWS>) {
 
+  #Start parsing
+  if ( $_ =~ /\#\%/ ) {
+    $parsing = 1;
+    $date = ''; $news = '';
+    $link = ''; $type = '';
+    next;
+  }
 
+  #Stop parsing when news item terminator is found
+  if ( $_ = /\#\#\%/ ) {
+    $parsing = 0;
+    next;
+  }
 
+  #Ignore shell style nine comments
+  if ( $_ =~ /^\#/ ) {
+    next;
+  }
 
+  #If we reached here when not in parsing mode there is 
+  #a format error
+  if ( !$parsing ) {
+    print STDERR "Bogus news line: $_";
+    next;
+  }
 
+  #In parsing mode, read date and news item
+  if ($parsing) {
+    if ( $_ =~ /DATE/ ) {
+      ( my $lbl, $date ) = split( /:/, $_ );
+      chomp $date;
+      $date = localtime($date);
+    }
 
+    if ( $_ =~ /ITEM/ ) {
+      ( my $lbl, $news ) = split( /:/, $_ );
+      chomp $news;
+      $numnews++;
+    }
+    
+    if ( $_ =~ /TYPE/ ) {
+      ( my $lbl, $type ) = split( /:/, $_ );
+      chomp $type;
+    }
+    
+    if ( $_ =~ /LINK/ ) {
+      ( my $lbl, $link ) = split( /:/, $_ );
+      chomp $link;
+    }
 
+    #Fill in templates.
+    if ( $date != '' && $news != '' ) {
+      if ($numnews < 3) {
+        print INCL sprintf($newstmpl, $date, $news);
+      }
+      
+      if ($numnews < 15) {
+        print RSS sprintf($rsstmpl );
+      }
+      
+      print HTML sprintf($htmltmpl, $date, $news);
+    }
+  }
+}
 
+#Copy the remaining template files
+while (<RSSIN>)  { print RSS $_; }
+while (<HTMLIN>) { print HTML $_; }
+while (<INCLIN>) { print INCL $_; }
 
-
-
+#Close all files
+close(NEWS);
+close(RSSIN);
+close(INCLIN);
+close(HTMLIN);
+close(RSS);
+close(INCL);
+close(HTML);

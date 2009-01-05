@@ -71,9 +71,10 @@
             </td>
         </tr>
     </table>
-        <p> 
-            <b><a href="/news.html">News:</a></b>
-            <!--incl:news-->
+    <div id="news">
+        <b><a href="/news.html">News:</a></b>
+        <!--incl:news-->
+    </div>
     </div>
     <!--incl:FOOTER-->
 </body>

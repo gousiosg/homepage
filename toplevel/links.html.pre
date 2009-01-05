@@ -17,7 +17,7 @@
           <tr> 
             <td width="50%" valign="top">
 				<div align="center" class="linkhead">People</div>
-				<A href="http://www.spinellis.gr">Diomidis Spinellis</A>,
+				<a href="http://www.spinellis.gr">Diomidis Spinellis</a>,
 				<a href="http://istlab.dmst.aueb.gr/~vbill">Vasilis Vlahos</a>,
 				<a href="http://istlab.dmst.aueb.gr/~bkarak">Vasilis Karakoidas</a>,
 				<a href="http://istlab.dmst.aueb.gr/~path">Stephanos Adroutsellis</a>,
@@ -25,7 +25,7 @@
 			</td> 
              <td width="50%" valign="top">
 			    <div align="center" class="linkhead">Research</div>
-				<A href="http://jikesrvm.sourceforge.net">JikesRVM</A>,
+				<a href="http://jikesrvm.sourceforge.net">JikesRVM</a>,
 				<a href="http://www.memorymanagement.org">The Memory management page</a>,
 				<a href="http://www.cs.kent.ac.uk/people/staff/rej/gc.html">Richard Jones’s garbage collection page</a>,
 				
@@ -34,13 +34,12 @@
           <tr> 
           	<td width="50%" valign="top">
 			    <div align="center" class="linkhead">Linux - OSS</div>
-				<A href="http://www.kde.org">KDE</A>,
+				<a href="http://www.kde.org">KDE</a>,
 				<a href="http://kaffeine.sourceforge.net">kaffeine</a>,
 				<a href="http://xinehq.de">Xine</a>,
 				<a href="http://www.mplayer.hu">MPlayer</a>,
 				<a href="http://www.kdevelop.org">KDevelop</a>,
 				<a href="http://www.linux.gr">Linux in Greece</a>
-				<a href="http://"/>
 			</td>
             <td>
 				<div align="center" class="linkhead">News</div>

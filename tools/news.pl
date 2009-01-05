@@ -42,9 +42,9 @@ my $rsstmpl = <<END;
 END
 
 my $htmltmpl = <<END;
-  <div id="date" class="newsdate">%s</div>
-  <div id="type" class="newstype">%s</div>
-  <div id="content" class="newscontent">%s</div>
+  <div class="newsdate">%s</div>
+  <div class="newstype">%s</div>
+  <div class="newscontent">%s</div>
   <br/>
 END
 

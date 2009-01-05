@@ -5,13 +5,13 @@
 SUBDIRS=pubs projects labs news toplevel img
 TOP_DIR=.
 
-include Makefile.conf
-include $(TOP_DIR)/Makefile.common
-
 .PHONY: all build dist all-install
 .DEFAULT: all-install
 
 all: all-install
+
+include Makefile.conf
+include $(TOP_DIR)/Makefile.common
 
 all-install: output build install
 

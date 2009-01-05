@@ -25,6 +25,7 @@
 
 use strict;
 use File::Copy;
+use POSIX qw(strftime);
 
 my $INCLUDEDIR = $ENV{'INCL'};
 
@@ -99,12 +100,15 @@ sub include {
 #get the date a file was changed from the SCM
 sub changed {
   my $arg  = shift;
-  my $date = `LANG=C svn info $arg| grep \"Date\"`;
+  my $date = `svn info $arg| grep \"Date\"`;
   if ( $date =~ /\((.*)\)/ ) {
     return $1;
   }
   else {
-    return '$mday / $mon / $year';
+    #my $actyear = $year + 1900;
+    #my $mon = $mon + 1;
+    #return "$mday/$mon/$actyear";
+    return strftime("%a, %d %b %Y", $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst);
   }
 }
 

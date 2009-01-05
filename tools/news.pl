@@ -116,8 +116,6 @@ my $sec,  my $min,  my $hour, my $mday, my $mon,
 
 while ($line = <NEWS>) {
 
-  $line =~ s/"/\"/g;
-
   #Stop parsing when news item terminator is found
   if ( $line =~ /\#\#\%/ ) {
     $parsing = 0;
@@ -176,7 +174,7 @@ while ($line = <NEWS>) {
     }
 
     if ( $line =~ /ITEM/ ) {
-      ( my $lbl, $news ) = split( /:/, $line );
+      $news = substr($line, index ($line, ':') + 1, length($line));
       chomp $news;
       $numnews++;
     }

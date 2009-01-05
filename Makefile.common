@@ -38,5 +38,5 @@ endif
 #Preprocessor
 ${OUTPUTDIR}/%.html: %.html.pre
 	@echo Processing $@
-	@INCL=$(INCLUDE) ${TOOLS}/preprocessor.pl $(shell pwd)/$< $@ 
+	@INCL=$(INCLUDE) LANG=C ${TOOLS}/preprocessor.pl $(shell pwd)/$< $@ 
 

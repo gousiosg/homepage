@@ -11,6 +11,7 @@
 </head>
 <body>
     <!--incl:MENU-->
+    <!--incl:COM-->
     <div id="body" class="body">
         <h1>Georgios Gousios home page</h1>
         <hr align="left" width="50%"/>

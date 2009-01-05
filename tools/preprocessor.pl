@@ -28,6 +28,7 @@ use File::Copy;
 use POSIX qw(strftime);
 
 my $INCLUDEDIR = $ENV{'INCL'};
+my $BASEURL = $ENV{'LINKBASE'};
 
 my $inputfile  = $ARGV[0];
 my $outputfile = $ARGV[1];
@@ -55,16 +56,20 @@ while ($replaced) {
     or die "Could not open file $inputfile.tmp.out";
 
   while (<IN>) {
-    if ( $_ =~ /<!--(incl.*)-->/ ) {
+    if ( $_ =~ /<!--(incl:.*)-->/ ) {
       print OUT include($1);
       $replaced = 1;
     }
-    elsif ( $_ =~ /<!--(changed.*)-->/ ) {
+    elsif ( $_ =~ /<!--(changed:.*)-->/ ) {
       print OUT changed($inputfile);
       $replaced = 1;
     }
-    elsif ( $_ =~ /<!--(news.*)-->/ ) {
-      print OUT news($1);
+    elsif ( $_ =~ /<!--(link:.*)-->/ ) {
+      print OUT linker($1);
+      $replaced = 1;
+    }
+    elsif ( $_ =~ /<!--(base:.*)-->/ ) {
+      print OUT baselinker($1);
       $replaced = 1;
     }
     else {
@@ -105,13 +110,35 @@ sub changed {
     return $1;
   }
   else {
-    #my $actyear = $year + 1900;
-    #my $mon = $mon + 1;
-    #return "$mday/$mon/$actyear";
     return strftime("%a, %d %b %Y", $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst);
   }
 }
 
-sub news {
-  
+#Create an anchor (<a>) to a the provided resource, taking care of the 
+#base URL
+sub linker {
+  my $arg = shift;
+  (my $cmd, my $link) = split (/:/, $arg);
+
+  if ($BASEURL eq '') {
+    print STDERR "The BASEURL env variable is empty, links may not work";
+  }
+   
+  (my $anchor, my $path) = split (/,/, $link);
+   
+  $anchor eq '' && die "Link anchor cannot be empty"; 
+
+  return "<a href='$BASEURL$path'>$anchor</a>\n";
+}
+
+#Augment a link with the base URL
+sub baselinker {
+  my $arg = shift;
+  (my $cmd, my $link) = split (/:/, $arg);
+
+  if ($BASEURL eq '') {
+    print STDERR "The BASEURL env variable is empty, links may not work";
+  }
+    
+  return "$BASEURL$link\n";
 }

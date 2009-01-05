@@ -15,9 +15,13 @@
   </generator>
   <managingEditor>Georgios Gousios</managingEditor>
   <image>
-   <url>http://istlab.dmst.aueb.gr/~george/img/gousiosg.gif</url>
+      <url>
+          <!--base:img/gousiosg.gif-->
+      </url>
    <title>gousiosg</title>
-   <link>http://www.gousios.gr</link>
+   <link>
+       <!--base:-->
+   </link>
   </image>
 <!--news:next-->
  </channel>

@@ -7,24 +7,24 @@
             <a href="http://sense.eltrun.gr/publications/m_gousios-publications.html">Publications</a>
         </div>
         <div class="menuitem">
-            <!--<a href="/res">Research</a>-->
+            <!--1link:Research,res-->
         </div>
         <div class="menuitem">
-            <!--<a href="/sw">Software</a>-->
+            <!--1link:Software,sw-->
         </div>
         <div class="menuitem">
-            <!--<a href="/projects">Projects</a>-->
+            <!--1link:Projects,projects-->
         </div>
         <div class="menuitem">
-            <!--<a href="/labs">Labs</a>-->
+            <!--1link:Labs,labs-->
         </div>
         <div class="menuitem">
-            <a href="/links.html">Links</a>
+            <!--link:Links,links.html-->
         </div>
         <div class="menuitem">
-            <a href="/contact.html">Contact</a>
+            <!--link:Contact,contact.html-->
         </div>
-        <div>
-            <a href="/index.html">Home</a>
+        <div class="menuitem">
+            <!--link:Home, -->
         </div>
 </div>

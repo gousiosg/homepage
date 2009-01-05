@@ -132,7 +132,7 @@ while ($line = <NEWS>) {
         print RSS sprintf("$rsstmpl", 
           "Site news ". strftime("%d/%m/%Y", $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst),
           $link, $news, $type,  
-          strftime("%a, %d %B %Y %R:%M:%S %Z", $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst), 
+          strftime("%a, %d %B %Y %T %Z", $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst), 
           $link );
       }
       

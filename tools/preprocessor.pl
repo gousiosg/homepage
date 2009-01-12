@@ -69,6 +69,7 @@ while ($replaced) {
       $replaced = 1;
     }
     elsif ( $_ =~ /<!--(base:.*)-->/ ) {
+      my $replacement = baselinker($1);
       print OUT baselinker($1);
       $replaced = 1;
     }

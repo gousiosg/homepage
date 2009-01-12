@@ -24,5 +24,5 @@ distclean : clean
 	-find . -type f -name DS_Store | xargs rm
 	-find . -type f -name .tmp | xargs rm
 dist: all
-	rsync -rv ${OUTPUTDIR} ${HOST}
+	rsync -rv ${OUTPUTDIR}/* ${HOST}
 

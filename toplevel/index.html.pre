@@ -73,7 +73,8 @@
         </tr>
     </table>
     <div id="news">
-        <b><a href="/news.html">News:</a></b>
+        <b><!--link:News,news.html--><b>
+
         <!--incl:news-->
     </div>
     </div>

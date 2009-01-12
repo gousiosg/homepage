@@ -4,7 +4,7 @@
         </div>
         <div class="menuitem">
            <!-- <a href="/pubs">Publications</a>-->
-            <a href="http://sense.eltrun.gr/publications/m_gousios-publications.html">Publications</a>
+            <a href="http://istlab.dmst.aueb.gr/content/publications/m_gousios-publications.html">Publications</a>
         </div>
         <div class="menuitem">
             <!--1link:Research,res-->
@@ -16,7 +16,7 @@
             <!--1link:Projects,projects-->
         </div>
         <div class="menuitem">
-            <!--1link:Labs,labs-->
+            <!--link:Labs,labs-->
         </div>
         <div class="menuitem">
             <!--link:Links,links.html-->

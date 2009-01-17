@@ -40,7 +40,7 @@
             Software Quality. The plan is to have the thesis written by end 2009.
         </td>
             <td>
-                <img alt="Picture of Georgios Gousios" width="90%" align="right" src="img/moi.jpg"/>
+                <img alt="Picture of Georgios Gousios" align="right" src="img/moi.jpg"/>
             </td>
         </tr>
         <tr>
@@ -67,8 +67,7 @@
             </p>
             </td>
             <td>
-                <img alt="Beautiful Architecture" 
-                width="80%" align="right" src="img/ba.jpg"/>
+                <img alt="Beautiful Architecture" align="right" src="img/ba.jpg"/>
             </td>
         </tr>
     </table>

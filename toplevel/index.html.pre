@@ -17,7 +17,7 @@
         <hr align="left" width="50%"/>
         <table width="100%">
             <tr>
-                <td>    
+                <td>
         Welcome to my home page.
         <p>
         I am Georgios Gousios.
@@ -39,7 +39,7 @@
             At the moment, I am working full-time on my PhD in the area of 
             Software Quality. The plan is to have the thesis written by end 2009.
         </td>
-            <td>
+            <td >
                 <img alt="Picture of Georgios Gousios" align="right" src="img/moi.jpg"/>
             </td>
         </tr>

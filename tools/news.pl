@@ -37,7 +37,7 @@ my $rsstmpl = <<END;
    <description>%s</description>
    <category>%s</category>
    <pubDate>%s</pubDate>
-   <guid isPermalink="true">%s</guid>
+   <guid isPermaLink="false">%s</guid>
 </item>
 END
 
@@ -51,6 +51,8 @@ END
 my $newstmpl = <<END;
   <li>%s: %s</li>
 END
+
+my $rfc822time = "%a, %d %b %Y %H:%M:%S GMT";
 
 my $version = '$Id$\n';
 
@@ -79,7 +81,7 @@ open( HTML,   " > $htmlout" ) || die "Cannot open file $htmlout";
 #Adjust file pointers appropriately
 while (<RSSIN>) {
   if (/news:update/) {
-    print RSS time();
+    print RSS strftime($rfc822time, localtime())."\n";
   }
   elsif (/news:version/) {
     print RSS $version;
@@ -113,7 +115,6 @@ my $link, my $type; my $line;
 my $sec,  my $min,  my $hour, my $mday, my $mon,
   my $year, my $wday, my $yday, my $isdst;
 
-
 while ($line = <NEWS>) {
 
   #Stop parsing when news item terminator is found
@@ -130,10 +131,10 @@ while ($line = <NEWS>) {
       
       if ($numnews < 16) {
         print RSS sprintf("$rsstmpl", 
-          "Site news ". strftime("%d/%m/%Y", $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst),
+          "Georgios Gousios news ". strftime("%d/%m/%Y", $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst),
           $link, $news, $type,  
-          strftime("%a, %d %b %Y %T %Z", $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst), 
-          $link );
+          strftime($rfc822time, $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst), 
+          $date);
       }
       
       print HTML sprintf($htmltmpl, 

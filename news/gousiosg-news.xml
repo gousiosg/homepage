@@ -1,11 +1,13 @@
 <?xml version="1.0"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
  <channel>
   <title>Georgios Gousios News </title>
-  <link>http://istlab.dmst.aueb.gr/gousiosg-news.xml</link>
+  <link>
+      <!--base:-->
+  </link>
   <description>Georgios Gousios's blog</description>
   <language>en-gb</language>
-  <pubDate>Thu, 1 Jan 2009 0:00:00 UTC</pubDate>
+  <pubDate>Thu, 1 Jan 2009 01:59:59 GMT</pubDate>
   <lastBuildDate>
 <!--news:update-->
   </lastBuildDate>
@@ -13,16 +15,18 @@
   <generator>
 <!--news:version-->
   </generator>
-  <managingEditor>Georgios Gousios</managingEditor>
+  <managingEditor>gousiosg@gmail.com (Georgios Gousios)</managingEditor>
   <image>
       <url>
           <!--base:img/gousiosg.gif-->
       </url>
-   <title>gousiosg</title>
-   <link>
-       <!--base:-->
-   </link>
+      <title>Georgios Gousios News</title>
+      <description>Georgios Gousios photo</description>
+      <link>
+         <!--base:-->
+      </link>
   </image>
+  <atom:link href="http://istlab.dmst.aueb.gr/~george/gousiosg-rss.xml" rel="self" type="application/rss+xml" />
 <!--news:next-->
  </channel>
 </rss>

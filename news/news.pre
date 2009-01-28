@@ -6,7 +6,7 @@ LINK: http://oreilly.com/catalog/9780596517984/
 ##%
 #%
 DATE: 1232274731
-ITEM: The e-book version of Beautiful Architecure is out, get if from <a href="http://oreilly.com/catalog/9780596517984/">O'Reilly</a>!
+ITEM: The e-book version of Beautiful Architecure is out, get if from O'Reilly!
 TYPE: Publication
 LINK: http://oreilly.com/catalog/9780596517984/
 ##%
@@ -25,13 +25,13 @@ LINK: http://oreilly.com/catalog/9780596517984/
 #%
 DATE: 1213779549 
 LINK: http://www.sqo-oss.org
-ITEM: <a href="http://www.sqo-oss.org">SQO-OSS</a> released its first public version.
+ITEM: SQO-OSS released its first public version.
 TYPE: Software
 ##%
 #%
 DATE: 1209632349
-ITEM: I am working on a <a href="http://code.google.com/soc/2008/jikesrvm/appinfo.html?csaid=F3903F8C63321112">Google Summer of Code 2008</a> project.
+ITEM: I am working on a Google Summer of Code 2008 project.
 TYPE: News
-LINK: 
+LINK:http://code.google.com/soc/2008/jikesrvm/appinfo.html?csaid=F3903F8C63321112 
 ##%
 #Note to self: No line space between comments, no multiline news. Order is new to old

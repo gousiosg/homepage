@@ -43,13 +43,13 @@ END
 
 my $htmltmpl = <<END;
   <div class="newsdate">%s</div>
-  <div class="newstype">%s</div>
+  <div class="newstype">%s - <a href="%s">more</a></div>
   <div class="newscontent">%s</div>
   <br/>
 END
 
 my $newstmpl = <<END;
-  <li>%s: %s</li>
+  <li>%s: %s (<a href="%s">More</a>)</li>
 END
 
 my $rfc822time = "%a, %d %b %Y %H:%M:%S GMT";
@@ -126,7 +126,7 @@ while ($line = <NEWS>) {
       if ($numnews < 4) {
         print INCL sprintf($newstmpl, 
           strftime("%a, %d %B %Y", $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst), 
-          $news);
+          $news, $link);
       }
       
       if ($numnews < 16) {
@@ -140,6 +140,7 @@ while ($line = <NEWS>) {
       print HTML sprintf($htmltmpl, 
         strftime("%a, %d %B %Y", $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst),
         $type,  
+        $link,
         $news);
     }
     next;

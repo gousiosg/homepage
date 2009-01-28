@@ -19,15 +19,16 @@
 				<div align="center" class="linkhead">People</div>
 				<a href="http://www.spinellis.gr">Diomidis Spinellis</a>,
 				<a href="http://istlab.dmst.aueb.gr/~vbill">Vasilis Vlahos</a>,
-				<a href="http://istlab.dmst.aueb.gr/~bkarak">Vasilis Karakoidas</a>,
+				<a href="http://gaijin.dmst.aueb.gr/~bkarak/">Vasilis Karakoidas</a>,
 				<a href="http://istlab.dmst.aueb.gr/~path">Stephanos Adroutsellis</a>,
-				<a href="http://www.cs.man.ac.uk/~irogers/">Ian Rogers</a>
+                <a href="http://www.cs.man.ac.uk/~irogers/">Ian Rogers</a>,
+                <a href="http://http://macsphere.wordpress.com/"/>Nikos Toumpelis</a>
 			</td> 
              <td width="50%" valign="top">
 			    <div align="center" class="linkhead">Research</div>
 				<a href="http://jikesrvm.sourceforge.net">JikesRVM</a>,
 				<a href="http://www.memorymanagement.org">The Memory management page</a>,
-				<a href="http://www.cs.kent.ac.uk/people/staff/rej/gc.html">Richard Jones’s garbage collection page</a>,
+				<a href="http://www.cs.kent.ac.uk/people/staff/rej/gc.html">Richard Jones’s garbage collection page</a>
 				
 			</td>
           </tr> 

@@ -5,6 +5,9 @@
  <a href="http://www.facebook.com/people/Georgios-Gousios/544933039">
   <img alt="facebook profile" src="img/fb.jpg" height='23' border='0'/>
  </a>
+ <a href="http://twitter.com/gousiosg">
+   <img alt="twitter feed" src="img/twitter.gif" height='23' border='0'/>
+ </a>
  <!--link:<img alt="rss feed" src="img/rss.png" height='23'  border='0'/>,gousiosg-rss.xml-->
  <br/>
  <a href='http://www.ohloh.net/accounts/21690?ref=Detailed'>

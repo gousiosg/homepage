@@ -72,7 +72,7 @@ document.getElementById('last').src = 'http://chart.apis.google.com/chart?' +
         </p>
         <p>
 
-            Feel free to drop me a line of 
+            Feel free <a href="mailto:gousiosg_OXISPAM@gmail.com">to drop me a line</a> to encourage my progress or critisize the lack of it!
 
         </p>
 
@@ -81,14 +81,15 @@ document.getElementById('last').src = 'http://chart.apis.google.com/chart?' +
         <img id="last" alt="Number of words last day" />
 
 <p> 
-            The thesis-o-meter approach towards monitoring thesis progress is
+            The thesis-o-meter is not
             <a href="http://www.cse.chalmers.se/~wouter/thesisometer.html">not</a> 
-            new;
+            my invention;
             <a href="http://www.cs.cmu.edu/~mmde/">several</a> 
             <a href="http://www.damas.ift.ulaval.ca/~jlaumoni/thesisometer.php4?lang=en&">other</a> 
             <a href="http://www.cs.man.ac.uk/~jsinger/phd.html">researchers</a> have                tried this before and 
             <a href="http://www.cl.cam.ac.uk/~akw27/thesisometer-explained.txt">
-                this letter</a> explains why the thesis-o-meter works. However, my 
+                this letter</a> explains why and how the thesis-o-meter works. 
+            However, my 
             thesis-o-meter is the first to use the Google Chart API instead of 
             <tt>gnuplot</tt> to draw the plots. I guess I can call it the 
             first Web 2.0 thesis-o-meter :-)

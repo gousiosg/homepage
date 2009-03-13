@@ -8,8 +8,55 @@
     <link rel="stylesheet" href="homepage.css" type="text/css"/>
     <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="alternate" type="application/rss+xml" title="gousiosg site news" href="http://istlab.dmst.aueb.gr/~george/gousiosg-rss.xml"/>
+    <script src="progress-vars.js"></script>
+    <script type="text/javascript">
+    var simpleEncoding = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+    function simpleEncode(valueArray,maxValue) {
+
+      var chartData = ['s:'];
+      for (var i = 0; i < valueArray.length; i++) {
+        var currentValue = valueArray[i];
+        if (!isNaN(currentValue) && currentValue >= 0) {
+        chartData.push(simpleEncoding.charAt(Math.round((simpleEncoding.length-1) * currentValue / maxValue)));
+        }
+        else {
+          chartData.push('_');
+          }
+        }
+        return chartData.join('');
+    }
+
+  function plot() {
+  document.getElementById('numwords').src = 'http://chart.apis.google.com/chart?' +
+'chs=300x200' +
+'&chd=' + simpleEncode(numwords_vals, numwords_max ) +
+'&cht=lc' +
+'&chxt=x,y' +
+'&chxl=0:|Mar|Apr|May|Jun' +
+'&chtt=Number+of+words';
+
+document.getElementById('chpr').src = 'http://chart.apis.google.com/chart?' +
+'chs=200x200'+
+'&chd=t:' + chpr_actual + '|' + chpr_targets +
+'&cht=bvs' +
+'&chxt=x,y' +
+'&chxl=0:|ch1|ch2|ch3|ch4|ch5|ch6|1:0|5000|10000|' +
+'&chco=4D89F9,C6D9FD' +
+'&chds=0,450' +
+'&chtt=Progress+in+each+chapter';
+
+document.getElementById('last').src = 'http://chart.apis.google.com/chart?' +
+'chs=200x200' +
+'&chd=t:'+ last_prc +
+'&chl=' + last_numwords +
+'&cht=gom' + 
+'&chtt=Num+Words+Yesterday';
+  }
+  
+    </script>
 </head>
-<body>
+<body onload="plot()">
     <!--incl:MENU-->
     <!--incl:COM-->
     <div id="body" class="body">
@@ -50,8 +97,9 @@
                 <li>sd</li>
             </ol>
         </p>
-        <p>
-        </p>
+        <img id="numwords" alt="Plot displaying the number of words in my thesis">
+        <img id="chpr" alt="Plot displaying individual chapter progress against targets"/>
+        <img id="last" alt="Number of words last day" />
         <p>
             
             The thesis-o-meter approach towards thesis progress monitoring is

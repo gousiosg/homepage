@@ -34,7 +34,7 @@
 '&cht=lc' +
 '&chxt=x,y' +
 '&chxl=0:|Mar|Apr|May|Jun' +
-'&chtt=Number+of+words';
+'&chtt=Total+Number+of+words';
 
 document.getElementById('chpr').src = 'http://chart.apis.google.com/chart?' +
 'chs=200x200'+
@@ -51,7 +51,7 @@ document.getElementById('last').src = 'http://chart.apis.google.com/chart?' +
 '&chd=t:'+ last_prc +
 '&chl=' + last_numwords +
 '&cht=gom' + 
-'&chtt=Num+Words+Yesterday';
+'&chtt=Num+Words+Added+Yesterday';
   }
   
     </script>
@@ -62,70 +62,39 @@ document.getElementById('last').src = 'http://chart.apis.google.com/chart?' +
     <div id="body" class="body">
         <h1>Thesis-o-meter</h1>
         <hr align="left" width="50%"/>
-        <p> 
+         <p>
 
-            Writing a PhD thesis is a tedious excersice and one that is usualy
-            done under tight deadline conditions. To ensure a succesful outcome,
-            progress monitoring must be continuous and thorough, while 
-            performance data should be available to third parties for independent
-            assesment. 
-
+            Since Mar 11, 2009, I am officially in thesis writing mode. The plan
+            is to have the thesis writen by end June 2009. I usually find peer
+            pressure to be very effective for keeping me motivated when I 
+            work on not too engaging stuff. I 've put together
+            this page to monitor my progress towards the tight deadline. 
         </p>
         <p>
+
+            Feel free to drop me a line of 
+
+        </p>
+
+        <img id="numwords" alt="Plot displaying the number of words in my thesis">
+        <img id="chpr" alt="Plot displaying individual chapter progress against targets"/>
+        <img id="last" alt="Number of words last day" />
+
+<p> 
             The thesis-o-meter approach towards monitoring thesis progress is
             <a href="http://www.cse.chalmers.se/~wouter/thesisometer.html">not</a> 
             new;
             <a href="http://www.cs.cmu.edu/~mmde/">several</a> 
-            <a href="http://www.damas.ift.ulaval.ca/~jlaumoni/thesisometer.php4?lang=en&">other</a> researchers have tried this before, 
-            This 
+            <a href="http://www.damas.ift.ulaval.ca/~jlaumoni/thesisometer.php4?lang=en&">other</a> 
+            <a href="http://www.cs.man.ac.uk/~jsinger/phd.html">researchers</a> have                tried this before and 
             <a href="http://www.cl.cam.ac.uk/~akw27/thesisometer-explained.txt">
-                letter</a> motivates the need for a 
-            thesis-o-meter very well. Our contribution lays in the fact that we
-            employ novel charting techniques to hide away the implementation 
-            complexities present in traditional approaches. The net effect
-            is the saving significant implementation time 
-            and the promotion of the re-use of publicly available APIs 
-            towards the integration of Web 2.0  in a coherent set 
-            of services (a.k.a. the Cloud).
+                this letter</a> explains why the thesis-o-meter works. However, my 
+            thesis-o-meter is the first to use the Google Chart API instead of 
+            <tt>gnuplot</tt> to draw the plots. I guess I can call it the 
+            first Web 2.0 thesis-o-meter :-)
+        </p>
 
-        </p>
-        <p>
-            The thesis-o-meter works in 5 steps:
-            <ol>
-                <li>The subject of study writes LaTeX in his/her thesis and 
-                    commits the resulting file in a </li>
-                <li>sd</li>
-            </ol>
-        </p>
-        <img id="numwords" alt="Plot displaying the number of words in my thesis">
-        <img id="chpr" alt="Plot displaying individual chapter progress against targets"/>
-        <img id="last" alt="Number of words last day" />
-        <p>
-            
-            The thesis-o-meter approach towards thesis progress monitoring is
-            in widespread use. In this page, we present a novel implementation 
-            of the thesis-o-meter concept; our implementation departs from 
-            traditional approaches, being first to use novel Web 2.0 technologies.
-            We are currently exposing our prototype in real-world
-            thesis writting scenarios and we will report in a newer study the
-            results of our findings.
-        </p>
-        <hr width="20%"/>
-        <p>
 
-            <i> Since Mar 9, 2009, I am officially in thesis writing mode. The plan
-            is to have the thesis writen by end June 2009. I usually find peer
-            pressure to be very effective for keeping me motivated when I 
-            work on not too engaging stuff. I 've put together
-            this page to monitor my progress towards the tight deadline.
-            If the the text above sounds strange to you, it is because it is
-            writen on purpose in
-            <a href="http://dictionary.reference.com/browse/academese">academese</a>,
-            just to give ususpected people an idea of the kind of language 
-            you are expected to write papers (and also theses) into.
-        </i>
-        
-        </p>
     </div>
     <!--incl:FOOTER-->
 </body>

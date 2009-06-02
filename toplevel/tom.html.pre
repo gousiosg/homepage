@@ -38,11 +38,12 @@
 '&chtt=Total+Number+of+words';
 
 document.getElementById('chpr').src = 'http://chart.apis.google.com/chart?' +
-'chs=250x200'+
+'chs=300x200'+
 '&chd=t:' + chpr_actual + '|' + chpr_targets +
 '&cht=bvs' +
 '&chxt=x,y' +
-'&chxl=0:|intro|rel|meth|fw|mi|concl|1:0|5000|10000|' +
+'&chxl=0:|acks|absrt|intro|rel|meth|plat|eval|concl|' +
+'1:0|5000|11000|' +
 '&chco=4D89F9,C6D9FD' +
 '&chds=0,11000' +
 '&chtt=Progress+in+each+chapter';

@@ -21,7 +21,7 @@
 
         <p>In a nutshell, my thesis examined how research in software engineering
         is done today and proposed and evaluated a system for large scale 
-        research studies.</p>
+        research studies that presumably addresses the discovered shortcomings.</p>
 
         You can find 
         out more about my thesis, by downloading it from the following link:
@@ -41,6 +41,10 @@
         Year = {2009}
     }</pre>
 
+    While writing the thesis, I found very useful to monitor my progress using
+    automated tools. You can see the results in the
+    <!--link:Thesis-o-meter,tom.html--> 
+    page.
         <h2>Software and Research Data</h2>
         <p>
         My reseach produced a significant amount of software, which forms part
@@ -51,13 +55,37 @@
         (<a href="http://anonsvn.sqo-oss.org">anonymous access</a>,
          <a href="http://websvn.sqo-oss.org">repository browser</a>).
         </p>
-        <p>
-        In the case studies 
+        
+        <p> 
+            For conducting the case studies presented in the thesis, I have
+            analysed, using Alitheia Core, the data repositories from about 
+            230 OSS projects. The result is a database with more than 100 million
+            records, the 
+            <a href="pubs/phd/alitheia.mysql.dump.bz2">compressed dump</a> 
+            of which weights about 1.2GB. 
+            The dump has been confirmed to work
+            with the MySQL database and Alitheia Core SVN revision 4654.
+            The processing
+            of the data was done using very simple shell script one-liners and
+            the <a href="http://www.r-project.org/">R</a> statistics package. 
         </p>
+
+        <p>
+            The depending on the kind of analysis you might want to do, the provided 
+            data might not be helpful. The reason is that Alitheia Core defaults
+            to use the real project repository data in several ocassions. Providing
+            the original data as a tarball is not practical as their data 
+            size is more than 100GB. However, should you find this data necessary, 
+            please
+            <!--link:drop me a line,contact.html-->
+            as it may be possible to arrange for an account to access our data 
+            mirrors.
+        </p>
+
         <h2>Abstract</h2>
         (You might find easier to read the abstact using the
-        <a href="">pdf</a> or the 
-        <a href="">Greek translation</a>)
+        <a href="pubs/phd/abstract.pdf">pdf</a> version, which also includes a  
+        Greek translation)
 
         <p>
         Software engineering is concerned with the study of systematic
@@ -206,18 +234,12 @@
 
         </ul>
 
-        <h2>Acknoweledgements</h2> 
-        The work on my thesis was supported by the
-        Greek Secretariat of Research and Technology through the Operational
-        Programme Competitiveness, measure 8.3.1 (Reinforcement Programme of
-        Human Research Manpower -- PENED), financed by National and
-        Community funds (25% from the Greek Ministry of Development-General
-        Secretariat of Research and Technology and 75% from the European
-        Social Fund). Additional support, in the form of equipment, travel and
-        conference funding, was provided by the European Community's Sixth
-        Framework Programme under the contract IST-2005-33331 ``Software
-        Quality Observatory for Open Source Software'' (SQO-OSS).
+        <h2>Acknoweledgements</h2>
 
+        The work on my thesis was funded by the 
+        <a href="http://www.gsrt.gr">Greek Secretariat of Research
+            and Technology</a> and by the 
+        <a href="http://cordis.europa.eu/fetch?CALLER=FP6_PROJ&ACTION=D&DOC=1&CAT=PROJ&QUERY=01248c46be97:50b0:2b51e482&RCN=79362">FP6-funded</a> SQO-OSS project. 
     </div>
     <!--incl:FOOTER-->
 </body>

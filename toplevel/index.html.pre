@@ -22,8 +22,8 @@
         <p>
         I am Georgios Gousios.
         I am a researcher at the 
-        <a href="http://www.dmst.aueb.gr">
-            Department of Management Science and Technology</a>,
+        <a href="http://istlab.dmst.aueb.gr/sense">
+            Software Engineering and Security laboratory</a>, at the
         <a href="http://www.aueb.gr">
             Athens University of Economics and Business</a>.
         </p>
@@ -36,11 +36,7 @@
                 <li>Operating systems architectures</li>
                 <li>Virtual Machines</li>
             </ul>
-            At the moment, I am working full-time on my PhD in the area of 
-            Software Quality. Since Mar 11, I am in thesis writting mode. 
-            Watch out my 
-            <!--link:Thesis-o-meter,tom.html-->
-            !
+
         </td>
             <td >
                 <img alt="Picture of Georgios Gousios" align="right" src="img/moi.jpg"/>
@@ -66,7 +62,8 @@
             <a href="http://www.play.com/Books/Books/4-/8270906/Beautiful-Architecture/Product.html">Play</a>), 
             and help a good cause, as the royalties for the book will be 
             donated to the 
-            <a href="http://www.msf.org"><em>Medecins Sans Frontieres</em></a>.
+            <a href="http://www.msf.org"><em>Medecins Sans Frontieres</em></a>.<br/>
+            <em>Update:</em> We already donated $1650.
             </p>
             </td>
             <td>

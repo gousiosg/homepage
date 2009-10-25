@@ -22,6 +22,10 @@
             <!--link:Links,links.html-->
         </div>
         <div class="menuitem">
+            <!--link:PhD,phd.html-->
+        </div>
+
+        <div class="menuitem">
             <!--link:Contact,contact.html-->
         </div>
         <div class="menuitem">

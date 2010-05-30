@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Georgios Gousios Publications</title>
+    <meta name="Author" content="Georgios Gousios"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="homepage.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<body>
+    <!--incl:MENU--> 
+    <div id="body" class="body">
+        <h1>Georgios Gousios Publications</h1>
+	
+	Here is a list of my publications, order by type and year. You can find 
+	an organised presentation of my work in my
+	<!--link:research,research.html --> 
+	page.
+<a name="book"></a><h2>Book</h2>
+<!-- BEGIN BIBLIOGRAPHY bib/book -->
+<!-- END BIBLIOGRAPHY bib/book -->
+<a name="thesis"></a><h2>Theses</h2>
+<!-- BEGIN BIBLIOGRAPHY bib/thesis -->
+<!-- END BIBLIOGRAPHY bib/thesis -->
+<a name="article"></a><h2>Journal Articles</h2>
+<!-- BEGIN BIBLIOGRAPHY bib/article -->
+<!-- END BIBLIOGRAPHY bib/article -->
+<a name="incollection"></a><h2>Book Chapters</h2>
+<!-- BEGIN BIBLIOGRAPHY bib/incollection -->
+<!-- END BIBLIOGRAPHY bib/incollection -->
+<a name="inproceedings"></a><h2>Conference Publications</h2>
+<!-- BEGIN BIBLIOGRAPHY bib/inproceedings -->
+<!-- END BIBLIOGRAPHY bib/inproceedings -->
+    </div>
+    <!--incl:FOOTER-->
+</body>
+</html>

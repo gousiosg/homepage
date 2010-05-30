@@ -44,7 +44,6 @@
         </tr>
         <tr>
             <td valign="top">
-            My PhD supervisor 
             <a href="http://www.spinellis.gr">Diomidis Spinellis</a>
             and I worked together with a team of brilliant engineers to put on
             paper their experience on building software systems. The 
@@ -68,6 +67,17 @@
             </td>
             <td>
                 <img alt="Beautiful Architecture" align="right" src="img/ba.jpg"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>While studying for my PhD, I had the pleasure to manage 
+                    the SQO-OSS project, an FP6-funded effort to develop novel
+                    tools for advanced software engineering research. 
+                    The project results along with the produced tool's source 
+                    code can be found at the 
+                    <a href="http://www.sqo-oss.org">project's homepage</a>
+                </p>
             </td>
         </tr>
     </table>

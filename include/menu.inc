@@ -7,7 +7,7 @@
             <a href="http://istlab.dmst.aueb.gr/content/publications/m_gousios-publications.html">Publications</a>
         </div>
         <div class="menuitem">
-            <!--1link:Research,res-->
+            <!--link:Research,research.html-->
         </div>
         <div class="menuitem">
             <!--1link:Software,sw-->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Georgios Gousios home page</title>
+    <meta name="Author" content="Georgios Gousios"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="homepage.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<body>
+    <!--incl:MENU--> 
+    <div id="body" class="body">
+        <h1>Research</h1>
+    </div>
+    <!--incl:FOOTER-->
+</body>
+</html>

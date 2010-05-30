@@ -887,7 +887,7 @@ push(@tmpfiles, "$auxfile.aux");
 
 open(AUXFILE, ">$auxfile" . ".aux");
 
-print AUXFILE "\\relax\n\\bibstyle{$bstfile}\n";
+print AUXFILE "\\relax\n\\bibstyle{tools/$bstfile}\n";
 
 if (defined($citefile)) {
     $citefile .= ".aux";

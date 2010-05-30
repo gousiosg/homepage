@@ -34,5 +34,10 @@ bib: install
 		for bibfile in $$bibfiles; do \
 			perl tools/bib2xhtml -c -r -u -s plain  $$bibfile.bib $$file;\
 		done ; \
+		cites=`cat $$file |grep "BEGIN CITATIONS" | tr -s ' '|cut -f4 -d' '`; \
+		for cite in $$cites; do \
+			perl tools/bib2xhtml -s plain  $$cite.bib $$file; \
+			break;\
+		done; \
 	done
 

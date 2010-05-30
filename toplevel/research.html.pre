@@ -21,8 +21,8 @@
 	software and security, and combinations thereof. Particularily, I enjoy
 	working (and playing) with systems level software, tinkering systems to
 	squeeze any bits of performance left and exploring large collections of
-	historical software data to discover interesing facts or trends. As a
-	concequence, I have also grown an interest in applying statistical
+	historical software data to discover interesting facts or trends. As a
+	consequence, I have also grown an interest in applying statistical
 	techniques for analysing large volumes of data. My work so far has
 	focused on the following areas: 
 
@@ -42,7 +42,7 @@
 		
 	On a related note, I worked with Diomidis Spinellis and a dozen of
 	brilliant software engineers to put together the Beautiful
-	Architectures book, which looked into the architecture of succesful
+	Architectures book, which looked into the architecture of successful
 	existing systems.
 
 	</p>
@@ -61,23 +61,30 @@
 	the Google Summer of Code 2008 program, to compile and run with OpenJDK
 	[4]. I have also proposed an architecture to make Java's I/O subsystem
 	faster by replacing the OS (notice a pattern?) with a hypervisor and
-	thus releaving it of context switches and copies [5]. This is work in
+	thus relieving it of context switches and copies [5]. This is work in
 	progress.
 
 	</p>
 
-	<h3>Performance evaluation</h3>
+	<h3>Systems performance evaluation</h3>
 
 	<p>
 
 	My research career started with trying to evaluate the performance of
 	web content technologies. In the same vein, I proposed and evaluated a
 	set of rules of thumb for tuning the JVM's garbage collector in a
-	server environment. I have also developed a Perl library that parses
+	server environment. <a href="#GKS06">[1]</a> 	
+	I have also developed a Perl library that parses
 	the output from DTrace to reveal interesting facts about the
-	co-operation of the JVM with the operating system.
-
+	co-operation of the JVM with the operating system.<a href="#GS08">[2]</a>
+	
+<!-- BEGIN CITATIONS bib/all -->
+<!-- \citation{GKS06} -->
+<!-- \citation{GS08} -->
+<!-- END CITATIONS bib/all -->
 	</p>
+	
+
 
 	<h2>Projects</h2>
 	    
@@ -90,16 +97,16 @@
 
 	<dd>The <a href="http://www.sqo-oss.eu">SQO-OSS</a> project was an EC
 		funded (FP6-033331) effort to investigate novel ways for the
-		assesment of software quality with data from OSS repositories.
+		assessment of software quality with data from OSS repositories.
 		I had written the original project proposal myself and served
 		the project as its project manager, being responsible for
 		talking with the EU and guiding its development. The project
 		developed an extensible high performance engine (Alitheia Core)
 		that analyses data from repositories and is extensible through
 		plug-ins. I was Alitheia Core's lead designer, development lead
-		and top source code commiter. Later on, I based my PhD work on
+		and top source code committer. Later on, I based my PhD work on
 		the Alitheia Core platform. The platform is still under
-		development at http://www.sqo-oss.org.  </dd>
+		development at <a href="http://www.sqo-oss.org">http://www.sqo-oss.org</a>. </dd>
 
 	<dt>PAVET 2008</dt>
 
@@ -120,7 +127,7 @@
 
 	<dd>The PRAXIS project looked into methods for performing automated
 		document exchange in business to business and business to state
-		scenarios. As a research assistant, I desgined document schemas
+		scenarios. As a research assistant, I designed document schemas
 		and a couple of exchange processes.</dd>
 	</dl>
 

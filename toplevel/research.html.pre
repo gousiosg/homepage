@@ -11,7 +11,119 @@
 <body>
     <!--incl:MENU--> 
     <div id="body" class="body">
-        <h1>Research</h1>
+	<h1>Research</h1>
+	    
+	<h2>Interests</h2>
+
+	<p>
+		
+	I am genuinely interested in any topic that has to do with systems,
+	software and security, and combinations thereof. Particularily, I enjoy
+	working (and playing) with systems level software, tinkering systems to
+	squeeze any bits of performance left and exploring large collections of
+	historical software data to discover interesing facts or trends. As a
+	concequence, I have also grown an interest in applying statistical
+	techniques for analysing large volumes of data. My work so far has
+	focused on the following areas: 
+
+	</p>
+	
+	<h3>Software Engineering</h3> 
+
+	<p>
+
+	In the context of my PhD work, I helped design and develop a novel
+	platform for software engineering research, Alitheia Core. The
+	motivation for the system is documented in [1] while its  
+
+	</p>	
+
+	<p>
+		
+	On a related note, I worked with Diomidis Spinellis and a dozen of
+	brilliant software engineers to put together the Beautiful
+	Architectures book, which looked into the architecture of succesful
+	existing systems.
+
+	</p>
+
+	<h3>Systems Software</h3>
+
+	<p>
+
+	My MSc research project was my entry to systems level software; I
+	ported JikesRVM, a JVM written mostly in Java, to run on top of bare
+	hardware, without the support of an operating system. The limited time
+	available in the context of an MSc project did not allow me to go all
+	the way to run applications on, but  the system could readily run
+	"hello world" [1][2]. Later, I contributed patches to the JikesRVM
+	project to enable support for Opensolaris [3] and, in the context of
+	the Google Summer of Code 2008 program, to compile and run with OpenJDK
+	[4]. I have also proposed an architecture to make Java's I/O subsystem
+	faster by replacing the OS (notice a pattern?) with a hypervisor and
+	thus releaving it of context switches and copies [5]. This is work in
+	progress.
+
+	</p>
+
+	<h3>Performance evaluation</h3>
+
+	<p>
+
+	My research career started with trying to evaluate the performance of
+	web content technologies. In the same vein, I proposed and evaluated a
+	set of rules of thumb for tuning the JVM's garbage collector in a
+	server environment. I have also developed a Perl library that parses
+	the output from DTrace to reveal interesting facts about the
+	co-operation of the JVM with the operating system.
+
+	</p>
+
+	<h2>Projects</h2>
+	    
+	Here is a list of research projects I have been actively involved with,
+	along with a description of my role in them.
+	 
+	<dl>
+
+	<dt>SQO-OSS</dt> 
+
+	<dd>The <a href="http://www.sqo-oss.eu">SQO-OSS</a> project was an EC
+		funded (FP6-033331) effort to investigate novel ways for the
+		assesment of software quality with data from OSS repositories.
+		I had written the original project proposal myself and served
+		the project as its project manager, being responsible for
+		talking with the EU and guiding its development. The project
+		developed an extensible high performance engine (Alitheia Core)
+		that analyses data from repositories and is extensible through
+		plug-ins. I was Alitheia Core's lead designer, development lead
+		and top source code commiter. Later on, I based my PhD work on
+		the Alitheia Core platform. The platform is still under
+		development at http://www.sqo-oss.org.  </dd>
+
+	<dt>PAVET 2008</dt>
+
+	<dd>The PAVET series of projects involved teaching new technologies to
+		interested third parties. I gave 5 lectures on development with
+		OSS tools to a mixed group of software professionals and
+		students.</dd>
+
+	<dt>PENED 2003</dt>
+
+	<dd>The PENED series of projects were Greek state funded joint research
+		projects for PhD students. Along with Stephanos Androutsellis
+		Theotokis and Kostas Stroggylos, we investigated novel ways for
+		doing secure business to business transactions, both at the
+		architectural and at the implementation level.</dd>
+
+	<dt>PRAXIS</dt>
+
+	<dd>The PRAXIS project looked into methods for performing automated
+		document exchange in business to business and business to state
+		scenarios. As a research assistant, I desgined document schemas
+		and a couple of exchange processes.</dd>
+	</dl>
+
     </div>
     <!--incl:FOOTER-->
 </body>

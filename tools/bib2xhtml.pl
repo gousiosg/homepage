@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
-eval 'exec /usr/bin/perl -w -S $0 ${1+"$@"}'
-    if 0;
+#eval 'exec /usr/bin/perl -w -S $0 ${1+"$@"}'
+#    if 0;
 
 $version = '$Id: bib2xhtml 2.31 2010/02/04 14:31:08 dds Exp $';
 
@@ -1241,6 +1241,6 @@ if (defined ($htmlfile)) {
     rename("$htmlfile$$", $htmlfile);
 }
 
-unlink(@tmpfiles);
+#unlink(@tmpfiles);
 
 exit(0);

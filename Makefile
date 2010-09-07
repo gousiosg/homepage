@@ -32,11 +32,11 @@ bib: install
 		echo $$file; \
 		bibfiles=`cat $$file |grep "BEGIN BIBLIOGRAPHY" | tr -s ' '|cut -f4 -d' '`; \
 		for bibfile in $$bibfiles; do \
-			perl tools/bib2xhtml -c -r -u -s plain  $$bibfile.bib $$file;\
+			perl tools/bib2xhtml.pl -s unsortlist $$bibfile.bib $$file;\
 		done ; \
 		cites=`cat $$file |grep "BEGIN CITATIONS" | tr -s ' '|cut -f4 -d' '`; \
 		for cite in $$cites; do \
-			perl tools/bib2xhtml -s plain  $$cite.bib $$file; \
+			perl tools/bib2xhtml.pl -s plain -i $$cite.bib $$file; \
 			break;\
 		done; \
 	done

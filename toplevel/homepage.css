@@ -111,3 +111,7 @@ a:hover {
     color: #888; 
 }
 
+.bib2xhtml li {
+	padding: 5px;
+	list-style-type: decimal;
+}

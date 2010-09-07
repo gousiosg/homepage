@@ -13,16 +13,16 @@
     <div id="body" class="body">
         <h1>Georgios Gousios Publications</h1>
 	
-	Here is a list of my publications, order by type and year. You can find 
+	Here is a list of my publications, ordered by type and data. You can find 
 	an organised presentation of my work in my
 	<!--link:research,research.html --> 
 	page.
+	
+	<em>The contents of this page lead to pre-ren</em>
+	
 <a name="book"></a><h2>Book</h2>
 <!-- BEGIN BIBLIOGRAPHY bib/book -->
 <!-- END BIBLIOGRAPHY bib/book -->
-<a name="thesis"></a><h2>Theses</h2>
-<!-- BEGIN BIBLIOGRAPHY bib/thesis -->
-<!-- END BIBLIOGRAPHY bib/thesis -->
 <a name="article"></a><h2>Journal Articles</h2>
 <!-- BEGIN BIBLIOGRAPHY bib/article -->
 <!-- END BIBLIOGRAPHY bib/article -->
@@ -32,7 +32,11 @@
 <a name="inproceedings"></a><h2>Conference Publications</h2>
 <!-- BEGIN BIBLIOGRAPHY bib/inproceedings -->
 <!-- END BIBLIOGRAPHY bib/inproceedings -->
-    </div>
+<a name="thesis"></a><h2>Theses</h2>
+<!-- BEGIN BIBLIOGRAPHY bib/thesis -->
+<!-- END BIBLIOGRAPHY bib/thesis -->
+
+	</div>
     <!--incl:FOOTER-->
 </body>
 </html>

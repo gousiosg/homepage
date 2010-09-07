@@ -40,12 +40,23 @@
 
 	<p>
 		
-	On a related note, I worked with Diomidis Spinellis and a dozen of
+	On a related note, I worked with Diomidis Spinellis and more than a dozen of
 	brilliant software engineers to put together the Beautiful
 	Architectures book, which looked into the architecture of successful
 	existing systems.
 
 	</p>
+
+<!-- BEGIN CITATIONS bib/all -->
+
+<!-- \citation{GKS06}
+\citation{GS08} -->
+
+<!-- END CITATIONS bib/all -->
+
+<!-- BEGIN BIBLIOGRAPHY bib/all -->
+<!-- END BIBLIOGRAPHY bib/all -->
+
 
 	<h3>Systems Software</h3>
 
@@ -77,14 +88,9 @@
 	I have also developed a Perl library that parses
 	the output from DTrace to reveal interesting facts about the
 	co-operation of the JVM with the operating system.<a href="#GS08">[2]</a>
-	
-<!-- BEGIN CITATIONS bib/all -->
-<!-- \citation{GKS06} -->
-<!-- \citation{GS08} -->
-<!-- END CITATIONS bib/all -->
-	</p>
-	
 
+
+	</p>
 
 	<h2>Projects</h2>
 	    
@@ -106,7 +112,8 @@
 		plug-ins. I was Alitheia Core's lead designer, development lead
 		and top source code committer. Later on, I based my PhD work on
 		the Alitheia Core platform. The platform is still under
-		development at <a href="http://www.sqo-oss.org">http://www.sqo-oss.org</a>. </dd>
+		development at <a href="http://www.sqo-oss.org">http://www.sqo-oss.org</a>. 
+	</dd>
 
 	<dt>PAVET 2008</dt>
 

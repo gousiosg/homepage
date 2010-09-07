@@ -34,10 +34,12 @@ bib: install
 		for bibfile in $$bibfiles; do \
 			perl tools/bib2xhtml.pl -s unsortlist $$bibfile.bib $$file;\
 		done ; \
-		cites=`cat $$file |grep "BEGIN CITATIONS" | tr -s ' '|cut -f4 -d' '`; \
-		for cite in $$cites; do \
-			perl tools/bib2xhtml.pl -s plain -i $$cite.bib $$file; \
-			break;\
-		done; \
 	done
+
+	@grep -Ri bibincl public_html/* | cut -f1 -d':' | \
+		while read file; do \
+			echo Processing bib in $$file; \
+			perl tools/bibinclude.pl $$file ; \
+		done
+	
 

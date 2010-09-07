@@ -47,17 +47,6 @@
 
 	</p>
 
-<!-- BEGIN CITATIONS bib/all -->
-
-<!-- \citation{GKS06}
-\citation{GS08} -->
-
-<!-- END CITATIONS bib/all -->
-
-<!-- BEGIN BIBLIOGRAPHY bib/all -->
-<!-- END BIBLIOGRAPHY bib/all -->
-
-
 	<h3>Systems Software</h3>
 
 	<p>
@@ -76,6 +65,8 @@
 	progress.
 
 	</p>
+
+	<!-- bibincl:GS08,GS09a#all.bib -->
 
 	<h3>Systems performance evaluation</h3>
 

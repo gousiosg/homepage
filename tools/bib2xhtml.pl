@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!/usr/bin/env perl
 #eval 'exec /usr/bin/perl -w -S $0 ${1+"$@"}'
 #    if 0;
 
@@ -1241,6 +1241,6 @@ if (defined ($htmlfile)) {
     rename("$htmlfile$$", $htmlfile);
 }
 
-#unlink(@tmpfiles);
+unlink(@tmpfiles);
 
 exit(0);

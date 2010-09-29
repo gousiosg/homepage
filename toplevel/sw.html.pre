@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Georgios Gousios home page</title>
+    <meta name="Author" content="Georgios Gousios"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="homepage.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<body>
+    <!--incl:MENU--> 
+    <div id="body" class="body">
+        <h2>Research Software and Data</h2>
+        <ul>
+            <li>
+                <p>
+                <em>Alitheia Core</em> is a platform that enables
+                researchers in the field of software engineering to automate
+                experiments and distribute the processing load on a cluster of
+                machines. I maintain the project in its own 
+                <a href="http://www.sqo-oss.org">site</a>. The project has been
+                the centerpiece of my <a href="">PhD research</a>, while it 
+                has been presented individually in our work 
+                </p>
+
+                <p>
+                    A dump of the Alitheia Core database as it was by the end
+                    of my PhD work can be found <a href="">here</a>. The data
+                    has changed a lot since then so if you are interest in 
+                    recent version of those, please contact me directly. 
+                </p>
+            </li>
+
+            <li>
+
+                The <em>Java DTrace Toolkit</em> (JDT) is a
+                series of Perl scripts that use the JVM DTrace providers on
+                <span style="text-decoration:line-through;">(Open)</span>Solaris
+                to provide deep insights on how Java software executes and how
+                it interacts with the operating system. It was the topic of the
+                paper <cite>Java Performance Evaluation Using External
+                    Instrumentation</cite>, which you can find <a
+                    href="">here</a>
+                
+            </li>
+
+            <li>
+
+                <em>Developer Contribution</em> A series of scripts and data 
+                that we used 
+
+            </li>
+
+        </ul>
+
+        <h2>Scripts and Hacks</h2>
+
+        <ul>
+
+            <li>
+
+                <em>Whereami</em> is a Perl script along with a J2ME
+                application that allows a user to record his tracks and allows
+                other users to view the current status, speed and altitude of
+                the data sharing user on a Google map. This hack was done back
+                on Dec 07, long before Google released its similarily
+                functioning, but widely more popular, Latitude service. You
+                can find it 
+                <!--link:here,sw/whereami-->
+                .
+            </li>
+
+            <li>
+
+                <em>Thesis-o-meter</em> Almost all computer science PhD students
+                implement a tool to monitor their thesis writing progress some
+                time. I am sharing mine 
+                <!--link:here,sw/tom-->
+                to help against re-inventing the wheel. 
+            
+            </li>
+
+        </ul>   
+
+    </div>
+    <!--incl:FOOTER-->
+</body>
+</html>

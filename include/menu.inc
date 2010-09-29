@@ -10,10 +10,7 @@
             <!--link:Research,research.html-->
         </div>
         <div class="menuitem">
-            <!--1link:Software,sw-->
-        </div>
-        <div class="menuitem">
-            <!--1link:Projects,projects-->
+            <!--link:Software,sw-->
         </div>
         <div class="menuitem">
             <!--link:Labs,labs-->
@@ -24,7 +21,7 @@
         <div class="menuitem">
             <!--link:PhD,phd.html-->
         </div>
-
+        
         <div class="menuitem">
             <!--link:Contact,contact.html-->
         </div>

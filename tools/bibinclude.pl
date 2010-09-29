@@ -24,8 +24,10 @@
 # POSSIBILITY OF SUCH DAMAGE.
 
 use strict;
+use File::Copy;
 
 my $BIBDIR = $ENV{'BIB'};
+my $TOOLSDIR = $ENV{'TOOLS'};
 
 my $inputfile  = $ARGV[0];
 my @tmpfiles;
@@ -35,6 +37,7 @@ open( OUT, "> $inputfile.out" ) or die "Could not open file $inputfile.out";
     
 while (<IN>) {
   if (m/<!-- \s*bibincl:(.*)\s*-->/) {
+    print OUT $_;
     print OUT getbib($1);
   } 
   else {
@@ -50,21 +53,56 @@ sub getbib {
   (my $refs, my $file) = split ('#', $bibline);
   my @refs = split(',', $refs);
   
-  open( BIB, "< $BIBDIR/$file") or die "Cannot open specified bib file: $file";
-  open (TMP, "bibinput$$") or die "Cannot open tmp file: ";
-  push (@tmpfiles, "bibinput$$");
+  chomp ($file);
+  $file =~ s/(.*).bib/$1/;
+  copy('$BIBDIR/'.$file, '$TOOLSDIR/'.$file,);
   
-  print TMP "\relax";
-  print TMP "\bibstyle{tools/html-n}";
+  chop ($file);
+  
+  open (TMP, ">$TOOLSDIR/bibinput$$.aux") or die "Cannot open tmp file: ";
+  push (@tmpfiles, "$TOOLSDIR/bibinput$$.aux");
+  
+  print TMP "\\relax"."\n";
+  print TMP "\\bibstyle{$TOOLSDIR/html-n}"."\n";
+  print TMP "\\bibdata{". $file . "}\n";
   for my $ref (@refs) {
-    print TMP "\citation{$ref}";
+    print TMP "\\citation{$ref}"."\n";
   }
-  print TMP "\bibdata{$file}";
+  
   close (TMP);
   
+  exec("cd $TOOLSDIR && ./bib2xhtml.pl -s plain bibinput$$.aux tmp$$.html");
+  push (@tmpfiles, "$TOOLSDIR/tmp$$.html");
   
+  open (HTML, "$TOOLSDIR/tmp$$.html") or die "Cannot open $TOOLSDIR/tmp$$.html: $!";
+  my @lines = <HTML>;
+ 
+  my $biblines, my $read = 0;
+  for my $line (@lines) {
+    if ($line =~ m/BEGIN BIBLIOGRAPHY/) {
+      $read = 1;
+    }
+    
+    if ($line =~ m/END BIBLIOGRAPHY/) {
+      $read = 0;
+    }
+    
+    if ($read) {
+      $biblines += $line;
+    }
+    
+  }
   
-  close (BIB);
+  return $biblines;
 }
 
 #unlink @tmpfiles;
+
+
+
+
+
+
+
+
+

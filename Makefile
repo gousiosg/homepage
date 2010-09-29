@@ -2,6 +2,7 @@
 # Makefile for building home page
 #
 
+BIBDIR = bib
 SUBDIRS=bib projects labs news toplevel img
 TOP_DIR=.
 
@@ -39,7 +40,7 @@ bib: install
 	@grep -Ri bibincl public_html/* | cut -f1 -d':' | \
 		while read file; do \
 			echo Processing bib in $$file; \
-			perl tools/bibinclude.pl $$file ; \
+			BIB=$(BIBDIR) perl tools/bibinclude.pl $$file ; \
 		done
 	
 

@@ -17,14 +17,15 @@
 
 	<p>
 		
-	I am genuinely interested in any topic that has to do with systems,
-	software and security, and combinations thereof. Particularily, I enjoy
-	working (and playing) with systems level software, tinkering systems to
-	squeeze any bits of performance left and exploring large collections of
-	historical software data to discover interesting facts or trends. As a
-	consequence, I have also grown an interest in applying statistical
-	techniques for analysing large volumes of data. My work so far has
-	focused on the following areas: 
+    I am genuinely interested in any topic that has to do with systems,
+    software and security, and combinations thereof. Specifically, I like to
+    work the system level, to find ways to optimise the performance of software
+    or scale large installations, to design and analyse software architectures
+    for large systems and finally to analyse historic data from software
+    repositories in order to discover models that explain the behaviour of
+    development teams. As a consequence of the above, I am also interested in
+    statistical processing of large data volumes. My research work so far has
+    focused on the following areas:
 
 	</p>
 	
@@ -32,18 +33,27 @@
 
 	<p>
 
-	In the context of my PhD work, I helped design and develop a novel
-	platform for software engineering research, Alitheia Core. The
-	motivation for the system is documented in [1] while its  
+    The majority of my research work and my 
+    
+    <!--link:doctoral dissertation,phd.html-->
+    
+    are concearned with software engineering. On that front, I have contributed to
+    the design and development of a high performance research platform that
+    works with data from software repositories. Also, I have proposed a model
+    for evaluating developer contribution to software development and a model
+    for software quality evaluation that evaluates both the product and the
+    process. Finally, we also propposed and designed a software quality
+    observatory for Open Source Software.  
 
 	</p>	
 
 	<p>
 		
-	On a related note, I worked with Diomidis Spinellis and more than a dozen of
-	brilliant software engineers to put together the Beautiful
-	Architectures book, which looked into the architecture of successful
-	existing systems.
+    On a related note, I worked with Diomidis Spinellis and more than a dozen
+    of brilliant software engineers to put together the <a
+        href="http://oreilly.com/catalog/9780596517984">Beautiful
+        Architecture</a> book, which looked into the architecture of successful
+    existing systems.
 
 	</p>
 
@@ -51,18 +61,14 @@
 
 	<p>
 
-	My MSc research project was my entry to systems level software; I
-	ported JikesRVM, a JVM written mostly in Java, to run on top of bare
-	hardware, without the support of an operating system. The limited time
-	available in the context of an MSc project did not allow me to go all
-	the way to run applications on, but  the system could readily run
-	"hello world" [1][2]. Later, I contributed patches to the JikesRVM
-	project to enable support for Opensolaris [3] and, in the context of
-	the Google Summer of Code 2008 program, to compile and run with OpenJDK
-	[4]. I have also proposed an architecture to make Java's I/O subsystem
-	faster by replacing the OS (notice a pattern?) with a hypervisor and
-	thus relieving it of context switches and copies [5]. This is work in
-	progress.
+    My involvement with systems software started during my graduate studies; I
+    ported JikesRVM, a JVM written mostly in Java, to run on top of bare
+    hardware, without the support of an operating system.  Later, I contributed
+    patches to the JikesRVM project to enable support for Opensolaris and, in
+    the context of the Google Summer of Code 2008 program, to compile and run
+    with OpenJDK. I have also proposed an architecture to make Java's I/O
+    subsystem faster by replacing the OS with a hypervisor and thus relieving
+    it of context switches and copies.	
 
 	</p>
 
@@ -72,14 +78,14 @@
 
 	<p>
 
-	My research career started with trying to evaluate the performance of
-	web content technologies. In the same vein, I proposed and evaluated a
-	set of rules of thumb for tuning the JVM's garbage collector in a
-	server environment. <a href="#GKS06">[1]</a> 	
-	I have also developed a Perl library that parses
-	the output from DTrace to reveal interesting facts about the
-	co-operation of the JVM with the operating system.<a href="#GS08">[2]</a>
-
+    On the systems performance front, I have studied the performance of popular
+    dynamic content generation technologies for the Apache web server and I
+    investigated ways for optimally configuring the garbage collection
+    algorithms for the two prevailing implementations of the JVM. I have also
+    implemented a library in Perl that parses the output from the DTrace
+    provider for Java in order to reveal obscure problems in the co-operation
+    of the JVM with the operating system.
+	
 
 	</p>
 
@@ -90,44 +96,57 @@
 	 
 	<dl>
 
-	<dt>SQO-OSS</dt> 
+        <dt><a href="http://ict-passive.eu/">PASSIVE</a></dt>
 
-	<dd>The <a href="http://www.sqo-oss.eu">SQO-OSS</a> project was an EC
-		funded (FP6-033331) effort to investigate novel ways for the
-		assessment of software quality with data from OSS repositories.
-		I had written the original project proposal myself and served
-		the project as its project manager, being responsible for
-		talking with the EU and guiding its development. The project
-		developed an extensible high performance engine (Alitheia Core)
-		that analyses data from repositories and is extensible through
-		plug-ins. I was Alitheia Core's lead designer, development lead
-		and top source code committer. Later on, I based my PhD work on
-		the Alitheia Core platform. The platform is still under
-		development at <a href="http://www.sqo-oss.org">http://www.sqo-oss.org</a>. 
-	</dd>
+    <dd> The project investigates trust establishment frameworks in cloud
+        computing and shared virtual machines environments. As part of the
+        project management team, I oversee and contribute to the mechanism
+        design and software development.
 
-	<dt>PAVET 2008</dt>
+    </dd>
 
-	<dd>The PAVET series of projects involved teaching new technologies to
-		interested third parties. I gave 5 lectures on development with
-		OSS tools to a mixed group of software professionals and
-		students.</dd>
+    <dt><a href="http://www.sqo-oss.org">SQO-OSS</a></dt> 
 
-	<dt>PENED 2003</dt>
+	<dd>
 
-	<dd>The PENED series of projects were Greek state funded joint research
-		projects for PhD students. Along with Stephanos Androutsellis
-		Theotokis and Kostas Stroggylos, we investigated novel ways for
-		doing secure business to business transactions, both at the
-		architectural and at the implementation level.</dd>
+    The project developed a novel platform for software quality assessment. I
+    was in charge of preparing the proposal, submitted it to the European
+    Commission and handle the subsequent negotiations. As the project's
+    manager, I oversaw its development. As member of the {\sc rtd} team, I was
+    the platform's chief designer and contributed the largest number of lines
+    in its code base. After the end of the project, I maintain and expand its
+    source code base. The project was the basis for my doctoral dissertation.
+    More details can be found online at
+    <a href="http://www.sqo-oss.org">http://www.sqo-oss.org</a>. 
 
-	<dt>PRAXIS</dt>
+    </dd>
+
+    <dt><a href="http://istlab.dmst.aueb.gr/content/projects/p_pened_b2b.html">PENED</a></dt>
+
+    <dd>The PENED series of projects were Greek state funded joint research
+        projects for PhD students. Along with Stephanos Androutsellis Theotokis
+        and Kostas Stroggylos, we investigated novel ways for doing secure
+        business to business transactions, both at the architectural and at the
+        implementation level. As a researcher, I oversaw the architectural
+        design and optimised the developed platform.</dd>
+
+    <dt><a href="http://istlab.dmst.aueb.gr/content/projects/p_praxis.html">PRAXIS</a></dt>
 
 	<dd>The PRAXIS project looked into methods for performing automated
 		document exchange in business to business and business to state
 		scenarios. As a research assistant, I designed document schemas
 		and a couple of exchange processes.</dd>
 	</dl>
+
+    <dt><a href="http://intranet.cs.man.ac.uk/apt/projects/jamaica/">Jamaica</a></dt>
+
+    <dd>
+
+    The project investigated chip multiprocessors and the accompanying parallel
+    software.  As part of my MSc research, I ported the JikesRVM Java
+    virtual machine to run on top of bare hardware.
+    
+    </dd>
 
     </div>
     <!--incl:FOOTER-->

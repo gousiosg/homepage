@@ -2,7 +2,7 @@
  <a href="http://www.linkedin.com/in/georgiosgousios">
   <img alt="linkedin profile" src="img/linkedin.gif" height='23' border='0'/>
  </a>
- <a href="http://www.facebook.com/people/Georgios-Gousios/544933039">
+ <a href="http://www.facebook.com/gousiosg">
   <img alt="facebook profile" src="img/fb.jpg" height='23' border='0'/>
  </a>
  <a href="http://twitter.com/gousiosg">

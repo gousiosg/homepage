@@ -3,8 +3,7 @@
             Links
         </div>
         <div class="menuitem">
-           <!-- <a href="/pubs">Publications</a>-->
-            <a href="http://istlab.dmst.aueb.gr/content/publications/m_gousios-publications.html">Publications</a>
+            <!--link:About,about.html-->
         </div>
         <div class="menuitem">
             <!--link:Research,research.html-->
@@ -13,18 +12,18 @@
             <!--link:Software,sw-->
         </div>
         <div class="menuitem">
+            <!--link:Publications,publications.html-->
+        </div>
+        <div class="menuitem">
             <!--link:Labs,labs-->
         </div>
         <div class="menuitem">
-            <!--link:Links,links.html-->
+            <!--1link:Links,links.html-->
         </div>
         <div class="menuitem">
-            <!--link:PhD,phd.html-->
+            <!--1link:PhD,phd.html-->
         </div>
         
-        <div class="menuitem">
-            <!--link:Contact,contact.html-->
-        </div>
         <div class="menuitem">
             <!--link:Home, -->
         </div>

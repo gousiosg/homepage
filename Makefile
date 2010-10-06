@@ -3,7 +3,7 @@
 #
 
 BIBDIR = bib
-SUBDIRS=bib projects labs news toplevel img
+SUBDIRS=bib sw labs news toplevel img
 TOP_DIR=.
 
 .PHONY: all build dist all-install

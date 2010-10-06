@@ -6,7 +6,7 @@ build:
 	cat *.bib > all.bib
 
 install:
-	cp all.bib $(OUTPUTDIR)/gousiosg.bib	
+	cat all.bib|grep -iv "Date-"|grep -v "^%"|grep -iv XE > $(OUTPUTDIR)/gousiosg.bib	
 
 clean:
 	rm *.bib

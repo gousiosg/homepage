@@ -1,47 +1,40 @@
-.navmenu
-{
+.navmenu {
 	border: 1px solid #999999;
 	top: 1em;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Arial, sans-serif;
 	font-size: small;
-	text-align:center;
+	text-align: center;
 	position: fixed;
 	left: 5px;
 	width: 8em;
 }
 
-.commenu
-{
-    top: 15em;
-    font-family: Helvetica, Arial, sans-serif;
+.commenu {
+	top: 15em;
+	font-family: Arial, sans-serif;
 	font-size: small;
-	text-align:center;
+	text-align: center;
 	position: fixed;
-    left: 5px;
+	left: 5px;
 	width: 8em;
 }
 
-
-.newsdate 
-{
-    position:relative;
-    font-style: oblique;
+.newsdate {
+	position: relative;
+	font-style: oblique;
 }
 
-.newstype 
-{
-    position:relative;
-    font-size: xx-small;
+.newstype {
+	position: relative;
+	font-size: xx-small;
 }
 
-.newscontent
-{
-    left: 15px;
-    position: relative;
+.newscontent {
+	left: 15px;
+	position: relative;
 }
 
-.menuheader
-{	
+.menuheader {
 	font-weight: bold;
 	text-align: center;
 	text-transform: capitalize;
@@ -51,46 +44,41 @@
 	letter-spacing: 1px;
 }
 
-.menuitem
-{
+.menuitem {
 	left: 3px;
 	position: relative;
 }
 
-.body
-{
-	font-family: Helvetica, Arial, sans-serif;
+.body {
+	font-family: Arial, sans-serif;
 	font-size: small;
 	position: relative;
 	width: 85%;
-	top: 1em;
 	height: auto;
 	right: 1em;
 	left: 10em;
+	line-height: 140%;
 }
 
-.license 
-{
+.license {
 	font-size: xx-small;
 }
 
-.lastchanged 
-{
+.lastchanged {
 	font-size: xx-small;
 	width: 50%;
 	font-style: oblique;
 }
 
-.footer 
-{
+.footer {
 	position: relative;
 	width: 100%;
-    height: 3em;
+	height: 3em;
 	top: 3em;
 }
 
 .linkhead {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Arial, sans-serif;
 	color: #FFFFFF;
 	background-color: #000000;
 	background-position: center center;
@@ -98,20 +86,29 @@
 }
 
 a:link {
-    color: #036; 
-    text-decoration: underline; 
+	color: #003366;
+	text-decoration: underline;
 }
 
 a:visited {
-    color: #012; 
-    text-decoration: underline; 
+	color: red;
+	text-decoration: underline;
 }
 
 a:hover {
-    color: #888; 
+	color: #888;
 }
 
 .bib2xhtml li {
 	padding: 5px;
 	list-style-type: decimal;
+}
+
+.sw li {
+	margin-top: 10px;
+	list-style-type: square;
+}
+
+h1,h2,h3,h4,h5 {
+	font-family: verdana;
 }

@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>Georgios Gousios Publications</title>
+    <title>Publications</title>
     <meta name="Author" content="Georgios Gousios"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="homepage.css" type="text/css"/>
@@ -11,18 +11,28 @@
 <body>
     <!--incl:MENU--> 
     <div id="body" class="body">
-        <h1>Georgios Gousios Publications</h1>
-	
+        <h2>Publications</h2>
+    <p>
 	Here is a list of my publications, ordered by type and data. You can find 
 	an organised presentation of my work in my
-	<!--link:research,research.html --> 
+	<!--link:research,research.html--> 
 	page.
-	
-	<em>The contents of this page lead to pre-ren</em>
-	
+    </p>	
+
+    <p>Download citation information in 
+        <!--link:Bibtex,gousiosg.bib-->
+        format.</p>
+
+    <p>
+    <em>The contents of this page lead to pre-publication renderings the
+    corresponding papers.</em>
+    </p>
 <a name="book"></a><h4>Book</h4>
 <!-- BEGIN BIBLIOGRAPHY book -->
 <!-- END BIBLIOGRAPHY book -->
+<a name="thesis"></a><h4>Theses</h4>
+<!-- BEGIN BIBLIOGRAPHY thesis -->
+<!-- END BIBLIOGRAPHY thesis -->
 <a name="article"></a><h4>Journal Articles</h4>
 <!-- BEGIN BIBLIOGRAPHY article -->
 <!-- END BIBLIOGRAPHY article -->
@@ -32,9 +42,6 @@
 <a name="inproceedings"></a><h4>Conference Publications</h4>
 <!-- BEGIN BIBLIOGRAPHY inproceedings -->
 <!-- END BIBLIOGRAPHY inproceedings -->
-<a name="thesis"></a><h4>Theses</h4>
-<!-- BEGIN BIBLIOGRAPHY thesis -->
-<!-- END BIBLIOGRAPHY thesis -->
 
 	</div>
     <!--incl:FOOTER-->

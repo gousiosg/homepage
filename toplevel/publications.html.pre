@@ -20,21 +20,21 @@
 	
 	<em>The contents of this page lead to pre-ren</em>
 	
-<a name="book"></a><h2>Book</h2>
-<!-- BEGIN BIBLIOGRAPHY bib/book -->
-<!-- END BIBLIOGRAPHY bib/book -->
-<a name="article"></a><h2>Journal Articles</h2>
-<!-- BEGIN BIBLIOGRAPHY bib/article -->
-<!-- END BIBLIOGRAPHY bib/article -->
-<a name="incollection"></a><h2>Book Chapters</h2>
-<!-- BEGIN BIBLIOGRAPHY bib/incollection -->
-<!-- END BIBLIOGRAPHY bib/incollection -->
-<a name="inproceedings"></a><h2>Conference Publications</h2>
-<!-- BEGIN BIBLIOGRAPHY bib/inproceedings -->
-<!-- END BIBLIOGRAPHY bib/inproceedings -->
-<a name="thesis"></a><h2>Theses</h2>
-<!-- BEGIN BIBLIOGRAPHY bib/thesis -->
-<!-- END BIBLIOGRAPHY bib/thesis -->
+<a name="book"></a><h4>Book</h4>
+<!-- BEGIN BIBLIOGRAPHY book -->
+<!-- END BIBLIOGRAPHY book -->
+<a name="article"></a><h4>Journal Articles</h4>
+<!-- BEGIN BIBLIOGRAPHY article -->
+<!-- END BIBLIOGRAPHY article -->
+<a name="incollection"></a><h4>Book Chapters</h4>
+<!-- BEGIN BIBLIOGRAPHY incollection -->
+<!-- END BIBLIOGRAPHY incollection -->
+<a name="inproceedings"></a><h4>Conference Publications</h4>
+<!-- BEGIN BIBLIOGRAPHY inproceedings -->
+<!-- END BIBLIOGRAPHY inproceedings -->
+<a name="thesis"></a><h4>Theses</h4>
+<!-- BEGIN BIBLIOGRAPHY thesis -->
+<!-- END BIBLIOGRAPHY thesis -->
 
 	</div>
     <!--incl:FOOTER-->

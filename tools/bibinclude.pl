@@ -34,10 +34,12 @@ my @tmpfiles;
 
 open( IN, "< $inputfile" ) or die "Could not open file $inputfile";
 open( OUT, "> $inputfile.out" ) or die "Could not open file $inputfile.out";
-    
+
+push (@tmpfiles, "$inputfile.out");
+
 while (<IN>) {
   if (m/<!-- \s*bibincl:(.*)\s*-->/) {
-    print OUT $_;
+    #print OUT $_;
     print OUT getbib($1);
   } 
   else {
@@ -53,14 +55,19 @@ sub getbib {
   (my $refs, my $file) = split ('#', $bibline);
   my @refs = split(',', $refs);
   
-  chomp ($file);
+  chomp ($file); chop ($file);
+  
+  if (! -e $TOOLSDIR.'/'.$file) {
+    print STDERR "Copying file $BIBDIR/$file to $TOOLSDIR\n";
+    copy($BIBDIR.'/'.$file, $TOOLSDIR) || die "$!";
+    push (@tmpfiles, $TOOLSDIR.'/'.$file);
+  }
+  
   $file =~ s/(.*).bib/$1/;
-  copy('$BIBDIR/'.$file, '$TOOLSDIR/'.$file,);
+  my $pid = $$;
   
-  chop ($file);
-  
-  open (TMP, ">$TOOLSDIR/bibinput$$.aux") or die "Cannot open tmp file: ";
-  push (@tmpfiles, "$TOOLSDIR/bibinput$$.aux");
+  open (TMP, ">$TOOLSDIR/bibinput$pid.aux") or die "Cannot open tmp file: ";
+  push (@tmpfiles, "$TOOLSDIR/bibinput$pid.aux");
   
   print TMP "\\relax"."\n";
   print TMP "\\bibstyle{$TOOLSDIR/html-n}"."\n";
@@ -70,25 +77,27 @@ sub getbib {
   }
   
   close (TMP);
-  
-  exec("cd $TOOLSDIR && ./bib2xhtml.pl -s plain bibinput$$.aux tmp$$.html");
-  push (@tmpfiles, "$TOOLSDIR/tmp$$.html");
-  
-  open (HTML, "$TOOLSDIR/tmp$$.html") or die "Cannot open $TOOLSDIR/tmp$$.html: $!";
+
+  system("cd $TOOLSDIR && ./bib2xhtml.pl -s plain bibinput$pid.aux >tmp$pid.html");
+  push (@tmpfiles, "$TOOLSDIR/tmp$pid.html");
+
+  open (HTML, "$TOOLSDIR/tmp$pid.html") or die "Cannot open $TOOLSDIR/tmp$pid.html: $!";
   my @lines = <HTML>;
  
   my $biblines, my $read = 0;
   for my $line (@lines) {
     if ($line =~ m/BEGIN BIBLIOGRAPHY/) {
       $read = 1;
+      next;
     }
     
     if ($line =~ m/END BIBLIOGRAPHY/) {
+      #$biblines = $biblines . $line;
       $read = 0;
     }
     
     if ($read) {
-      $biblines += $line;
+      $biblines = $biblines . $line;
     }
     
   }
@@ -96,7 +105,7 @@ sub getbib {
   return $biblines;
 }
 
-#unlink @tmpfiles;
+unlink @tmpfiles;
 
 
 

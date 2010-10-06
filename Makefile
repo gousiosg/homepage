@@ -29,18 +29,20 @@ dist: all
 	rsync -rv ${OUTPUTDIR}/* ${HOST}
 
 bib: install
-	@for file in `find ${OUTPUTDIR} -type f|grep html$$`; do \
+	@for file in `find $$PWD/${OUTPUTDIR} -type f|grep html$$`; do \
 		echo $$file; \
 		bibfiles=`cat $$file |grep "BEGIN BIBLIOGRAPHY" | tr -s ' '|cut -f4 -d' '`; \
 		for bibfile in $$bibfiles; do \
-			perl tools/bib2xhtml.pl -s unsortlist $$bibfile.bib $$file;\
+			cd $(TOOLS) ;\
+			BIB=../$(BIBDIR) perl bib2xhtml.pl -s unsortlist $$bibfile.bib $$file ;\
+			cd -;\
 		done ; \
 	done
 
-	@grep -Ri bibincl public_html/* | cut -f1 -d':' | \
+	@grep -Ri bibincl $$PWD/public_html/* | cut -f1 -d':' | \
 		while read file; do \
 			echo Processing bib in $$file; \
-			BIB=$(BIBDIR) perl tools/bibinclude.pl $$file ; \
+			BIB=$$PWD/$(BIBDIR) TOOLS=$$PWD/$(TOOLS) perl tools/bibinclude.pl $$file ; \
 		done
-	
+
 

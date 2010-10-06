@@ -37,13 +37,15 @@
     
     <!--link:doctoral dissertation[1],phd.html-->
     
-    are concearned with software engineering. On that front, I have contributed to
-    the design and development of a high performance research platform that
-    works with data from software repositories. Also, I have proposed a model
-    for evaluating developer contribution to software development and a model
-    for software quality evaluation that evaluates both the product and the
-    process. Finally, we also propposed and designed a software quality
-    observatory for Open Source Software.  
+    are concearned with software engineering. On that front, I have contributed
+    to the design and development of a high performance research platform that
+    works with data from software repositories<a href="#GS09a">[2]</a><a
+        href="#GS09b">[3]</a>. Also, I have proposed a model for evaluating
+    developer contribution to software development <a href="#SGSS08">[4]</a> and
+    a model for software quality evaluation that evaluates both the product and
+    the process <a href="#KGSP09">[5]</a><a href="#GKS08">[6]</a>. Finally, we
+    also propposed and designed a software quality observatory for Open Source
+    Software <a href="#GKSLVS07">[7]</a><a href="#GKAG06">[8]</a>.  
 
 	</p>	
 
@@ -57,39 +59,46 @@
 
 	</p>
 
-    <!--bibincl:#all.bib-->
+    <!-- bibincl:Gousi09-phdthesis,GS09a,GS09b,SGSS08,KGSP09,GKS08,GKSLVS07,GKAG06#all.bib -->
 
 	<h3>Systems Software</h3>
 
 	<p>
 
-    My involvement with systems software started during my graduate studies; I
-    ported JikesRVM, a JVM written mostly in Java, to run on top of bare
-    hardware, without the support of an operating system.  Later, I contributed
-    patches to the JikesRVM project to enable support for Opensolaris and, in
-    the context of the Google Summer of Code 2008 program, to compile and run
-    with OpenJDK. I have also proposed an architecture to make Java's I/O
-    subsystem faster by replacing the OS with a hypervisor and thus relieving
-    it of context switches and copies.	
+    My involvement with systems software started during my graduate studies <a
+        href="#Gousi04-mscthesis">[1]</a>; I ported JikesRVM, a JVM written
+    mostly in Java, to run on top of bare hardware, without the support of an
+    operating system.  Later, I <a
+        href="http://sourceforge.net/tracker/?func=detail&aid=1780253&group_id=128805&atid=712770">contributed
+        patches</a> to the <a href="http://www.jikesrvm.org">JikesRVM</a> project
+    to enable support for <span style="text-decoration: line-through;">Open</span>Solaris (i386) and, in the context of the <a
+        href="http://code.google.com/soc/2008/jikesrvm/about.html">Google
+        Summer of Code 2008</a> program, to <a
+        href="http://jikesrvm.svn.sourceforge.net/viewvc/jikesrvm/rvmroot/branches/RVM-549-OpenJDK/">compile
+        and run</a> with OpenJDK. I have also proposed an architecture to make
+    Java's I/O subsystem faster by replacing the OS with a hypervisor and thus
+    relieving it of context switches and copies <a href="#G07">[2]</a>.	
 
 	</p>
 
-	<!-- bibincl:GS08,GS09a#all.bib -->
+	<!-- bibincl:Gousi04-mscthesis,G07#all.bib -->
 
 	<h3>Systems performance evaluation</h3>
 
 	<p>
 
     On the systems performance front, I have studied the performance of popular
-    dynamic content generation technologies for the Apache web server and I
+    dynamic content generation technologies for the Apache web server 
+    <a href="#GS02">[1]</a> and I
     investigated ways for optimally configuring the garbage collection
-    algorithms for the two prevailing implementations of the JVM. I have also
+    algorithms for the two prevailing implementations of the JVM <a href="#GKS06">[2]</a>. I have also
     implemented a library in Perl that parses the output from the DTrace
     provider for Java in order to reveal obscure problems in the co-operation
-    of the JVM with the operating system.
-	
+    of the JVM with the operating system <a href="#GS08">[3]</a>.
 
-	</p>
+    </p>
+
+    <!-- bibincl:GS02,GKS06,GS08#all.bib -->
 
 	<h2>Projects</h2>
 	    

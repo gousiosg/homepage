@@ -35,7 +35,7 @@
 
     The majority of my research work and my 
     
-    <!--link:doctoral dissertation,phd.html-->
+    <!--link:doctoral dissertation[1],phd.html-->
     
     are concearned with software engineering. On that front, I have contributed to
     the design and development of a high performance research platform that
@@ -56,6 +56,8 @@
     existing systems.
 
 	</p>
+
+    <!--bibincl:#all.bib-->
 
 	<h3>Systems Software</h3>
 

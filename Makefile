@@ -21,8 +21,8 @@ output:
 
 distclean : clean 
 	-rm -rf ${OUTPUTDIR}/* 
-	-find . -type f -name '*~' | xargs rm
-	-find . -type f -name DS_Store | xargs rm
+	-find . -type f |grep '~' | xargs rm
+	-find . -type f |grep .DS_Store | xargs rm
 	-find . -type f -name .tmp | xargs rm
 
 dist: all

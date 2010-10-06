@@ -44,3 +44,7 @@ ${OUTPUTDIR}/labs/%.html: %.html.pre
 	@echo Processing $@
 	@INCL=$(INCLUDE) LANG=C LINKBASE=$(BASEURL) ${TOOLS}/preprocessor.pl $(shell pwd)/$< $@
 
+${OUTPUTDIR}/sw/%.html: %.html.pre
+	@echo Processing $@
+	@INCL=$(INCLUDE) LANG=C LINKBASE=$(BASEURL) ${TOOLS}/preprocessor.pl $(shell pwd)/$< $@
+

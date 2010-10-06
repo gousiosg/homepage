@@ -9,4 +9,4 @@ install:
 	cat all.bib|grep -iv "Date-"|grep -v "^%"|grep -iv XE > $(OUTPUTDIR)/gousiosg.bib	
 
 clean:
-	rm *.bib
+	-rm *.bib

@@ -1,8 +1,17 @@
 TOP_DIR=../..
+PROCESS=$(shell ls *.pre)
+HTML=$(patsubst %.html.pre,%.html, $(PROCESS))
+INSTALLDIR=$(OUTPUTDIR)/sw/whereami
+OUTPUT=$(addprefix ${INSTALLDIR},$(HTML))
 
-build:
+include $(TOP_DIR)/Makefile.common
 
-install:
+create-install-dir:
+	mkdir -p $(OUTPUTDIR)/sw/whereami
 
-clean:
+build: $(HTML) 
 
+install: create-install-dir $(OUTPUT)
+
+clean: 
+	-rm $(HTML)

@@ -2,10 +2,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>Georgios Gousios - Where am I? </title>
+    <title>Where am I?</title>
     <meta name="Author" content="Georgios Gousios"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" href="homepage.css" type="text/css"/>
+    <link rel="stylesheet" href="../../homepage.css" type="text/css"/>
     <link rel="shortcut icon" href="favicon.ico"/>
     <script src="js/coords.js"></script>
     <script src="http://maps.google.com/maps?file=api&v=2.x&key=ABQIAAAAs7zxKP55zHlKrd9RkWrDQBTm24TVhLYtfp8NzQR3Yruif91m2xQ7eEHLSPbnE3OMvzvAQp55HUFOyQ"
@@ -36,22 +36,36 @@
 <body onload="initialize()" onunload="GUnload()">
     <!--incl:MENU--> 
     <div id="body" class="body">
-        <h1>Where am I?</h1>
-        <hr/>
+        <h2>Where am I?</h2>
         <p>
-        I love geolocation. I 've recently acuired a 3G mobile phone along  
-        with the cheapest data plan I could find. 
-        Unfortunately, the phone does not include a GPS
-        receiver. Fortunately, I have a spare Bluetooth one. The combination
-        of 3G, GPS and Google Maps became apparent as soon as I got all 
-        devices in my hands. 
+        
+        Where Am I is a series of scripts that allow a mobile user to show
+        his/her location to a web page. I implemented it some time by the end
+        of 2007, when I first got my hands on a Bluetooth GPS receiver. The
+        reason (or cheap excuse) was practical enough: I used to go on long
+        bike riders and people got worried. Instead of answering their phone
+        calls, which I did not do, I prompted them to have a look at a web page,
+        which kept them amused and sure that I am OK.
+
         </p>     
+        
+        <p> Almost a year after implementing it, Google introduced <a
+            href="www.google.com/latitude">Latitude</a>, which does essentially
+        the same thing. In fact, <a
+            href="http://www.sports-tracker.com/">Several</a> <a
+            href="http://www.worksmartlabs.com/cardiotrainer/about.php">other</a>
+        programs do the same thing nowdays. Personaly, I am a fan of Google's
+        <a href="http://mytracks.appspot.com/">My Tracks</a>
+        for Android.</p>
+        
         <div id="map"style="width: 500px; height: 300px"></div> 
-        <div id="lastupdate" onclick="updateWhen();">Last update: </div>
-        <h2>How it works</h2>
+        <div id="lastupdate" onClick="updateWhen();">Last update: </div>
+
+        <h3>How it works</h3>
+        
         <p>
-        I 've implemented a simple Perl script that runs within a CGI 
-        (or preferebly <tt>mod_perl</tt>) web server and
+        A Perl script that runs within a CGI 
+        (or preferebly <tt>mod_perl</tt>) web server 
         accepts plain NMEA input that looks line this: 
         </p>
 	<pre>
@@ -67,18 +81,29 @@
 	phone. The exact request URL format is the following:
 	</p>
 	<pre>
-	http://cartman.dmst.aueb.gr/perl/loggps-db.pl?lat=39.62365&lon=22.409113333333334&alt=144.6&speed=0&clientid=gousiosg
+	http://server/loggps-db.pl?lat=39.62365&lon=22.409113333333334&alt=144.6&speed=0&clientid=gousiosg
 	</pre>
-   	<p>
-	I 've also implemented a small J2ME application for the mobile phone that reads
-	data from the GPS receiver and submits it to the logging script. You can find the 
-	client program here.
-	</p>
+    <p>
+
+    I 've also implemented a tiny J2ME application for the mobile phone that
+    reads data from the GPS receiver and submits it to the logging script. 
+    Unfortunately, though, I have lost the original source code so I am only
+    providing the binary. 
+
+    </p>
 	<p>
-	After the data is in the database, displaying it on a map is a breeze with the 
-	excellent Google Maps API. Basically, a cron script periodically update the values
-	of some javascript variables which are then used by the map as input values.
-	</p>
+
+    After the data is in the database, displaying it on a map is a breeze with
+    the excellent Google Maps API. Basically, a cron script periodically updates
+    the values of some javascript variables which are then used by the map as
+    input values.
+    
+    </p>
+
+    <h3>Download</h3>
+
+    You can find all scripts and the J2ME application here.
+
    <!--incl:FOOTER-->
 </body>
 </html>

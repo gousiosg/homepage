@@ -1,14 +1,15 @@
 TOP_DIR=..
-SUBDIRS=
+SUBDIRS=cv
 COPYFILES=homepage.css #progress-vars.js
 PROCESS=$(shell ls *.pre)
 OUTPUT=$(patsubst %.html.pre,%.html,$(addprefix ${OUTPUTDIR}/,$(PROCESS))) 
+INSTALLDIR=$(OUTPUTDIR)
 
 include $(TOP_DIR)/Makefile.common
 
 local-build:
 
-local-install: $(OUTPUT) copy-files 
+local-install: $(OUTPUT) 
 
 local-clean:
 

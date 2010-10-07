@@ -16,9 +16,9 @@ include $(TOP_DIR)/Makefile.common
 
 all-install: output build install bib
 
-local-build:
+local-build: 
 
-local-install:
+local-install: 
 
 local-clean:
 

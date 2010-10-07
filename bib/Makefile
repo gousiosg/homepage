@@ -1,12 +1,13 @@
 TOP_DIR=..
 include $(TOP_DIR)/Makefile.conf
+include $(TOP_DIR)/Makefile.common
 
-build:
+local-build:
 	cp $(BIBBASE)/*.bib . 
 	cat *.bib > all.bib
 
-install:
+local-install:
 	cat all.bib|grep -iv "Date-"|grep -v "^%"|grep -iv XE > $(OUTPUTDIR)/gousiosg.bib	
 
-clean:
+local-clean:
 	-rm *.bib

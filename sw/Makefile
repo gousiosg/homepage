@@ -1,13 +1,15 @@
 TOP_DIR=..
 SUBDIRS=whereami jdt
 PROCESS=$(shell ls *.pre)
-OUTPUT=$(patsubst %.html.pre,%.html,$(addprefix ${OUTPUTDIR}/sw/,$(PROCESS)))
+HTML=$(patsubst %.html.pre,%.html, $(PROCESS))
 INSTALLDIR=$(OUTPUTDIR)/sw/
 
 include $(TOP_DIR)/Makefile.common
 
-local-build:
+local-build: $(HTML) 
 
-local-install: $(OUTPUT)
+local-install: 
+	cp -v $(HTML) $(INSTALLDIR)
 
 local-clean:
+	-rm $(HTML)

@@ -16,7 +16,7 @@ create-install-dir:
 	mkdir -p $(INSTALLDIR) 
 endif
 
-install: create-install-dir install-subdirs local-install copy-files copy-dirs
+install: build create-install-dir install-subdirs local-install copy-files copy-dirs
 
 ifeq ($(SUBDIRS),)
 install-subdirs :
@@ -38,14 +38,14 @@ ifeq ($(COPYFILES),)
 copy-files :
 else
 copy-files :
-	(for file in ${COPYFILES}; do cp -v $$file ${OUTPUTDIR}/$$file; done)||exit 1;	
+	(for file in ${COPYFILES}; do cp -v $$file ${INSTALLDIR}/$$file; done)||exit 1;	
 endif
 
 ifeq ($(COPYDIRS),)
 copy-dirs:
 else
 copy-dirs:
-	(for file in ${COPYDIRS}; do cp -Rv $$file ${OUTPUTDIR}/$$file; done)||exit 1;  
+	(for file in ${COPYDIRS}; do cp -Rv $$file ${INSTALLDIR}/$$file; done)||exit 1;  
 endif
 
 #Implicit rules for tools
@@ -59,10 +59,6 @@ ${OUTPUTDIR}/%.html: %.html.pre
 	INCL=$(INCLUDE) LANG=C LINKBASE=$(BASEURL) ${TOOLS}/preprocessor.pl $(shell pwd)/$< $@
 
 ${OUTPUTDIR}/labs/%.html: %.html.pre
-	@echo Processing $@
-	@INCL=$(INCLUDE) LANG=C LINKBASE=$(BASEURL) ${TOOLS}/preprocessor.pl $(shell pwd)/$< $@
-
-${OUTPUTDIR}/sw/%.html: %.html.pre
 	@echo Processing $@
 	@INCL=$(INCLUDE) LANG=C LINKBASE=$(BASEURL) ${TOOLS}/preprocessor.pl $(shell pwd)/$< $@
 

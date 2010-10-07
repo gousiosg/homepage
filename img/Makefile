@@ -1,12 +1,12 @@
 SUBDIRS=
 TOP_DIR=..
 
-include ${TOP_DIR}/Makefile.conf
+include ${TOP_DIR}/Makefile.common
 
-build:
+local-build:
 
-install:
+local-install:
 	mkdir -p ${OUTPUTDIR}/img
 	cp -v *.jpg *.png *.gif ${OUTPUTDIR}/img
 
-clean:
+local-clean:

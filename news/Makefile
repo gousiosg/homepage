@@ -10,7 +10,9 @@ HTMLOUTPUT=$(OUTPUTDIR)/news.html
 
 include $(TOP_DIR)/Makefile.common
 
-install: $(OUTPUT) $(OUTPUTDIR)/gousiosg-rss.xml
+local-build:
+
+local-install: $(OUTPUT) $(OUTPUTDIR)/gousiosg-rss.xml
 
 $(OUTPUT) : $(PROCESS)
 	@echo "#Generating site news feeds and includes" 
@@ -20,6 +22,6 @@ $(OUTPUTDIR)/gousiosg-rss.xml : $(NEWSRSS)
 	@echo Processing $@
 	@INCL=$(INCLUDE) LANG=C LINKBASE=$(BASEURL) ${TOOLS}/preprocessor.pl $< $@
 
-clean:
+local-clean:
 	-rm  $(NEWSRSS) $(NEWSINCL) $(NEWSHTML)
 

@@ -1,8 +1,10 @@
 SUBDIRS=
 TOP_DIR=../..
 
-build:
+include $(TOP_DIR)/Makefile.common
 
-install:
+local-build:
 
-clean:
+local-install:
+
+local-clean:

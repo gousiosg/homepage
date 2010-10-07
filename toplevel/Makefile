@@ -6,5 +6,9 @@ OUTPUT=$(patsubst %.html.pre,%.html,$(addprefix ${OUTPUTDIR}/,$(PROCESS)))
 
 include $(TOP_DIR)/Makefile.common
 
-install: $(OUTPUT) copy-files 
+local-build:
+
+local-install: $(OUTPUT) copy-files 
+
+local-clean:
 

@@ -16,6 +16,12 @@ include $(TOP_DIR)/Makefile.common
 
 all-install: output build install bib
 
+local-build:
+
+local-install:
+
+local-clean:
+
 output:
 	mkdir -p ${OUTPUTDIR}
 
@@ -28,7 +34,7 @@ distclean : clean
 dist: all
 	rsync -rv ${OUTPUTDIR}/* ${HOST}
 
-bib: install
+bib: local-install 
 	@for file in `find $$PWD/${OUTPUTDIR} -type f|grep html$$`; do \
 		echo $$file; \
 		bibfiles=`cat $$file |grep "BEGIN BIBLIOGRAPHY" | tr -s ' '|cut -f4 -d' '`; \

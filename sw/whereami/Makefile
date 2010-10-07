@@ -1,17 +1,16 @@
 TOP_DIR=../..
 PROCESS=$(shell ls *.pre)
 HTML=$(patsubst %.html.pre,%.html, $(PROCESS))
-INSTALLDIR=$(OUTPUTDIR)/sw/whereami
+INSTALLDIR=$(OUTPUTDIR)/sw/whereami/
 OUTPUT=$(addprefix ${INSTALLDIR},$(HTML))
+COPYDIRS=js
 
 include $(TOP_DIR)/Makefile.common
 
-create-install-dir:
-	mkdir -p $(OUTPUTDIR)/sw/whereami
+local-build: $(HTML) 
 
-build: $(HTML) 
+local-install: 
+	echo "Installing local target"
 
-install: create-install-dir $(OUTPUT)
-
-clean: 
+local-clean: 
 	-rm $(HTML)

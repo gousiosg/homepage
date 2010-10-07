@@ -1,6 +1,6 @@
 include ${TOP_DIR}/Makefile.conf
 
-build: build-subdirs
+build: build-subdirs local-build
 
 ifeq ($(SUBDIRS),)
 build-subdirs :
@@ -9,7 +9,14 @@ build-subdirs :
 	for i in $(SUBDIRS) ; do ( cd $$i && echo "# Building in `pwd`" >&2  && $(MAKE) build) || exit 1; done
 endif
 
-install : install-subdirs
+ifeq ($(INSTALLDIR),)
+create-install-dir:
+else 
+create-install-dir:
+	mkdir -p $(INSTALLDIR) 
+endif
+
+install: create-install-dir install-subdirs local-install copy-files copy-dirs
 
 ifeq ($(SUBDIRS),)
 install-subdirs :
@@ -18,7 +25,7 @@ install-subdirs :
 	for i in $(SUBDIRS) ; do ( cd $$i && echo "# Installing in `pwd`" >&2 && $(MAKE) install) || exit 1; done
 endif
 
-clean : clean-subdirs
+clean : clean-subdirs local-clean
 
 ifeq ($(SUBDIRS),)
 clean-subdirs :
@@ -32,6 +39,13 @@ copy-files :
 else
 copy-files :
 	(for file in ${COPYFILES}; do cp -v $$file ${OUTPUTDIR}/$$file; done)||exit 1;	
+endif
+
+ifeq ($(COPYDIRS),)
+copy-dirs:
+else
+copy-dirs:
+	(for file in ${COPYDIRS}; do cp -Rv $$file ${OUTPUTDIR}/$$file; done)||exit 1;  
 endif
 
 #Implicit rules for tools

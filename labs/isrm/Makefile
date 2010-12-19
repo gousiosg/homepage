@@ -5,10 +5,10 @@ ISRMLAB=/Volumes/Files/Documents/Misc/labs/isrm/
 include $(TOP_DIR)/Makefile.common
 
 local-build:
-	echo "cd $(ISRMLAB) && make"
+	cd $(ISRMLAB) && make html
 
 local-install:
-	echo cp -Rv $(ISRMLAB)/* $(INSTALLDIR)
+	cp -Rv $(ISRMLAB)/html/* $(INSTALLDIR)
 
 local-clean:
-	echo "cd $(ISRMLAB) && make clean"
+	cd $(ISRMLAB) && make clean

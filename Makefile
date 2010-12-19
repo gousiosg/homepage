@@ -31,7 +31,7 @@ distclean : clean
 	-find . -type f |grep .DS_Store | xargs rm
 	-find . -type f -name .tmp | xargs rm
 
-dist: all
+dist: 
 	rsync -rv ${OUTPUTDIR}/* ${HOST}
 
 bib: local-install 

@@ -12,6 +12,7 @@
     <!--incl:MENU--> 
     <div id="body" class="body">
         <h2>Research Software and Data</h2>
+        <em>Warning: this page is under construction and will be gradually filled with more information. Several links do not work at the moment.</em>
         <ul class="sw">
             <li>
                 <p>
@@ -40,19 +41,17 @@
                 series of Perl scripts that use the JVM DTrace providers on
                 <span style="text-decoration:line-through;">Open</span>Solaris
                 to provide deep insights on how Java software executes and how
-                it interacts with the operating system. It was the topic of the
-                paper <cite>Java Performance Evaluation Using External
-                    Instrumentation</cite>, which you can find <a
-                    href="">here</a>
-                
+                it interacts with the operating system. 
+                <!--link:More...,sw/jdt-->
+
             </li>
 
-            <li>
+            <!--<li>
 
                 <em>Developer Contribution</em> A series of scripts and data 
                 that we used 
 
-            </li>
+            </li>-->
 
         </ul>
 

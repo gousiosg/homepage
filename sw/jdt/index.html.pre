@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Java DTrace Toolkit</title>
+    <meta name="Author" content="Georgios Gousios"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../../homepage.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<body>
+    <!--incl:MENU--> 
+    <div id="body" class="body">
+        <h2>Java DTrace Toolkit</h2>
+
+        <p>
+
+        <a href="http://en.wikipedia.org/wiki/DTrace">DTrace</a> is a dynamic
+        tracing framework, initially developed by Sun for the Solaris 10 OS.
+        Since some early beta version of the Java 1.6 JDK, the JVM (at least on
+        Solaris) has incorporated a number of <a
+            href="http://download.oracle.com/javase/6/docs/technotes/guides/vm/dtrace.html">DTrace
+            probes</a> that allow DTrace to extract data from a program running
+        within the JVM at runtime. 
+
+        </p>
+
+        <p>
+
+            I initially used DTrace for Java to study the interaction of the OS with
+            the JVM on the I/O front. I then understood that my scripts might
+            be useful to a number of people doing low level performance analysis
+            so I spent some time to make them a bit more generic and easy to use.
+        
+        </p>
+
+        <p>
+
+            You can download the Java DTrace Toolkit from 
+            <!--link:here,files/jdt.tar.gz-->.
+        
+        </p>
+
+
+        <p>
+
+            The JDT has been presented in the following short paper:
+
+            <!-- bibincl:GS08#all.bib -->
+        </p>
+
+        <h4>The scripts</h4>
+
+        <table>
+            <tr>
+                <td><b>Script</b></td>
+                <td><b>Function</b></td>
+            </tr>
+            <tr>
+                <td>jprofiler</td>
+                <td>Reports the methods and classes that consume most execution time. Can aggregate results by package name.</td>
+            </tr>
+
+            <tr>
+                <td>jmemstats</td>
+                <td>Report object allocation statistics. Can aggregate results by package name and filter results by specific package names.</td>
+            </tr>
+
+            <tr>
+                <td>jlockstat</td>
+                <td>Reports methods initiating locking opera- tions in native code.</td>
+            </tr>
+
+            <tr>
+                <td>jiosnoop</td>
+                <td>File management statistics: which classes cause I/O traffic?</td>
+            </tr>
+
+            <tr>
+                <td>jcallgraph</td>
+                <td>Display a Java function call graph from Java to the OS kernel.</td>
+            </tr>
+
+            <tr>
+                <td>jgcsnoop</td>
+                <td>Reports garbage collection statistics: fre- quency, duration.</td>
+            </tr>
+        </table>
+
+
+        <h3>Output Examples</h3>
+
+        <h4>jmemstats</h4>
+
+        <pre>
+Java Method                            objects alloc
+====================================================
+java/lang/StringCoding$StringEncoder.encode      486  
+java/util/HashMap.newKeyIterator                 221  
+org/[...]/buf/CharChunk.toStringInternal         142  
+java/io/UnixFileSystem.resolve                   131  
+java/lang/String.substring                       122  
+java/lang/StringCoding$StringDecoder.decode      108  
+java/net/Socket.getInputStream                   100  
+java/lang/AbstractStringBuilder.expandCapacity   99   
+java/lang/Object.clone                           91
+java/io/UnixFileSystem.list                      74  
+
+        </pre>
+        
+        <h4>jlockstat</h4>
+
+        <pre>
+Java Method                                  Native      cnt
+============================================================
+java/io/UnixFileSystem.getBooleanAttributes0 malloc      367
+java/io/UnixFileSystem.getBooleanAttributes0 free        363    
+java/lang/ClassLoader.defineClass1           free        288  
+java/lang/ClassLoader.defineClass1           malloc      290
+java/io/UnixFileSystem.getLastModifiedTime   free        136  
+java/io/UnixFileSystem.getLastModifiedTime   malloc      136  
+java/io/UnixFileSystem.list                  readdir64_r 134 
+
+        </pre>
+
+        <h4>jiosnoop</h4>
+
+        <pre>
+Java Method                                     syscall  cnt  
+============================================================
+org/apache/coyote/Response.action               _so_send  7
+org[...]Http11Processor.action                  _read     7 
+org/[...]OutputStreamOutputBuffer.doWrite       _so_send  2  
+org/[...]Http11ConnectionHandler.processConnect _read     1  
+org[...]/mapper/Mapper.internalMapWrapper       _read     1             
+        </pre>        
+
+    </div>
+    <!--incl:FOOTER-->
+</body>
+</html>

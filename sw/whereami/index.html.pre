@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../homepage.css" type="text/css"/>
     <link rel="shortcut icon" href="favicon.ico"/>
     <script src="js/coords.js"></script>
-    <script src="http://maps.google.com/maps?file=api&v=2.x&key=ABQIAAAAs7zxKP55zHlKrd9RkWrDQBTm24TVhLYtfp8NzQR3Yruif91m2xQ7eEHLSPbnE3OMvzvAQp55HUFOyQ"
+    <script src="http://maps.google.com/maps?file=api&v=2.x&key=ABQIAAAAs7zxKP55zHlKrd9RkWrDQBSzWEeHLihruNzfB9jxtfXPLq2P2xS2dHUDd-msl51UBrW4_OSaI66w_A"
     type="text/javascript"></script>
     <script type="text/javascript">
 
@@ -81,14 +81,13 @@
 	phone. The exact request URL format is the following:
 	</p>
 	<pre>
-	http://server/loggps-db.pl?lat=39.62365&lon=22.409113333333334&alt=144.6&speed=0&clientid=gousiosg
+	http://server/loggps-db.pl?lat=39.62365&lon=22.409113333&alt=144.6&speed=0&clientid=gousiosg
 	</pre>
     <p>
 
-    I 've also implemented a tiny J2ME application for the mobile phone that
-    reads data from the GPS receiver and submits it to the logging script. 
-    Unfortunately, though, I have lost the original source code so I am only
-    providing the binary. 
+    I 've also implemented (actually modified existing code in the PD) a tiny
+    J2ME application for the mobile phone that reads data from the GPS receiver
+    and submits it to the logging script. 
 
     </p>
 	<p>
@@ -102,7 +101,9 @@
 
     <h3>Download</h3>
 
-    You can find all scripts and the J2ME application here.
+    You can find all scripts and the J2ME application 
+    <!--link:here,files/whereami.tar.gz-->.
+    
 
    <!--incl:FOOTER-->
 </body>

@@ -78,7 +78,7 @@ sub getbib {
   
   close (TMP);
 
-  system("cd $TOOLSDIR && ./bib2xhtml.pl -s plain bibinput$pid.aux >tmp$pid.html");
+  system("cd $TOOLSDIR && ./bib2xhtml.pl -s empty -c -r bibinput$pid.aux >tmp$pid.html");
   push (@tmpfiles, "$TOOLSDIR/tmp$pid.html");
 
   open (HTML, "$TOOLSDIR/tmp$pid.html") or die "Cannot open $TOOLSDIR/tmp$pid.html: $!";

@@ -61,7 +61,6 @@ document.getElementById('last').src = 'http://chart.apis.google.com/chart?' +
 </head>
 <body onload="plot()">
     <!--incl:MENU-->
-    <!--incl:COM-->
     <div id="body" class="body">
         <h1>Thesis-o-meter</h1>
         <hr align="left" width="50%"/>

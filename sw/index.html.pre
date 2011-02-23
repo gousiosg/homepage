@@ -22,8 +22,8 @@
                 machines. I maintain the project in its own 
                 <a href="http://www.sqo-oss.org">site</a>. The project has been
                 the centerpiece of my 
-                <!--link:PhD research,phd.html-->, while it 
-                has been presented individually in our work: 
+                <!--link:PhD research,phd.html-->
+                , while it has been presented individually in our work: 
                 </p>
 
                 <!-- bibincl:GS09a#all.bib -->
@@ -31,8 +31,8 @@
                 <p> A dump of the Alitheia Core database as it was by the end
                     of my PhD work can be found <a
                         href="pubs/phd/alitheia.mysql.dump.bz2">here</a>. The
-                    data has changed a lot since then so if you are interest in
-                    recent version of those, please contact me directly.  </p>
+                    data has changed a lot since then so if you are interested in
+                    a recent version of those, please contact me directly.  </p>
             </li>
 
             <li>
@@ -52,7 +52,16 @@
                 that we used 
 
             </li>-->
+            
+            <li>
+                
+                In our work <em>Performing Large Scale Software Engineering Studies
+                </em> (currently under review), I used both the Alitheia Core 
+                dataset (mentioned above) and a fresh, new dataset. Find more
+                details on how to replicate the experiments I report in this study 
+                <!--link:here.,sw/lsses-->
 
+            </li>
         </ul>
 
         <h2>Scripts and Hacks</h2>

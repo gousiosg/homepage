@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>Java DTrace Toolkit</title>
+        <meta name="Author" content="Georgios Gousios"/>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" href="../../homepage.css" type="text/css"/>
+        <link rel="shortcut icon" href="favicon.ico"/>
+    </head>
+    <body>
+        <!--incl:MENU--> 
+        <div id="body" class="body">
+            <h2>Performing Large Scale Software Engineering Studies</h2>
+
+         <p>
+
+         In our work <em>Performing Large Scale Software Engineering
+             Studies</em>, we examine why we must perform large scale studies
+         and how we can do them using 
+         <a href="http://www.sqo-oss.org">Alitheia Core</a>. 
+         
+         In our work, we use two data sets:
+        
+        </p>
+
+        <li>
+            <li>The Alitheia Core dataset</li>
+        </li>
+
+        <p>
+        
+        </p>
+
+        <p>
+
+            You can download the Java DTrace Toolkit from 
+            <!--link:here,files/jdt.tar.gz-->.
+        
+        </p>
+
+
+        <p>
+
+            The JDT has been presented in the following short paper:
+
+            <!-- bibincl:GS08#all.bib -->
+        </p>
+
+
+    </div>
+    <!--incl:FOOTER-->
+</body>
+</html>

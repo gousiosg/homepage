@@ -20,12 +20,21 @@
          and how we can do them using 
          <a href="http://www.sqo-oss.org">Alitheia Core</a>. 
          
-         In our work, we use two data sets:
+         In our work, we used Alitheia Core, <a
+             href="http://git-scm.com/">Git</a> revision <a
+             href="http://git.sqo-oss.org/?p=sqo-oss.git;a=commit;h=88a6fcc6d15aac911aba710ea8a30e2a9a166443">88a6fcc6d15aac911aba710ea8a30e2a9a166443</a>.
+         <em>(Note that after this revision, Alitheia Core data schema changed,
+             so the datasets we provide will not work.)</em> 
+
+         Using it, we processed two data sets:
         
         </p>
 
         <li>
-            <li>The Alitheia Core dataset</li>
+            <li>The Alitheia Core shared dataset (metadata)</li>
+            <li>A four-project dataset, which we distribute hoping
+                it will become a standardised testbed for developing new ideas. 
+                (raw data, metadata)</li>
         </li>
 
         <p>

@@ -3,7 +3,7 @@
 #
 
 BIBDIR = bib
-SUBDIRS=bib sw labs news toplevel img
+SUBDIRS=bib sw news toplevel img labs
 TOP_DIR=.
 
 .PHONY: all build dist all-install
@@ -17,6 +17,7 @@ include $(TOP_DIR)/Makefile.common
 all-install: output build install bib
 
 local-build: 
+	mkdir -p $(FILESDIR)
 
 local-install: 
 

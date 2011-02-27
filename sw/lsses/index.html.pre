@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
-        <title>Java DTrace Toolkit</title>
+        <title>Performing Large Scale Software Engineering Studies</title>
         <meta name="Author" content="Georgios Gousios"/>
         <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
         <link rel="stylesheet" href="../../homepage.css" type="text/css"/>
@@ -25,7 +25,7 @@
              href="http://git.sqo-oss.org/?p=sqo-oss.git;a=commit;h=88a6fcc6d15aac911aba710ea8a30e2a9a166443">88a6fcc6d15aac911aba710ea8a30e2a9a166443</a>.
          <em>(Note that after this revision, Alitheia Core data schema changed,
              so the datasets we provide will not work.)</em> 
-
+ww
          Using it, we processed two data sets:
         
         </p>
@@ -94,8 +94,6 @@ mysql> UPDATE CLUSTERNODE_PROJECT set CLUSTERNODE_ID=x;
 Query OK, 511 rows affected (0.10 sec)
 Rows matched: 538  Changed: 511  Warnings: 0
                 </pre>
-
-            
             </li>
 
             <li>Alitheia Core should now be able to process the data. To test the
@@ -107,6 +105,23 @@ Rows matched: 538  Changed: 511  Warnings: 0
             </li>
 
         </ol>
+
+        <h3>Replicating the case studies</h3>
+        Instructions on how to replicate the experiments described in the paper
+        using the provided datasets.
+
+        <h4>Performance measurements</h4>
+
+        To measure the performance of Alitheia Core, we used the raw data from
+        the first dataset. To perform the measurements in your environment,
+        in turn just <a href="http://www.sqo-oss.org/addproject">add</a> each 
+        project and start all updaters at once.
+
+        <h4>Electronic Discussions and Software Evolution</h4>
+
+        
+
+        <h4>Development Teams and Maintainability</h4>
 
     </div>
     <!--incl:FOOTER-->

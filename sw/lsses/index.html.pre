@@ -30,32 +30,83 @@
         
         </p>
 
-        <li>
-            <li>The Alitheia Core shared dataset (metadata)</li>
-            <li>A four-project dataset, which we distribute hoping
-                it will become a standardised testbed for developing new ideas. 
-                (raw data, metadata)</li>
-        </li>
+        <ui>
+            
+            <li>The <a href=""> Alitheia Core shared dataset</a> This dataset
+            was used to conduct the two case studies. It was prepared </li>
+            
+        <li>A <a href="https://pithos.grnet.gr/pithos/rest/gousiosg@aueb.gr/files/public/testdata.gz">four project</a> dataset, which we distribute hoping
+                it will become a standardised testbed for developing new ideas.
+                This dataset includes both raw data and Alitheia Core metadata
+                from running the first updater stage for the four projects we
+                describe in our work (JConvert, Gnome-VFS, Evolution and FreeBSD).
 
-        <p>
-        
+            </li>
+        </ui>
+
+        <h3>Using the datasets</h3>
+        <p>      
+
+            Both datasets are essentially MySQL dumps. To use them with Alitheia
+            Core, do the following (the instructions assume a Unix-like OS) :
         </p>
 
-        <p>
+        <ol>
+            <li><a href="http://www.sqo-oss.org/download">Download</a> 
+                and <a href="http://www.sqo-oss.org/quickstart">install</a> 
+                Alitheia Core. Alternatively, you can download the Alitheia Core
+                <a href="http://www.sqo-oss.org/download/vm">virtual machine</a>
+                and use it to import the provided data. The virtual machine 
+                appliance follows the Open Virtualization Format specification,
+                so it may be able to be hosted in (and scale) cloud 
+                installations, such as the Amazon EC2 service (untested).
+            </li>
 
-            You can download the Java DTrace Toolkit from 
-            <!--link:here,files/jdt.tar.gz-->.
-        
-        </p>
+            <li>Load either dump in the MySQL database. This can be done using
+                the following command:
 
+                <pre>
+cat dump.sql |mysql -u alitheia -p alitheia                
+                </pre>
+             
+            </li>
 
-        <p>
+            <li>The raw data for the four project dataset need to be placed (or symlinked) at <code>/home/data</code></li>
 
-            The JDT has been presented in the following short paper:
+            <li>Alitheia Core uses the machine's name to register it as a node
+                in a cluster installation. Projects are always assigned to a
+                cluster node, through an entry in the
+                <code>CLUSTERNODE_PROJECT</code> table. This means that by 
+                default Alitheia Core will not be able to use the imported data
+                as the projects are assigned to another (our) machine. To fix 
+                this, start Alitheia Core and open a connection to MySQL. Then
+                do 
 
-            <!-- bibincl:GS08#all.bib -->
-        </p>
+                <pre>
+mysql> select * from CLUSTERNODE;
++----------------+------------------+
+| CLUSTERNODE_ID | CLUSTERNODE_NAME |
++----------------+------------------+
+|              9 | alitheia         |
+|              x | your.hostname    |
++----------------+------------------+
+mysql> UPDATE CLUSTERNODE_PROJECT set CLUSTERNODE_ID=x;
+Query OK, 511 rows affected (0.10 sec)
+Rows matched: 538  Changed: 511  Warnings: 0
+                </pre>
 
+            
+            </li>
+
+            <li>Alitheia Core should now be able to process the data. To test the
+                installation, start Alitheia Core, install a plug-in in the
+                plug-ins page, go to the projects page, select a project and click
+                Synchronize in the plug-in dialog. Check whether the jobs 
+                number is reducing and whether the failed jobs count is 0 or 
+                at least very low.
+            </li>
+
+        </ol>
 
     </div>
     <!--incl:FOOTER-->

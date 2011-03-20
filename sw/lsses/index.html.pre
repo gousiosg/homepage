@@ -6,6 +6,11 @@
         <meta name="Author" content="Georgios Gousios"/>
         <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
         <link rel="stylesheet" href="../../homepage.css" type="text/css"/>
+        <script type="text/javascript" src="../../scripts/shCore.js"></script>
+        <script type="text/javascript" src="../../scripts/shBrushSql.js"></script>
+        <link type="text/css" rel="stylesheet" href="../../styles/shCoreDefault.css"/>
+        <script type="text/javascript">SyntaxHighlighter.all();</script>
+        
         <link rel="shortcut icon" href="favicon.ico"/>
     </head>
     <body>
@@ -24,8 +29,7 @@
              href="http://git-scm.com/">Git</a> revision <a
              href="http://git.sqo-oss.org/?p=sqo-oss.git;a=commit;h=88a6fcc6d15aac911aba710ea8a30e2a9a166443">88a6fcc6d15aac911aba710ea8a30e2a9a166443</a>.
          <em>(Note that after this revision, Alitheia Core data schema changed,
-             so the datasets we provide will not work.)</em> 
-ww
+             so the datasets we provide may not work.)</em> 
          Using it, we processed two data sets:
         
         </p>
@@ -82,7 +86,7 @@ cat dump.sql |mysql -u alitheia -p alitheia
                 this, start Alitheia Core and open a connection to MySQL. Then
                 do 
 
-                <pre>
+                <pre class="brush: sql;">
 mysql> select * from CLUSTERNODE;
 +----------------+------------------+
 | CLUSTERNODE_ID | CLUSTERNODE_NAME |
@@ -115,11 +119,38 @@ Rows matched: 538  Changed: 511  Warnings: 0
         To measure the performance of Alitheia Core, we used the raw data from
         the first dataset. To perform the measurements in your environment,
         in turn just <a href="http://www.sqo-oss.org/addproject">add</a> each 
-        project and start all updaters at once.
+        project and start all updaters at once. 
+        For more precise time keeping, one could set the 
+        <code>eu.sqooss.log.perf</code> parameter 
+        (in the top level 
+        <code>pom.xml</code> file) to <code>true</code> and recompile Alitheia
+        Core. Detailed performance measurements (per job) can then be found
+        in the <code>runner/perf.log</code> file.
 
         <h4>Electronic Discussions and Software Evolution</h4>
 
-        
+        <p> 
+            The first experiment was run on the full repositories of 64 Gnome
+            projects and the FreeBSD project. The projects we examined are
+            listed in this file. The metadata can be found in the Alitheia Core
+            shared dataset. To generate the metadata, we mirrored the full
+            source code and mailing list data up to Jan 2009, we imported the
+            projects one by one, we split the projects among the machines on
+            our cluster (by manually assigning projects to machines in the
+            database, as shown above) and finally we fired the metadata
+            updaters on all machines.  
+        </p>
+
+        <p>
+            The second step in the experiment execution involves the running of 
+            the Discussion Heat plug-in. Again, we triggered the metric 
+            synchronisation function for the discussion heat plug-in (using
+            the Alitheia Core web interface on each machine on the cluster).
+        </p>
+
+        <p>
+            After 
+        </p>
 
         <h4>Development Teams and Maintainability</h4>
 

@@ -182,9 +182,9 @@ done |grep -v ^0 >>results.txt
         </p>
 
         <pre class="brush: erlang">
-f<-read.table("results.txt", header = TRUE)
+f&lt;-read.table(&quot;results.txt&quot;, header = TRUE)
 plot(f$DEPTH,f$NUM)
-cor(f$DEPTH, f$NUM, method="pearson")
+cor(f$DEPTH, f$NUM, method=&quot;pearson&quot;)
         </pre>
 
         <p>
@@ -323,6 +323,110 @@ t.test(f$RESULT, d$RESULT)
         </pre>
 
         <h4>Development Teams and Maintainability</h4>
+        
+        <p>
+            The second case study was performed on 213 projects whose primary
+            language (as can be obtained by counting the number of files in 
+            their latest version) is C (listed in 
+            <!--link:this file,files/lsses-mi-projects-c.txt-->). 
+            For each project, we addded it to 
+            the Alitheia Core system, assigned it manually to the most 
+            appropriate node in our cluster and started the source code metadata
+            updater. After the project data were imported, we run the required
+            metrics. At the time the experiment took place, Alitheia Core was
+            not able to handle metric dependencies, so the order of metric execution
+            was preserved by manually initiating metric runs. Later versions, 
+            such as the one linked above, will automatically
+            run metrics and their dependencies in the correct order.
+        </p>
+
+        <p>
+            To do the correlation analysis required in order to examine the two
+            hypotheses, we obtained results from both the maintainability
+            index and the developer metrics plug-ins, for each type of entity 
+            we were interested about (specifically, project versions and modules).
+            The query to obtain the results at the module level for project 
+            <code>Gnome-VFS</code> is the following:
+        </p>
+ 
+        <pre class="brush: sql;">
+select MI.MODMI, EYEBALL.MODEYEBALL
+from
+(  select pfm.PROJECT_FILE_ID as ID, pfm.RESULT as MODMI 
+   from   STORED_PROJECT sp, PROJECT_VERSION pv, PROJECT_FILE pf, 
+          PROJECT_FILE_MEASUREMENT pfm, METRIC m 
+   where  pfm.METRIC_ID=m.METRIC_ID and pf.PROJECT_FILE_ID=pfm.PROJECT_FILE_ID 
+          and pv.PROJECT_VERSION_ID=pf.PROJECT_VERSION_ID 
+          and pv.STORED_PROJECT_ID=sp.PROJECT_ID 
+          and m.MNEMONIC="MODMI" and sp.PROJECT_NAME="Gnome-VFS"
+) as MI,
+(  select pfm.PROJECT_FILE_ID as ID, pfm.RESULT as MODEYEBALL 
+   from   STORED_PROJECT sp, PROJECT_VERSION pv, PROJECT_FILE pf, 
+          PROJECT_FILE_MEASUREMENT pfm, METRIC m 
+   where  pfm.METRIC_ID=m.METRIC_ID and pf.PROJECT_FILE_ID=pfm.PROJECT_FILE_ID 
+          and pv.PROJECT_VERSION_ID=pf.PROJECT_VERSION_ID 
+          and pv.STORED_PROJECT_ID=sp.PROJECT_ID 
+          and m.MNEMONIC="MODEYBALL" 
+          and exists (
+              select pfm1.PROJECT_FILE_ID 
+              from PROJECT_FILE_MEASUREMENT pfm1, METRIC m1 
+              where  pfm1.METRIC_ID=m1.METRIC_ID and m1.MNEMONIC="ISSRCMOD" 
+                     and pfm.PROJECT_FILE_ID=pfm1.PROJECT_FILE_ID
+                     and pfm1.RESULT="1" 
+              ) 
+          and sp.PROJECT_NAME="Gnome-VFS"
+) as EYEBALL
+where
+    MI.ID = EYEBALL.ID
+        </pre>
+
+        <p>
+            The query to obtain the results at the project level using a 3 month
+            time window to determine team size (team size comprises of developers
+            that have committed at least once within this time window) for
+            the same project is the following:
+        </p>
+        <pre class="brush: sql;">
+select MI.MI, TEAMSIZE.TEAMSIZE
+from
+(  select pvm.PROJECT_VERSION_ID as ID, pvm.RESULT as MODMI 
+   from   STORED_PROJECT sp, PROJECT_VERSION pv, 
+          PROJECT_VERSION_MEASUREMENT pvm, METRIC m 
+   where  pvm.METRIC_ID=m.METRIC_ID 
+          and pv.PROJECT_VERSION_ID=pvm.PROJECT_VERSION_ID 
+          and pv.STORED_PROJECT_ID=sp.PROJECT_ID 
+          and m.MNEMONIC="MI" and sp.PROJECT_NAME="Gnome-VFS"
+) as MI,
+(  select pvm.PROJECT_VERSION_ID as ID, pvm.RESULT as TEAMSIZE
+   from   STORED_PROJECT sp, PROJECT_VERSION pv, 
+          PROJECT_VERSION_MEASUREMENT pvm, METRIC m 
+   where  pvm.METRIC_ID=m.METRIC_ID 
+          and pv.PROJECT_VERSION_ID=pvm.PROJECT_VERSION_ID 
+          and pv.STORED_PROJECT_ID=sp.PROJECT_ID 
+          and m.MNEMONIC="TEAMSIZE3" 
+          and sp.PROJECT_NAME="Gnome-VFS"
+) as TEAMSIZE
+where
+    MI.ID = TEAMSIZE.ID
+
+        </pre>
+
+        <p>
+            Results at the project and module level for all projects can be obtained
+            by means of simple shell scripts that execute the two queries for all
+            projects in the 
+            <!--link:provided project file list,files/lsses-mi-projects-c.txt-->).
+            Then, importing the data in R and performing the correlation analysis
+            is as simple as the following script. As the dataset to be analyzed is
+            very big, R will need a machine with at least 4 gigabytes of memory
+            to process it.
+        </p>
+
+        <pre class="brush: erlang">
+f&lt;-read.table(&quot;results.txt&quot;, header = TRUE)
+cor(f$MI, f$TEAMSIZE, method=&quot;pearson&quot;)
+        </pre>
+
 
     </div>
     <!--incl:FOOTER-->

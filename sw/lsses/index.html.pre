@@ -8,8 +8,14 @@
         <link rel="stylesheet" href="../../homepage.css" type="text/css"/>
         <script type="text/javascript" src="../../scripts/shCore.js"></script>
         <script type="text/javascript" src="../../scripts/shBrushSql.js"></script>
+        <script type="text/javascript" src="../../scripts/shBrushBash.js"></script>
+        <script type="text/javascript" src="../../scripts/shBrushRuby.js"></script>
+        <script type="text/javascript" src="../../scripts/shBrushErlang.js"></script>
         <link type="text/css" rel="stylesheet" href="../../styles/shCoreDefault.css"/>
-        <script type="text/javascript">SyntaxHighlighter.all();</script>
+        <script type="text/javascript">
+            SyntaxHighlighter.defaults['gutter'] = false;
+            SyntaxHighlighter.all();
+        </script>
         
         <link rel="shortcut icon" href="favicon.ico"/>
     </head>
@@ -69,7 +75,7 @@
             <li>Load either dump in the MySQL database. This can be done using
                 the following command:
 
-                <pre>
+                <pre class="brush: bash;">
 cat dump.sql |mysql -u alitheia -p alitheia                
                 </pre>
              
@@ -132,7 +138,9 @@ Rows matched: 538  Changed: 511  Warnings: 0
         <p> 
             The first experiment was run on the full repositories of 64 Gnome
             projects and the FreeBSD project. The projects we examined are
-            listed in this file. The metadata can be found in the Alitheia Core
+            listed in 
+            <!--link:this file,files/lsses-heated-projects.txt-->
+            The metadata can be found in the Alitheia Core
             shared dataset. To generate the metadata, we mirrored the full
             source code and mailing list data up to Jan 2009, we imported the
             projects one by one, we split the projects among the machines on
@@ -148,9 +156,171 @@ Rows matched: 538  Changed: 511  Warnings: 0
             the Alitheia Core web interface on each machine on the cluster).
         </p>
 
-        <p>
-            After 
+        <p> The case study investigates three hypotheses. The first one
+            examines the correlation between the number of messages and the
+            depth for each thread. We only examine those threads that have more
+            than one messages (or equivalently, the depth of the thread is
+            non-zero).  To obtain the data, execute the following simple shell
+            script: 
         </p>
+
+        <pre class="brush: bash;">
+echo "DEPTH NUMBER" |tr ' ' '\t' > results.txt
+cat lsses-heated-projects.txt |
+while read project; do 
+    echo "select max(DEPTH), COUNT(*) \
+          from MAILMESSAGE mm, MAILINGLIST ml, STORED_PROJECT sp  \
+          where mm.MLIST_ID=ml.MLIST_ID and ml.PROJECT_ID=sp.PROJECT_ID \
+          and sp.PROJECT_NAME='$project' group by (THREAD_ID);"|
+    mysql -u alitheia -p'alitheia' alitheia -s; 
+done |grep -v ^0 >>results.txt
+        </pre>
+
+        <p>
+            After obtaining the results file, it is a matter of a very simple
+            script to extract the Pearson correlation co-efficient with R
+        </p>
+
+        <pre class="brush: erlang">
+f<-read.table("results.txt", header = TRUE)
+plot(f$DEPTH,f$NUM)
+cor(f$DEPTH, f$NUM, method="pearson")
+        </pre>
+
+        <p>
+            The results of the running of the discussion heat plug-in, 
+            used to evaluate the second hypothesis, can be
+            obtained (along with the project name) with the following SQL
+            query:
+        </p>
+
+        <pre class="brush: sql">
+select sp.project_name, m.result, mtm.THREAD_ID 
+from  ML_THREAD_MEASUREMENT mtm, MAILINGLIST_THREAD mtl, 
+      MAILINGLIST ml, STORED_PROJECT sp, METRIC m 
+where mtm.METRIC_ID=m.METRIC_ID and mtm.THREAD_ID=mtl.MLTHREAD_ID 
+      and mtl.MAILING_LIST_ID=ml.mlist_id 
+      and ml.project_id=sp.project_id and m.MNEMONIC="HOTEFFECT";
+        </pre>
+
+        <p> 
+            The third hypothesis includes a two sample <em>t-test</em>, whose
+            aim is to examine whether the cases identified as heated
+            discussions exhibit a statistically significant difference in the
+            rate of source line intake compared to the average case. The following
+            Ruby script reads the results of the previous query from a file (which
+            can be simply constructed using the appended script), 
+            randomly samples an equal number of
+            versions for which there is not a heated discussion going on and
+            calculates the rate of line intake for them. 
+        </p>
+
+        <pre class="brush: bash">
+echo " select sp.project_name, count(RESULT) \
+       from METRIC m, ML_THREAD_MEASUREMENT mtm, MAILINGLIST_THREAD mtl, \
+            MAILINGLIST ml, STORED_PROJECT sp \
+       where m.METRIC_ID=mtm.METRIC_ID and m.MNEMONIC="HOTEFFECT" \
+             and mtm.THREAD_ID=mtl.MLTHREAD_ID \
+             and mtl.MAILING_LIST_ID=ml.mlist_id \ 
+             and ml.project_id=sp.project_id  \
+       group by sp.project_name;" |
+mysql -u alitheia -p'alitheia' -s alitheia > heated.txt         
+        </pre>
+
+
+        <pre class="brush: ruby;">
+#!/usr/bin/ruby
+
+require 'rubygems'
+require 'mysql2'
+
+$mysql = Mysql2::Client.new(:host =&gt; &quot;localhost&quot;, :username =&gt; &quot;alitheia&quot;, 
+                            :password =&gt; &quot;alitheia&quot;, :database =&gt; &quot;alitheia&quot;)
+
+MAXPV = &quot;select max(pv.PROJECT_VERSION_ID) 
+from PROJECT_VERSION pv, STORED_PROJECT sp 
+where pv.STORED_PROJECT_ID=sp.PROJECT_ID and sp.PROJECT_NAME='%s';&quot;
+
+MINPV = &quot;select min(pv.PROJECT_VERSION_ID) 
+from PROJECT_VERSION pv, STORED_PROJECT sp 
+where pv.STORED_PROJECT_ID=sp.PROJECT_ID and sp.PROJECT_NAME='%s';&quot;
+
+CHECKPV = &quot;select * 
+from PROJECT_VERSION pv, STORED_PROJECT sp  
+where pv.STORED_PROJECT_ID=sp.PROJECT_ID and sp.PROJECT_NAME='%s' and pv.PROJECT_VERSION_ID=%d;&quot;
+
+VERTS = &quot;select pv.TIMESTAMP as ts 
+from PROJECT_VERSION pv 
+where pv.PROJECT_VERSION_ID=%d&quot;
+
+VERBETWEEN = &quot;select pv.PROJECT_VERSION_ID as id 
+from PROJECT_VERSION pv, STORED_PROJECT sp 
+where pv.TIMESTAMP &gt;= %d and pv.TIMESTAMP &lt;= %d 
+      and sp.PROJECT_ID=pv.STORED_PROJECT_ID 
+      and sp.PROJECT_NAME='%s';&quot;
+
+VERLOC = &quot;select pvm.RESULT as result
+from PROJECT_VERSION_MEASUREMENT pvm, METRIC m
+where pvm.METRIC_ID=m.METRIC_ID and pvm.PROJECT_VERSION_ID=%d and m.MNEMONIC='VERLOC';&quot;
+
+def results_period (period)
+  period.collect{|id|         
+    result = $mysql.query(sprintf(VERLOC, id))
+    unless result.first.nil?          
+      result.first[&quot;result&quot;]
+    end
+  }
+end
+
+srand(0xdeadbabe)
+File.open(&quot;heated.txt&quot;).each do |line|
+    samples, project = line.split(' ') 
+    max = $mysql.query(sprintf(MAXPV, project)).first[&quot;max(pv.PROJECT_VERSION_ID)&quot;]
+    min = $mysql.query(sprintf(MINPV, project)).first[&quot;min(pv.PROJECT_VERSION_ID)&quot;]
+    
+    smpl_array = Array.new
+    #Get an array of random version ids from the project
+    while smpl_array.length &lt; samples.to_i
+      
+      rnd = min + rand(max - min)
+      
+      unless $mysql.query(sprintf(CHECKPV, project, rnd)).count == 0
+        smpl_array.push(rnd)
+      end
+    end
+   
+    smpl_array.each do |pvid|
+      ts = $mysql.query(sprintf(VERTS, pvid)).first[&quot;ts&quot;]
+      prev_month = ts - 3600 * 24 * 30 * 1000
+      next_week = ts + 3600 * 24 * 7 * 1000
+
+      ver_prev_month = $mysql.query(sprintf(VERBETWEEN, prev_month, ts, project)).collect{|row| row[&quot;id&quot;]}
+      ver_next_week  = $mysql.query(sprintf(VERBETWEEN, ts, next_week, project)).collect{|row| row[&quot;id&quot;]}
+      
+      meas_prev_month = results_period(ver_prev_month) 
+      meas_next_week  = results_period(ver_next_week)
+
+      print(project, &quot; &quot;, 
+      	meas_prev_month.inject(0.0){|sum, n| sum + n.to_f} / meas_prev_month.size -
+        meas_next_week.inject(0.0){|sum, n| sum + n.to_f} / meas_next_week.size, 
+        &quot;\n&quot;)
+    end
+end
+    
+        </pre>
+
+        <p>
+            After having obtained the results of both the metric (in file 
+            <code>heat-result.txt</code>) and the Ruby script (in file
+            <code>t-test-sample.txt</code>) it is straightforward to do
+            the <em>t-test</em> in R:
+        </p>
+
+        <pre class="brush: erlang;">
+d&lt;-read.table(&quot;t-test-sample.txt&quot;, header = TRUE)
+f&lt;-read.table(&quot;heat-result.txt&quot;, header = TRUE)
+t.test(f$RESULT, d$RESULT)
+        </pre>
 
         <h4>Development Teams and Maintainability</h4>
 

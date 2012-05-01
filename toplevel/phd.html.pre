@@ -52,8 +52,8 @@
         my specific contributions as a downloadable package is impossible
         without breaking its functinality and therefore I would like to
         redirect interested readers to the SQO-OSS project software repository 
-        (<a href="http://anonsvn.sqo-oss.org">anonymous access</a>,
-         <a href="http://websvn.sqo-oss.org">repository browser</a>).
+        (<a href="http://www.sqo-oss.org/download/src">anonymous access</a>,
+         <a href="http://git.sqo-oss.org">repository browser</a>).
         </p>
         
         <p> 
@@ -61,8 +61,8 @@
             analysed, using Alitheia Core, the data repositories from about 
             230 OSS projects. The result is a database with more than 100 million
             records, the 
-            <a href="pubs/phd/alitheia.mysql.dump.bz2">compressed dump</a> 
-            of which weights about 1.2GB. 
+            <a href="https://pithos.grnet.gr/pithos/rest/gousiosg@aueb.gr/files/datasets/alitheia.mysql.dump.gz">compressed dump</a> 
+            of which weights about 1.4GB. 
             The dump has been confirmed to work
             with the MySQL database and Alitheia Core SVN revision 4654.
             The processing

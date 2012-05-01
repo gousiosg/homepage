@@ -31,21 +31,23 @@
          and how we can do them using 
          <a href="http://www.sqo-oss.org">Alitheia Core</a>. 
          
-         In our work, we used Alitheia Core, <a
-             href="http://git-scm.com/">Git</a> revision <a
-             href="http://git.sqo-oss.org/?p=sqo-oss.git;a=commit;h=88a6fcc6d15aac911aba710ea8a30e2a9a166443">88a6fcc6d15aac911aba710ea8a30e2a9a166443</a>.
+         In our work, we used Alitheia Core, <a href="http://git-scm.com/">Git</a> 
+         revision 
+         <a href="http://git.sqo-oss.org/?p=sqo-oss.git;a=commit;h=88a6fcc6d15aac911aba710ea8a30e2a9a166443">88a6fcc6d15aac911aba710ea8a30e2a9a166443</a>.
          <em>(Note that after this revision, Alitheia Core data schema changed,
              so the datasets we provide may not work.)</em> 
          Using it, we processed two data sets:
-        
         </p>
 
         <ui>
             
-            <li>The <a href=""> Alitheia Core shared dataset</a> This dataset
-            was used to conduct the two case studies. It was prepared </li>
+            <li>The 
+                <!--link: Alitheia Core shared dataset, ../../phd.html-->
+                This dataset
+                was used to conduct the two case studies. 
+            </li>
             
-        <li>A <a href="https://pithos.grnet.gr/pithos/rest/gousiosg@aueb.gr/files/public/testdata.gz">four project</a> dataset, which we distribute hoping
+        <li>A <a href="https://pithos.grnet.gr/pithos/rest/gousiosg@aueb.gr/files/datasets/four-projects.tar.gz">four project</a> dataset, which we distribute hoping
                 it will become a standardised testbed for developing new ideas.
                 This dataset includes both raw data and Alitheia Core metadata
                 from running the first updater stage for the four projects we

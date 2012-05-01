@@ -9,7 +9,7 @@ include $(TOP_DIR)/Makefile.common
 local-build: $(HTML) 
 
 local-install: $(FILESDIR) $(INSTALLDIR)
-	cp *.txt $(FILESDIR)
+	cp -v *.txt $(FILESDIR)
 	cp -v $(HTML) $(INSTALLDIR)
 
 local-clean: 

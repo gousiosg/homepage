@@ -1,4 +1,5 @@
-SUBDIRS=isrm stuff
+#SUBDIRS=isrm stuff
+SUBDIRS=stuff
 TOP_DIR=..
 PROCESS=$(shell ls *.pre)
 OUTPUT=$(patsubst %.html.pre,%.html,$(addprefix ${OUTPUTDIR}/labs/,$(PROCESS)))

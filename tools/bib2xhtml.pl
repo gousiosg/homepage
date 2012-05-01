@@ -31,7 +31,7 @@ require 'ctime.pl';
 eval "use PDF::API2";
 $have_pdf_api = 1 unless (defined $@ && $@ ne '');
 
-$BIBTEX="/opt/local/bin/bibtex";
+$BIBTEX="/usr/texbin/bibtex";
 $BIBDIR = $ENV{'BIB'};
 
 # Label styles.

@@ -21,25 +21,29 @@
         Welcome to my home page.
         <p>
         I am Georgios Gousios.
-        I am a researcher at the 
+        I am a researcher at the <a href="http://swerl.tudelft.nl/bin/view/Main/WebHome">
+        Software Engineering Research group
+        </a>, 
+        <a href="http://www.tudelft.nl">TU Delft</a>.
+        Before that, I got my PhD from the 
         <a href="http://istlab.dmst.aueb.gr/sense">
             Software Engineering and Security laboratory</a>, at the
         <a href="http://www.aueb.gr">
-            Athens University of Economics and Business</a>.
+                Athens University of Economics and Business</a>, where I worked
+        with <a href="http://www.spinellis.gr">Diomidis Spinellis</a>.
         </p>
         <p>
         	My primary research interests include:
         </p>
         	<ul>
-                <li>Software quality</li>
                 <li>Software engineering</li>
-                <li>Operating systems architectures</li>
-                <li>Virtual Machines</li>
+                <li>Programming Languages</li>
+                <li>Systems software and system administration</li>
             </ul>
 
         </td>
             <td >
-                <img alt="Picture of Georgios Gousios" align="right" src="img/moi.jpg"/>
+                <img alt="Picture of Georgios Gousios" align="right" width="55%" src="img/moi.jpg"/>
             </td>
         </tr>
         <tr>
@@ -55,10 +59,10 @@
             <a href="http://oreilly.com/catalog/9780596517984/">book web site</a>.
             </p>
             <p>
-            The book is now available at your local bookstore. You can also order it
+            The book is now available at your local bookstore. You can also order it online
             (<a href="http://www.amazon.com/Beautiful-Architecture-Leading-Thinkers-Software/dp/059651798X/">Amazon</a>, 
-            <a href="http://www.papasotiriou.gr/product.ebook.asp?pfid=1816872&prid=1071106">Papasotiriou</a>,
-            <a href="http://www.play.com/Books/Books/4-/8270906/Beautiful-Architecture/Product.html">Play</a>), 
+            <a href="http://www.play.com/Books/Books/4-/8270906/Beautiful-Architecture/Product.html">Play</a>,
+            <a href="http://www.barnesandnoble.com/w/beautiful-architecture-diomidis-spinellis/1100166114?ean=9780596517984">Barnes and Noble</a>), 
             and help a good cause, as the royalties for the book will be 
             donated to the 
             <a href="http://www.msf.org"><em>Medecins Sans Frontieres</em></a>.<br/>

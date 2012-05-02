@@ -1,136 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
+  <head>
     <title>Georgios Gousios: About</title>
     <meta name="Author" content="Georgios Gousios"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="homepage.css" type="text/css"/>
     <link rel="shortcut icon" href="favicon.ico"/>
-</head>
-<body>
+  </head>
+  <body>
     <!--incl:MENU--> 
     <div id="body" class="body">
-        <h1>About Georgios Gousios</h1>
+      <h1>About Georgios Gousios</h1>
 
-        <p>
+      <p>
+      <em>Dr. Georgios Gousios</em> holds an MSc with distinction from the
+      University of Manchester, UK and a PhD from the Athens University of
+      Economics and Business,GR, both on Software Engineering. He has worked
+      as a researcher in several national and international research projects
+      and provided consulting services in both multinational and emerging
+      startup companies. He was the project manager, lead designer and top
+      source code contributor of the SQO-OSS project, an FP6 funded project
+      that produced novel tools for facilitating research in the field of
+      software engineering. He has published more that 15 papers in various
+      fields and also co-edited the "Beautiful Architectures" book (OReilly,
+      2009). His research interests include empirical software engineering,
+      software architectures, systems level software and programming
+      languages.</p>
 
-        <em>Dr. Georgios Gousios</em> holds an MSc with distinction from the
-        University of Manchester, UK and a PhD from the Athens University of
-        Economics and Business,GR, both on Software Engineering. He has worked
-        as a researcher in several national and international research projects
-        and provided consulting services in both multinational and emerging
-        startup companies. He was the project manager, lead designer and top
-        source code contributor of the SQO-OSS project, an FP6 funded project
-        that produced novel tools for facilitating research in the field of
-        software engineering. He has published more that 10 papers in various
-        fields and also co-edited the "Beautiful Architectures" book (OReilly,
-        2009). His research interests include empirical software engineering,
-        software architectures, systems level software and programming
-        languages. </p>
+      <p>Here is my latest 
+      <!--link:curriculum vitae,files/gousiosg-cv-en.pdf-->.
+      </p>
 
-        <p>Here is my latest 
-            <!--link:curriculum vitae,files/gousiosg-cv-en.pdf-->.
-        </p>
+      <h3>Member</h3>
+      I am a member of a number of organisatiations:
 
-        <h3>Member</h3>
-        I am a member of a number of organisatiations:
+      <ul>
 
-        <ul>
+        <li><a href="http://portal.acm.org/author_page.cfm?id=81351592431">member
+          of</a> the <a href="http://www.acm.org">ACM</a></li>
 
-            <li><a href="http://portal.acm.org/author_page.cfm?id=81351592431">member
-                    of</a> the <a href="http://www.acm.org">ACM</a></li>
+        <li>member of the <a href="http://www.computer.org/">IEEE Computer
+          Society</a></li>
 
-            <li>member of the <a href="http://www.computer.org/">IEEE Computer
-                    Society</a></li>
-            
-            <li><a href="http://en.wikipedia.org/wiki/User:Gousiosg">active</a>
-                (not as much as I would like, unfortunately) Wikipedian</li>
-            
-            <li>member of the <a href="http://www.tee.gr">Technical Chapter of 
-                    Greece</a></li>
+        <li><a href="http://en.wikipedia.org/wiki/User:Gousiosg">active</a>
+        (not as much as I would like, unfortunately) Wikipedian</li>
 
-            <li>member of the scientific commitee of the <a
-                    href="http://ellak.gr/">Greek Open Source Software
-                    Organisation</a>.</li>
+        <li>member of the <a href="http://www.tee.gr">Technical Chapter of 
+          Greece</a></li>
 
-        </ul>
+        <li>member of the scientific commitee of the <a
+          href="http://ellak.gr/">Greek Open Source Software
+          Organisation</a>.</li>
 
-        <h3>Online profile</h3>
+      </ul>
 
-        I try to maintain a number of online profiles. When I can, I do connect
-        them and allow the one to update the other. Unfortunately, it seems
-        that with today's information hungry online services it is hard to
-        maintain a low profile if you want to stay relevant. Here is a list of
-        services that host (some version of) my online profile
+      <h3>Online profile</h3>
 
-        <ul>
+      I try to maintain a number of online profiles. When I can, I do connect
+      them and allow the one to update the other. Unfortunately, it seems
+      that with today's information hungry online services it is hard to
+      maintain a low profile if you want to stay relevant. Here is a list of
+      services that host (some version of) my online profile
 
-            <li><a href="http://twitter.com/gousiosg">Twitter</a></li>
+      <ul>
+        <li><a href="http://twitter.com/gousiosg">Twitter</a></li>
+        <li><a href="http://www.facebook.com/gousiosg">Facebook</a></li>
+        <li><a href="http://www.linkedin.com/in/georgiosgousios">LinkedIn</a></li>
+        <li><a href="http://www.ohloh.net/accounts/gousiosg">Ohloh</a></li>
+        <li><a href="http://portal.acm.org/author_page.cfm?id=81351592431">ACM</a></li>
+        <li><a href="http://www.oreillynet.com/pub/au/3473">O'Reilly</a></li>
+        <li><a href="http://www.amazon.co.uk/wishlist/2ONAREYL5GL9S">Amazon.co.uk wishlist</a></li>
+        <li><a href="http://runkeeper.com/user/gousiosg/profile">Runkeeper</a></li>
+      </ul>
 
-            <li><a href="http://www.facebook.com/gousiosg">Facebook</a></li>
-
-            <li><a href="http://www.linkedin.com/in/georgiosgousios">LinkedIn</a></li>
-
-            <li><a href="http://www.ohloh.net/accounts/gousiosg">Ohloh</a></li>
-
-            <li><a href="http://portal.acm.org/author_page.cfm?id=81351592431">ACM</a></li>
-
-            <li><a href="http://www.oreillynet.com/pub/au/3473">O'Reilly</a></li>
-            <li><a href="http://www.amazon.co.uk/wishlist/2ONAREYL5GL9S">Amazon.co.uk wishlist</a></li>
-
-        </ul>
-
-        <h3>Contact Information</h3>
-        <table>
-            <tr>
+      <h3>Contact Information</h3>
+      <table>
+        <tr>
+          <td valign="top">
+            <table cellspacing="3" cellpadding="2">
+              <tr>
+                <td>
+                  <b>Email</b>
+                </td>
+                <td>
+                  <img src="img/gousiosg.png" alt="Personal communication details"/>
+                </td>
+              </tr>
+              <tr>
                 <td valign="top">
-   <table cellspacing="3" cellpadding="2">
-    <tr>
-     <td>
-      <b>Email</b>
-     </td>
-     <td>
-      <img src="img/gousiosg.png" alt="Personal communication details"/>
-     </td>
-    </tr>
-    <tr>
-     <td valign="top">
-      <b>Postal Address</b>
-     </td>
-     <td>Gousios Georgios <br/>
-      				Department of Management Science and Technology<br/>
-      				Athens University of Economics and Business<br/>
-      				3rd fl, Derigny ct.<br/>
-      				Patision 76<br/>
-      				GR 104 34, Athens<br/>
-      				Greece<br/>
-     </td>
-    </tr>
-    <tr>
-     <td>
-      <b>Phone</b>
-     </td>
-     <td>+30 210 8203370</td>
-    </tr>
-    <tr>
-     <td>
-      <b>Fax</b>
-     </td>
-     <td>+30 210 8203370</td>
-    </tr>
-</table>
-            </td>
-            <td>
-   <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=105845515842014498362.00045e3d1fdd861508bfc&amp;ll=37.99459,23.732657&amp;spn=0,0&amp;output=embed&amp;s=AARTsJrAzosgTDq2AkQScdFf8dbLxuU-SA"></iframe>
-   <br />
-   <small>
-    <a href="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=105845515842014498362.00045e3d1fdd861508bfc&amp;ll=37.99459,23.732657&amp;spn=0,0&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a>
-   </small>
-            </td>
+                  <b>Postal Address</b>
+                </td>
+                <td>Gousios Georgios <br/>
+                  Department of Management Science and Technology<br/>
+                  Athens University of Economics and Business<br/>
+                  3rd fl, Derigny ct.<br/>
+                  Patision 76<br/>
+                  GR 104 34, Athens<br/>
+                  Greece<br/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b>Phone</b>
+                </td>
+                <td>+30 210 8203370</td>
+              </tr>
+              <tr>
+                <td>
+                  <b>Fax</b>
+                </td>
+                <td>+30 210 8203370</td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps/ms?msa=0&amp;msid=203218461114064744034.00045e3d1fdd861508bfc&amp;ie=UTF8&amp;t=m&amp;ll=51.999058,4.374077&amp;spn=0,0&amp;output=embed">
+            </iframe>
+            <br />
+            <small>
+              <a href="http://maps.google.com/maps/ms?msa=0&amp;msid=203218461114064744034.00045e3d1fdd861508bfc&amp;ie=UTF8&amp;t=m&amp;ll=51.999058,4.374077&amp;spn=0,0&amp;source=embed" style="color:#0000FF;text-align:left">View in a larger map</a>
+            </small>
+
+          </td>
         </tr>
-    </table>
+      </table>
     </div>
     <!--incl:FOOTER-->
-</body>
+  </body>
 </html>
+
+<!-- vim: set fenc=utf-8 ft=xhtml : -->

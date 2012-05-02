@@ -35,7 +35,8 @@ distclean : clean
 dist: 
 	rsync -rv ${OUTPUTDIR}/* ${HOST}
 
-bib: local-install 
+bib: local-install
+	@cd bib; make; cd -
 	@for file in `find $$PWD/${OUTPUTDIR} -type f|grep html$$`; do \
 		echo $$file; \
 		bibfiles=`cat $$file |grep "BEGIN BIBLIOGRAPHY" | tr -s ' '|cut -f4 -d' '`; \

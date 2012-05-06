@@ -16,7 +16,8 @@
       <p>
       <em>Dr. Georgios Gousios</em> holds an MSc with distinction from the
       University of Manchester, UK and a PhD from the Athens University of
-      Economics and Business,GR, both on Software Engineering. He has worked
+      Economics and Business,GR, both on Software Engineering.
+      He has worked
       as a researcher in several national and international research projects
       and provided consulting services in both multinational and emerging
       startup companies. He was the project manager, lead designer and top
@@ -28,6 +29,10 @@
       software architectures, systems level software and programming
       languages.</p>
 
+      <p>Currently, Georgios is a <a
+        href="http://cordis.europa.eu/mariecurie-actions/eif/home.html">Marie
+        Curie</a> fellow at the Technical University of Delft.</p>
+      
       <p>Here is my latest 
       <!--link:curriculum vitae,files/gousiosg-cv-en.pdf-->.
       </p>
@@ -64,6 +69,7 @@
       services that host (some version of) my online profile
 
       <ul>
+        <li><a href="https://github.com/gousiosg">Github</a></li>
         <li><a href="http://twitter.com/gousiosg">Twitter</a></li>
         <li><a href="http://www.facebook.com/gousiosg">Facebook</a></li>
         <li><a href="http://www.linkedin.com/in/georgiosgousios">LinkedIn</a></li>
@@ -84,7 +90,7 @@
                   <b>Email</b>
                 </td>
                 <td>
-                  <img src="img/gousiosg.png" alt="Personal communication details"/>
+                  Gmail: gousiosg 
                 </td>
               </tr>
               <tr>
@@ -92,26 +98,16 @@
                   <b>Postal Address</b>
                 </td>
                 <td>Gousios Georgios <br/>
-                  Department of Management Science and Technology<br/>
-                  Athens University of Economics and Business<br/>
-                  3rd fl, Derigny ct.<br/>
-                  Patision 76<br/>
-                  GR 104 34, Athens<br/>
-                  Greece<br/>
+                  Oude Delft 75G <br/>
+                  Delft, NL
                 </td>
               </tr>
-              <tr>
+              <!--<tr>
                 <td>
                   <b>Phone</b>
                 </td>
                 <td>+30 210 8203370</td>
-              </tr>
-              <tr>
-                <td>
-                  <b>Fax</b>
-                </td>
-                <td>+30 210 8203370</td>
-              </tr>
+              </tr>-->
             </table>
           </td>
           <td>

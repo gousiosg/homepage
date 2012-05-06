@@ -36,7 +36,7 @@ dist:
 	rsync -rv ${OUTPUTDIR}/* ${HOST}
 
 bib: local-install
-	@cd bib; make; cd -
+	@cd bib; make; cp *.bib ../$(TOOLS); cd -
 	@for file in `find $$PWD/${OUTPUTDIR} -type f|grep html$$`; do \
 		echo $$file; \
 		bibfiles=`cat $$file |grep "BEGIN BIBLIOGRAPHY" | tr -s ' '|cut -f4 -d' '`; \
@@ -53,4 +53,4 @@ bib: local-install
 			BIB=$$PWD/$(BIBDIR) TOOLS=$$PWD/$(TOOLS) perl tools/bibinclude.pl $$file ; \
 		done
 
-
+	@rm $(TOOLS)/*.bib

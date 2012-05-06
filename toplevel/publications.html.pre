@@ -13,7 +13,7 @@
     <div id="body" class="body">
       <h2>Publications</h2>
       <p>
-      Here is a list of my publications, ordered by type and data. You can find 
+      Here is a list of my publications, ordered by type and date. You can find 
       an organised presentation of my work in my
       <!--link:research,research.html--> 
       page.
@@ -24,24 +24,24 @@
       format.</p>
 
       <p>
-      <em>The contents of this page lead to pre-publication renderings the
+      <em>The contents of this page lead to pre-publication renderings of the
         corresponding papers.</em>
       </p>
       <a name="book"></a><h4>Book</h4>
-      <!-- BEGIN BIBLIOGRAPHY book -->
-      <!-- END BIBLIOGRAPHY book -->
+<!-- BEGIN BIBLIOGRAPHY book -->
+<!-- END BIBLIOGRAPHY book -->
       <a name="article"></a><h4>Journal Articles</h4>
-      <!-- BEGIN BIBLIOGRAPHY article -->
-      <!-- END BIBLIOGRAPHY article -->
+<!-- BEGIN BIBLIOGRAPHY article -->
+<!-- END BIBLIOGRAPHY article -->
       <a name="incollection"></a><h4>Book Chapters</h4>
-      <!-- BEGIN BIBLIOGRAPHY incollection -->
-      <!-- END BIBLIOGRAPHY incollection -->
+<!-- BEGIN BIBLIOGRAPHY incollection -->
+<!-- END BIBLIOGRAPHY incollection -->
       <a name="inproceedings"></a><h4>Conference Publications</h4>
-      <!-- BEGIN BIBLIOGRAPHY inproceedings -->
-      <!-- END BIBLIOGRAPHY inproceedings -->
+<!-- BEGIN BIBLIOGRAPHY inproceedings -->
+<!-- END BIBLIOGRAPHY inproceedings -->
       <a name="thesis"></a><h4>Theses</h4>
-      <!-- BEGIN BIBLIOGRAPHY thesis -->
-      <!-- END BIBLIOGRAPHY thesis --></h4></a>
+<!-- BEGIN BIBLIOGRAPHY thesis -->
+<!-- END BIBLIOGRAPHY thesis --></h4></a>
 </div>
 <!--incl:FOOTER-->
 </body>

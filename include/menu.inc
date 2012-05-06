@@ -15,7 +15,7 @@
             <!--link:Publications,publications.html-->
         </div>
         <div class="menuitem">
-            <!--link:Labs,labs-->
+            <!--link:Projects/Courses,labs-->
         </div>
         <div class="menuitem">
             <!--1link:Links,links.html-->

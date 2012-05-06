@@ -1,17 +1,17 @@
 .navmenu {
 	border: 1px solid #999999;
 	top: 1em;
-	font-family: Arial, sans-serif;
+	font-family: sans-serif;
 	font-size: small;
 	text-align: center;
 	position: fixed;
 	left: 5px;
-	width: 8em;
+	width: 9em;
 }
 
 .commenu {
 	top: 15em;
-	font-family: Arial, sans-serif;
+	font-family: sans-serif;
 	font-size: small;
 	text-align: center;
 	position: fixed;
@@ -50,7 +50,7 @@
 }
 
 .body {
-	font-family: Arial, sans-serif;
+	font-family: sans-serif;
 	font-size: small;
 	position: relative;
 	width: 85%;
@@ -78,7 +78,7 @@
 }
 
 .linkhead {
-	font-family: Arial, sans-serif;
+	font-family: sans-serif;
 	color: #FFFFFF;
 	background-color: #000000;
 	background-position: center center;

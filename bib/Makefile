@@ -3,7 +3,7 @@ include $(TOP_DIR)/Makefile.conf
 include $(TOP_DIR)/Makefile.common
 
 local-build:
-	cp $(BIBBASE)/*.bib . 
+	find $(BIBBASE) -type f|grep bib$$|while read file; do cp $$file .; done 
 	cat *.bib > all.bib
 
 local-install:

@@ -1,0 +1,5 @@
+url: http://istlab.dmst.aueb.gr/~george/blog
+baseurl: blog
+paginate: 5
+future: false
+

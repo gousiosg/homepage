@@ -2,6 +2,7 @@
 layout: post 
 author: Georgios Gousios 
 title: On the importance of tools in software engineering research
+categories: Research MSR Tools
 --- 
 
 On the first weekend of July, I was at the Mining Software Repositories (MSR)

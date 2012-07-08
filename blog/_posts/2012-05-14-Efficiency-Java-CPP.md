@@ -1,7 +1,8 @@
 ---
 layout: post 
 author: Georgios Gousios
-title: The Efficiency of Java and C++ revised 
+title: The Efficiency of Java and C++ revised
+categories: Performance Java JVM C++
 ---
 
 During my first months as a PhD student (back in Feb 2005) at AUEB, we had

@@ -112,3 +112,17 @@ a:hover {
 h1,h2,h3,h4,h5 {
 	font-family: verdana;
 }
+
+.blog-list-header {
+    background-color: #000000;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.blog-list-title {
+    float = left;
+}
+
+.blog-list-date {
+    float = right;
+}

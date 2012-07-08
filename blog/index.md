@@ -7,8 +7,16 @@ categories:
 Welcome to my blog! Here are the latest posts:
 
 {% for post in site.posts limit:5 %}
- <p>{{ post.title}}</p>
- {{ post.content | truncatewords 50 }}
- [Read more...]({{ post.url }})
+
+ <div class="blog">
+   <div class="blog-list-header">
+     <span class="blog-list-title">{{ post.title}}</span>
+     <span class="blog-list-date">{{ post.date | date: "%d %b %Y"}}</span>
+   </div>
+   {{ post.content |strip_html|truncatewords: 100 }}
+   <span style="blog-read-more"><a href="{{ post.url }}">Read more...</a></span>
+ </div>
+
 {% endfor %}
+
 

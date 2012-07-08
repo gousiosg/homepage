@@ -1,6 +1,5 @@
-#permalink: /:categories/:year/:month/:day/:title 
-#url: http://istlab.dmst.aueb.gr/~george/blog
-url: http://localhost:4000
+permalink: /:year/:month/:day/:title 
+url: http://istlab.dmst.aueb.gr/~george/blog
 baseurl: blog
 paginate: 5
 future: false

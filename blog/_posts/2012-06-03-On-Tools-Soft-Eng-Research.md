@@ -1,5 +1,5 @@
 --- 
-layout: default 
+layout: post 
 author: Georgios Gousios 
 title: On the importance of tools in software engineering research
 --- 
@@ -88,7 +88,7 @@ with research tools too (see for example LLVM or JikesRVM).
 I believe that publishing reusable tools (plus data and documentation) should
 be a prerequisite to publishing papers, especially so in empirical venues.
 Thereby, I hope that efforts such as the 
-(RESER)[http://sequoia.cs.byu.edu/reser2013] workshop and the  
+[RESER](http://sequoia.cs.byu.edu/reser2013) workshop and the  
 the will raise the awareness of the importance of tools in software engineering research.
 
 Why do you think that people are not investing time to create tools?

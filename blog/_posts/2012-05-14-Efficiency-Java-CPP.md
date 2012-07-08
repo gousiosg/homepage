@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post 
 author: Georgios Gousios
 title: The Efficiency of Java and C++ revised 
 ---

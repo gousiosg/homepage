@@ -113,16 +113,27 @@ h1,h2,h3,h4,h5 {
 	font-family: verdana;
 }
 
+.blog {
+  margin-bottom: 5px;
+}
+
 .blog-list-header {
-    background-color: #000000;
+    background-color: gray;
     font-weight: bold;
     color: #FFFFFF;
+    margin-bottom: 10px;
 }
 
 .blog-list-title {
-    float = left;
+    padding-left: 5px;
 }
 
 .blog-list-date {
-    float = right;
+    text-align: right;
+    float: right;
+    padding-right: 10px;
+}
+
+.blog-list-sum {
+    margin-left: 5px;
 }

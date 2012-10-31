@@ -84,7 +84,6 @@ improvements](http://blog.jruby.org/2011/12/getting_started_with_jruby_and_java_
 development target; I am so sure about Java as a language.
 
 To sum up: is Java inherently slower? Yes, it is, but hard optimization work
-has lifted several performance hurdles. Does it matter? To some people yes; to
-me no. The problems I am trying to solve are better expressed in Ruby and
-Scala. I am happy as long as those two languages offer 80% of the performance
-of Java.
+has lifted several performance hurdles. Does it matter? To some problem
+domains, it does; I would never think writing the code that processes big
+data in Java, expect if distribution could lead to significant speedups. Most of the problems I am trying to solve are better expressed in Ruby and Scala. I am happy as long as those two languages offer 80% of the performance of Java.

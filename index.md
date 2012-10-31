@@ -6,17 +6,17 @@ tagline:
 {% include JB/setup %}
 
 <div class="row">
-  <div class="span2">
+  <div class="span2" align="center">
 
-<a href="http://www.linkedin.com/in/georgiosgousios"><img alt="linkedin profile" src="img/linkedin.gif" height='23px' width='23px' border='0'/></a>
-  <a href="http://www.facebook.com/gousiosg"><img alt="facebook profile" src="img/fb.jpg" height='23px' width='23px' border='0'/></a>
-  <a href="http://twitter.com/gousiosg"><img alt="twitter feed" src="img/twitter.gif" height='23px' width='23px' border='0'/></a>
-<a href='http://istlab.dmst.aueb.gr/~george/gousiosg-rss.xml'><img alt="rss feed" src="img/rss.png" height='23px' width='23px' border='0'/></a>
+<a href="http://www.linkedin.com/in/georgiosgousios"><img alt="linkedin profile" src="img/linkedin.gif" width='23px' border='0'/></a>
+  <a href="http://www.facebook.com/gousiosg"><img alt="facebook profile" src="img/fb.jpg"  width='23px' border='0'/></a>
+  <a href="http://twitter.com/gousiosg"><img alt="twitter feed" src="img/twitter.gif" width='23px' border='0'/></a>
+<a href='atom.xml'><img alt="rss feed" src="img/rss.png" height='23px' width='23px' border='0'/></a>
 
   <a href='http://scholar.google.gr/citations?hl=el&amp;user=-NI5S50AAAAJ&amp;oi=sra'><img alt='Google scholar' src="img/gscholar.gif" width='95'  border='0'/></a>
 
 <br/>
- <a href="http://dl.acm.org/author_page.cfm?id=81351592431"><img alt="ACM digital library" src="img/acm.jpg" height='23px' width='23px' /></a>
+ <a href="http://dl.acm.org/author_page.cfm?id=81351592431"><img alt="ACM digital library" src="img/acm.jpg" width='23px' /></a>
 
   <a href="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/g/Gousios:Georgios.html"><img alt="DBLP" src="img/dblp.gif" /></a>
 
@@ -24,7 +24,7 @@ tagline:
 
 <a href="https://github.com/gousiosg"><img alt="Georgios Gousios Github
     account" src="img/github.png" width="80px"/></a>
-  <a href="http://www.ohloh.net/accounts/21690?ref=Detailed"><img alt='Ohloh profile for gousiosg' height='23' src="http://www.ohloh.net/accounts/21690/widgets/account_detailed.gif" width="95px" border='0'/></a>
+  <a href="http://www.ohloh.net/accounts/21690?ref=Detailed"><img alt='Ohloh profile for gousiosg' src="http://www.ohloh.net/accounts/21690/widgets/account_detailed.gif" width="115px" border='0'/></a>
 
   </div>
   <div class="span10">

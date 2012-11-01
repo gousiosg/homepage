@@ -9,7 +9,8 @@ html, body {
   margin-top: 20px;
 }
 .container > footer p {
-  text-align: center; /* center align it with the container */
+  text-align: left;
+  font-size: x-small;
 }
 
 /* The white background content wrapper */

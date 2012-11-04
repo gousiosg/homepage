@@ -40,12 +40,15 @@ is often the case.
 
 The following table summarizes what I have found:
 
-<table>
+<table class="table table-striped">
+  <thead>
   <tr><td>Paper </td><td> Data </td><td> Tools </td><td> Documentation</td><td>Comment</td></tr>
-  <tr><td>Towards Improving Bug Tracking Systems with Game Mechanisms </td><td> Partial </td><td> No </td><td> No</td></tr>
-  <tr><td>GHTorrent: Github's Data from a Firehose </td><td> Yes </td><td> Yes </td><td> Partial</td></tr>
-  <tr><td>MIC Check: A Correlation Tactic for ESE Data </td><td> No </td><td> No </td><td> No</td></tr>
-  <tr><td>An Empirical Study of Supplementary Bug Fixes </td><td> No </td><td> No </td><td> No</td></tr>
+  </thead>
+  <tbody>
+  <tr><td>Towards Improving Bug Tracking Systems with Game Mechanisms </td><td> Partial </td><td> No </td><td> No</td><td></td></tr>
+  <tr><td>GHTorrent: Github's Data from a Firehose </td><td> Yes </td><td> Yes </td><td> Partial</td><td></td></tr>
+  <tr><td>MIC Check: A Correlation Tactic for ESE Data </td><td> No </td><td> No </td><td> No</td><td></td></tr>
+  <tr><td>An Empirical Study of Supplementary Bug Fixes </td><td> No </td><td> No </td><td> No</td><td></td></tr>
   <tr><td>Incorporating Version Histories in Information Retrieval Based Bug Localization </td><td> Yes </td><td> No </td><td> Yes </td><td> Uses existing documented dataset</td></tr>
   <tr><td>Think Locally, Act Globally: Improving Defect and Effort Prediction Models </td><td> No </td><td> No </td><td> No </td><td> Promise to upload data</td></tr>
   <tr><td>Green Mining: A Methodology of Relating Software Change to Power Consumption </td><td> No </td><td> No </td><td> No </td><td> Best paper award</td></tr>
@@ -60,6 +63,7 @@ The following table summarizes what I have found:
   <tr><td>Can We Predict Types of Code Changes? An Empirical Analysis </td><td> No </td><td> Yes (most) </td><td> No </td><td></td></tr>
   <tr><td>An Empirical Investigation of Changes in Some Software Properties Over Time </td><td> Yes </td><td> No </td><td> Yes </td><td> Uses existing dataset</td></tr>
   <tr><td>Who? Where? What? Examining Distributed Development in Two Large Open Source Projects </td><td> Yes(partially) </td><td> No </td><td> No </td><td> Paper mentions that data is on the PROMISE dataset, could not be retrieved at  the date of the conference.</td></tr>
+  </tbody>  
 </table>
 
 As you can see, the results are not particularly encouraging. In one of the

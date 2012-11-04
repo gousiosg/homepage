@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: post
 author: Georgios Gousios
 title: The Efficiency of Java and C++ revised
 categories: Performance Java JVM C++
@@ -22,15 +22,15 @@ Back then, the result came to me as a surprise. Despite my best efforts (I
 did try a lot of VM options), I could not manage to bring the Java
 implementation's performance anywhere near C++. During the 7 years in the
 between, I occasionally run the code on any new system that I had at my hands,
-and the result was, give or take, the same. 
+and the result was, give or take, the same.
 
 Today, I decided to rerun the experiment. I compiled the C++ code with Clang 3
 with all optimisations enabled (-O3 -march=corei7) and used the 1.6.0_31
 version of the JVM to run the Java code. The result came to me as a surprise:
 
-{% highlight shell %}
+{% highlight bash %}
 $ clang++ -O3 -march=corei7 sort.cpp
-$ time ./a.out 
+$ time ./a.out
 [...]
 real	0m1.063s
 user	0m1.026s
@@ -49,7 +49,7 @@ sys	0m0.071s
 {% endhighlight %}
 
 The Java version was faster than C++! Why did this happen? It turns out
-that between those 7 years JVM performance engineers did not sit idle: 
+that between those 7 years JVM performance engineers did not sit idle:
 
 * Escape analysis [is turned on by
   default](http://weblogs.java.net/blog/forax/archive/2009/10/06/jdk7-do-escape-analysis-default)
@@ -80,7 +80,7 @@ too. For example, in Java 1.7, the new `invokedynamic` opcode allows JRuby to
 optimize execution [various dynamic execution
 aspects](http://www.drdobbs.com/jvm/231500287) delivers [significant
 performance
-improvements](http://blog.jruby.org/2011/12/getting_started_with_jruby_and_java_7/). In all, Java as a platform does seem like a healty 
+improvements](http://blog.jruby.org/2011/12/getting_started_with_jruby_and_java_7/). In all, Java as a platform does seem like a healty
 development target; I am so sure about Java as a language.
 
 To sum up: is Java inherently slower? Yes, it is, but hard optimization work

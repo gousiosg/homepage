@@ -125,17 +125,16 @@ JB :
   # where [HELPER] is the name of the helper you are overriding.
 
 scholar:
-  style: apa
+  style: mla
   locale: en
 
   sort_by: none
   order: ascending
 
   source: ./_bibliography
-  bibliography: references
+  bibliography: all.bib
 
   details_dir:    bibliography
-  details_layout: bibtex.html
-  details_link:   Details
-
+  details_layout: bib_details.html
+  details_link:   details
   query: "@*"

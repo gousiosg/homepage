@@ -1,0 +1,59 @@
+---
+layout: default
+---
+<h3>{{ page.entry.title }}</h3>
+by {{ page.entry.author }}
+
+{% unless page.entry.slideshareembed %}
+<p>
+You can get the paper in PDF format from <a href="{{ page.entry.url }}">here</a>.
+</p>
+{% endunless %}
+
+<h4>Abstact</h4>
+
+{{ page.entry.abstract }}
+
+
+<h4>Bibtex record</h4>
+<pre>
+{{ page.entry.bibtex }}
+</pre>
+
+{% if page.entry.slideshareembed %}
+<h4>Presentation</h4>
+
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/{{page.entry.slideshareembed}}?rel=0" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> 
+
+{% endif %}
+
+<!--
+    <script type="text/javascript" src="/javascript/pdf.js"></script>
+    <script type="text/javascript">
+    'use strict';
+    PDFJS.getPdf('/pubs/master.pdf', function getPdfHelloWorld(data) {
+  //
+  // Instantiate PDFDoc with PDF data
+  //
+  var pdf = new PDFJS.PDFDoc(data);
+  var page = pdf.getPage(2);
+  var scale = 0.3;
+
+  //
+  // Prepare canvas using PDF page dimensions
+  //
+  var canvas = document.getElementById('the-canvas');
+  var context = canvas.getContext('2d');
+  canvas.height = page.height * scale;
+  canvas.width = page.width * scale;
+
+  //
+  // Render PDF page into canvas context
+  //
+  page.startRendering(context);
+});
+  </script>
+
+  <canvas id="the-canvas" style="border:1px solid black;"/>
+-->

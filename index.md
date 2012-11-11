@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Georgios Gousios home page
-tagline:
 ---
 {% include JB/setup %}
 
@@ -48,9 +47,9 @@ tagline:
 
             <p>Projects I am working on</p>
             <ul>
-              <li>[Alitheia Core](http://www.sqo-oss.org): A platform for software engineering</li>
+              <li><a href="https://github.com/gousiosg/github-mirror">Github-mirror</a>: A suite of tools to process Github REST API data</li>
+              <li><a href="http://www.sqo-oss.org">Alitheia Core</a>: A platform for software engineering</li>
               research
-              <li>Github-mirror: A suite of tools to process Github data</li>
             </ul>
       </div>
       <div class="span2">
@@ -60,11 +59,11 @@ tagline:
     <div class="row">
       <div class="span8">
             Together with Diomidis Spinellis, I worked on editing the
-            Beautiful Architecture book.
+             {% cite_details SG09, Beautiful Architecture %} book.
             You can find more information from the publisher's
             <a href="http://oreilly.com/catalog/9780596517984/">book web site</a>. Beautiful Architecure has also been translated to Chinese (<a href="http://oreilly.com.cn/book.php?bn=978-7-111-28356-0">架构之美</a>), Japanese (<a href="http://www.oreilly.co.jp/books/9784873114309/">ビューティフルアーキテクチャ)</a> and Russian (<a href="http://www.ozon.ru/context/detail/id/5430638/">Идеальная архитектура</a>).
             If you buy it, you 're also helping a good cause, as the
-            royalties as the royalties are donated to the [Medecins Sans Frontieres](http://www.msf.org/)
+            royalties as the royalties are donated to the <a href="http://www.msf.org/"><em>Medecins Sans Frontieres</em></a>.
       </div>
       <div class="span2">
         <img alt="Beautiful Architecture" align="right" src="img/ba.jpg"/>
@@ -73,12 +72,12 @@ tagline:
   </div>
 </div>
 
-My Blog
--------
+#### Latest blog posts
 <ul class="posts">
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
+
 
 

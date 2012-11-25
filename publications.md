@@ -3,10 +3,20 @@ title: My publications
 layout: page
 ---
 
+Book
+----
+
+{% bibliography book %}
+
 Journals
 --------
 
 {% bibliography article %}
+
+Pending Judgement
+-----------------
+
+{% bibliography pending %}
 
 Book chapters
 -------------
@@ -17,11 +27,6 @@ Conferences
 -----------
 
 {% bibliography inproceedings %}
-
-Invited talks
--------------
-
-{% bibliography intalk %}
 
 Theses
 ------

@@ -2,24 +2,43 @@
 layout: default
 ---
 <h3>{{ page.entry.title }}</h3>
-by {{ page.entry.author }}
 
-{% unless page.entry.slideshareembed %}
+{% if page.entry.author %}
+
 <p>
-You can get the paper in PDF format from <a href="{{ page.entry.url }}">here</a>.
+by {{ page.entry.author }}
 </p>
-{% endunless %}
+{% endif %}
 
+{% if page.entry.editor %}
+<p>
+edited by {{ page.entry.editor }}
+</p>
+{% endif %}
+
+{% if page.entry.url %}
+<p>
+You can get it from <a href="{{ page.entry.url }}">here</a>.
+
+{% if page.entry.doi %}
+You can view the publisher's page <a href="http://dx.doi.org/{{ page.entry.doi }}">here</a>.
+{% endif %}
+
+</p>
+{% endif %}
+
+{% if page.entry.abstract %}
 <h4>Abstact</h4>
 
+<p>
 {{ page.entry.abstract }}
-
+</p>
+{% endif %}
 
 <h4>Bibtex record</h4>
 <pre>
 {{ page.entry.bibtex }}
 </pre>
-
 {% if page.entry.slideshareembed %}
 <h4>Presentation</h4>
 

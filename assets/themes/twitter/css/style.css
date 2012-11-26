@@ -11,6 +11,7 @@ html, body {
 .container > footer p {
   text-align: left;
   font-size: x-small;
+  line-height: 18px;
 }
 
 /* The white background content wrapper */

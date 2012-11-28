@@ -6,8 +6,8 @@ This is the source code to my homepage.
 
 To build the home page do the following:
 
-* Install Ruby 1.9
-* `rvm install jekyll jekyll-scholar`
+* Install Ruby 1.9: `rvm install 1.9.3`
+* `gem install jekyll jekyll-scholar`
 * `easy_install pygments`
 
 ## License

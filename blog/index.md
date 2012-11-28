@@ -16,8 +16,10 @@ Welcome to my blog! Here are the latest posts:
    </div>
    <div class="span7">
      <div class="blog-list-title">{{post.title}}</div>
-   {{ post.content |strip_html|truncatewords: 100 }}
-     <span style="blog-read-more"><a href="{{ post.url }}">Read more...</a></span>
+     <p> {{ post.content |strip_html|truncatewords: 100 }}
+     <span style="blog-read-more"><a href="{{ post.url }}">Read more</a></span>
+     </p>
+     <a href="{{ post.url }}#disqus_thread">Read more</a>
      <hr/>
    </div>
  </div>
@@ -47,3 +49,12 @@ Welcome to my blog! Here are the latest posts:
 </div>
 </div>
 
+<script type="text/javascript">
+  var disqus_shortname = 'gousiosghomepage';
+  (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+</script>

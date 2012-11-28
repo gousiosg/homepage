@@ -12,10 +12,10 @@ Welcome to my blog! Here are the latest posts:
 
  <div class="row">
    <div class="span2">
-     <span class="blog-list-date">{{ post.date | date: "%d %b %Y"}}</span>
+     <span class="label label-success">{{ post.date | date: "%d %b %Y"}}</span>
    </div>
    <div class="span7">
-     <div class="blog-list-title">{{post.title}}</div>
+     <h4>{{post.title}}</h4>
      <p> {{ post.content |strip_html|truncatewords: 100 }}
      <span style="blog-read-more"><a href="{{ post.url }}">Read more</a></span>
      </p>

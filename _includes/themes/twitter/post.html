@@ -22,30 +22,46 @@
       </ul>
     </div>
     <hr>
-    {% include JB/comments %}
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    var disqus_shortname = 'gousiosghomepage';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+     var dsq = document.createElement('script');
+     dsq.type = 'text/javascript';
+     dsq.async = true;
+     dsq.src = 'http://'+ disqus_shortname + '.disqus.com/embed.js';
+     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+     })();
+    </script>
   </div>
-  
+
   <div class="span3">
     <h4>Published</h4>
     <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
 
-  {% unless page.categories == empty %}
+    {% unless page.categories == empty %}
+
+    <br/>
     <h4>Tags</h4>
     <ul class="tag_box">
-    {% assign tags_list = page.categories %}
-    {% include JB/tags_list %}
+      {% assign tags_list = page.categories %}
+      {% include JB/tags_list %}
     </ul>
-    {% endunless %} 
+    {% endunless %}
+
+    <br/>
+    <h4>Sharing</h4>
     <!-- AddThis Button BEGIN -->
-    <div class="addthis_toolbox addthis_floating_style
-      addthis_counter_style">
-      <a class="addthis_button_facebook_like" fb:like:layout="box_count"></a>
-      <a class="addthis_button_tweet" tw:count="vertical"></a>
-      <a class="addthis_button_google_plusone" g:plusone:size="tall"></a>
-      <a class="addthis_counter"></a>
-      </div>
-      <script type="text/javascript"
-        src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50b3d354431ac7e5"></script>
-      <!-- AddThis Button END -->
+    <div class="addthis_toolbox addthis_counter_style">
+      <a class="addthis_button_facebook_like"></a><br/>
+      <a class="addthis_button_tweet"></a> <br/>
+      <a class="addthis_button_google_plusone"></a>
+      <a class="addthis_button_compact"></a>
+    </div>
+    <script type="text/javascript"
+      src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50b3d354431ac7e5"></script>
+    <!-- AddThis Button END -->
   </div>
 </div>

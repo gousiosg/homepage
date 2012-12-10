@@ -9,7 +9,7 @@ title: Research Software and Data
 * *GHTorrent* is a collection of tools to mirror data from Github's [v3 API](http://developer.github.com) for
 research purposes (see {% cite_details GS12, relevant publication %}). The project is currently being
 [developed](https://github.com/gousiosg/github-mirror) while some initial data
-[has been released](https://github.com/gousiosg/github-mirror/wiki/Available-Torrents). Expect several gigabytes come in the comming months!
+[has been released](https://github.com/gousiosg/github-mirror/wiki/Available-Torrents). Expect several gigabytes of dumps in the comming months!
 
 * In our work {% cite_details GS12a, Conducting Quantitative Software Engineering Studies with Alitheia Core %} (currently under
 review), we used both the Alitheia Core dataset (mentioned above) and a fresh,

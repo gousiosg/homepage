@@ -14,8 +14,5 @@ During the last few years, GitHub has emerged as a popular project hosting, mirr
 
 ####References
 
-1. {% print_cite GS12 %}
+1. {% reference GS12 %}
 
-2. {% print_cite  %}
-
-3. {% print_cite %}

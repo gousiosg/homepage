@@ -80,6 +80,7 @@ scholar:
   sort_by: none
   order: ascending
 
+  bibdir: /Users/gousiosg/Documents/biblists
   source: ./_bibliography
   bibliography: all.bib
 

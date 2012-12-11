@@ -12,9 +12,8 @@ research purposes (see {% cite_details GS12, relevant publication %}). The proje
 [has been released](https://github.com/gousiosg/github-mirror/wiki/Available-Torrents). Expect several gigabytes of dumps in the comming months!
 
 * In our work {% cite_details GS12a, Conducting Quantitative Software Engineering Studies with Alitheia Core %} (currently under
-review), we used both the Alitheia Core dataset (mentioned above) and a fresh,
-new dataset. Find more details on how to replicate the case studies
-[here](/research/qsesac.html).
+review), we used both the Alitheia Core dataset and a new, sorter dataset. Find
+more details on how to replicate the case studies reported in this paper [here](/research/qsesac.html).
 
 * Alitheia Core is a platform that enables researchers in the field of software
 engineering to automate experiments and distribute the processing load on a

@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: page
 title: Research Software and Data
 ---
-{% include JB/setup %}
 
-##Research Software and Data
+###Projects
 
 * *GHTorrent* is a collection of tools to mirror data from Github's [v3 API](http://developer.github.com) for
 research purposes (see {% cite_details GS12, relevant publication %}). The project is currently being
@@ -15,7 +14,7 @@ research purposes (see {% cite_details GS12, relevant publication %}). The proje
 review), we used both the Alitheia Core dataset and a new, sorter dataset. Find
 more details on how to replicate the case studies reported in this paper [here](/research/qsesac.html).
 
-* Alitheia Core is a platform that enables researchers in the field of software
+* *Alitheia Core* is a platform that enables researchers in the field of software
 engineering to automate experiments and distribute the processing load on a
 cluster of machines. I maintain the project in its own site. The project has
 been the centerpiece of my [PhD work](phd.html), while it has been presented

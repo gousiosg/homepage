@@ -13,4 +13,10 @@ Pagerank is a widely used measure of node importance in networks. It works by re
 
 ####References
 
+1. {% reference Lopez06 %}
 
+2. {% reference Myers03 %}
+
+3. {% reference Murph98 %}
+
+4. {% reference Page98 %}

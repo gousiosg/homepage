@@ -16,3 +16,6 @@ During the last few years, GitHub has emerged as a popular project hosting, mirr
 
 1. {% reference GS12 %}
 
+2. {% reference Catal08 %}
+
+3. {% reference Valet07 %}

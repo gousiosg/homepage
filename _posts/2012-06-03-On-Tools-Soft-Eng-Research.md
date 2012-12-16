@@ -5,7 +5,7 @@ title: On the importance of tools in software engineering research
 categories: Research MSR Tools
 --- 
 
-On the first weekend of July, I was at the Mining Software Repositories (MSR)
+On the first weekend of June, I was at the Mining Software Repositories (MSR)
 2012 conference. For those not familiar with MSR, it is a venue where software
 engineering meets information extraction and data mining. Researchers present
 the tools and methods that they applied on software repositories (source code
@@ -69,7 +69,7 @@ The following table summarizes what I have found:
 As you can see, the results are not particularly encouraging. In one of the
 most prominent empirical software engineering conferences, only two out of
 18 papers provide really reusable tools (I have not investigated
-the degree of reusability). Even papers that 
+the degree of reusability). 
 
 In my opinion, what applies in practice should also apply in research. As
 researchers, we are often hesitant to provide reusable tools. Many times, this

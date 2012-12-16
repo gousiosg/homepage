@@ -25,4 +25,4 @@ I can supervise efficiently, based on my [research interests](research.html).
 
 ### Misc
 
-* [Java programming style quick reference card]()
+* [Java programming style quick reference card](/files/java-progr-style.pdf)

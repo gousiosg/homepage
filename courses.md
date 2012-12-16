@@ -9,7 +9,7 @@ title: Courses
 and links to student projects for the functional programming course taught by
 Erik Meijer (2012)
 
-* [Advanced topics in Software Engineering lab notes](courses/isrm/index.html):
+* [Advanced topics in Software Engineering lab notes](courses/atse/index.html):
  I developed these lab notes while I was a teaching assistant for Diomidis
  Spinellis's [homonymous course](http://dmst.aueb.gr/dds/ismr/index.htm)
  (2005 --- 2009)

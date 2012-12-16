@@ -33,3 +33,8 @@ Theses
 
 {% bibliography thesis %}
 
+Technical Reports
+-----------------
+
+{% bibliography techreport %}
+

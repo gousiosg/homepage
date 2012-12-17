@@ -3,7 +3,7 @@ layout: page
 title: Functional Programming
 ---
 
-*taugh by [Erik Meijer](http://)*
+*taugh by [Erik Meijer](http://en.wikipedia.org/wiki/Erik_Meijer_(computer_scientist))*
 
 I was teaching assistant for the TU Delft course IN2556. The course covered
 functional programming basics and more advanced concepts such as monads,
@@ -15,7 +15,7 @@ and also in terms of student output. We reported our experience in
 
 In addition to assisting with the course, I
 {% cite_details Gousit12a, presented an introduction %} to the
-[Actor model](https://www.wikipedia.org/Actor_model)
+[Actor model](http://en.wikipedia.org/wiki/Actor_model)
 using [Akka](http://akka.io) and Scala as reference implementations.
 
 #### Teapots!
@@ -23,7 +23,7 @@ using [Akka](http://akka.io) and Scala as reference implementations.
 <img src="/files/teapot.png" width="30%"/>
 
 The first week assignment consisted of rendering the
-[Utah Teapot](http://www.wikipedia.org/Utah_teapot)
+[Utah Teapot](http://en.wikipedia.org/wiki/Utah_teapot)
 using any
 graphics primitive of the student’s choice using only right triangles. In its
 core, the exercise required students to decompose arbitrary triangles, which
@@ -43,9 +43,10 @@ I collected all solutions to the
 
 The projects required from the students to come up with a functional
 solution to a relatively complex problem. Students
-[worked really hard](http://twitter.com/headinthebox) on problems ranging
-from
-[Github project relationship graphs]()
+[worked really hard](https://twitter.com/headinthebox/status/269537848154271745) on problems ranging from
+[Github project relationship graphs](https://github.com/hendrikvanantwerpen/github-relations-viz)
 to
-[in browser Map/Reduce](). More information about
-student projects can be found from [this page](http://serg...).
+[in browser Map/Reduce](https://github.com/dlhartveld/in4355-fp-project). 
+More information about
+student projects can be found from 
+[this page](http://swerl.tudelft.nl/bin/view/Main/FunctionalProgrammingCourse).

@@ -1,37 +1,60 @@
 ---
-layout: default 
-title: Georgios Gousios's blog
+layout: default
+title: Georgios Gousios blog
 ---
 
-<div class="navmenu">
-<div class="menuheader">
-Tags
-</div>
-<div class="menuitem">
-foo x 4
-</div>
-<div class="menuitem">
-bar x 3
-</div>
-</div>
+Welcome to my blog! Here are the latest posts:
+
+<div class="row">
+<div class="span9">
 
 {% for post in site.posts limit:10 %}
 
- <div class="blog">
-   <div class="blog-list-header">
-     <span class="blog-list-title">{{ post.title}}</span>
-     <span class="blog-list-date">{{ post.date | date: "%d %b %Y"}}</span>
+ <div class="row">
+   <div class="span2">
+     <span class="label label-success">{{ post.date | date: "%d %b %Y"}}</span>
    </div>
-   <div class="blog-list-sum">
-   {{ post.content |strip_html|truncatewords: 80 }}
-   <span style="blog-read-more"><a href="{{ post.url }}">Read more...</a></span>
+   <div class="span7">
+     <h4>{{post.title}}</h4>
+     <p> {{ post.content |strip_html|truncatewords: 100 }}
+     <span style="blog-read-more"><a href="{{ post.url }}">Read more</a></span>
+     </p>
+     <a href="{{ post.url }}#disqus_thread">Read more</a>
+     <hr/>
    </div>
  </div>
-
 {% endfor %}
+  <a href="/blog/archive.html">Older posts</a>
+</div>
 
-Archives:
+<div class="span3">
 
-{% for post in site.posts skip:10 %}
-  
+<table class="table table-hover table-condensed">
+  <thead>
+  <tr>
+    <td><b>Tags</b></td>
+    <td></td>
+  </tr>
+  </thead>
+  <tbody>
+{% for category in site.categories|sort %}
+  <tr>
+    <td><a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category[0] }}-ref"><span class="label">{{ category[0] }}</span></a></td>
+    <td>x {{ category[1].size }} </td>
+  </tr>
 {% endfor %}
+  </tbody>
+</table>
+
+</div>
+</div>
+
+<script type="text/javascript">
+  var disqus_shortname = 'gousiosghomepage';
+  (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+</script>

@@ -14,7 +14,7 @@ Erik Meijer (2012)
  Spinellis's [homonymous course](http://dmst.aueb.gr/dds/ismr/index.htm)
  (2005 --- 2009)
 
-###MSc Thesis Topics
+### MSc thesis topics
 
 If you are interested in doing an MSc thesis with me, please [contact
 me](about.html). You can choose any of the following topics, or propose one that

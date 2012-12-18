@@ -9,7 +9,7 @@ title: Research
 I am genuinely interested in any topic that has to do with systems, software and security, and combinations thereof. Specifically my research interests are
 the following:
 
-* Software Engineering
+* Software engineering
 * Programming languages
 * Systems software and security
 
@@ -29,7 +29,7 @@ and [share](http://demo.sqo-oss.org) data from more than
 
 I also proposed a
 {% cite_details GKAG06B, platform %} for
-{% cite_details SGKL08, analysing the quality of OSS projects %} and a
+{% cite_details SGKLASS09, analysing the quality of OSS projects %} and a
 corresponding
 {% cite_details SGSS08, hierarchical metrics-based software quality model %} for evaluating both the
 process and the product quality. I have also contributed to a
@@ -69,7 +69,7 @@ of (then) popular component software middleware.
 ##Grants Obtained
 I have written the following research proposals which led to funding for
 me or for the institution I was working for at the time. I have also authored
-and co-authored several other proposals, albeit not as lucky ones :-)
+and co-authored several other proposals, obviously not as lucky ones :-)
 
 SEFUNC
 : Software Engineering Properties of Functionally Enabled

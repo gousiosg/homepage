@@ -41,15 +41,14 @@ title: Georgios Gousios home page
             <p>My primary research interests include:</p>
             <ul>
               <li>Software engineering</li>
-              <li>Programming Languages</li>
-              <li>Systems software and system administration</li>
+              <li>Programming languages</li>
+              <li>Systems software</li>
             </ul>
 
             <p>Projects I am working on</p>
             <ul>
               <li><a href="https://github.com/gousiosg/github-mirror">Github-mirror</a>: A suite of tools to process Github REST API data</li>
-              <li><a href="http://www.sqo-oss.org">Alitheia Core</a>: A platform for software engineering</li>
-              research
+              <li><a href="http://www.sqo-oss.org">Alitheia Core</a>: A platform for software engineering research</li>
             </ul>
       </div>
       <div class="span2">

@@ -15,24 +15,22 @@ the project's history. Due to its wide scope, MSR is always a bit unbalanced
 with respect to the quality of the papers presented. This year however, there
 were some really great submissions.
 
-One of the most interesting talks, was Dogmei's keynote address on the first day.
-Dogmei is a senior researcher at Microsoft Research Asia, where she leads the
-development analytics project. During her presentation, she told some great
-tales from the research vs practice battlefield. One of them, concerned a code
-cloning detection tool, that has successfully graduated from Microsoft Research
-to internal Microsoft teams and finally to a Visual Studio 2012 plug-in. Dogmei
-explained that the most important reason this tool was successful was not that
-the research upon which it was based, but the fact that it was a TOOL.
-Imperfect in the beginning, its speed and accuracy was improved after
-suggestions from users started pouring in. What she learned from this
+One of the most interesting talks, was Dongmei Zhang's keynote address on the
+first day. Dongmei is a senior researcher at Microsoft Research Asia, where she
+leads the development analytics project. During her presentation, she told some
+great tales from the research vs practice battlefield. One of them, concerned a
+code cloning detection tool, that has successfully graduated from Microsoft
+Research to internal Microsoft teams and finally to a Visual Studio 2012
+plug-in. Dongmei explained that the most important reason this tool was
+successful was not that the research upon which it was based, but the fact that
+it was a TOOL. Imperfect in the beginning, its speed and accuracy was improved
+after suggestions from users started pouring in. What she learned from this
 experience was the importance of producing reusable tools out of the research
-was greater than doing the research itself. 'Make tools. It works on my
-computer is no longer enough', as she put it.
-
-Several researchers have advocated the importance of publishing tools 
+was greater than doing the research itself. 'Make tools. It works on my computer
+is no longer enough', as she put it.
 
 I was curious as to whether the above apply to the papers presented the very
-same day (and the next) to the very same conference that Dogmei gave the
+same day (and the next) to the very same conference that Dongmei gave the
 keynote talk to. To do so, I went through each paper and looked for pointers to
 the tools or datasets used. I also Googled the paper titles, hoping that the
 authors had put together a page containing the paper's data or tools, as it

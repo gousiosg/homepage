@@ -31,6 +31,20 @@ Welcome to my blog! Here are the latest posts:
 
 <table class="table table-hover table-condensed">
   <thead>
+    <tr>
+    <td><b>Syndication</b></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="">RSS</span></td>
+      <td><a href='../atom.xml'><img alt="atom feed" src="../img/rss.png" height='23px' width='23px' border='0'/></a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table table-hover table-condensed">
+  <thead>
   <tr>
     <td><b>Tags</b></td>
     <td></td>

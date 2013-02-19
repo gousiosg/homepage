@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+
+<div class="row">
+  <div class="span10">
 <h3>{{ page.entry.title }}</h3>
 
 {% if page.entry.author %}
@@ -18,9 +21,10 @@ edited by {{ page.entry.editor }}
 
 {% if page.entry.url %}
 <p>
-You can get it from <a href="{{ page.entry.url }}">here</a>.
+You can get a pre-print version from <a href="{{ page.entry.url }}">here</a>.
 
 {% if page.entry.doi %}
+<br/>
 You can view the publisher's page <a href="http://dx.doi.org/{{ page.entry.doi }}">here</a>.
 {% endif %}
 
@@ -46,7 +50,21 @@ You can view the publisher's page <a href="http://dx.doi.org/{{ page.entry.doi }
 <iframe src="http://www.slideshare.net/slideshow/embed_code/{{page.entry.slideshareembed}}?rel=0" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> 
 
 {% endif %}
-
+</div>
+<div class="span2">
+  <!-- AddThis Button BEGIN -->
+    <div class="addthis_toolbox addthis_counter_style">
+      <a class="addthis_button_facebook_like"></a><br/>
+      <a class="addthis_button_tweet"></a> <br/>
+      <a class="addthis_button_google_plusone"></a>
+      <a class="addthis_button_compact"></a>
+    </div>
+    <script type="text/javascript"
+      src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50b3d354431ac7e5"></script>
+    <!-- AddThis Button END -->
+  </div>
+</div>
+</div>
 <!--
     <script type="text/javascript" src="/javascript/pdf.js"></script>
     <script type="text/javascript">

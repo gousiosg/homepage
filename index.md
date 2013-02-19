@@ -62,7 +62,7 @@ title: Georgios Gousios home page
             You can find more information from the publisher's
             <a href="http://oreilly.com/catalog/9780596517984/">book web site</a>. Beautiful Architecure has also been translated to Chinese (<a href="http://oreilly.com.cn/book.php?bn=978-7-111-28356-0">架构之美</a>), Japanese (<a href="http://www.oreilly.co.jp/books/9784873114309/">ビューティフルアーキテクチャ)</a> and Russian (<a href="http://www.ozon.ru/context/detail/id/5430638/">Идеальная архитектура</a>).
             If you buy it, you 're also helping a good cause, as the
-            royalties as the royalties are donated to the <a href="http://www.msf.org/"><em>Medecins Sans Frontieres</em></a>.
+            royalties are donated to the <a href="http://www.msf.org/"><em>Medecins Sans Frontieres</em></a>.
       </div>
       <div class="span2">
         <img alt="Beautiful Architecture" align="right" src="img/ba.jpg"/>

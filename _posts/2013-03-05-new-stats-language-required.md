@@ -11,9 +11,9 @@ the data analysis work in my PhD thesis was also done with R, while I used
 R for the occasional correlation or plot in other papers. However, I never had
 to manipulate data and design code that will be re-used (hopefully) with it.
 
-The experience has not been great.  The R language may be nice and fine for
-statisticians (I believe; I really don't know any statistician), but from a
-programmer's perspective, it is a nightmare. While other languages may feel like
+The experience has not been great.  The [R language](http://cran.r-project.org/doc/manuals/R-lang.html) 
+may be nice and fine for
+statisticians (I believe; I really don't know any statistician), but from my perspective, it is a nightmare. While other languages may feel like
 they have designed by a committee, the R language seems to be designed by
 no-one. In my eyes, it looks like that every time someone needed a feature to be
 implemented it just did and it stuck. The main problem is inconsistency, for
@@ -27,20 +27,13 @@ more ways to select specific rows and columns.
 
 Moreover, R is extremely slow and inefficient. I have been using a data sample
 of 40,000 data points, moderate by any account, to build classifiers based on
-the Random Forest classification algorithm. The memory usage could easily reach
-3-4 GBs (for just 5 MB of data and in-memory data structures), forcing me to run
-my experiments on a server, rather than my laptop. It takes R 3 min 15 sec to
-read a 35MB CSV file in memory and then it consumes more than 500MB of RAM.
+the [Random Forest](http://en.wikipedia.org/wiki/Random_forest) classification
+algorithm. The memory usage could easily reach 3-4 GBs (for just 5 MB of data
+and in-memory data structures), forcing me to run my experiments on a server,
+rather than my laptop. It takes R 3 min 15 sec to read a 35MB CSV file in memory
+and then it consumes more than 500MB of RAM.
 
-I have never used other statistic tools. Closed source ones I would not use, as
-my research could not be replicated without a license. From the open source
-ones, I would not use Weka, because I find clicking around an inferior way of
-providing input to a program, especially since I would like executions to be
-scripted. Therefore, my choices are trimmed down to two: R and Octave. Octave
-does not include a machine learning toolkit. So I am really left without
-alternative.
-
-#### What I would like in a sane data processing language
+#### What I would expect from a sane data processing language
 
 I would like a statistics language that is also a data manipulation and
 exploration language. An ideal language, at least for the use cases I can think
@@ -73,6 +66,13 @@ is suboptimal
 sure that someone can design an editor that will allow people to explore data
 graphically and then produce static descriptions of the generated plots.
 
-Given the big data explosion we are facing these days, doing analysis using such
-inefficient as R is a waste of time. I really hope that someone comes up
-with a nice alternative to R. 
+I have never used other statistic tools seriously. Closed source ones I would not use, as
+my research could not be replicated without a license. From the open source
+ones, I would not use [Weka](http://www.cs.waikato.ac.nz/ml/weka/), 
+because I find clicking around an inferior way of
+providing input to a program, especially since I would like executions to be
+scripted. Therefore, my choices are trimmed down to three: R, [Octave](http://www.gnu.org/software/octave/) and [SciPy](http://www.scipy.org/) - [SciKit](http://scikit-learn.org/). Octave
+does not include a robust machine learning toolkit. SciPy is more promising,
+after all it is based on a rather nice programming language, but it does not have
+`ggplot2`. While waiting for a new statistics language to arrive, I am going
+to give SciPy a try for my next work.

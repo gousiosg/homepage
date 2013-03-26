@@ -13,10 +13,10 @@ to manipulate data and design code that will be re-used (hopefully) with it.
 
 The experience has not been great.  The [R language](http://cran.r-project.org/doc/manuals/R-lang.html) 
 may be nice and fine for
-statisticians (I believe; I really don't know any statistician), but from my perspective, it is a nightmare. While other languages may feel like
+statisticians (I believe; I don't know any statistician), but from my perspective, it is a nightmare. While other languages may feel like
 they have designed by a committee, the R language seems to be designed by
 no-one. In my eyes, it looks like that every time someone needed a feature to be
-implemented it just did and it stuck. The main problem is inconsistency, for
+implemented, she just did and it stuck. The main problem is inconsistency, for
 example:
 
 * There are several ways to access a column in a dataframe. There are even
@@ -33,7 +33,7 @@ and in-memory data structures), forcing me to run my experiments on a server,
 rather than my laptop. It takes R 3 min 15 sec to read a 35MB CSV file in memory
 and then it consumes more than 500MB of RAM.
 
-#### What I would expect from a sane data processing language
+#### What I would expect from a sane statistics language
 
 I would like a statistics language that is also a data manipulation and
 exploration language. An ideal language, at least for the use cases I can think
@@ -56,11 +56,11 @@ to be processed, types help a lot with consistency and optimization.
 [Dart](http://www.dartlang.org/) has shown that it can be 
 practical.
 
-* It should be compilable to machine code or to an 
+* A compiler to machine code or to an 
 intermediate format able to produce efficient machine code (LLVM or JVM
 bytecode). Big data cannot be processed by interpreters and
-having to develop the same program twice (prototype with R, run in C++)
-is suboptimal
+having to develop the same program twice (prototype with R, production in C++)
+is suboptimal.
 
 * A library for interactive graphics. `ggplot` is great, but it is static. I am
 sure that someone can design an editor that will allow people to explore data
@@ -74,5 +74,5 @@ providing input to a program, especially since I would like executions to be
 scripted. Therefore, my choices are trimmed down to three: R, [Octave](http://www.gnu.org/software/octave/) and [SciPy](http://www.scipy.org/) - [SciKit](http://scikit-learn.org/). Octave
 does not include a robust machine learning toolkit. SciPy is more promising,
 after all it is based on a rather nice programming language, but it does not have
-`ggplot2`. While waiting for a new statistics language to arrive, I am going
+`ggplot`. While waiting for a new statistics language to arrive, I am going
 to give SciPy a try for my next work.

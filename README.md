@@ -7,7 +7,8 @@ This is the source code to my homepage.
 To build the home page do the following:
 
 * Install Ruby 1.9: `rvm install 1.9.3`
-* `gem install jekyll jekyll-scholar rdiscount`
+* Create the `homepage` gemset: `rvm gemset create homepage`
+* `rvm 1.9.3-p392@homepage do gem install jekyll jekyll-scholar rdiscount`
 * `easy_install pygments`
 
 The `jekyll-scholar` plugin is configured to read its publication database
@@ -17,7 +18,7 @@ to running `jekyll`
 ## Deploying
 
 ```bash
-jekyll
+rvm 1.9.3@homepage do jekyll
 rsync -av _site/* gousiosg@www.gousios.gr:~/public_html/
 ```
 

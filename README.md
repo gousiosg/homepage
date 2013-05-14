@@ -8,7 +8,7 @@ To build the home page do the following:
 
 * Install Ruby 1.9: `rvm install 1.9.3`
 * Create the `homepage` gemset: `rvm gemset create homepage`
-* `rvm 1.9.3-p392@homepage do gem install jekyll jekyll-scholar rdiscount`
+* `rvm 1.9.3-p392@homepage do gem install jekyll-scholar --version '0.2.0'`
 * `easy_install pygments`
 
 The `jekyll-scholar` plugin is configured to read its publication database

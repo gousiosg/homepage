@@ -70,8 +70,8 @@ interesting data representing the project's life time.
 
 #### Project process monitoring
 
-The [database schema](http://ghtorrent.org/relational.html) is rather
-complicated, but the data that Github has is very rich as well.
+The [database schema](http://ghtorrent.org/relational.html) is relatively 
+complicated, but the data it stores is very rich in return.
 Using this database, we can ask very complicated queries in order to create
 interesting reports of our project's development process, including
 some queries that were not possible without Github's data. Below, I
@@ -84,7 +84,7 @@ results. You can find the R script [here](https://gist.github.com/gousiosg/55632
       <a href="/files/pull-req-stats.png" rel="lightbox">
         <img src="/files/pull-req-stats.png" alt="Pull request statistics per month">
       </a>
-      <p>Pull request statistics per month (<a href="https://gist.github.com/gousiosg/5563230#file-pullreqs_opened_per_month-sql">opened</a>, <a href="https://gist.github.com/gousiosg/5563230#file-pullreqs_merged_per_month-sql">closed</a>)</p>
+      <p>(1) Pull request statistics per month (<a href="https://gist.github.com/gousiosg/5563230#file-pullreqs_opened_per_month-sql">opened</a>, <a href="https://gist.github.com/gousiosg/5563230#file-pullreqs_merged_per_month-sql">closed</a>)</p>
     </div>
   </li>
   <li class="span4">
@@ -92,7 +92,7 @@ results. You can find the R script [here](https://gist.github.com/gousiosg/55632
       <a href="/files/issue-stats.png" rel="lightbox">
         <img src="/files/issue-stats.png" alt="Source of commits">
       </a>
-      <p>Issue statistics per month (<a href="https://gist.github.com/gousiosg/5563230#file-issues_opened_per_month-sql">opened</a>,<a href="https://gist.github.com/gousiosg/5563230#file-issues_closed_per_month-sql">closed</a>)</p>
+      <p>(2) Issue statistics per month (<a href="https://gist.github.com/gousiosg/5563230#file-issues_opened_per_month-sql">opened</a>,<a href="https://gist.github.com/gousiosg/5563230#file-issues_closed_per_month-sql">closed</a>)</p>
     </div>
   </li>
   <li class="span4">
@@ -100,7 +100,7 @@ results. You can find the R script [here](https://gist.github.com/gousiosg/55632
       <a href="/files/commit-source.png" rel="lightbox">
         <img src="/files/commit-source.png" alt="Source of commits">
       </a>
-      <p>Source of commits (<a href="https://gist.github.com/gousiosg/5563230#file-commit_source-sql">query</a>). The more commits come from
+      <p>(3) Source of commits (<a href="https://gist.github.com/gousiosg/5563230#file-commit_source-sql">query</a>). The more commits come from
       pull requests, the more open the project process.</p>
     </div>
   </li>
@@ -109,7 +109,7 @@ results. You can find the R script [here](https://gist.github.com/gousiosg/55632
       <a href="/files/fork-stats.png" rel="lightbox">
         <img src="/files/fork-stats.png" alt="Fork statistics">
       </a>
-      <p>Forks created(<a href="https://gist.github.com/gousiosg/5563230#file-forks_created-sql">query1</a>) vs forks actually contributing commits back to the main repo (<a href="https://gist.github.com/gousiosg/5563230#file-forks_contributing-sql">query2</a>). Ideally, all forks should contribute back.
+      <p>(4) Forks created(<a href="https://gist.github.com/gousiosg/5563230#file-forks_created-sql">query1</a>) vs forks actually contributing commits back to the main repo (<a href="https://gist.github.com/gousiosg/5563230#file-forks_contributing-sql">query2</a>). Ideally, all forks should contribute back.
       </p>
     </div>
   </li>
@@ -118,7 +118,7 @@ results. You can find the R script [here](https://gist.github.com/gousiosg/55632
       <a href="/files/comments-commenters-external.png" rel="lightbox">
         <img src="/files/comments-commenters-external.png" alt="Fork statistics">
       </a>
-      <p>Percentage of issue comments and commenters coming from the project community (i.e. users with no commit rights to the main repo)(<a href="https://gist.github.com/gousiosg/5563230#file-monthly_comments_commenters-sql">query</a>)
+      <p>(5) Percentage of issue comments and commenters coming from the project community (i.e. users with no commit rights to the main repo)(<a href="https://gist.github.com/gousiosg/5563230#file-monthly_comments_commenters-sql">query</a>)
       </p>
     </div>
   </li>
@@ -128,7 +128,10 @@ That's it! Using a simple process, we can retrieve a very rich dataset to create
 project specific reports from. What's more is that the database can be updated
 (make sure that `cache: prod` in `config.yaml`), and the report generation process can be automated. More than one projects can share the same database,
 so organizations can have a centralized way of retrieving process information
-about their projects.
+about their projects. Researchers interested in doing work with Github's data
+can use this process to try out ideas on smaller projects before moving 
+forward to the [real dataset](http://ghtorrent.org/dblite/). 
 
 Do you have any ideas for more useful reports? Leave a comment and I 'll
 promise to implement them!
+

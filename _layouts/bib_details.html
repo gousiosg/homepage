@@ -39,6 +39,14 @@ You can view the publisher's page <a href="http://dx.doi.org/{{ page.entry.doi }
 </p>
 {% endif %}
 
+{% if page.entry.award %}
+<p>
+<img src="/files/award.png" style="width: 5%"></img>
+This paper received the "{{ page.entry.award }}" award
+</p>
+{% endif %}
+
+
 <h4>Bibtex record</h4>
 <pre>
 {{ page.entry.bibtex }}
@@ -50,6 +58,15 @@ You can view the publisher's page <a href="http://dx.doi.org/{{ page.entry.doi }
 <iframe src="http://www.slideshare.net/slideshow/embed_code/{{page.entry.slideshareembed}}?rel=0" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> 
 
 {% endif %}
+
+{% if page.entry.speakerdeck %}
+<h4>Presentation</h4>
+
+<div style="width: 60%;margin-left:auto;margin-right:auto;">
+<script class="speakerdeck-embed" data-id="{{page.entry.speakerdeck}}" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+</div>
+{% endif %}
+
 </div>
 <div class="span2">
   <!-- AddThis Button BEGIN -->

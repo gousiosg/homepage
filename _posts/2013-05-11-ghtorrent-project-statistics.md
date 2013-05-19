@@ -72,11 +72,11 @@ interesting data representing the project's life time.
 
 The [database schema](http://ghtorrent.org/relational.html) is relatively 
 complicated, but the data it stores is very rich in return.
-Using this database, we can ask very complicated queries in order to create
-interesting reports of our project's development process, including
-some queries that were not possible without Github's data. Below, I
-have tried a couple of such queries and used R and `ggplot2` to plot the
-results. You can find the R script [here](https://gist.github.com/gousiosg/5563230#file-ghtorrent-project-stats-r).
+Using this database, we can formulate complex queries that will return
+interesting insights of our project's development process, including
+some that were not possible without Github's data. Below, I
+present a couple of such queries, plotted using R and `ggplot2`. 
+You can find the R script [here](https://gist.github.com/gousiosg/5563230#file-ghtorrent-project-stats-r).
 
 <ul class="thumbnails">
   <li class="span4">

@@ -71,9 +71,9 @@ title: Georgios Gousios home page
   </div>
 </div>
 
-#### Latest blog posts
+<a href='atom.xml'><img alt="atom feed" src="/img/rss.png" height='23px' width='23px' border='0'/></a> **Latest blog posts** 
 <ul class="posts">
-  {% for post in site.posts %}
+  {% for post in site.posts |limit: 5 %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>

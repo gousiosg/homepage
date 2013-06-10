@@ -26,11 +26,9 @@ in the ecosystem were abandoned
 
 1. {% reference Lungu10 %}
 
-2. {% reference Lungu10b %}
+2. {% reference Robbe11 %}
 
-3. {% reference Robbe11 %}
+3. {% reference Kabbe11 %}
 
-4. {% reference Kabbe11 %}
-
-5. {% reference Hanss12 %}
+4. {% reference Hanss12 %}
 

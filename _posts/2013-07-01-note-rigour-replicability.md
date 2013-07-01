@@ -5,30 +5,29 @@ title: A Note on Rigor and Replicability
 categories: Research Java Scala
 ---
 
-At ICSE 2012, [one of the presented papers]() caught my attention; the title
+At ICSE 2012, [one of the presented papers](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6227200) caught my attention; the title
 was provocative enough and the topic was very hot: functional vs imperative
 programming. The paper presented a comparative study of programming a multicore
-application in Java and Scala. The authors used a group of master
+application in Java and Scala. The authors employed a group of master
 students to write a non-toy application in both languages and then compared
-the results. They found no....
+the results. They found no significant difference between the two languages.
 
 I remember leaving the paper presentation with mixed feelings; my suspicions
 grew stronger when I actually read the paper. There were several errors in the
-paper with respect to the methods used and the statistical treatment of the data.
-Together with my friend and colleague [Panos Louridas](), we wrote a paper that
-criticizes the methods used in the Pankratius et al. paper. Partially because
-only the paper abstract was published in the print version of SigSoft Software
-Engineering notes, our criticism went relatively unnoticed. Since today marks
-the first anniversary of the writing of the paper, I am summarizing it here.
-You can also [read the full version]().
+paper with respect to the methods used and the statistical treatment of the
+data. Together with my colleague [Panos Louridas](https://twitter.com/louridas), we wrote a paper that criticizes the
+methods used in the Pankratius et al. paper. Partially because only the paper
+abstract was published in the print version of SigSoft Software Engineering
+notes, our criticism went relatively unnoticed. Since today marks the first
+anniversary of the writing of this paper, I am summarizing our findings here.
+You can also [read the full version](http://www.gousios.gr/bibliography/LG12.html).
 
 #### Problems we found
 
 * Wrong statistical tests being used or wrong naming of the statistical tests
 
 * Liberal interpretation of p-values. While the authors use p < 0.05 as a
-threshold for significance (in itself strange as the population size was just
-13), they later claim significance (or support) for p-values of 0.078 and 0.094
+threshold for significance, they later claim significance (or support) for p-values of 0.078 and even 0.094
 
 * Subjects were classified as experts in Scala after 4 weeks of training while
 other subjects were classified as novices in Java after 4 years of university
@@ -74,5 +73,3 @@ publication-time availability of experimental data, tools and experiment
 replication documentation should be a requirement for publication. Our proposal,
 if adopted, might be a first step in this direction.
 
-
-#### References

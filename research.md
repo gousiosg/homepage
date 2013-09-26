@@ -15,17 +15,22 @@ the following:
 
 ###Software Engineering
 
-I am currently working on {% cite_details GS12, obtaining %}
-and analysing data from Github, throught the [GHTorrent](https://github.com/gousiosg/github-mirror) project.
+I am currently exploring how {% cite_details GPD14, pull-based distributed development %} works. I also actively develop and maintain a [collection of
+tools](https://github.com/gousiosg/github-mirror) for 
+{% cite_details GS12, obtaining %}
+and {% cite_details G13, analysing %} data from Github, throught the [GHTorrent](https://ghtorrent.org) project. The project has been awarded
+the [best data project award](http://2014.msrconf.org/history.php) at MSR 2013
+and has been selected as the official dataset of the [MSR 2014 mining
+challenge](http://2014.msrconf.org/challenge.php).
 
-I lead the design and development of [Alitheia Core](http://www.sqo-oss.org)
+I led the design and development of [Alitheia Core](http://www.sqo-oss.org)
 (also on [Github](https://github.com/istlab/Alitheia-Core)),
 a high performance research platform
 that works with data from software repositories. I used the platform to develop models for the {% cite_details KGSP09, evaluation %} of
 {% cite_details GKS08, developer contribution %}, to investigate the evolution of {% cite_details MGS12, software security issues %} and to
 {% cite_details Gousi09-phdthesis, process %}
 and [share](http://demo.sqo-oss.org) data from more than
-[600 open source software repositories](http://ikaria.dmst.aueb.gr/repositories/).
+[700 open source software repositories](http://ikaria.dmst.aueb.gr/repositories/).
 
 I also proposed a
 {% cite_details GKAG06B, platform %} for
@@ -62,7 +67,8 @@ JVM with the operating system.
 On the software security front, I co-developed a mechanism for identifying and
 preventing cross-site scripting attacks through {% cite_details MSGS11, Javascript fingerprinting %},
 I investigated the
-{% cite_details MGS12, evolution of software security issues %}, and I analysed
+{% cite_details MGS12, evolution of software security issues %}, an effort which
+was then scaled to analyze the {% cite_details MKLGS13, entire Maven repository %}, and I analysed
 the {% cite_details GAG04, security challenges and requirements %}
 of (then) popular component software middleware.
 

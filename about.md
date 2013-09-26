@@ -4,22 +4,17 @@ layout: page
 tags: about cv
 ---
 
-### Short CV
+### Bio
 
-*Dr. Georgios Gousios* holds an MSc with distinction from the
-University of Manchester, UK and a PhD from the Athens University of
-Economics and Business,GR, both on Software Engineering. He has worked as a
-researcher in several national and international research projects and
-provided consulting services in both multinational and emerging startup
-companies. He was the project manager, lead designer and top source code
-contributor of the SQO-OSS project, an FP6 funded project that produced novel
-tools for facilitating research in the field of software engineering. He has
-published more that 15 papers in various fields and also co-edited the
-"Beautiful Architectures" book (OReilly, 2009). His research interests
-include empirical software engineering, software architectures, systems level
-software and programming languages.
-
-Currently, Georgios is a [Marie Curie](http://cordis.europa.eu/mariecurie-actions/eif/home.html) fellow at the Technical University of Delft.
+*Dr. Georgios Gousios* holds an MSc with distinction from the University of
+Manchester, UK and a PhD from the Athens University of Economics and
+Business,GR, both on Software Engineering. He has worked as a researcher in
+several national and international research projects and provided consulting
+services in both multinational and emerging startup companies. He has published
+more that 20 papers in various fields and also co-edited the "Beautiful
+Architectures" book (OReilly, 2009). He was a Marie Curie fellow at TU Delft,
+where he is currently working as a researcher.  His research interests include
+software engineering, systems software and programming languages.
 
 A full CV can be provided upon request.
 
@@ -70,7 +65,7 @@ services that host (some version of) my online profile
       <div class="span2">
         Gousios Georgios
         Room 08.080, EWI
-        Makelweeg 4
+        Mekelweg 4
         Delft 2628CD
         NL
       </div>

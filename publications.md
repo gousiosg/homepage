@@ -13,11 +13,6 @@ Journals
 
 {% bibliography article %}
 
-Pending Judgement
------------------
-
-{% bibliography pending %}
-
 Book chapters
 -------------
 
@@ -32,6 +27,17 @@ Theses
 ------
 
 {% bibliography thesis %}
+
+Pending Judgement
+-----------------
+
+{% bibliography pending %}
+
+Working papers 
+--------------
+
+{% bibliography working %}
+
 
 Technical Reports
 -----------------

@@ -3,11 +3,17 @@ layout: page
 title: Functional Programming
 ---
 
-*taugh by [Erik Meijer](http://en.wikipedia.org/wiki/Erik_Meijer_(computer_scientist))*
+*taugh by [Erik Meijer](http://en.wikipedia.org/wiki/Erik_Meijer)*
 
 I was teaching assistant for the TU Delft course IN2556. The course covered
 functional programming basics and more advanced concepts such as monads,
 functors and monoids.
+
+## edition 2013
+
+The course will take place from Oct 1 -- Oct 31. Stay tuned for updates!
+
+## edition 2012
 
 The course turned out to be a great success, both in terms of student involvment
 and also in terms of student output. We reported our experience in

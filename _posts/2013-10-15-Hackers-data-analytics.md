@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Georgios Gousios
-title: Hacker's data analytics 
+title: Lazy hacker's service analytics 
 categories: GHTorrent debug unix R 
 ---
 

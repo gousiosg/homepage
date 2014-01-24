@@ -6,41 +6,41 @@ layout: page
 Book
 ----
 
-{% bibliography book %}
+{% bibliography --file book %}
 
 Journals
 --------
 
-{% bibliography article %}
-
-Book chapters
--------------
-
-{% bibliography incollection %}
+{% bibliography --file article %}
 
 Conferences
 -----------
 
-{% bibliography inproceedings %}
+{% bibliography --file inproceedings %}
+
+Book chapters
+-------------
+
+{% bibliography --file incollection %}
 
 Theses
 ------
 
-{% bibliography thesis %}
+{% bibliography --file thesis %}
 
 Pending Judgement
 -----------------
 
-{% bibliography pending %}
+{% bibliography --file pending %}
 
 Working papers 
 --------------
 
-{% bibliography working %}
+{% bibliography --file working %}
 
 
 Technical Reports
 -----------------
 
-{% bibliography techreport %}
+{% bibliography --file techreport %}
 

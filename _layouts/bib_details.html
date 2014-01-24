@@ -67,6 +67,14 @@ This paper received the "{{ page.entry.award }}" award
 </div>
 {% endif %}
 
+{% if page.entry.url %}
+
+<h4>The paper</h4>
+<div style="width: 100%;margin-left:auto;margin-right:auto;">
+<iframe id="viewer" src = "/Viewer.js/#{{page.entry.url}}" width='724'
+  height='1000' allowfullscreen webkitallowfullscreen></iframe>
+</div>
+{% endif %}
 </div>
 <div class="span2">
   <!-- AddThis Button BEGIN -->
@@ -82,32 +90,4 @@ This paper received the "{{ page.entry.award }}" award
   </div>
 </div>
 </div>
-<!--
-    <script type="text/javascript" src="/javascript/pdf.js"></script>
-    <script type="text/javascript">
-    'use strict';
-    PDFJS.getPdf('/pubs/master.pdf', function getPdfHelloWorld(data) {
-  //
-  // Instantiate PDFDoc with PDF data
-  //
-  var pdf = new PDFJS.PDFDoc(data);
-  var page = pdf.getPage(2);
-  var scale = 0.3;
 
-  //
-  // Prepare canvas using PDF page dimensions
-  //
-  var canvas = document.getElementById('the-canvas');
-  var context = canvas.getContext('2d');
-  canvas.height = page.height * scale;
-  canvas.width = page.width * scale;
-
-  //
-  // Render PDF page into canvas context
-  //
-  page.startRendering(context);
-});
-  </script>
-
-  <canvas id="the-canvas" style="border:1px solid black;"/>
--->

@@ -7,7 +7,7 @@ title: The Java DTrace Toolkit
 
 I initially used DTrace for Java to study the interaction of the OS with the JVM on the I/O front. I then understood that my scripts might be useful to a number of people doing low level performance analysis so I spent some time to make them a bit more generic and easy to use.
 
-You can download the Java DTrace Toolkit from [here](http://istlab.dmst.aueb.gr/~george/files/jdt.tar.gz)
+You can download the Java DTrace Toolkit from [here](https://github.com/gousiosg/jdt)
 
 The JDT has been presented in the following short paper:
 

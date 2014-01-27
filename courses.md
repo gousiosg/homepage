@@ -5,10 +5,12 @@ title: Courses
 
 ### Lecture and lab notes
 
+* [Software Re-Engineering](courses/sre/): Information about an MSc level
+course I taught at TU Delft, together with Andy Zaidman (2013)
+
 * [Reactive Programming](courses/rx/index.html): Information and
 links to student projects for the reactive programming course taught by
 Erik Meijer (2013)
-
 
 * [Functional Programming](courses/fp/index.html): A couple of presentations
 and links to student projects for the functional programming course taught by

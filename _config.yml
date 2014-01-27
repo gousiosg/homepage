@@ -53,7 +53,7 @@ scholar:
   sort_by: none
   order: ascending
 
-  bibdir: /Users/gousiosg/Documents/biblists
+  bibdir: /Users/gousiosg/Documents/biblists/gousiosg
   source: ./_bibliography
   bibliography: all.bib
 

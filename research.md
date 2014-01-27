@@ -15,10 +15,10 @@ the following:
 
 ###Software Engineering
 
-I am currently exploring how {% cite_details GPD14, pull-based distributed development %} works. I also actively develop and maintain a [collection of
+I am currently exploring how {% cite_details GPD14 --text pull-based distributed development %} works. I also actively develop and maintain a [collection of
 tools](https://github.com/gousiosg/github-mirror) for 
-{% cite_details GS12, obtaining %}
-and {% cite_details G13, analysing %} data from Github, throught the [GHTorrent](https://ghtorrent.org) project. The project has been awarded
+{% cite_details GS12 --text obtaining %}
+and {% cite_details G13 --text analysing %} data from Github, throught the [GHTorrent](https://ghtorrent.org) project. The project has been awarded
 the [best data project award](http://2014.msrconf.org/history.php) at MSR 2013
 and has been selected as the official dataset of the [MSR 2014 mining
 challenge](http://2014.msrconf.org/challenge.php).
@@ -26,50 +26,50 @@ challenge](http://2014.msrconf.org/challenge.php).
 I led the design and development of [Alitheia Core](http://www.sqo-oss.org)
 (also on [Github](https://github.com/istlab/Alitheia-Core)),
 a high performance research platform
-that works with data from software repositories. I used the platform to develop models for the {% cite_details KGSP09, evaluation %} of
-{% cite_details GKS08, developer contribution %}, to investigate the evolution of {% cite_details MGS12, software security issues %} and to
-{% cite_details Gousi09-phdthesis, process %}
+that works with data from software repositories. I used the platform to develop models for the {% cite_details KGSP09 --text evaluation %} of
+{% cite_details GKS08 --text developer contribution %}, to investigate the evolution of {% cite_details MGS12 --text software security issues %} and to
+{% cite_details Gousi09-phdthesis --text process %}
 and [share](http://demo.sqo-oss.org) data from more than
 [700 open source software repositories](http://ikaria.dmst.aueb.gr/repositories/).
 
 I also proposed a
-{% cite_details GKAG06B, platform %} for
-{% cite_details SGKLASS09, analysing the quality of OSS projects %} and a
+{% cite_details GKAG06B --text platform %} for
+{% cite_details SGKLASS09 --text analysing the quality of OSS projects %} and a
 corresponding
-{% cite_details SGSS08, hierarchical metrics-based software quality model %} for evaluating both the
+{% cite_details SGSS08 --text hierarchical metrics-based software quality model %} for evaluating both the
 process and the product quality. I have also contributed to a
-{% cite_details ASKG11, comprehensive survey %} of the literature in OSS research.
+{% cite_details ASKG11 --text comprehensive survey %} of the literature in OSS research.
 
 ###Systems Software and Security
 
-I {% cite_details Gousi04-mscthesis, ported %} [JikesRVM](http://jikesrvm.org),
+I {% cite_details Gousi04-mscthesis --text ported %} [JikesRVM](http://jikesrvm.org),
 a JVM written mostly in Java, to run on top of bare hardware, without support
 from an operating system. Later, I contributed patches to the JikesRVM project
 to enable support for Opensolaris, and in the context of the [Google Summer of
 Code 2008](http://code.google.com/soc/2008/jikesrvm/about.html) program, to
 compile and [run with OpenJDK](http://docs.codehaus.org/display/RVM/Acknowledgments). I also proposed
 an architecture to make Java’s I/O subsystem faster by
-{% cite_details G07, replacing the operating system with a hypervisor %}
+{% cite_details G07 --text replacing the operating system with a hypervisor %}
 and thus relieving it of
 context switches and unnecessary data copies; an almost identical approach has
 been independently developed into the JRockit virtual edition product.
 
 On the systems performance front, I have studied the performance of then popular
 dynamic content generation technologies for the Apache web server
-({% cite_details GS02, my first paper %}, which received a best paper award) and I
-investigated ways for {% cite_details GKS06, optimally configuring %} the
+({% cite_details GS02 --text my first paper %}, which received a best paper award) and I
+investigated ways for {% cite_details GKS06 --text optimally configuring %} the
 garbage collection algorithms for the then two prevailing implementations of the
-JVM. I have also {% cite_details GS08, implemented a library %}
+JVM. I have also {% cite_details GS08 --text implemented a library %}
 that parses the output from the DTrace
 provider for Java in order to reveal obscure problems in the co-operation of the
 JVM with the operating system.
 
 On the software security front, I co-developed a mechanism for identifying and
-preventing cross-site scripting attacks through {% cite_details MSGS11, Javascript fingerprinting %},
+preventing cross-site scripting attacks through {% cite_details MSGS11 --text Javascript fingerprinting %},
 I investigated the
-{% cite_details MGS12, evolution of software security issues %}, an effort which
-was then scaled to analyze the {% cite_details MKLGS13, entire Maven repository %}, and I analysed
-the {% cite_details GAG04, security challenges and requirements %}
+{% cite_details MGS12 --text evolution of software security issues %}, an effort which
+was then scaled to analyze the {% cite_details MKLGS13 --text entire Maven repository %}, and I analysed
+the {% cite_details GAG04 --text security challenges and requirements %}
 of (then) popular component software middleware.
 
 ##Grants Obtained

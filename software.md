@@ -6,19 +6,18 @@ title: Research Software and Data
 ###Projects
 
 * *GHTorrent* is a collection of tools to mirror data from Github's [v3 API](http://developer.github.com) for
-research purposes (see {% cite_details GS12, relevant publication %}). The project is currently being
+research purposes (see {% cite_details GS12 --text relevant publication %}). The project is currently being
 [developed](https://github.com/gousiosg/github-mirror) while some initial data
 [has been released](https://github.com/gousiosg/github-mirror/wiki/Available-Torrents). Expect several gigabytes of dumps in the comming months!
 
-* In our work {% cite_details GS12a, Conducting Quantitative Software Engineering Studies with Alitheia Core %} (currently under
-review), we used both the Alitheia Core dataset and a new, sorter dataset. Find
+* In our work {% cite_details GS13 --text Conducting Quantitative Software Engineering Studies with Alitheia Core %}, we used both the Alitheia Core dataset and a new, sorter dataset. Find
 more details on how to replicate the case studies reported in this paper [here](/research/qsesac.html).
 
 * *Alitheia Core* is a platform that enables researchers in the field of software
 engineering to automate experiments and distribute the processing load on a
 cluster of machines. I maintain the project in its own site. The project has
 been the centerpiece of my [PhD work](phd.html), while it has been presented
-individually in {% cite_details GS09a, this work %}. A dump of the Alitheia Core
+individually in {% cite_details GS09a --text this work %}. A dump of the Alitheia Core
 database as it was by the end of my PhD can be found from [this page](phd.html).
 The data schema has changed a lot since then so if you are interested in a
 recent version of those, please contact me directly.

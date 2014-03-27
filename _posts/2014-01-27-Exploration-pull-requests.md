@@ -5,10 +5,6 @@ title: How projects use pull requests on Github
 categories: GHTorrent Github pull-request MSR
 ---
 
-*Have your say! If you find this line of work interesting, please consider
-filling in our [survey on pull request
-usage.](https://www.surveymonkey.com/s/pullreqs)*
-
 Pull requests form a new method for collaboration on distributed software
 development. The novelty lays in the decoupling of the development effort from
 the decision to incorporate the results of the development in the code base.
@@ -372,7 +368,6 @@ the proceedings of the [36th](2014.icse-conferences.org/) International
 Conference on Software Engineering (ICSE). 
 {% cite_details GPD14 --text Here is a pre-print %}, where you can find an in 
 depth account of the tools and
-techniques we used to come up with the results we present here. Also, [don't
-forget to fill in our survey!](https://www.surveymonkey.com/s/pullreqs)
+techniques we used to come up with the results we present here.
 
 

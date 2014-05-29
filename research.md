@@ -10,13 +10,15 @@ I am genuinely interested in any topic that has to do with systems, software and
 the following:
 
 * Software engineering
-* Programming languages
 * Systems software and security
 
 ###Software Engineering
 
-I am currently exploring how {% cite_details GPD14 --text pull-based distributed development %} works. I also actively develop and maintain a [collection of
-tools](https://github.com/gousiosg/github-mirror) for 
+I am currently exploring how {% cite_details GPD14 --text pull-based distributed development %} works both [quantitatively](https://github.com/gousiosg/pullreqs) and qualitatively (upcoming). 
+{% cite_details GZ14 --text The dataset %} I developed as part of the
+quantitative investigation, won the [best dataset award](http://2014.msrconf.org/history.php) at MSR 2014.
+I also actively develop and maintain a
+[collection of tools](https://github.com/gousiosg/github-mirror) for 
 {% cite_details GS12 --text obtaining %}
 and {% cite_details G13 --text analysing %} data from Github, throught the [GHTorrent](https://ghtorrent.org) project. The project has been awarded
 the [best data project award](http://2014.msrconf.org/history.php) at MSR 2013
@@ -101,6 +103,10 @@ Total budget &euro;1,638,000. Host: Athens University of Economics and Business.
 ##Projects
 
 A list of research projects I have been actively involved with, along with a description of my role in them, in reverse chronological order:
+
+[Testroots](http://testroots.org)
+: The project investigates how developers use testing. The ultimate goal is to
+learn from past behaviours to drive up testing quality and efficiency.
 
 [Passive](http://ict-passive.eu/)
 : The project investigated trust establishment frameworks in cloud computing and shared virtual machines environments. As part of the project management team, I oversaw and contributed to the mechanism design and software development.

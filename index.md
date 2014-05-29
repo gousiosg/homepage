@@ -47,8 +47,8 @@ title: Georgios Gousios home page
 
             <p>Projects I am working on</p>
             <ul>
-              <li><a href="https://github.com/gousiosg/github-mirror">Github-mirror</a>: A suite of tools to process Github REST API data</li>
-              <li><a href="http://www.sqo-oss.org">Alitheia Core</a>: A platform for software engineering research</li>
+              <li><a href="https://ghtorrent.org">GHTorrent</a>: A project to make the Github REST API queriable</li>
+              <li>TestRoots: Assessing how developers test software</li>
             </ul>
       </div>
       <div class="span2">

@@ -6,15 +6,14 @@ tags: about cv
 
 ### Bio
 
-*Dr. Georgios Gousios* holds an MSc with distinction from the University of
+*Dr. Georgios Gousios* is an assistant professor at the Radboud Universiteit
+Nijmegen. He holds an MSc with distinction from the University of
 Manchester, UK and a PhD from the Athens University of Economics and
 Business,GR, both on Software Engineering. He has worked as a researcher in
 several national and international research projects and provided consulting
 services in both multinational and emerging startup companies. He has published
 more that 20 papers in various fields and also co-edited the "Beautiful
-Architectures" book (OReilly, 2009). He was a Marie Curie fellow at TU Delft,
-where he is currently working as a researcher.  His research interests include
-software engineering, systems software and programming languages.
+Architectures" book (OReilly, 2009). He was a Marie Curie fellow at TU Delft.  His research interests include software engineering, software analytics and programming languages.
 
 A full CV can be provided upon request.
 
@@ -64,20 +63,15 @@ services that host (some version of) my online profile
       </div>
       <div class="span2">
         Gousios Georgios
-        Room 08.080, EWI
-        Mekelweg 4
-        Delft 2628CD
-        NL
+        Mercator I
+        Radboud University Nijmegen
+        Nijmegen, 6525
+        The Netherlands
       </div>
     </div>
   </div>
   <div class="span9">
-    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps/ms?msa=0&amp;msid=203218461114064744034.00045e3d1fdd861508bfc&amp;ie=UTF8&amp;t=m&amp;ll=51.999058,4.374077&amp;spn=0,0&amp;output=embed">
-            </iframe>
-            <br />
-            <small>
-              <a href="http://maps.google.com/maps/ms?msa=0&amp;msid=203218461114064744034.00045e3d1fdd861508bfc&amp;ie=UTF8&amp;t=m&amp;ll=51.999058,4.374077&amp;spn=0,0&amp;source=embed" style="color:#0000FF;text-align:left">View in a larger map</a>
-            </small>
+   <iframe src="https://www.google.com/maps/d/embed?mid=zfY4c9hpEs6M.kClcleuVj1w8" width="640" height="480"></iframe>
   </div>
 </div>
 

@@ -89,16 +89,16 @@ prefer commit metadata preserving merges.*
 
 The most important factor leading to acceptance of a contribution is its
 quality. Quality has many manifestations in our response set; integrators
-examine the source code quality and code style of incoming code, along with its
-documentation and granularity. At a higher level, they also examine the quality
-of the commit set and whether it adheres to the project conventions for
+examine the *source code quality* and *code style* of incoming code, along with
+its documentation and granularity. At a higher level, they also examine the
+quality of the commit set and whether it adheres to the project *conventions* for
 submitting pull requests.
 
-A second signal that the integrators examine is project fit: does the pull
-request fit the project roadmap? A variation is technical fit: does the code fit
+A second signal that the integrators examine is *project fit*: does the pull
+request fit the project roadmap? A variation is *technical fit*: does the code fit
 the technical design of the project?
 
-It is interesting to note that the track record of the contributors is ranked
+It is interesting to note that the *track record* of the contributors is ranked
 low in the integrator check list. This is in line with our earlier analysis of
 pull requests, in which we did not see a difference in treatment of pull
 requests from the core team or from the project’s community.
@@ -117,17 +117,17 @@ provided by the contributors.
 
 The factors that strongly affect the time to make a decision are mostly social
 and, as expected, have timing characteristics as well. The most important one,
-affecting 14% of the projects, is reviewer availability. The problem is more
+affecting 14% of the projects, is *reviewer availability*. The problem is more
 pronounced in projects with small integrator teams (45%) and no full time paid
-developers. Another social factor is contributor responsiveness; if the pull
+developers. Another social factor is *contributor responsiveness*; if the pull
 request contributor does not come back to requests for action fast, the
-evaluation process is stalled. Long discussions also affect negatively the time
+evaluation process is stalled. *Long discussions* also affect negatively the time
 to decide, but they are required for reaching consensus among core team members,
 especially in case of controversial contributions. For changes that have not
 been communicated before, discussions are also mandatory.
 
-Technical factors, such as the complexity of the change, code quality, code
-style and mergeability of the code also affect negatively the time to decide on
+Technical factors, such as the complexity of the change, *code quality*, *code
+style* and *mergeability* of the code also affect negatively the time to decide on
 a pull request. The reason is that the code inspection reveals issues that need
 to be addressed by the contributors.
 
@@ -146,32 +146,32 @@ and its degree of fit to the project’s roadmap and technical design.*
 One of the top priorities for integrators when evaluating pull request quality
 is *conformance*. Conformance can mean conformance to project style or to API
 usage throughout the project. Many integrators also examine conformance against
-the programming language’s style idioms.
+the *programming language’s style idioms*.
 
 Integrators often relate contribution quality to the quality of the source code
 it contains. To evaluate source code quality, they mostly examine non-functional
-characteristics of the changes. Source code that is understandable and elegant,
-has good documentation and provides clear added value to the project with
-minimal impact is preferred.
+characteristics of the changes. Source code that is *understandable* and
+*elegant*, has good *documentation* and provides clear *added value* to the
+project with minimal impact is preferred.
 
-The quality (or even the existence) of documentation signifies an increased
-attention to detail by the submitter. The integrators also examine the commit
-organization in the pull request and its size. In the later case, the
-integrators value small pull requests as it is easier to assess their impact.
+The quality (or even the existence) of *documentation* signifies an increased
+attention to detail by the submitter. The integrators also examine the *commit
+organization* in the pull request along with its *size*. In the later case, the
+integrators value small pull requests as it is easier to *assess their impact*.
 
-Testing plays an important role in evaluating submissions. Initially, the very
-existence of tests in the pull request is perceived as a positive signal.
+Testing plays an important role in evaluating submissions. The very
+*existence of tests* in the pull request is perceived as a positive signal.
 
 Finally, integrators use social signals to build trust for the examined
-contribution. The most important one is the contributor’s reputation. The
+contribution. The most important one is the *contributor’s reputation*. The
 integrators build a mental profile for the contributor by evaluating their track
 record within the project or by searching information about the contributor’s
-work in other projects. Some integrators also use interpersonal relationships to
-make judgements for the contributor and, by proxy, for their work.
+work in other projects. Some integrators also use *interpersonal relationships*
+to make judgements for the contributor and, by proxy, for their work.
 
 ####Tools
 
-The vast majority (75%) of projects use continuous integration, either in hosted
+The vast majority (75%) of projects use *continuous integration*, either in hosted
 services or in standalone setups. On the other hand, few projects use more
 dedicated software quality tools such as metric calculators (15%) or coverage
 reports (18%). It is interesting to note that practically all (98%) projects
@@ -303,7 +303,16 @@ What do you think of the results? Do they reflect your personal experience? What
 tools would you expect us researchers to provide you with to cope with pull
 requests? Chime in below!
 
+
 *This blog post is a brief account of our findings. An in-depth analysis,
 including a description of our analysis methods and the original survey can be
 found in our
-[technical report](http://swerl.tudelft.nl/twiki/pub/Main/TechnicalReports/TUD-SERG-2014-013.pdf).*
+[technical report](http://swerl.tudelft.nl/twiki/pub/Main/TechnicalReports/TUD-SERG-2014-013.pdf). This is joint work with
+[Andy Zaidman](http://www.st.ewi.tudelft.nl/~zaidman/),
+[Margaret-Anne Storey](http://margaretannestorey.wordpress.com/) and
+[Arie van Deursen](http://avandeursen.com/). *
+
+*If you liked this post, you will also like our previous work on [how projects
+use pull requests](http://www.gousios.gr/blog/Exploration-pull-requests/).*
+
+*Update 20/12/2014: The paper has been accepted at ICSE 2015!*

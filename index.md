@@ -29,10 +29,14 @@ title: Georgios Gousios home page
   <div class="span10">
     <div class="row">
     <div class="span8">
-    <p>Welcome to my home page.</p>
+    <p>Welcome to my home page!</p>
 
-    <p>I am a researcher at the <a href="http://swerl.tudelft.nl/bin/view/Main/WebHome"> Software Engineering Research group </a>, <a href="http://www.tudelft.nl">TU Delft</a>.
-            Before that, I got my PhD from the
+    <p>I am an assistant professor at the
+    <a href="http://www.ru.nl/ds/"> Digital security group</a>,
+    <a href="http://www.ru.nl">Radboud Universiteit Nijmegen</a>.
+            Before that, I was a postdoc with the
+            <a href="http://swerl.tudelft.nl/bin/view/Main/WebHome">Software engineering group</a> at <a href="http://www.tudelft.nl/">TU Delft</a>.
+            I got my PhD from the
             <a href="http://istlab.dmst.aueb.gr/sense">
               Software Engineering and Security laboratory</a>, at the
             <a href="http://www.aueb.gr">
@@ -41,8 +45,8 @@ title: Georgios Gousios home page
             <p>My primary research interests include:</p>
             <ul>
               <li>Software engineering</li>
+              <li>Software analytics</li>
               <li>Programming languages</li>
-              <li>Systems software</li>
             </ul>
 
             <p>Projects I am working on</p>

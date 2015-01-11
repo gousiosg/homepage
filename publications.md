@@ -28,6 +28,11 @@ Theses
 
 {% bibliography --file thesis %}
 
+Technical Reports
+-----------------
+
+{% bibliography --file techreport %}
+
 Pending Judgement
 -----------------
 
@@ -38,9 +43,4 @@ Working papers
 
 {% bibliography --file working %}
 
-
-Technical Reports
------------------
-
-{% bibliography --file techreport %}
 

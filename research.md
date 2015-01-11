@@ -10,24 +10,29 @@ I am genuinely interested in any topic that has to do with systems, software and
 the following:
 
 * Software engineering
-* Systems software and security
+* Software analytics
+* Programming languages
+* Systems software
 
-###Software Engineering
+###Software Engineering - Software Analytics
 
-I am currently exploring how {% cite_details GPD14 --text pull-based distributed development %} works both [quantitatively](https://github.com/gousiosg/pullreqs) and qualitatively (upcoming). 
+I am currently exploring how {% cite_details GPD14 --text pull-based distributed development %} works both [quantitatively](https://github.com/gousiosg/pullreqs) ({%cite_details GPD14 --text ICSE 2014 %}) and [qualitatively](https://github.com/gousiosg/pullreqs-survey) ({%cite_details GZSD15 --text ICSE 2015 %}).
 {% cite_details GZ14 --text The dataset %} I developed as part of the
 quantitative investigation, won the [best dataset award](http://2014.msrconf.org/history.php) at MSR 2014.
-I also actively develop and maintain a
-[collection of tools](https://github.com/gousiosg/github-mirror) for 
+
+I actively develop and maintain a
+[collection of tools](https://github.com/gousiosg/github-mirror) for
 {% cite_details GS12 --text obtaining %}
 and {% cite_details G13 --text analysing %} data from Github, throught the [GHTorrent](https://ghtorrent.org) project. The project has been awarded
 the [best data project award](http://2014.msrconf.org/history.php) at MSR 2013
 and has been selected as the official dataset of the [MSR 2014 mining
-challenge](http://2014.msrconf.org/challenge.php).
+challenge](http://2014.msrconf.org/challenge.php). At the moment (Jan 10) 25
+papers where based on it, more that 50 researchers are [using its data](http://ghtorrent.org/raw.html),
+while GitHub included it in its [2014 data challenge](https://github.com/blog/1864-third-annual-github-data-challenge).
 
 I led the design and development of [Alitheia Core](http://www.sqo-oss.org)
 (also on [Github](https://github.com/istlab/Alitheia-Core)),
-a high performance research platform
+a high performance software analytics platform
 that works with data from software repositories. I used the platform to develop models for the {% cite_details KGSP09 --text evaluation %} of
 {% cite_details GKS08 --text developer contribution %}, to investigate the evolution of {% cite_details MGS12 --text software security issues %} and to
 {% cite_details Gousi09-phdthesis --text process %}
@@ -39,7 +44,7 @@ I also proposed a
 {% cite_details SGKLASS09 --text analysing the quality of OSS projects %} and a
 corresponding
 {% cite_details SGSS08 --text hierarchical metrics-based software quality model %} for evaluating both the
-process and the product quality. I have also contributed to a
+process and the product quality. I have contributed to a
 {% cite_details ASKG11 --text comprehensive survey %} of the literature in OSS research.
 
 ###Systems Software and Security

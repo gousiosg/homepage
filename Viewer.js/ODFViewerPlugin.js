@@ -1,61 +1,61 @@
 /**
- * @license
  * Copyright (C) 2012 KO GmbH <copyright@kogmbh.com>
  *
  * @licstart
- * The JavaScript code in this page is free software: you can redistribute it
- * and/or modify it under the terms of the GNU Affero General Public License
- * (GNU AGPL) as published by the Free Software Foundation, either version 3 of
- * the License, or (at your option) any later version.  The code is distributed
- * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU AGPL for more details.
+ * This file is part of WebODF.
  *
- * As additional permission under GNU AGPL version 3 section 7, you
- * may distribute non-source (e.g., minimized or compacted) forms of
- * that code without the copy of the GNU GPL normally required by
- * section 4, provided you include this license notice and a URL
- * through which recipients can access the Corresponding Source.
+ * WebODF is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU Affero General Public License (GNU AGPL)
+ * as published by the Free Software Foundation, either version 3 of
+ * the License, or (at your option) any later version.
  *
- * As a special exception to the AGPL, any HTML file which merely makes function
- * calls to this code, and for that purpose includes it by reference shall be
- * deemed a separate work for copyright law purposes. In addition, the copyright
- * holders of this code give you permission to combine this code with free
- * software libraries that are released under the GNU LGPL. You may copy and
- * distribute such a system following the terms of the GNU AGPL for this code
- * and the LGPL for the libraries. If you modify this code, you may extend this
- * exception to your version of the code, but you are not obligated to do so.
- * If you do not wish to do so, delete this exception statement from your
- * version.
+ * WebODF is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
  *
- * This license applies to this entire compilation.
+ * You should have received a copy of the GNU Affero General Public License
+ * along with WebODF.  If not, see <http://www.gnu.org/licenses/>.
  * @licend
+ *
  * @source: http://www.webodf.org/
- * @source: http://gitorious.org/webodf/webodf/
+ * @source: https://github.com/kogmbh/WebODF/
  */
 
-/*global runtime, document, odf, console*/
+/*global runtime, document, odf, gui, console, webodf*/
 
 function ODFViewerPlugin() {
     "use strict";
 
     function init(callback) {
-        var lib = document.createElement('script');
+        var lib = document.createElement('script'),
+            pluginCSS;
+
         lib.async = false;
         lib.src = './webodf.js';
         lib.type = 'text/javascript';
         lib.onload = function () {
-            runtime.currentDirectory = function () {
-                return "../../webodf/lib";
-            };
-            runtime.libraryPaths = function () {
-                return [ runtime.currentDirectory() ];
-            };
-
+            runtime.loadClass('gui.HyperlinkClickHandler');
             runtime.loadClass('odf.OdfCanvas');
+            runtime.loadClass('ops.Session');
+            runtime.loadClass('gui.CaretManager');
+            runtime.loadClass("gui.HyperlinkTooltipView");
+            runtime.loadClass('gui.SessionController');
+            runtime.loadClass('gui.SvgSelectionView');
+            runtime.loadClass('gui.SelectionViewManager');
+            runtime.loadClass('gui.ShadowCursor');
+            runtime.loadClass('gui.SessionView');
+
             callback();
         };
 
         document.getElementsByTagName('head')[0].appendChild(lib);
+
+        pluginCSS = document.createElement('link');
+        pluginCSS.setAttribute("rel", "stylesheet");
+        pluginCSS.setAttribute("type", "text/css");
+        pluginCSS.setAttribute("href", "./ODFViewerPlugin.css");
+        document.head.appendChild(pluginCSS);
     }
 
     // that should probably be provided by webodf
@@ -70,6 +70,8 @@ function ODFViewerPlugin() {
     }
 
     var self = this,
+        pluginName = "WebODF",
+        pluginURL = "http://webodf.org",
         odfCanvas = null,
         odfElement = null,
         initialized = false,
@@ -81,6 +83,17 @@ function ODFViewerPlugin() {
     this.initialize = function (viewerElement, documentUrl) {
         // If the URL has a fragment (#...), try to load the file it represents
         init(function () {
+            var session,
+                sessionController,
+                sessionView,
+                odtDocument,
+                shadowCursor,
+                selectionViewManager,
+                caretManager,
+                localMemberId = 'localuser',
+                hyperlinkTooltipView,
+                eventManager;
+
             odfElement = document.getElementById('canvas');
             odfCanvas = new odf.OdfCanvas(odfElement);
             odfCanvas.load(documentUrl);
@@ -90,8 +103,36 @@ function ODFViewerPlugin() {
                 initialized = true;
                 documentType = odfCanvas.odfContainer().getDocumentType(root);
                 if (documentType === 'text') {
-                    odfCanvas.enableAnnotations(true);
+                    odfCanvas.enableAnnotations(true, false);
+
+                    session = new ops.Session(odfCanvas);
+                    odtDocument = session.getOdtDocument();
+                    shadowCursor = new gui.ShadowCursor(odtDocument);
+                    sessionController = new gui.SessionController(session, localMemberId, shadowCursor, {});
+                    eventManager = sessionController.getEventManager();
+                    caretManager = new gui.CaretManager(sessionController, odfCanvas.getViewport());
+                    selectionViewManager = new gui.SelectionViewManager(gui.SvgSelectionView);
+                    sessionView = new gui.SessionView({
+                        caretAvatarsInitiallyVisible: false
+                    }, localMemberId, session, sessionController.getSessionConstraints(), caretManager, selectionViewManager);
+                    selectionViewManager.registerCursor(shadowCursor);
+                    hyperlinkTooltipView = new gui.HyperlinkTooltipView(odfCanvas,
+                        sessionController.getHyperlinkClickHandler().getModifier);
+                    eventManager.subscribe("mousemove", hyperlinkTooltipView.showTooltip);
+                    eventManager.subscribe("mouseout", hyperlinkTooltipView.hideTooltip);
+
+                    var op = new ops.OpAddMember();
+                    op.init({
+                        memberid: localMemberId,
+                        setProperties: {
+                            fillName: runtime.tr("Unknown Author"),
+                            color: "blue"
+                        }
+                    });
+                    session.enqueue([op]);
+                    sessionController.insertLocalCursor();
                 }
+
                 self.onLoad();
             });
         });
@@ -151,9 +192,28 @@ function ODFViewerPlugin() {
         }
         return pages;
     };
-    
+
     this.showPage = function (n) {
         odfCanvas.showPage(n);
     };
- 
+
+    this.getPluginName = function () {
+        return pluginName;
+    };
+
+    this.getPluginVersion = function () {
+        var version;
+
+        if (String(typeof webodf) !== "undefined") {
+            version = webodf.Version;
+        } else {
+            version = "Unknown";
+        }
+
+        return version;
+    };
+
+    this.getPluginURL = function () {
+        return pluginURL;
+    };
 }

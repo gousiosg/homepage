@@ -13,7 +13,7 @@ end
 
 desc "Import the Advanced Software Engineering lab notes"
 task :atse do
-  src = "#{homedir}/Documents/Misc/labs/isrm/Makefile"
+  src = "#{homedir}/Documents/course-material/isrm/Makefile"
   target = 'courses/atse/index.md'
   unless uptodate?(target, [src])
     mkdir_p(File.dirname target)

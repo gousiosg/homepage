@@ -16,9 +16,10 @@ the following:
 
 ###Software Engineering - Software Analytics
 
-I am currently exploring how {% cite_details GPD14 --text pull-based distributed development %} works both [quantitatively](https://github.com/gousiosg/pullreqs) ({%cite_details GPD14 --text ICSE 2014 %}) and [qualitatively](https://github.com/gousiosg/pullreqs-survey) ({%cite_details GZSD15 --text ICSE 2015 %}).
+I am currently exploring how {% cite_details GPD14 --text pull-based distributed development %} works both [quantitatively](https://github.com/gousiosg/pullreqs) ({%cite_details GPD14 --text ICSE 2014 %}) and [qualitatively](https://github.com/gousiosg/pullreqs-survey) ({%cite_details GZSD15 --text ICSE 2015 %}, {%cite_details GB15 --text submission to FSE 2015 %}).
 {% cite_details GZ14 --text The dataset %} I developed as part of the
-quantitative investigation, won the [best dataset award](http://2014.msrconf.org/history.php) at MSR 2014.
+quantitative investigation, won the [best dataset award](http://2014.msrconf.org/history.php) at MSR 2014. Using the findings of the qualitative work, I have
+also co-proposed a service to help developers {% cite_details VGZ15 --text prioritize pull request handling %} and a service to {% cite_details HG15 --text match job advertisments to developer profiles %}.
 
 I actively develop and maintain a
 [collection of tools](https://github.com/gousiosg/github-mirror) for

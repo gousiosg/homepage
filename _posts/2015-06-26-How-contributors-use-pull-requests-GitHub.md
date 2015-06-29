@@ -28,10 +28,9 @@ The main motivation for contributing to a project is its usage. This usage can
 be a dependency from another project the contributor is developing or fixing an
 end user bug. Altruistic motives (still) play a role: 33% of the respondents
 mentioned that they want to devote their time to a good cause. Developers also
-contributor for natural interest and personal development reasons, for
-example to sharpen their programming skills or intellectual stimulation.
-Finally, approximately 35% of the respondents related contributions to career
-development, raging from enriching their profile to attraching new customers.
+contribute for natural interest and personal development reasons, for
+example to *sharpen their programming skills* or for the *intellectually
+stimulating* fun of it. Finally, approximately 35% of the respondents related contributions to career development, raging from enriching their profile to attraching new customers.
 <blockquote>
   <p>
     <i>R121: Making contributions to [project] makes it easier for me to get new clients.</i>
@@ -45,8 +44,8 @@ changes or whether similar pull requests where submitted recently (59%).
 Half of them try to communicate their changes to the core team. Moreover,
 trying to be good citizens, they check for pull request guidelines in
 the project. Only few (32%) check for similar open PRs; this might
-explain the fact that we found in another study that many PRs are closed due to
-being duplicate.
+explain the fact that we found
+[in another study](/blog/Exploration-pull-requests/) that many PRs are closed due to being duplicate.
 
 After coding the change, contributors (81%) expect tests to run, while they
 try to honour the project guidelines (79%). Again, only very few check whether
@@ -85,7 +84,7 @@ is also what many contributors have been complaining about.
 </blockquote>
 
 WRT tools, contributors have trouble in two fronts: using git and especially
-doing (*conflict resolution*) in the face of multiple branches and, more importantly, creating the required setup to build a project and run its test suite (*infrastructure setup*). 
+doing (*conflict resolution*) in the face of multiple branches and, more importantly, creating the required setup to build a project and run its test suite (*infrastructure setup*).
 
 Finally, many problems are social. The most prominent one is *responsiveness*:
 more than 15% of the survey participants find that getting a timely feedback, if any, for their pull requests is hard and they mostly mention people-related causes.

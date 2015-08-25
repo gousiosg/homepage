@@ -89,7 +89,7 @@ doing (*conflict resolution*) in the face of multiple branches and, more importa
 Finally, many problems are social. The most prominent one is *responsiveness*:
 more than 15% of the survey participants find that getting a timely feedback, if any, for their pull requests is hard and they mostly mention people-related causes.
 Respondents specify that they would rather receive a clear reject than having no response for their PRs. If nothing else, prompt feedback reassures contributors
-that their effort is not in vein and helps them predict future communication patterns.
+that their effort is not in vain and helps them predict future communication patterns.
 
 *Communication* is also hard over Github's pull request mechanism (see also above).
 It is therefore hard to *explain rationale* for a change. Typical issues prevalent in online forums are also prevalent in pull requests: *politics*, *divergent opinions*, *bikeshedding* and general *rudeness* have been reported by contributors, but admittedly not too often.
@@ -112,7 +112,7 @@ involved.
 #### Integrators
 * Provide comprehensive contribution guidelines
 * Invest in good tests and [run a](https://www.cloudbees.com) [CI](http://travis-ci.org)
-* Automate everything: [development environment setup](https://puppetlabs.com), [deployment](www.docker.com) and [quality](http://scrutinizer-ci.com) evaluation
+* Automate everything: [development environment setup](https://puppetlabs.com), [deployment](http://www.docker.com) and [quality](http://scrutinizer-ci.com) evaluation
 * Monitor the project's [pull request handling performance](http://ghtorrent.org/pullreq-perf/). Compare against the norms, promptly close dead pull requests.
 * Be proactive: Establish a communication ettiquette, actively enforce it.
 

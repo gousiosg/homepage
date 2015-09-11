@@ -16,24 +16,49 @@ the following:
 
 ###Software Engineering - Software Analytics
 
-I am currently exploring how {% cite_details GPD14 --text pull-based distributed development %} works both [quantitatively](https://github.com/gousiosg/pullreqs) ({%cite_details GPD14 --text ICSE 2014 %}) and [qualitatively](https://github.com/gousiosg/pullreqs-survey) ({%cite_details GZSD15 --text ICSE 2015 %}, {%cite_details GB15 --text submission to FSE 2015 %}).
+#### Current work
+
+I am currently exploring how
+{% cite_details GPD14 --text pull-based distributed software development %} works both [quantitatively](https://github.com/gousiosg/pullreqs)
+({%cite_details GPD14 --text ICSE 2014 %}) and
+[qualitatively](https://github.com/gousiosg/pullreqs-survey)
+({%cite_details GZSD15 --text ICSE 2015 %},
+{%cite_details GB15 --text submission to ICSE 2016 %}).
 {% cite_details GZ14 --text The dataset %} I developed as part of the
 quantitative investigation, won the [best dataset award](http://2014.msrconf.org/history.php) at MSR 2014. Using the findings of the qualitative work, I have
-also co-proposed a service to help developers {% cite_details VGZ15 --text prioritize pull request handling %} and a service to {% cite_details HG15 --text match job advertisments to developer profiles %}.
+also co-proposed a service to help developers
+{% cite_details VGZ15 --text prioritize pull request handling %} and a service to {% cite_details HG15 --text match job advertisments to developer profiles %}.
 
 I actively develop and maintain a
 [collection of tools](https://github.com/gousiosg/github-mirror) for
 {% cite_details GS12 --text obtaining %}
 and {% cite_details G13 --text analysing %} data from Github, throught the [GHTorrent](https://ghtorrent.org) project. The project has been awarded
 the [best data project award](http://2014.msrconf.org/history.php) at MSR 2013
-and has been selected as the official dataset of the [MSR 2014 mining
-challenge](http://2014.msrconf.org/challenge.php). At the moment (Jan 10) 25
-papers where based on it, more that 50 researchers are [using its data](http://ghtorrent.org/raw.html),
-while GitHub included it in its [2014 data challenge](https://github.com/blog/1864-third-annual-github-data-challenge).
+and has been selected as the official dataset of the
+[MSR 2014 mining challenge](http://2014.msrconf.org/challenge.php).
+At the moment (Sep 2015)
+[60 papers](https://scholar.google.gr/scholar?oi=bibs&hl=en&cites=11132126230347149781)
+[where based on it](http://ghtorrent.org/halloffame.html), more that 100 researchers are [using its data](http://ghtorrent.org/raw.html),
+while GitHub included it in its
+[2014 data challenge](https://github.com/blog/1864-third-annual-github-data-challenge).
+Together with collegues, we have documented the promises and pitfalls of doing research with GHTorrent
+({% cite_details KGBSGD14 --text MSR14 %},
+{% cite_details KGBSGD15 --text EMSE %}).
 
+On a parallel track, I am also doing research, in the context of the
+[TestRoots](http://testroots.org) project on how developers use automated
+testing. In this context, I co-implemented a data collection and analysis
+pipeline for the [Watchdog](https://github.com/TestRoots/watchdog) framework
+and co-implemented a similar pipeline for [Travis CI data](https://github.com/Inventitech/travis-analysis). With those tools, we have shown
+({% cite_details BGZ15 --text ICSE-NIER15%},
+{% cite_details BGPZ15 --text FSE15 %}) that developers
+do not test as much as they thing they do, do not follow TDD approaches and
+investigated how testing in done in CI (submission to ICSE 2016).
+
+#### Past work
 I led the design and development of [Alitheia Core](http://www.sqo-oss.org)
-(also on [Github](https://github.com/istlab/Alitheia-Core)),
-a high performance software analytics platform
+(also on [Github](https://github.com/istlab/Alitheia-Core)), a
+{% cite_details GS14 --text high performance software analytics platform %}
 that works with data from software repositories. I used the platform to develop models for the {% cite_details KGSP09 --text evaluation %} of
 {% cite_details GKS08 --text developer contribution %}, to investigate the evolution of {% cite_details MGS12 --text software security issues %} and to
 {% cite_details Gousi09-phdthesis --text process %}
@@ -85,25 +110,28 @@ I have written the following research proposals which led to funding for
 me or for the institution I was working for at the time. I have also authored
 and co-authored several other proposals, obviously not as lucky ones :-)
 
+Pourquoi
+: Pull request quality services. STW Take-off fase 1. &euro;40,000. Host: TU Delft. Funding agency: STW. 2014
+
 SEFUNC
 : Software Engineering Properties of Functionally Enabled
 Languages. Marie Curie Intra European Fellowship grant. Duration 16 months.
 Total budget &euro;130,000. Host: TU Delft. Funding agency: Research
-Executive Agency (European Commission).
+Executive Agency (European Commission). 2012
 
 STEREO
 : Software Engineering Research Platform.
 Collaborative research project. 3 partners. Duration 36 months. Total
-budget: &euro;600,000. Host: Athens University of Economics and Business. Funding agency: Greek Secretariat of Research and Technology.
+budget: &euro;600,000. Host: Athens University of Economics and Business. Funding agency: Greek Secretariat of Research and Technology. 2010
 
 CallGraphRank
 : Pagerank on software graphs.  Basic research grant. 2
 researchers. Duration 12 months. Total budget: &euro;10,000. Funding agency:
-Athens University of Economics and Business.
+Athens University of Economics and Business. 2010
 
 SQO-OSS
 : Software Quality Observatory for Open Source Software. Collaborative research project. 6 partners. Duration 24 months.
-Total budget &euro;1,638,000. Host: Athens University of Economics and Business. Funding agency: European Commission.
+Total budget &euro;1,638,000. Host: Athens University of Economics and Business. Funding agency: European Commission. 2006
 
 
 ##Projects

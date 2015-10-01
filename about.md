@@ -69,14 +69,13 @@ services that host (some version of) my online profile
     </div>
      <div class="row">
       <div class="span1">
-        <b>Postal Address</b>
+        <b>Visiting Address</b>
       </div>
       <div class="span2">
-        Gousios Georgios
-        Mercator I
-        Radboud University Nijmegen
-        Nijmegen, 6525
-        The Netherlands
+        Room M1.01.18
+        Faculty of Science
+        Toernooiveld 212
+        6525EC Nijmegen
       </div>
     </div>
   </div>

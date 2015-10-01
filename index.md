@@ -32,7 +32,7 @@ title: Georgios Gousios home page
     <p>Welcome to my home page!</p>
 
     <p>I am an assistant professor at the
-    <a href="http://www.ru.nl/ds/"> Digital security group</a>,
+    <a href="http://www.ru.nl/icis/"> Institute for Computing and Information Sciences</a>,
     <a href="http://www.ru.nl">Radboud Universiteit Nijmegen</a>.
             Before that, I was a postdoc with the
             <a href="http://swerl.tudelft.nl/bin/view/Main/WebHome">Software engineering group</a> at <a href="http://www.tudelft.nl/">TU Delft</a>.

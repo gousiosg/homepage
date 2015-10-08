@@ -13,10 +13,15 @@ Journals
 
 {% bibliography --file article %}
 
-Conferences
+Conferences (full papers)
 -----------
 
 {% bibliography --file inproceedings %}
+
+Conferences (short papers and workshops)
+-----------
+
+{% bibliography --file inworkshop %}
 
 Book chapters
 -------------
@@ -38,7 +43,7 @@ Pending Judgement
 
 {% bibliography --file pending %}
 
-Working papers 
+Working papers
 --------------
 
 {% bibliography --file working %}

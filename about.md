@@ -54,32 +54,3 @@ services that host (some version of) my online profile
 * [Amazon.co.uk wishlist](http://www.amazon.co.uk/wishlist/2ONAREYL5GL9S)
 * [Runkeeper](http://runkeeper.com/user/gousiosg/profile)
 
-### Contact
-
-<div class="row">
-  <div class="span3">
-    <div class="row">
-      <div class="span1">
-        <b>Email</b>
-      </div>
-      <div class="span2">
-        Gmail: gousiosg
-      </div>
-    </div>
-     <div class="row">
-      <div class="span1">
-        <b>Visiting Address</b>
-      </div>
-      <div class="span2">
-        Room M1.01.18
-        Faculty of Science
-        Toernooiveld 212
-        6525EC Nijmegen
-      </div>
-    </div>
-  </div>
-  <div class="span9">
-   <iframe src="https://www.google.com/maps/d/embed?mid=zfY4c9hpEs6M.kClcleuVj1w8" width="640" height="480"></iframe>
-  </div>
-</div>
-

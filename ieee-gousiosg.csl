@@ -125,6 +125,15 @@
       </else>
     </choose>
   </macro>
+
+  <macro name="award">
+    <choose>
+      <if variable="award">
+        <text value="&lt;img src=&rsquo;/files/award.png&rsquo; width=20 /&gt;"/>
+      </if>
+    </choose>
+  </macro>
+
   <macro name="publisher">
     <choose>
       <if type=" bill book chapter graphic legal_case legislation motion_picture paper-conference song" match="any">
@@ -230,6 +239,7 @@
     <layout suffix=".">
       <!-- Citation Number -->
       <!--<text variable="citation-number" prefix="[" suffix="]"/>-->
+      <text macro="award" />
       <!-- Author(s) -->
       <text macro="author" suffix=", "/>
       <!-- Rest of Citation -->

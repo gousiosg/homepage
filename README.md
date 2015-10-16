@@ -17,7 +17,7 @@ to running `jekyll`
 
 ```bash
 jekyll build
-rsync -av _site/* gousiosg@www.gousios.gr:~/public_html/
+rsync -av _site/* gousiosg@www.gousios.gr:~/gousios.gr/
 ```
 
 ## License

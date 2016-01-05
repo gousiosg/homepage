@@ -51,7 +51,7 @@ title: Georgios Gousios home page
 
             <p>Projects I am working on</p>
             <ul>
-              <li><a href="https://ghtorrent.org">GHTorrent</a>: A project to make the Github REST API queriable</li>
+              <li><a href="http://ghtorrent.org">GHTorrent</a>: A project to make the Github REST API queriable</li>
               <li><a href="http://testroots.org/">TestRoots</a>: Assessing how developers test software</li>
             </ul>
       </div>

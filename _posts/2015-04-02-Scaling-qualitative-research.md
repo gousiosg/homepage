@@ -8,7 +8,7 @@ categories: survey qualitative
 If you know me well, this blog post might seem strange. I have always been a  proponent of quantitative methods and big data.
 Despite this, in April 2014, I run a survey that got filled in by 1,500 people.
 One part of the survey analysis will be presented at [ICSE 2015](http://www.gousios.gr/bibliography/GZSD15.html) this year,
-while we submitted the second part to [FSE 2015]() (still twiddling our thumbs about the results). In wake of the ICSE 2015 publication, many colleagues asked me how I managed to get so many responses.
+while we submitted the second part to [FSE 2015](http://gousios.gr/bibliography/GB15.html) (still twiddling our thumbs about the results). In wake of the ICSE 2015 publication, many colleagues asked me how I managed to get so many responses.
 
 Here is how I did it.
 

@@ -56,7 +56,7 @@ title: Georgios Gousios home page
             </ul>
       </div>
       <div class="span2">
-            <img alt="Picture of Georgios Gousios" align="right" width="150px" src="img/moi.jpg"/>
+            <a href="img/moi_full.jpg"><img alt="Picture of Georgios Gousios" align="right" width="150px" src="img/moi.jpg"/></a>
       </div>
     </div>
     <div class="row">

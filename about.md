@@ -6,23 +6,21 @@ tags: about cv
 
 ### Bio
 
-*Dr. Georgios Gousios* is an assistant professor at the Model Based Software
-Development group, Radboud University Nijmegen. He obtained his PhD in Empirical
-Software Engineering (mining software repositories) with distinction from the
-Athens University of Economics and Business (AUEB), supervised by Prof. Diomidis
-Spinellis. He has 2.5 years of postdoctoral experience as a Marie Curie fellow
-at TU Delft (working with Prof. Arie van Deursen), and 2.5 years of industrial
-experience in Greece and Germany. His research specialty is software analytics
-and large-scale empirical software engineering. He has worked in the fields of
-distributed software development processes, software quality, software testing,
-developer productivity assessment, research infrastructures and software
-security. His research has been published in top venues (ICSE, FSE, EMSE, MSR)
-and has received 3 best paper awards. In total, he has published more that 40
-papers and also co-edited the "Beautiful Architectures" book (OReilly, 2009).
-He is the main author of the GHTorrent data collection and curration framework
-and the Alitheia Core repository mining platform. His research interests include
-software engineering, software analytics and programming languages.
-
+*Dr. Georgios Gousios* is an assistant professor at the Software
+Science group, Radboud University Nijmegen. His
+research interests include software engineering, software analytics and
+programming languages. He works in the fields
+of distributed software development processes, software quality, software
+testing, developer productivity assessment, research infrastructures and
+software security. His research has been published in top venues (ICSE, FSE,
+EMSE, MSR) where he has received 3 best paper awards. In total, he has published
+more that 40 papers and also co-edited the ``Beautiful Architectures'' book
+(OReilly, 2009). He is the main author of the GHTorrent data collection and
+curration framework and the Alitheia Core repository mining platform.
+Dr.\ Gousios holds a PhD in Empirical Software Engineering
+(mining software repositories) with distinction from the Athens University of
+Economics and Business (AUEB) and an MSc (software engineering) from the
+University of Manchester.
 
 A full CV can be provided upon request.
 

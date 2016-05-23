@@ -6,20 +6,19 @@ tags: about cv
 
 ### Bio
 
-*Dr. Georgios Gousios* is an assistant professor at the Software
-Science group, Radboud University Nijmegen. His
-research interests include software engineering, software analytics and
-programming languages. He works in the fields
-of distributed software development processes, software quality, software
+*Dr. Georgios Gousios* is an assistant professor at the Software Science group,
+Radboud University Nijmegen. His research interests include software
+engineering, software analytics and programming languages. He works in the
+fields of distributed software development processes, software quality, software
 testing, developer productivity assessment, research infrastructures and
 software security. His research has been published in top venues (ICSE, FSE,
-EMSE, MSR) where he has received 3 best paper awards. In total, he has published
+EMSE, MSR) where he has received 4 best paper awards. In total, he has published
 more that 40 papers and also co-edited the ``Beautiful Architectures'' book
 (OReilly, 2009). He is the main author of the GHTorrent data collection and
-curration framework and the Alitheia Core repository mining platform.
-Dr.\ Gousios holds a PhD in Empirical Software Engineering
-(mining software repositories) with distinction from the Athens University of
-Economics and Business (AUEB) and an MSc (software engineering) from the
+curration framework and the Alitheia Core repository mining platform.  Dr.
+Gousios holds a PhD in Empirical Software Engineering (mining software
+repositories) with distinction from the Athens University of Economics and
+Business (AUEB) and an MSc (software engineering) with distinction from the
 University of Manchester.
 
 A full CV can be provided upon request.
@@ -50,5 +49,4 @@ services that host (some version of) my online profile
 * [ACM](http://portal.acm.org/author_page.cfm?id=81351592431)
 * [O'Reilly](http://www.oreillynet.com/pub/au/3473)
 * [Amazon.co.uk wishlist](http://www.amazon.co.uk/wishlist/2ONAREYL5GL9S)
-* [Runkeeper](http://runkeeper.com/user/gousiosg/profile)
-
+* [Strava](https://www.strava.com/athletes/14122138)

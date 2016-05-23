@@ -1,5 +1,5 @@
 ---
-layout: page 
+layout: page
 title: Research
 ---
 {% include JB/setup %}
@@ -23,7 +23,8 @@ I am currently exploring how
 ({%cite_details GPD14 --text ICSE 2014 %}) and
 [qualitatively](https://github.com/gousiosg/pullreqs-survey)
 ({%cite_details GZSD15 --text ICSE 2015 %},
-{%cite_details GSB16 --text ICSE 2016 %}).
+{%cite_details GSB16 --text ICSE 2016 %}
+[SIGSOFT best paper award](http://2016.icse.cs.txstate.edu/program/awards)).
 {% cite_details GZ14 --text The dataset %} I developed as part of the
 quantitative investigation, won the [best dataset award](http://2014.msrconf.org/history.php) at MSR 2014. Using the findings of the qualitative work, I have
 also co-proposed a service to help developers
@@ -36,14 +37,17 @@ and {% cite_details G13 --text analysing %} data from Github, throught the [GHTo
 the [best data project award](http://2014.msrconf.org/history.php) at MSR 2013
 and has been selected as the official dataset of the
 [MSR 2014 mining challenge](http://2014.msrconf.org/challenge.php).
-At the moment (Feb 2016)
-[80 papers](https://scholar.google.gr/scholar?oi=bibs&hl=en&cites=11132126230347149781)
-[where based on it](http://ghtorrent.org/halloffame.html), more that 100 researchers are [using its data](http://ghtorrent.org/raw.html),
-while GitHub included it in its
-[2014 data challenge](https://github.com/blog/1864-third-annual-github-data-challenge).
+At the moment (May 2016)
+[100 papers](https://scholar.google.gr/scholar?oi=bibs&hl=en&cites=11132126230347149781)
+[where based on it](http://ghtorrent.org/halloffame.html), more that 100 researchers are [using its data](http://ghtorrent.org/raw.html), GitHub included it in its
+[2014 data challenge](https://github.com/blog/1864-third-annual-github-data-challenge), while [Microsoft chose it](/bibliography/Gousit16f.html) as the data source for monitoring their OSS projects.
 Together with collegues, we have documented the promises and pitfalls of doing research with GHTorrent
 ({% cite_details KGBSGD14 --text MSR14 %},
 {% cite_details KGBSGD15 --text EMSE %}).
+
+I am also working on the area of software analytics. We proposed a
+{% cite_details GSV16 --text reference architecture %} for realtime mining
+and summarization of repository data. Stay tuned for more!
 
 On a parallel track, I am also doing research, in the context of the
 [TestRoots](http://testroots.org) project on how developers use automated
@@ -51,9 +55,12 @@ testing. In this context, I co-implemented a data collection and analysis
 pipeline for the [Watchdog](https://github.com/TestRoots/watchdog) framework
 and co-implemented a similar pipeline for [Travis CI data](https://github.com/Inventitech/travis-analysis). With those tools, we have shown
 ({% cite_details BGZ15 --text ICSE-NIER15%},
+{% cite_details BLPGZ16 --text ICSE-SERIP16,%}
 {% cite_details BGPZ15 --text FSE15 %}) that developers
 do not test as much as they thing they do, do not follow TDD approaches and
-investigated how testing in done in CI (submission to FSE 2016).
+investigated how testing in done in CI (submission to FSE 2016). We also
+created the [TravisTorrent](http://travistorrent.testroots.org) project to
+disseminate Travis build results in a way similar to GHTorrent.
 
 #### Past work
 I led the design and development of [Alitheia Core](http://www.sqo-oss.org)
@@ -133,7 +140,6 @@ SQO-OSS
 : Software Quality Observatory for Open Source Software. Collaborative research project. 6 partners. Duration 24 months.
 Total budget &euro;1,638,000. Host: Athens University of Economics and Business. Funding agency: European Commission. 2006
 
-
 ##Projects
 
 A list of research projects I have been actively involved with, along with a description of my role in them, in reverse chronological order:
@@ -156,4 +162,3 @@ learn from past behaviours to drive up testing quality and efficiency.
 
 [Jamaica](http://apt.cs.man.ac.uk/projects/jamaica/)
 : The project investigated chip multiprocessors and the accompanying parallel software. As part of my MSc research, I ported the JikesRVM Java virtual machine to run on top of bare hardware.
-

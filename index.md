@@ -32,10 +32,8 @@ title: Georgios Gousios home page
     <p>Welcome to my home page!</p>
 
     <p>I am an assistant professor at the
-    <a href="http://www.ru.nl/icis/"> Institute for Computing and Information Sciences</a>,
-    <a href="http://www.ru.nl">Radboud Universiteit Nijmegen</a>.
-            Before that, I was a postdoc with the
-            <a href="http://swerl.tudelft.nl/bin/view/Main/WebHome">Software engineering group</a> at <a href="http://www.tudelft.nl/">TU Delft</a>.
+    <a href="http://www.wis.ewi.tudelft.nl">Web Information Systems group</a>,
+    <a href="http://www.tudelft.nl">TU Delft</a>.
             I got my PhD from the
             <a href="http://istlab.dmst.aueb.gr/sense">
               Software Engineering and Security laboratory</a>, at the
@@ -75,12 +73,9 @@ title: Georgios Gousios home page
   </div>
 </div>
 
-<a href='atom.xml'><img alt="atom feed" src="/img/rss.png" height='23px' width='23px' border='0'/></a> **Latest blog posts** 
+<a href='atom.xml'><img alt="atom feed" src="/img/rss.png" height='23px' width='23px' border='0'/></a> **Latest blog posts**
 <ul class="posts">
   {% for post in site.posts |limit: 3 %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
-
-
-

@@ -3,10 +3,8 @@
 permalink: /blog/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-#auto: true
-highlighter: pygments
-
-markdown: rdiscount
+highlighter: rouge
+markdown: kramdown
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
@@ -21,30 +19,7 @@ author :
 
 homedir: /Users/gousiosg
 
-# The production_url is only used when full-domain names are needed
-# such as sitemap.txt
-# Most places will/should use BASE_PATH to make the urls
-#
-# If you have set a CNAME (pages.github.com) set your custom domain here.
-# Else if you are pushing to username.github.com, replace with your username.
-# Finally if you are pushing to a GitHub project page, include the project name at the end.
-#
 production_url : http://www.gousios.gr
-
-# All Jekyll-Bootstrap specific configurations are namespaced into this hash
-#
-JB :
-  version : 0.2.13
-
-  BASE_PATH : false
-  ASSET_PATH : false
-
-  # These paths are to the main pages Jekyll-Bootstrap ships with.
-  # Some JB helpers refer to these paths; change theme here if needed.
-  #
-  archive_path: /blog/archive.html
-  categories_path : /blog/categories.html
-  tags_path : /blog/tags.html
 
 scholar:
   style: ./ieee-gousiosg.csl

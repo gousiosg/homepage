@@ -2,15 +2,14 @@
 layout: default
 title: Georgios Gousios home page
 ---
-{% include JB/setup %}
 
 <div class="row">
   <div class="span2" align="center">
 
-<a href="http://www.linkedin.com/in/georgiosgousios"><img alt="linkedin profile" src="img/linkedin.gif" width='23px' border='0'/></a>
-  <a href="http://www.facebook.com/gousiosg"><img alt="facebook profile" src="img/fb.jpg"  width='23px' border='0'/></a>
-  <a href="http://twitter.com/gousiosg"><img alt="twitter feed" src="img/twitter.gif" width='23px' border='0'/></a>
-<a href='atom.xml'><img alt="rss feed" src="img/rss.png" height='23px' width='23px' border='0'/></a>
+<a href="http://www.linkedin.com/in/georgiosgousios"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  <a href="http://www.facebook.com/gousiosg"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+  <a href="http://twitter.com/gousiosg"<i class="fa fa-twitter" aria-hidden="true"></i></a>
+<a href='atom.xml'><i class="fa fa-rss" aria-hidden="true"></i></a>
 
   <a href='http://scholar.google.gr/citations?hl=el&amp;user=-NI5S50AAAAJ&amp;oi=sra'><img alt='Google scholar' src="img/gscholar.gif" width='95'  border='0'/></a>
 
@@ -75,7 +74,7 @@ title: Georgios Gousios home page
 
 <a href='atom.xml'><img alt="atom feed" src="/img/rss.png" height='23px' width='23px' border='0'/></a> **Latest blog posts**
 <ul class="posts">
-  {% for post in site.posts |limit: 3 %}
+  {% for post in site.posts limit: 3 %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>

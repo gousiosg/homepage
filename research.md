@@ -2,7 +2,6 @@
 layout: page
 title: Research
 ---
-{% include JB/setup %}
 
 ##Interests
 

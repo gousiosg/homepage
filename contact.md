@@ -17,6 +17,7 @@ email with the topic of your visit, but this is not obligatory.
     <div class="row">
       <div class="span1">
         <i class="fa fa-google"></i>
+        <i class="fa fa-facebook"></i>
         <i class="fa fa-github"></i>
         <i class="fa fa-twitter"></i>
       </div>
@@ -24,7 +25,7 @@ email with the topic of your visit, but this is not obligatory.
         gousiosg
       </div>
       <div class="span1">
-        <i class="fa fa-envelope"></i>
+        <i class="fa fa-envelope-o"></i>
       </div>
       <div class="span2">
         g.gousios@tudelft.nl
@@ -32,20 +33,21 @@ email with the topic of your visit, but this is not obligatory.
     </div>
     <div class="row">
       <div class="span1">
-        <i class="fa fa-envelope-o"></i>
+        <i class="fa fa-envelope"></i>
+        <i class="fa fa-map-marker"></i>
       </div>
       <div class="span2">
+        Building 36 <br/>
         Room 08.140 <br/>
-        Faculty of Electrical Engineering, Mathematics and Computer Science <br/>
-        Mekelweg 4<br/>
+        Mekelweg 4 <br/>
         2628 CD, Delft<br/>
         the Netherlands <br/>
       </div>
     </div>
    </div>
   </div>
-  <div class="span3"></div>
-  <div class="span6">
+  <div class="span2"></div>
+  <div class="span7">
    <iframe src="https://www.google.com/maps/d/embed?mid=zfY4c9hpEs6M.kClcleuVj1w8" width="480" height="360"></iframe>
   </div>
 </div>

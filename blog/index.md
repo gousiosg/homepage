@@ -18,7 +18,7 @@ Welcome to my blog! Here are the latest posts:
      <h4>{{post.title}}</h4>
      <p> {{ post.content |strip_html|truncatewords: 100 }}
      <span style="blog-read-more"><a href="{{ post.url }}">Read more</a></span>
-     </p> 
+     </p>
      <hr/>
    </div>
  </div>
@@ -50,9 +50,9 @@ Welcome to my blog! Here are the latest posts:
   </tr>
   </thead>
   <tbody>
-{% for category in site.categories|sort %}
+{% for category in site.categories %}
   <tr>
-    <td><a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category[0] }}-ref"><span class="label">{{ category[0] }}</span></a></td>
+    <td><a href="{{ BASE_PATH }}/blog/categories.html#{{ category[0] }}-ref"><span class="label">{{ category[0] }}</span></a></td>
     <td>x {{ category[1].size }} </td>
   </tr>
 {% endfor %}
@@ -61,4 +61,3 @@ Welcome to my blog! Here are the latest posts:
 
 </div>
 </div>
-

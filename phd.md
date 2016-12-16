@@ -3,7 +3,7 @@ layout: default
 title: PhD Thesis
 ---
 
-##PhD Thesis Page
+## PhD Thesis Page
 
 On Jul 4, 2009, I succesfully defended my PhD thesis, entitled Tools and Methods for Large Scale Software Engineering Reseach. [Diomidis Spinellis](http://www.dmst.aueb.gr/dds) was my PhD supervisor.
 
@@ -18,7 +18,7 @@ If you find it useful, you can use the following Bibtex record to cite it.
 {% highlight tex %}
 @phdthesis{Gousi09-phdthesis,
   Author = {Georgios Gousios},
-  School = {Athens University of Economics and Business}, 
+  School = {Athens University of Economics and Business},
   Title = {Tools and Methods for Large Scale Software Engineering Research},
   Month = {July},
   Year = {2009}
@@ -27,7 +27,7 @@ If you find it useful, you can use the following Bibtex record to cite it.
 
 While writing the thesis, I found very useful to monitor my progress using automated tools. You can see the results in the [Thesis-o-meter](tom.html) page.
 
-###Software and Research Data
+### Software and Research Data
 
 My reseach produced a significant amount of software, which forms part of the
 [SQO-OSS](http://www.sqo-oss.org) project. Bundling my specific contributions as
@@ -47,8 +47,7 @@ and the R statistics package.
 
 The depending on the kind of analysis you might want to do, the provided data might not be helpful. The reason is that Alitheia Core defaults to use the real project repository data in several ocassions. Here are the [full mirrors](http://ikaria.dmst.aueb.gr/repositories/).
 
-
-###Long abstract
+### Long abstract
 
 Software engineering is concerned with the study of systematic approaches towards software development and maintenance. According to many authors, software engineering is an empirical science as it strives to produce models that capture the characteristics of the development process or to predict its behaviour. Being an empirical science, software engineering is in a constant need for data.
 
@@ -79,6 +78,5 @@ Overall, our contribution has both a scientific and a practical aspect. More spe
 * We validate our platform by conducting two case studies using it. We find that intense email discussions do not affect short term project evolution and that development team size does not affect software maintainability at the module or project level.
 * We show that the results of the aforementioned case studies could be radically different if bias is applied on the selected experimentation dataset, thereby validating our thesis on the importance of conducting experiments on large scale datasets.
 
-###Acknoweledgements
+### Acknoweledgements
 The work on my thesis was funded by the Greek Secretariat of Research and Technology and by the [FP6-funded](http://cordis.europa.eu/fetch?CALLER=FP6_PROJ&ACTION=D&DOC=1&CAT=PROJ&QUERY=01248c46be97:50b0:2b51e482&RCN=79362) SQO-OSS project.
-

@@ -1,5 +1,5 @@
 ---
-layout: page 
+layout: page
 title: Courses
 ---
 
@@ -14,7 +14,7 @@ develop a softare application for a real client. ([2015](courses/softeng/2015.ht
 * Software analysis: I did an introduction to
 software repository mining ([2015](courses/msr/2015.html)).
 
-####As teaching assistant
+#### As teaching assistant
 
 * Software Re-Engineering: Information about an MSc level
 course I taught at TU Delft, together with Andy Zaidman (2013 and 2014)

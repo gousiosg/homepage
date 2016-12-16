@@ -3,7 +3,7 @@ layout: page
 title: Research Software and Data
 ---
 
-###Projects
+### Projects
 
 * *GHTorrent* is a collection of tools to mirror data from Github's [v3 API](http://developer.github.com) for
 research purposes (see {% cite_details GS12 --text relevant publication %}). The project is currently being
@@ -24,7 +24,7 @@ recent version of those, please contact me directly.
 
 * The *Java DTrace Toolkit (JDT)* is a series of Perl scripts that use the JVM DTrace providers on <del>Open</del>Solaris to provide deep insights on how Java software executes and how it interacts with the operating system. [More...](/sw/jdt.html)
 
-###Scripts and Hacks
+### Scripts and Hacks
 
 * *Whereami* is a Perl script along with a J2ME application that allows a user to
 record his tracks and allows other users to view the current status, speed and
@@ -35,9 +35,8 @@ popular, Latitude service. You can find it here .
 * *Thesis-o-meter*: Almost all computer science PhD students implement a tool to
 monitor their thesis writing progress some time. I am [sharing mine here](/sw/tom.html) to help against re-inventing the wheel (even though I am pretty sure this particular wheel will keep being re-invented forever --- procrastination is much more enjoyable than writing).
 
-###Github
+### Github
 
 Lately, I have been using Github for most of my development work. You can find my profile [here](https://github.com/gousiosg).
 
 <iframe src="http://githubbadge.appspot.com/badge/gousiosg" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
-

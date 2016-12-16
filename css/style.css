@@ -38,6 +38,9 @@ html, body {
   border: 0;
 }
 
+div.span2 i {
+  font-size: 24px;
+}
 
 /* tag_box ======================================================== */
 
@@ -70,4 +73,3 @@ html, body {
 	border:1px solid #4C964D;
 	color:#FFF;
 }
-	

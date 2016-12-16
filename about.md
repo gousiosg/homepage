@@ -29,9 +29,8 @@ I am a member of a number of organisatiations:
 
 * [member](http://portal.acm.org/author_page.cfm?id=81351592431) of the [ACM](http://www.acm.org)
 * member of the [IEEE Computer Society](http://www.computer.org)
-* [active](http://en.wikipedia.org/wiki/User:Gousiosg) (not as much as I would like, unfortunately) Wikipedian
-* member of the [Technical Chamber of Greece](http://www.tee.gr)
-* member of the scientific commitee of the [Greek Open Source Software Organisation](http://ellak.gr/)
+
+In a previous life, I was a member of the [Technical Chamber of Greece](http://www.tee.gr), the scientific commitee of the [Greek Open Source Software Organisation](http://ellak.gr/) and a [Wikipedian](http://en.wikipedia.org/wiki/User:Gousiosg).
 
 ### Online Profile
 

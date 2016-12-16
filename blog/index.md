@@ -37,7 +37,7 @@ Welcome to my blog! Here are the latest posts:
   <tbody>
     <tr>
       <td><span class="">RSS</span></td>
-      <td><a href='../atom.xml'><img alt="atom feed" src="../img/rss.png" height='23px' width='23px' border='0'/></a></td>
+      <td><a href='atom.xml'><i class="fa fa-rss" aria-hidden="true"></i></a></td>
     </tr>
   </tbody>
 </table>

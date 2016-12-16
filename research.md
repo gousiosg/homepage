@@ -3,7 +3,7 @@ layout: page
 title: Research
 ---
 
-##Interests
+## Interests
 
 I am genuinely interested in any topic that has to do with systems, software and security, and combinations thereof. Specifically my research interests are
 the following:
@@ -13,7 +13,7 @@ the following:
 * Programming languages
 * Systems software
 
-###Software Engineering - Software Analytics
+### Software Engineering - Software Analytics
 
 #### Current work
 
@@ -79,7 +79,7 @@ corresponding
 process and the product quality. I have contributed to a
 {% cite_details ASKG11 --text comprehensive survey %} of the literature in OSS research.
 
-###Systems Software and Security
+### Systems Software and Security
 
 I {% cite_details Gousi04-mscthesis --text ported %} [JikesRVM](http://jikesrvm.org),
 a JVM written mostly in Java, to run on top of bare hardware, without support
@@ -111,7 +111,7 @@ was then scaled to analyze the {% cite_details MKLGS13 --text entire Maven repos
 the {% cite_details GAG04 --text security challenges and requirements %}
 of (then) popular component software middleware.
 
-##Grants Obtained
+## Grants Obtained
 I have written the following research proposals which led to funding for
 me or for the institution I was working for at the time. I have also authored
 and co-authored several other proposals, obviously not as lucky ones :-)
@@ -139,7 +139,7 @@ SQO-OSS
 : Software Quality Observatory for Open Source Software. Collaborative research project. 6 partners. Duration 24 months.
 Total budget &euro;1,638,000. Host: Athens University of Economics and Business. Funding agency: European Commission. 2006
 
-##Projects
+## Projects
 
 A list of research projects I have been actively involved with, along with a description of my role in them, in reverse chronological order:
 

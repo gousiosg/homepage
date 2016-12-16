@@ -4,25 +4,21 @@ title: Georgios Gousios home page
 ---
 
 <div class="row">
-  <div class="span2" align="center">
+  <div class="span2">
 
+  <a href="http://twitter.com/gousiosg"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  <a href="http://www.facebook.com/gousiosg"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 <a href="http://www.linkedin.com/in/georgiosgousios"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-  <a href="http://www.facebook.com/gousiosg"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-  <a href="http://twitter.com/gousiosg"<i class="fa fa-twitter" aria-hidden="true"></i></a>
 <a href='atom.xml'><i class="fa fa-rss" aria-hidden="true"></i></a>
 
-  <a href='http://scholar.google.gr/citations?hl=el&amp;user=-NI5S50AAAAJ&amp;oi=sra'><img alt='Google scholar' src="img/gscholar.gif" width='95'  border='0'/></a>
+<br/>
+<a href='http://scholar.google.gr/citations?hl=el&amp;user=-NI5S50AAAAJ&amp;oi=sra'><i class="ai ai-google-scholar"></i></a>
+<a href='http://orcid.org/0000-0002-8495-7939'><i class="ai ai-orcid"></i></a>
 
 <br/>
- <a href="http://dl.acm.org/author_page.cfm?id=81351592431"><img alt="ACM digital library" src="img/acm.jpg" width='23px' /></a>
-
-  <a href="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/g/Gousios:Georgios.html"><img alt="DBLP" src="img/dblp.gif" /></a>
-
-<br/>
-
-<a href="https://github.com/gousiosg"><img alt="Georgios Gousios Github
-    account" src="img/github.png" width="80px"/></a>
-  <a href="http://www.ohloh.net/accounts/21690?ref=Detailed"><img alt='Ohloh profile for gousiosg' src="http://www.ohloh.net/accounts/21690/widgets/account_detailed.gif" width="115px" border='0'/></a>
+<a href="https://github.com/gousiosg"><i class="fa fa-github" aria-hidden="true"></i></a>
+<a href="https://bitbucket.com/gousiosg"><i class="fa fa-bitbucket" aria-hidden="true"></i></a>
+<a href="https://www.openhub.net/accounts/gousiosg"><i class="fa fa-code" aria-hidden="true"></i></a>
 
   </div>
   <div class="span10">
@@ -72,7 +68,7 @@ title: Georgios Gousios home page
   </div>
 </div>
 
-<a href='atom.xml'><img alt="atom feed" src="/img/rss.png" height='23px' width='23px' border='0'/></a> **Latest blog posts**
+<a href='atom.xml'><i class="fa fa-rss" aria-hidden="true"></i></a> **Latest blog posts**
 <ul class="posts">
   {% for post in site.posts limit: 3 %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>

@@ -1,0 +1,58 @@
+---
+layout: page
+title: Teaching
+---
+
+### MSc thesis supervision
+
+If you are interested in doing an MSc thesis with me, please [contact
+me](about.html). You can choose any of the following topics, or propose one that
+I can supervise, based on my [research interests](research.html).
+
+* [Community analysis for GitHub projects](/courses/msc-github-community.html)
+* [Improving pull request usage](/courses/msc-improve-pullreq-handling.html)
+* [Evaluating the use of functional programming characteristics](/courses/msc-se-func.html)
+* [Streaming cascading aggregations](/courses/msc-cascading-aggregations.html)
+* [Real-time technology trends](http://www.cs.ru.nl/J.Visser/students/open-projects/) summarise 
+the activities of software developers across the globe into real-time technology trend lines 
+by monitoring and aggregating the activities in code repositories, developer forums, job 
+advertisements and more. (co-supervised with [Joost Visser](http://www.cs.ru.nl/J.Visser/))
+
+#### Supervised students
+
+* Erik van der Veen: Automatic prioritization of pull requests ({% cite_details VGZ15 --text paper %}, [thesis](http://repository.tudelft.nl/view/ir/uuid%3Aa4df21b6-708b-4c15-a601-45f986a918f5/))
+* Phil Hunte: Automated data migration based on model coupled transformation ([thesis](http://repository.tudelft.nl/view/ir/uuid%3Ab82c0906-7e76-4381-b0cd-a100ba50ccb5/))
+
+#### Done, old or obsolete thesis topics
+
+* [Pagerank as a metric of code importance](/courses/msc-pagerank.html)
+* [Language ecosystem evolution](/courses/msc-lang-ecosystem.html)
+* [A metric of code functional-ness](/courses/msc-functionalness.html)
+
+### Courses
+
+#### At the TU Delft
+
+_Current_
+
+* TI1206 (Minor): Object-Oriented Programming, taught with Andy Zaidman
+
+_Old_
+
+* IN4189 (MSc): Software Re-Engineering, taught with Andy Zaidman (2013 and 2014)
+* IN4389 (MSc): Reactive Programming, taught by Erik Meijer ((2013)[courses/rx/index.html])
+* IN4355 (MSc): Functional Programming, taught by Erik Meijer ((2012)[courses/fp/index.html], (2013)[courses/fp/index.html])
+
+#### At the Radboud University Nijmegen
+
+* NWI-IBI001 (BSc): Software Engineering ([2016](courses/softeng/2016.html))
+* NWI-IMC052 (MSc): Software Development in Start-ups ([2015](courses/softeng/2015.html))
+* NWI-IMC035 (MSc): Software analysis: I did an introduction to
+software repository mining ([2015](courses/msr/2015.html)).
+
+#### At the Athens University of Economics and Business
+
+* [Advanced topics in Software Engineering lab notes](courses/atse/index.html):
+ I developed these lab notes while I was a teaching assistant for Diomidis
+ Spinellis's [homonymous course](http://dmst.aueb.gr/dds/ismr/index.htm)
+ (2005 to 2009)

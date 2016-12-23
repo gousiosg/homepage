@@ -18,16 +18,23 @@ the activities of software developers across the globe into real-time technology
 by monitoring and aggregating the activities in code repositories, developer forums, job 
 advertisements and more. (co-supervised with [Joost Visser](http://www.cs.ru.nl/J.Visser/))
 
-#### Supervised students
+#### Master students
 
-* Erik van der Veen: Automatic prioritization of pull requests ({% cite_details VGZ15 --text paper %}, [thesis](http://repository.tudelft.nl/view/ir/uuid%3Aa4df21b6-708b-4c15-a601-45f986a918f5/))
+_Current_
+
+* [Rik Nijessen](https://www.linkedin.com/in/rik-nijessen-6bb62b43): A metric of code functional-ness
+
+_Old_
+
+* [Yannic Smeets](https://nl.linkedin.com/in/yannic-smeets-a1030b73/en): Improving the Adoption of Dynamic Web Security Vulnerability Scanners ([thesis](www.ru.nl/publish/pages/769526/z03_yannic_smeets.pdf))
+* [Erik van der Veen](https://www.linkedin.com/in/erikvdv1): Automatic prioritization of pull requests ({% cite_details VGZ15 --text paper %}, [thesis](http://repository.tudelft.nl/view/ir/uuid%3Aa4df21b6-708b-4c15-a601-45f986a918f5/))
 * Phil Hunte: Automated data migration based on model coupled transformation ([thesis](http://repository.tudelft.nl/view/ir/uuid%3Ab82c0906-7e76-4381-b0cd-a100ba50ccb5/))
 
 #### Done, old or obsolete thesis topics
 
 * [Pagerank as a metric of code importance](/courses/msc-pagerank.html)
-* [Language ecosystem evolution](/courses/msc-lang-ecosystem.html)
-* [A metric of code functional-ness](/courses/msc-functionalness.html)
+* [Language ecosystem evolution](/courses/msc-lang-ecosystem.html) (by [Riivo Kikas](https://www.linkedin.com/in/riivokikas))
+* [A metric of code functional-ness](/courses/msc-functionalness.html) (by Rik Nijessen)
 
 ### Courses
 
@@ -40,8 +47,8 @@ _Current_
 _Old_
 
 * IN4189 (MSc): Software Re-Engineering, taught with Andy Zaidman (2013 and 2014)
-* IN4389 (MSc): Reactive Programming, taught by Erik Meijer ((2013)[courses/rx/index.html])
-* IN4355 (MSc): Functional Programming, taught by Erik Meijer ((2012)[courses/fp/index.html], (2013)[courses/fp/index.html])
+* IN4389 (MSc): Reactive Programming, taught by Erik Meijer ([2013](courses/rx/index.html))
+* IN4355 (MSc): Functional Programming, taught by Erik Meijer ([2012](courses/fp/index.html), [2013](courses/fp/index.html))
 
 #### At the Radboud University Nijmegen
 
@@ -52,7 +59,4 @@ software repository mining ([2015](courses/msr/2015.html)).
 
 #### At the Athens University of Economics and Business
 
-* [Advanced topics in Software Engineering lab notes](courses/atse/index.html):
- I developed these lab notes while I was a teaching assistant for Diomidis
- Spinellis's [homonymous course](http://dmst.aueb.gr/dds/ismr/index.htm)
- (2005 to 2009)
+* [Advanced topics in Software Engineering lab notes](courses/atse/index.html), taught by Diomidis Spinellis

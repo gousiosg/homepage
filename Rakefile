@@ -7,25 +7,13 @@ config = YAML::load(File.open('_config.yml'))
 homedir = config['homedir']
 
 desc "Run all pre-requisites"
-task :default => [:bib, :atse] do
+task :default => [:bib, :check] do
   puts "Building dependencies"
 end
 
-desc "Import the Advanced Software Engineering lab notes"
-task :atse do
-  src = "#{homedir}/Documents/course-material/isrm/Makefile"
-  target = 'courses/atse/index.md'
-  unless uptodate?(target, [src])
-    mkdir_p(File.dirname target)
-    old = FileUtils.pwd
-    cd File.dirname src
-    sh "make html" or fail
-    cd old
-    Find.find(File.join((File.dirname src), 'html')) do |f|
-      next if File.directory?(f)
-      cp f, File.dirname(target)
-    end
-  end
+desc "Check dead links"
+task :default => [:] do
+  puts "Building dependencies"
 end
 
 desc "Generate bib file"

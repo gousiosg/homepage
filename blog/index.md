@@ -1,6 +1,6 @@
 --- 
 layout: default
-title: Georgios Gousios blog 
+title: Georgios Gousios blog
 ---
 
 <div class="page-header">
@@ -19,7 +19,7 @@ title: Georgios Gousios blog
       <div class="col-md-10">
         <span class="blogtitle">{{post.title}}</span>
         <p> {{ post.content |strip_html|truncatewords: 100 }}
-          <span style="blog-read-more"><a href="{{ post.url }}">Read more</a></span>
+          <span style="blog-read-more"><a href="{{ post.url }}.html">Read more</a></span>
         </p>
         <hr/>
       </div>

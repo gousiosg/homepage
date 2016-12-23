@@ -82,10 +82,7 @@ prefer commit metadata preserving merges.*
 ### How do integrators decide whether to accept a contribution?
 
 #### Decision to accept
-<div style="width: 60%;margin-left:auto;margin-right:auto;">
-<p><a href="/files/pr-int-acceptance.png" rel="lightbox">
-<img src="/files/pr-int-acceptance.png" class="img-polaroid" align="center"/></a></p>
-</div>
+<img src="/files/pr-int-acceptance.png" style="width: 50%;float: center;" class="img-polaroid">
 
 The most important factor leading to acceptance of a contribution is its
 quality. Quality has many manifestations in our response set; integrators
@@ -110,10 +107,8 @@ cases, integrators can simply postpone decisions until fixes are being
 provided by the contributors.
 
 #### Time to make the acceptance decision
-<div style="width: 60%;margin-left:auto;margin-right:auto;">
-<p><a href="/files/pr-int-time.png" rel="lightbox">
-<img src="/files/pr-int-time.png" class="img-polaroid" align="center"/></a></p>
-</div>
+
+<img src="/files/pr-int-time.png" style="width: 50%;float: center;" class="img-polaroid">
 
 The factors that strongly affect the time to make a decision are mostly social
 and, as expected, have timing characteristics as well. The most important one,
@@ -136,10 +131,7 @@ and its degree of fit to the project’s roadmap and technical design.*
 
 ### How do the integrators evaluate the quality of contributions?
 
-<div style="width: 60%;margin-left:auto;margin-right:auto;">
-<p><a href="/files/pr-int-quality.png" rel="lightbox">
-<img src="/files/pr-int-quality.png" class="img-polaroid" align="center"/></a></p>
-</div>
+<img src="/files/pr-int-quality.png" style="width: 50%;float: center;" class="img-polaroid">
 
 #### Perception
 
@@ -184,10 +176,7 @@ than continuous integration.*
 
 ### How do the integrators prioritize the application of contributions?
 
-<div style="width: 60%;margin-left:auto;margin-right:auto;">
-<p><a href="/files/pr-int-prioritization.png" rel="lightbox">
-<img src="/files/pr-int-prioritization.png" class="img-polaroid" align="center"/></a></p>
-</div>
+<img src="/files/pr-int-prioritization.png" style="width: 50%;float: center;" class="img-polaroid">
 
 Integrators prioritize contributions by examining their *criticality* (in case
 of bug fixes), their *urgency* (in case of new features) and their *size* or
@@ -201,10 +190,7 @@ while most integrators report that they apply at most two prioritization
 
 ### What key challenges do integrators face when working with pull requests?
 
-<div style="width: 60%;margin-left:auto;margin-right:auto;">
-<p><a href="/files/pr-int-key-challenges.png" rel="lightbox">
-<img src="/files/pr-int-key-challenges.png" class="img-polaroid" align="center"/></a></p>
-</div>
+<img src="/files/pr-int-key-challenges.png" style="width: 50%;float: center;" class="img-polaroid">
 
 ####Technical challenges
 
@@ -275,8 +261,7 @@ entrepreneurs are welcome to answer them by doing further research and/or by
 developing new tools.
 
 * How can we facilitate the quality evaluation process involved in pull requests?
-* How can we help integrators in large projects cope with the
-load of incoming pull requests?
+* How can we help integrators in large projects cope with the load of incoming pull requests?
 * How can we raise the awareness of newcomers wrt what is happening in the project? How can we avoid duplicate work?
 * What can projects or the Github platform do to streamline their contribution process?
 

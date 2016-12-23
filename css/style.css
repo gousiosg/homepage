@@ -39,6 +39,12 @@ dt {
     font-size: 200%;
 }
 
+.blogtitle {
+    font-weight: 800;
+    font-style: oblique;
+    line-height: 2;
+}
+
 
 /* The white background content wrapper */
 

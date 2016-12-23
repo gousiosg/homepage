@@ -17,7 +17,7 @@ title: Georgios Gousios blog
         <span class="label label-success">{{ post.date | date: "%d %b %Y"}}</span>
       </div>
       <div class="col-md-10">
-        {{post.title}}
+        <span class="blogtitle">{{post.title}}</span>
         <p> {{ post.content |strip_html|truncatewords: 100 }}
           <span style="blog-read-more"><a href="{{ post.url }}">Read more</a></span>
         </p>

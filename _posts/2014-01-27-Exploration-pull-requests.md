@@ -123,7 +123,7 @@ Github facilities (more might have been merged using other methods, see below).
 requests and shared repositories are equally used among projects.*
 
 ### Characteristics of the pull request lifecycle
-<img src="/files/wordcloud-icse2014.png" class="img-polaroid" style="float: right;width : 40%">
+<img src="/files/wordcloud-icse2014.png" class="img-polaroid" style="float: right;width: 40%">
 
 The GHTorrent dataset is good to get an overall view of pull requests across all
 projects on Github, but we wanted to go deeper than that. For this reason, we
@@ -143,11 +143,7 @@ the lifecycle characteristics of pull requests and determine the factors that
 influence them.
 
 **Lifetime**
-
-<div style="width: 40%;margin-left:auto;margin-right:auto;">
-<p><a href="/files/pr-lifetime-hist.png" rel="lightbox">
-<img src="/files/pr-lifetime-hist.png" class="img-polaroid" align="center"/></a></p>
-</div>
+<img src="/files/pr-lifetime-hist.png" style="width: 50%;float: center;" class="img-polaroid">
 
 By correlating pull request features with the time to merge and the
 time to close pull requests, one can find very interesting patterns.
@@ -287,10 +283,7 @@ pull requests are *not* merged. For that reason, we manually looked into 350
 pull requests that our heuristics identified as un-merged. The results can be
 seen in the plot below:
 
-<div style="width: 60%;margin-left:auto;margin-right:auto;">
-<p><a href="/files/unmerged-reasons.png" rel="lightbox">
-<img src="/files/unmerged-reasons.png" class="img-polaroid" align="center"/></a></p>
-</div>
+<img src="/files/unmerged-reasons.png" style="width: 50%;float: center;" class="img-polaroid">
  
 Apparently, there is no clearly outstanding reason for not merging pull
 requests. If we group together close reasons that have a timing dimension, we

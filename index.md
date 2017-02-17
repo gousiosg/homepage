@@ -1,66 +1,35 @@
 ---
-layout: default
+layout: index
 title: Georgios Gousios home page
 ---
 
-<div class="row">
-  <div class="col-md-2">
+Welcome to my home page!
 
-    <a href="http://twitter.com/gousiosg"><i class="fa fa-twitter linkicon" aria-hidden="true"></i></a>
-    <a href="http://www.facebook.com/gousiosg"><i class="fa fa-facebook linkicon" aria-hidden="true"></i></a>
-    <a href="http://www.linkedin.com/in/georgiosgousios"><i class="fa fa-linkedin linkicon" aria-hidden="true"></i></a>
-    <a href='atom.xml'><i class="fa fa-rss linkicon" aria-hidden="true"></i></a>
+I am assistant professor of software engineering at the
+[Web Information Systems](http://www.wis.ewi.tudelft.nl) group,
+[TU Delft](http://www.tudelft.nl), leading the group's Software Analytics research direction. I do [research](research.html) in the broad area of
+software engineering. I am [teaching](teaching.html) programming
+and big data processing at the BSc level. I am also [speaking](talks.html)
+and [blogging](/blog/).
 
-    <br/>
-    <a href='http://scholar.google.gr/citations?hl=el&amp;user=-NI5S50AAAAJ&amp;oi=sra'><i class="ai ai-google-scholar linkicon"></i></a>
-    <a href='http://orcid.org/0000-0002-8495-7939'><i class="ai ai-orcid"></i></a>
+#### Latest news
 
-    <br/>
-    <a href="https://github.com/gousiosg"><i class="fa fa-github linkicon" aria-hidden="true"></i></a>
-    <a href="https://bitbucket.com/gousiosg"><i class="fa fa-bitbucket linkicon" aria-hidden="true"></i></a>
-    <a href="https://www.openhub.net/accounts/gousiosg"><i class="fa fa-code linkicon" aria-hidden="true"></i></a>
-    
-    <br>
-    <br>
-    <br>
+* **Feb 2017** &raquo; Joseph started as a PhD student
+* **Feb 2017** &raquo; Invited to the (honourary) position of the EMSE
+review board, consisting of people who have contributed the most reviews in 2015/2016.
+* **Dec 2016** &raquo; Invited to the [ICSME 2017 PC](https://icsme2017.github.io/Program%20Committee.html). Read the [CFP](https://icsme2017.github.io/cfp/ResearchTrackCFP.html).
+* **Aug 2016** &raquo; Together with Moritz Beller and Andy Zaidman, I will
+be organizing the [2017 MSR Mining Challenge](http://2017.msrconf.org/#/challenge)
 
-    <address>
-     <strong>Georgios Gousios</strong><br>
-     <abbr title="Address"><i class="fa fa-map-marker" aria-hidden="true"></i></abbr>
-      TU Delft EWI / ST<br>
-      Building 36 <br>
-      Room 08.140 <br>
-      Mekelweg 4 <br>
-      2628 CD, Delft<br>
-      the Netherlands <br>
-      <br>
-    <abbr title="Phone"><i class="fa fa-phone" aria-hidden="true"></i></abbr> +31 (0) 15 278 9504 <br>
-    <abbr title="Email"><i class="fa fa-envelope"></i></abbr> g.gousios @ tudelft.nl
-    </address>
-  </div>
-  <div class="col-md-10">
-      <p>Welcome to my home page!</p>
+#### Current Projects
 
-      <p>I am assistant professor at the
-      <a href="http://www.wis.ewi.tudelft.nl">Web Information Systems group</a>,
-      <a href="http://www.tudelft.nl">TU Delft</a>.
-      <a href="img/moi_full.jpg"><img alt="Picture of Georgios Gousios" align="right" width="150px" src="img/moi.jpg"/></a>
+* [CodeFeedr](http://codefeedr.github.io): Developing next-gen software analytics platforms.
+* [GHTorrent](http://ghtorrent.org): Making the Github REST API queriable.
 
-      </p>
+#### Team
 
+I have the pleasure to work with the following PhD students:
 
-      <h4><a href='atom.xml'><i class="fa fa-rss" aria-hidden="true"></i></a> Latest news</h4>
-      
-      <ul class="list-unstyled posts">
-        {% for post in site.posts limit: 3 %}
-          <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      </ul>
-
-      <h4>Current Projects</h4>
-      <ul>
-          <li><a href="http://codefeedr.github.io">CodeFeedr</a>: Developing next-gen software analytics platforms </li>
-          <li><a href="http://ghtorrent.org">GHTorrent</a>: A project to make the Github REST API queriable</li>
-      </ul>
-  </div>
-</div>
+* [Joseph Hejderup](https://nl.linkedin.com/in/josephhejderup) (Feb 2017), working on the CodeFeedr project.
+* [Dominik Safaric](https://www.linkedin.com/in/dominik-safaric-83666749/) (Feb
+2016, part-time), working on the CodeFeedr project.

@@ -4,7 +4,6 @@ require 'find'
 require 'yaml'
 
 config = YAML::load(File.open('_config.yml'))
-homedir = config['homedir']
 
 desc "Run all pre-requisites"
 task :default => [:bib, :check] do
@@ -12,9 +11,9 @@ task :default => [:bib, :check] do
 end
 
 desc "Check dead links"
-task :default => [:] do
-  puts "Building dependencies"
-end
+#task :default => [:] do
+#  puts "Building dependencies"
+#end
 
 desc "Generate bib file"
 task :bib do

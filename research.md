@@ -2,7 +2,7 @@
 layout: page
 title: Research
 ---
-I am genuinely interested in any topic that has to do with systems and software, 
+I am genuinely interested in any topic that has to do with systems and software,
 and combinations thereof. Specifically my research interests are the following:
 
 * Software engineering
@@ -14,70 +14,81 @@ and combinations thereof. Specifically my research interests are the following:
 
 #### Current work
 
-<i class="fa fa-line-chart research" aria-hidden="true"></i> 
-We just stared working in the area of software analytics, in the context of the CodeFeedr project. 
+<i class="fa fa-line-chart research" aria-hidden="true"></i>
+We just stared working in the area of software analytics, in the context of the [CodeFeedr](http://codefeedr.github.io) project.
 We describe our {% cite_details GSV16 --text vision here %}. Stay tuned for more!
 
 <i class="fa fa-code-fork research" aria-hidden="true"></i>I am exploring how
-{% cite_details GPD14 --text pull-based distributed software development %} works 
+{% cite_details GPD14 --text pull-based distributed software development %} works
 both [quantitatively](https://github.com/gousiosg/pullreqs) ({%cite_details GPD14 --text ICSE 2014 %}) and
 [qualitatively](https://github.com/gousiosg/pullreqs-survey)
 ({%cite_details GZSD15 --text ICSE 2015 %},
 {%cite_details GSB16 --text ICSE 2016 %}
 [SIGSOFT best paper award](http://2016.icse.cs.txstate.edu/program/awards)).
 {% cite_details GZ14 --text The dataset %} I developed as part of the
-quantitative investigation, won the 
-[best dataset award](http://2014.msrconf.org/history.php) at MSR 2014. 
+quantitative investigation, won the
+[best dataset award](http://2014.msrconf.org/history.php) at MSR 2014.
 Using the findings of the qualitative work, I have also co-proposed a service to help developers
-{% cite_details VGZ15 --text prioritize pull request handling %} and a service 
-to {% cite_details HG15 --text match job advertisments to developer profiles %}.
+{% cite_details VGZ15 --text prioritize pull request handling %} and a service
+to {% cite_details HG15 --text match job advertisements to developer profiles %}.
 
 <i class="fa fa-github-alt research" aria-hidden="true"></i> I actively develop and maintain a
 [collection of tools](https://github.com/gousiosg/github-mirror) for
 {% cite_details GS12 --text obtaining %}
-and {% cite_details G13 --text analysing %} data from Github, throught the 
+and {% cite_details G13 --text analysing %} data from Github, through the
 [GHTorrent](https://ghtorrent.org) project. The project has been awarded
 the [best data project award](http://2014.msrconf.org/history.php) at MSR 2013
 and has been selected as the official dataset of the
 [MSR 2014 mining challenge](http://2014.msrconf.org/challenge.php).
 At the moment (Dec 2016)
 [120 papers](https://scholar.google.gr/scholar?oi=bibs&hl=en&cites=11132126230347149781)
-(33% of all GitHub-related papers according to [one source]())
-[where based on it](http://ghtorrent.org/halloffame.html), more that 230 researchers are 
-[using its data](http://ghtorrent.org/raw.html), GitHub included it in its
-[2014 data challenge](https://github.com/blog/1864-third-annual-github-data-challenge), while 
-[Microsoft chose it](/bibliography/Gousit16f.html) as the data source for monitoring their OSS projects.
-Together with collegues, we have documented the promises and pitfalls of doing research with GHTorrent
+(33% of all GitHub-related papers according to [one source](http://modeling-languages.com/believe-research-github-mining/))
+[where based on it](http://ghtorrent.org/halloffame.html), more that 250 researchers are
+[using its data](http://github.com/ghtorrent/ghtorrent.org/keys.txt), GitHub included it in its
+[2014 data challenge](https://github.com/blog/1864-third-annual-github-data-challenge), while
+[Microsoft chose it](/bibliography/Gousit16f.html) as a data source for monitoring their OSS projects.
+Together with colleagues, we have documented the promises and pitfalls of doing research with GHTorrent
 ({% cite_details KGBSGD14 --text MSR14 %},
-{% cite_details KGBSGD15 --text EMSE %}).
+{% cite_details KGBSGD16 --text EMSE %}).
+We also {% cite_details RNG16 --text investigated %} whether
+geographical and nationality biases exist among OSS developers.
 
-<i class="fa fa-flask research" aria-hidden="true"></i>
-On a parallel track, I am doing research, in the context of the
-[TestRoots](http://testroots.org) project on how developers use automated
-testing. In this context, I co-implemented a data collection and analysis
-pipeline for the [Watchdog](https://github.com/TestRoots/watchdog) framework
-and co-implemented a similar pipeline for [Travis CI data](https://github.com/Inventitech/travis-analysis). 
-With those tools, we have shown ({% cite_details BGZ15 --text ICSE-NIER15%},
-{% cite_details BLPGZ16 --text ICSE-SERIP16,%}
-{% cite_details BGPZ15 --text FSE15 %}) that developers
-do not test as much as they thing they do, do not follow TDD approaches and
-investigated how testing in done in CI (submission to FSE 2016). We also
-created the [TravisTorrent](http://travistorrent.testroots.org) project to
-disseminate Travis build results in a way similar to GHTorrent.
+<i class="fa fa-simplybuilt research" aria-hidden="true"></i>
+I also work on analysis of Continuous Integration logs. For that, we created the [TravisTorrent](http://travistorrent.testroots.org) project
+to disseminate Travis build results in a way similar to GHTorrent. TravisTorrent
+is the dataset for the 2017
+[MSR mining challenge](http://2017.msrconf.org/#/challenge) (attracting
+a record number of submissions).
+Our initial results ({% cite_details BGZ16 --text PeerJ Preprint %})
+show significant (order of magnitude) differences between testing habits among programming languages, including build breakage rates and number of tests run.
 
 #### Past work
-<i class="fa fa-bar-chart research" aria-hidden="true"></i> 
+
+<i class="fa fa-flask research" aria-hidden="true"></i>
+In the context of the [TestRoots](http://testroots.org) project, I did research
+on how developers use automated testing. Mostly working with [Moritz Beller](),
+I co-implemented a [data collection and analysis
+pipeline](https://github.com/Inventitech/watchdog-analysis) for the
+[Watchdog](https://github.com/TestRoots/watchdog) framework and co-implemented a
+similar pipeline for [Travis CI
+data](https://github.com/TestRoots/travistorrent-tools.git). With those tools,
+we have shown ({% cite_details BGZ15 --text ICSE-NIER15%}, {% cite_details
+BLPGZ16 --text ICSE-SERIP16,%} {% cite_details BGPZ15 --text FSE15 %}) that
+developers do not test as much as they think they do and do not follow TDD
+approaches.
+
+<i class="fa fa-bar-chart research" aria-hidden="true"></i>
 I led the design and development of [Alitheia Core](http://github.com/istlab/Alitheia-Core), a
 {% cite_details GS14 --text high performance software analytics platform %}
-that works with data from software repositories. I used the platform to develop models for the 
+that works with data from software repositories. I used the platform to develop models for the
 {% cite_details KGSP09 --text evaluation %} of
-{% cite_details GKS08 --text developer contribution %}, to investigate the evolution of 
+{% cite_details GKS08 --text developer contribution %}, to investigate the evolution of
 {% cite_details MGS12 --text software security issues %} and to
 {% cite_details Gousi09-phdthesis --text process %}
 and share data from more than
 [700 open source software repositories](http://ikaria.dmst.aueb.gr/repositories/).
 
-<i class="fa fa-stethoscope research" aria-hidden="true"></i> 
+<i class="fa fa-stethoscope research" aria-hidden="true"></i>
 I also proposed a
 {% cite_details GKAG06B --text platform %} for
 {% cite_details SGKLASS09 --text analysing the quality of OSS projects %} and a
@@ -90,9 +101,9 @@ process and the product quality. I have contributed to a
 Together with [Diomidis Spinellis](http://spinellis.gr), I worked on editing the
 {% cite_details SG09 --text Beautiful Architecture %} book.
 You can find more information from the publisher's
-<a href="http://oreilly.com/catalog/9780596517984/">book web site</a>. Beautiful Architecure has also 
-been translated to Chinese (<a href="http://oreilly.com.cn/book.php?bn=978-7-111-28356-0">架构之美</a>), 
-Japanese (<a href="http://www.oreilly.co.jp/books/9784873114309/">ビューティフルアーキテクチャ)</a> and 
+<a href="http://oreilly.com/catalog/9780596517984/">book web site</a>. Beautiful Architecure has also
+been translated to Chinese (<a href="http://oreilly.com.cn/book.php?bn=978-7-111-28356-0">架构之美</a>),
+Japanese (<a href="http://www.oreilly.co.jp/books/9784873114309/">ビューティフルアーキテクチャ)</a> and
 Russian (<a href="http://www.ozon.ru/context/detail/id/5430638/">Идеальная архитектура</a>).
 If you buy it, you 're also helping a good cause, as the
 royalties are donated to the <a href="http://www.msf.org/"><em>Medecins Sans Frontieres</em></a>.
@@ -164,7 +175,7 @@ Total budget &euro;1,638,000. Host: Athens University of Economics and Business.
 ## Projects
 
 <i class="fa fa-cog research" aria-hidden="true"></i>
-A list of research projects I have been actively involved with, along with a description of my role 
+A list of research projects I have been actively involved with, along with a description of my role
 in them, in reverse chronological order:
 
 [Testroots](http://testroots.org)
@@ -188,7 +199,7 @@ learn from past behaviours to drive up testing quality and efficiency.
 
 ## Research software and data
 
-* In our work {% cite_details GS13 --text Conducting Quantitative Software Engineering Studies with Alitheia Core %}, 
+* In our work {% cite_details GS13 --text Conducting Quantitative Software Engineering Studies with Alitheia Core %},
 we used both the Alitheia Core dataset and a new, sorter dataset. Find
 more details on how to replicate the case studies reported in this paper [here](/research/qsesac.html).
 
@@ -201,8 +212,8 @@ database as it was by the end of my PhD can be found from [this page](phd.html).
 The data schema has changed a lot since then so if you are interested in a
 recent version of those, please contact me directly.
 
-* The *Java DTrace Toolkit (JDT)* is a series of Perl scripts that use the JVM DTrace providers on 
-<del>Open</del>Solaris to provide deep insights on how Java software executes and how it interacts 
+* The *Java DTrace Toolkit (JDT)* is a series of Perl scripts that use the JVM DTrace providers on
+<del>Open</del>Solaris to provide deep insights on how Java software executes and how it interacts
 with the operating system. [More...](/sw/jdt.html)
 
 ### Scripts and Hacks
@@ -214,6 +225,6 @@ Dec 07, long before Google released its similarly functioning, but widely more
 popular, Latitude service. You can find it here .
 
 * *Thesis-o-meter*: Almost all computer science PhD students implement a tool to
-monitor their thesis writing progress some time. I am [sharing mine here](/sw/tom.html) to help against 
-re-inventing the wheel (even though I am pretty sure this particular wheel will keep being re-invented 
+monitor their thesis writing progress some time. I am [sharing mine here](/sw/tom.html) to help against
+re-inventing the wheel (even though I am pretty sure this particular wheel will keep being re-invented
 forever --- procrastination is much more enjoyable than writing).

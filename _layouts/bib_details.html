@@ -46,6 +46,12 @@ This paper received the "{{ page.entry.award }}" award
 </p>
 {% endif %}
 
+{% if page.entry.nomination %}
+<p>
+<img src="/files/award.png" style="width: 5%"></img>
+This paper received a nomination for the "{{ page.entry.nomination }}" award
+</p>
+{% endif %}
 
 <h4>Bibtex record</h4>
 <pre>
@@ -54,8 +60,7 @@ This paper received the "{{ page.entry.award }}" award
 {% if page.entry.slideshareembed %}
 <h4>Presentation</h4>
 
-
-<iframe src="http://www.slideshare.net/slideshow/embed_code/{{page.entry.slideshareembed}}?rel=0" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> 
+<iframe src="http://www.slideshare.net/slideshow/embed_code/{{page.entry.slideshareembed}}?rel=0" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
 
 {% endif %}
 
@@ -90,4 +95,3 @@ This paper received the "{{ page.entry.award }}" award
   </div>
 </div>
 </div>
-

@@ -134,6 +134,14 @@
     </choose>
   </macro>
 
+  <macro name="nomination">
+    <choose>
+      <if variable="nomination">
+        <text value="&lt;i class=&quot;fa fa-trophy research&quot; aria-hidden=&quot;true&quot; style=&quot;color: silver;&quot;&gt;&lt;/i&gt;"/>
+      </if>
+    </choose>
+  </macro>
+
   <macro name="publisher">
     <choose>
       <if type=" bill book chapter graphic legal_case legislation motion_picture paper-conference song" match="any">
@@ -240,6 +248,7 @@
       <!-- Citation Number -->
       <!--<text variable="citation-number" prefix="[" suffix="]"/>-->
       <text macro="award" />
+      <text macro="nomination" />
       <!-- Author(s) -->
       <text macro="author" suffix=", "/>
       <!-- Rest of Citation -->

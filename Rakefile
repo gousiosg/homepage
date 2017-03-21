@@ -6,11 +6,11 @@ require 'yaml'
 config = YAML::load(File.open('_config.yml'))
 
 desc "Run all pre-requisites"
-task :default => [:bib, :check] do
+task :default => [:bib, :courses] do
   puts "Building dependencies"
 end
 
-desc "Check dead links"
+#desc "Check dead links"
 #task :default => [:] do
 #  puts "Building dependencies"
 #end
@@ -36,6 +36,13 @@ task :bib do
     end
   end
   bibfile.close
+end
+
+desc "Prepare course slides"
+task :courses do
+  config['courses'].each do |c|
+    sh "d=`pwd` && mkdir -p courses/#{c[0]} && cd #{c[1]} && make && cp *.html $d/courses/#{c[0]}/ && cd $d"
+  end
 end
 
 desc "Clean up"

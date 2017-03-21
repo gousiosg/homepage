@@ -43,8 +43,8 @@ _Previous_
 
 _Current_
 
-* TI2736B (BSc, Minor): Big data processing (2017)
-* TIxxxx (Minor): Algorithms and Datastructures (2017)
+* TI2736B (BSc, Minor): Big data processing ([2017](/courses/bigdata/course_descr.html))
+* TIxxxx (Minor): Algorithms and Datastructures ([2017](courses/algo-ds/course_descr.html))
 
 _Old_
 

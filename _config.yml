@@ -21,6 +21,10 @@ homedir: /Users/gousiosg
 
 production_url : http://www.gousios.gr
 
+courses:
+  bigdata: /Users/gousiosg/Documents/course-material/bigdata
+  algo-ds: /Users/gousiosg/Documents/course-material/algo-ds
+
 scholar:
   style: ./ieee-gousiosg.csl
   locale: en

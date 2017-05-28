@@ -35,7 +35,7 @@ _Previous_
 #### Done, old or obsolete thesis topics
 
 * [Pagerank as a metric of code importance](/courses/msc-pagerank.html)
-* [Language ecosystem evolution](/courses/msc-lang-ecosystem.html) (by [Riivo Kikas](https://www.linkedin.com/in/riivokikas))
+* [Language ecosystem evolution](/courses/msc-lang-ecosystem.html) (by [Riivo Kikas](https://www.linkedin.com/in/riivokikas), {% cite_details KGDP17 --text paper %} )
 
 ### Courses
 
@@ -43,8 +43,8 @@ _Previous_
 
 _Current_
 
-* TI2736B (BSc, Minor): Big data processing ([2017](/courses/bigdata/course_descr.html))
-* TIxxxx (Minor): Algorithms and Datastructures ([2017](courses/algo-ds/course_descr.html))
+* TI2736B (BSc, Minor): Big data processing ([2017](/courses/bigdata/course_descr.nb.html))
+* TI3110TU (Minor): Algorithms and Datastructures ([2017](courses/algo-ds/course_descr.nb.html))
 
 _Old_
 

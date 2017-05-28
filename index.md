@@ -14,6 +14,12 @@ and [blogging](/blog/).
 
 #### Latest news
 
+* **May 2017** &raquo; Upcoming talks: [MSR 2017](http://2017.msrconf.org/) [on
+  dependency management evolution](/bibliography/KGDP17.html),
+  [source{d} tech talks](http://talks.sourced.tech/machine-learning-2017/)
+  on GHTorrent and GitHub research (June 3, Moscow) and [Shonan meeting on
+  software ecosystems](http://shonan.nii.ac.jp/seminar/099/) (Jun 25 -- 29).
+* **May 2017** &raquo; Maria Kechagia started as a postdoc
 * **Mar 2017** &raquo; Papers on [ecosystem
   evolution](/bibliography/KGDP17.html), [testing in CI](/bibliography/BGZ17.html)
   and the [TravisTorrent](/bibliography/BGZ17.html) [project](https://travistorrent.testroots.org) accepted at [MSR 2017](http://2017.msrconf.org)!
@@ -31,7 +37,13 @@ be organizing the [2017 MSR Mining Challenge](http://2017.msrconf.org/#/challeng
 
 #### Team
 
-I have the pleasure to work with the following PhD students:
+I have the pleasure to work with the following people:
+
+**Postdocs**
+
+* [Maria Kechagia]() working on software crash analytics
+
+**PhDs**
 
 * [Joseph Hejderup](https://nl.linkedin.com/in/josephhejderup) (Feb 2017), working on the CodeFeedr project.
 * [Dominik Safaric](https://www.linkedin.com/in/dominik-safaric-83666749/) (Feb

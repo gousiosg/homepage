@@ -28,6 +28,11 @@ Book chapters
 
 {% bibliography --file incollection %}
 
+Tutorials
+---------
+
+{% bibliography --file tutorials %}
+
 Theses
 ------
 
@@ -47,5 +52,3 @@ Working papers
 --------------
 
 {% bibliography --file working %}
-
-

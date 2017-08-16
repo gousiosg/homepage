@@ -14,9 +14,10 @@ and [blogging](/blog/).
 
 #### Latest news
 
+* **Jul 2017** &raquo; Elected to the [MSR conference](http://msrconf.org) steering committee.
 * **May 2017** &raquo; Upcoming talks: [MSR 2017](http://2017.msrconf.org/) [on
   dependency management evolution](/bibliography/KGDP17.html) and [Shonan meeting on software ecosystems](http://shonan.nii.ac.jp/seminar/099/) (Jun 25 -- 29).
-* **May 2017** &raquo; Maria Kechagia started as a postdoc
+* **May 2017** &raquo; Maria started as a postdoc
 * **Mar 2017** &raquo; Papers on [ecosystem
   evolution](/bibliography/KGDP17.html), [testing in CI](/bibliography/BGZ17.html)
   and the [TravisTorrent](/bibliography/BGZ17.html) [project](https://travistorrent.testroots.org) accepted at [MSR 2017](http://2017.msrconf.org)!

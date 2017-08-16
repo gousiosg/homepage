@@ -21,16 +21,18 @@ I can supervise, based on my [research interests](research.html).
 
 _Current_
 
-* [Rik Nijessen](https://www.linkedin.com/in/rik-nijessen-6bb62b43): Predicting
-  pull request acceptance with DNNs
-* [Herman Banken](https://www.linkedin.com/in/hermanbanken/): Visualizing Rx
-  workflows
+* [Niels van Kaam](https://www.linkedin.com/in/niels-van-kaam-aa731768/): A
+querying system for streaming data processing
+* [Rik Nijessen](https://www.linkedin.com/in/rik-nijessen-6bb62b43): Detecting
+duplicate PRs with DNNs
 
 _Previous_
 
+* [Herman Banken](https://www.linkedin.com/in/hermanbanken/): Debugging
+data flows in reactive programs ([thesis](http://resolver.tudelft.nl/uuid:d37cac08-195d-4dbd-a076-e3227a756717), [RxFiddle](https://rxfiddle.net))
 * [Yannic Smeets](https://nl.linkedin.com/in/yannic-smeets-a1030b73/en): Improving the Adoption of Dynamic Web Security Vulnerability Scanners ([thesis](www.ru.nl/publish/pages/769526/z03_yannic_smeets.pdf))
-* [Erik van der Veen](https://www.linkedin.com/in/erikvdv1): Automatic prioritization of pull requests ({% cite_details VGZ15 --text paper %}, [thesis](http://repository.tudelft.nl/view/ir/uuid%3Aa4df21b6-708b-4c15-a601-45f986a918f5/))
-* Phil Hunte: Automated data migration based on model coupled transformation ([thesis](http://repository.tudelft.nl/view/ir/uuid%3Ab82c0906-7e76-4381-b0cd-a100ba50ccb5/))
+* [Erik van der Veen](https://www.linkedin.com/in/erikvdv1): Automatic prioritization of pull requests ({% cite_details VGZ15 --text paper %}, [thesis](http://resolver.tudelft.nl/uuid:a4df21b6-708b-4c15-a601-45f986a918f5))
+* Phil Hunte: Automated data migration based on model coupled transformation ([thesis](http://resolver.tudelft.nl/uuid:b82c0906-7e76-4381-b0cd-a100ba50ccb5))
 
 #### Done, old or obsolete thesis topics
 

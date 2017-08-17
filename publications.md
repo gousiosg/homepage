@@ -43,11 +43,6 @@ Technical Reports
 
 {% bibliography --file techreport %}
 
-Pending Judgement
------------------
-
-{% bibliography --file pending %}
-
 Working papers
 --------------
 

@@ -41,7 +41,17 @@ end
 desc "Prepare course slides"
 task :courses do
   config['courses'].each do |c|
-    sh "d=`pwd` && mkdir -p courses/#{c[0]} && cd #{c[1]} && make -j 4 && find . -type f |grep .nb.html|xargs -Istr cp str $d/courses/#{c[0]}/ && find . -type f |grep .pdf |xargs -Istr cp str $d/courses/#{c[0]}/  && cd $d"
+    sh <<SCRIPT
+d=`pwd`
+mkdir -p courses/#{c[0]}
+cd #{c[1]}
+make -j 4
+find . -type f -name '*.nb.html' |xargs -Istr cp str $d/courses/#{c[0]}/
+find . -type f -name '*.pdf' |grep -v solutions |xargs -Istr cp str $d/courses/#{c[0]}/
+find . -type f -name '*.ipynb' |egrep -v "solutions|.ipynb_check" |xargs -Istr cp str $d/courses/#{c[0]}/
+cd $d
+SCRIPT
+
   end
 end
 

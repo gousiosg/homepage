@@ -45,8 +45,8 @@ data flows in reactive programs ([thesis](http://resolver.tudelft.nl/uuid:d37cac
 
 _Current_
 
-* TI2736B (BSc, Minor): Big data processing ([2017](/courses/bigdata/course_descr.nb.html))
-* TI3110TU (Minor): Algorithms and Datastructures ([2017](courses/algo-ds/course_descr.nb.html))
+* TI2736B (BSc, Minor): Big data processing ([2017](/courses/bigdata/))
+* TI3110TU (Minor): Algorithms and Datastructures ([2017](courses/algo-ds/))
 
 _Old_
 

@@ -23,11 +23,10 @@ _Current_
 
 * [Niels van Kaam](https://www.linkedin.com/in/niels-van-kaam-aa731768/): A
 querying system for streaming data processing
-* [Rik Nijessen](https://www.linkedin.com/in/rik-nijessen-6bb62b43): Detecting
-duplicate PRs with DNNs
 
 _Previous_
 
+* [Rik Nijessen](https://www.linkedin.com/in/rik-nijessen-6bb62b43): A Case for Deep Learning in Mining Software Repositories ([thesis](https://repository.tudelft.nl/islandora/object/uuid%3Afc0cf997-4900-435c-b213-00e5828490de))
 * [Herman Banken](https://www.linkedin.com/in/hermanbanken/): Debugging
 data flows in reactive programs ([thesis](http://resolver.tudelft.nl/uuid:d37cac08-195d-4dbd-a076-e3227a756717), [RxFiddle](https://rxfiddle.net))
 * [Yannic Smeets](https://nl.linkedin.com/in/yannic-smeets-a1030b73/en): Improving the Adoption of Dynamic Web Security Vulnerability Scanners ([thesis](www.ru.nl/publish/pages/769526/z03_yannic_smeets.pdf))
@@ -47,6 +46,7 @@ _Current_
 
 * TI2736B (BSc, Minor): Big data processing ([2017](/courses/bigdata/))
 * TI3110TU (Minor): Algorithms and Datastructures ([2017](courses/algo-ds/))
+* EWI3615TU (Minor): 5EC project ([2017](courses/minor-project/))
 
 _Old_
 

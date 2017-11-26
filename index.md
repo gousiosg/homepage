@@ -14,6 +14,8 @@ at the BSc level. I am also [speaking](talks.html) and [blogging](/blog/).
 
 #### Latest news
 
+* **Sep 2017** &raquo; New {%cite_details BGPPAZ17 --text IEEE TSE paper %} on developer testing in the IDE.
+* **Sep 2017** &raquo; Invited to the MSR 2018 PC [CFP](https://conf.researchr.org/track/msr-2018/msr-2018-papers).
 * **Aug 2017** &raquo; I will be co-organizing the [MSR data showcase track](http://conf.researchr.org/track/msr-2018/msr-2018-papers#Data-Showcase).
 * **Jul 2017** &raquo; Enrique started as a postdoc on the CodeFeedr project.
 * **Jul 2017** &raquo; Invited to the [SANER 2018 PC](http://saner.unimol.it/restrack.php?p=Research%20Track). Checkout the [CFP](http://saner.unimol.it/restrack.php?p=Research%20Track).
@@ -21,10 +23,6 @@ at the BSc level. I am also [speaking](talks.html) and [blogging](/blog/).
 * **May 2017** &raquo; Upcoming talks: [MSR 2017](http://2017.msrconf.org/) [on
   dependency management evolution](/bibliography/KGDP17.html) and [Shonan meeting on software ecosystems](http://shonan.nii.ac.jp/seminar/099/).
 * **May 2017** &raquo; Maria started as a postdoc
-* **Mar 2017** &raquo; Papers on [ecosystem
-  evolution](/bibliography/KGDP17.html), [testing in CI](/bibliography/BGZ17.html)
-  and the [TravisTorrent](/bibliography/BGZ17.html) [project](https://travistorrent.testroots.org) accepted at [MSR 2017](http://2017.msrconf.org)!
-* **Feb 2017** &raquo; Joseph started as a PhD student
 
 _[Old news](oldnews.html)_
 
@@ -39,9 +37,11 @@ I have the pleasure to work with the following people:
 
 **Postdocs**
 
+* [Moritz Beller](https://inventitech.com) working on software analytics
 * [Maria Kechagia]() working on software crash analytics
 * [Enrique Larios](https://www.linkedin.com/in/enrique-larios-vargas/) (Jul 2017), working on the CodeFeedr project (part-time, also with [SIG]())
 
 **PhDs**
 
-* [Joseph Hejderup](https://nl.linkedin.com/in/josephhejderup) (Feb 2017), working on the CodeFeedr project.
+* [Joseph Hejderup](https://nl.linkedin.com/in/josephhejderup) (Feb 2017), working on
+dependency management.

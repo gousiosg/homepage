@@ -46,8 +46,7 @@ d=`pwd`
 mkdir -p courses/#{c[0]}
 cd #{c[1]}
 make -j 4 html
-find . -type f -name '*.html' |xargs -Istr cp str $d/courses/#{c[0]}/
-#find . -type f -name '*.pdf' |grep -v solutions |xargs -Istr cp str $d/courses/#{c[0]}/
+find . -type f -name '*.html' |grep -v solutions| xargs -Istr cp str $d/courses/#{c[0]}/
 find . -type f -name '*.ipynb' |egrep -v "solutions|.ipynb_check" |xargs -Istr cp str $d/courses/#{c[0]}/
 cd $d
 SCRIPT

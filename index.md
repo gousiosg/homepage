@@ -14,7 +14,7 @@ at the BSc level. I am also [speaking](talks.html) and [blogging](/blog/).
 
 #### Latest news
 
-* **Sep 2017** &raquo; New {%cite_details BGPPAZ17 --text IEEE TSE paper %} on developer testing in the IDE.
+* **Nov 2017** &raquo; New {%cite_details BGPPAZ17 --text IEEE TSE paper %} on developer testing in the IDE.
 * **Sep 2017** &raquo; Invited to the MSR 2018 PC [CFP](https://conf.researchr.org/track/msr-2018/msr-2018-papers).
 * **Aug 2017** &raquo; I will be co-organizing the [MSR data showcase track](http://conf.researchr.org/track/msr-2018/msr-2018-papers#Data-Showcase).
 * **Jul 2017** &raquo; Enrique started as a postdoc on the CodeFeedr project.

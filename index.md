@@ -14,7 +14,7 @@ at the BSc level. I am also [speaking](talks.html) and [blogging](/blog/).
 
 #### Latest news
 
-* **Dec 2017** &raquo; New {%cite_details HLSRGR18 --text SANER paper %} on
+* **Dec 2017** &raquo; New {%cite_details BHVG18 --text SANER paper %} on
 a quality model for Puppet.
 * **Nov 2017** &raquo; New {%cite_details BGPPAZ17 --text IEEE TSE paper %} on developer testing in the IDE.
 * **Sep 2017** &raquo; Invited to the MSR 2018 PC [CFP](https://conf.researchr.org/track/msr-2018/msr-2018-papers).

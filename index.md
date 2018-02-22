@@ -14,13 +14,16 @@ at the BSc level. I am also [speaking](talks.html) and [blogging](/blog/).
 
 #### Latest news
 
+* **Feb 2018** &raquo; Preprits for our ICSE 2018 papers on
+  {%cite_details BGM18 --text debugging reactive programs %} (main track),
+  {%cite_details HDG18 --text ecosystem-wide call graphs %}, and
+  {%cite_details VHKBG18 --text real-time software analytics %} (NIER track).
+* **Jan 2018** &raquo; [Moritz Beller](https://inventitech.com) started as a
+  postdoc
 * **Dec 2017** &raquo; New {%cite_details BHVG18 --text SANER paper %} on
 a quality model for Puppet.
 * **Nov 2017** &raquo; New {%cite_details BGPPAZ17 --text IEEE TSE paper %} on developer testing in the IDE.
 * **Sep 2017** &raquo; Invited to the MSR 2018 PC [CFP](https://conf.researchr.org/track/msr-2018/msr-2018-papers).
-* **Aug 2017** &raquo; I will be co-organizing the [MSR data showcase track](http://conf.researchr.org/track/msr-2018/msr-2018-papers#Data-Showcase).
-* **Jul 2017** &raquo; Enrique started as a postdoc on the CodeFeedr project.
-* **Jul 2017** &raquo; Invited to the [SANER 2018 PC](http://saner.unimol.it/restrack.php?p=Research%20Track). Checkout the [CFP](http://saner.unimol.it/restrack.php?p=Research%20Track).
 
 _[Old news](oldnews.html)_
 
@@ -36,10 +39,21 @@ I have the pleasure to work with the following people:
 **Postdocs**
 
 * [Moritz Beller](https://inventitech.com) working on software analytics
-* [Maria Kechagia]() working on software crash analytics
-* [Enrique Larios](https://www.linkedin.com/in/enrique-larios-vargas/) (Jul 2017), working on the CodeFeedr project (part-time, also with [SIG]())
+* [Maria Kechagia](https://mkechagia.github.io) working on software crash analytics
+* [Enrique Larios](https://www.linkedin.com/in/enrique-larios-vargas/) (Jul 2017), working on the CodeFeedr project (part-time, also with [SIG](http://sig.nl))
 
 **PhDs**
 
-* [Joseph Hejderup](https://nl.linkedin.com/in/josephhejderup) (Feb 2017), working on
-dependency management.
+* [Joseph Hejderup](https://nl.linkedin.com/in/josephhejderup) (Feb 2017), working on dependency management.
+
+**Master's students**
+
+* [Niels van Kaam](https://www.linkedin.com/in/niels-van-kaam-aa731768/) (Aug
+  2017): State preservation for streaming data processing
+* [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (Feb 2018): Software
+  analytics at ING.
+
+**BSc students**
+
+* [Wouter Zorgdrager](https://www.linkedin.com/in/wouter-zorgdrager-a4746512a/)
+  Development of the CodeFeedr platform

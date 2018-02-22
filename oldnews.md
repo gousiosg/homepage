@@ -3,6 +3,9 @@ layout: page
 title: Old news items
 ---
 
+* **Aug 2017** &raquo; I will be co-organizing the [MSR data showcase track](http://conf.researchr.org/track/msr-2018/msr-2018-papers#Data-Showcase).
+* **Jul 2017** &raquo; Enrique started as a postdoc on the CodeFeedr project.
+* **Jul 2017** &raquo; Invited to the [SANER 2018 PC](http://saner.unimol.it/restrack.php?p=Research%20Track). Checkout the [CFP](http://saner.unimol.it/restrack.php?p=Research%20Track).
 * **Jul 2017** &raquo; Elected to the [MSR conference](http://msrconf.org) steering committee.
 * **May 2017** &raquo; Upcoming talks: [MSR 2017](http://2017.msrconf.org/) [on
   dependency management evolution](/bibliography/KGDP17.html) and [Shonan meeting on software ecosystems](http://shonan.nii.ac.jp/seminar/099/).

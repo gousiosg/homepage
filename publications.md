@@ -18,7 +18,12 @@ Conferences (full papers)
 
 {% bibliography --file inproceedings %}
 
-Conferences (short papers and workshops)
+Conferences (short papers)
+-----------
+
+{% bibliography --file  shortpaper %}
+
+Workshops and other conference papers
 -----------
 
 {% bibliography --file inworkshop %}

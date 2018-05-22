@@ -14,8 +14,11 @@ at the BSc level. I am also [speaking](talks.html) and [blogging](/blog/).
 
 #### Latest news
 
+* **May 2018**&raquo; I will be giving two technical briefings at ICSE 2018:
+one on {%cite_details G18 --text mining repositories with Apache Spark %} and
+one on {%cite_details SG18 --text using Git and Unix to efficiently mine repositories %}.
 * **Feb 2018** &raquo; Preprits for our ICSE 2018 papers on
-  {%cite_details BGM18 --text debugging reactive programs %} (main track),
+  {%cite_details BMG18 --text debugging reactive programs %} (main track),
   {%cite_details HDG18 --text ecosystem-wide call graphs %}, and
   {%cite_details VHKBG18 --text real-time software analytics %} (NIER track).
 * **Jan 2018** &raquo; [Moritz Beller](https://inventitech.com) started as a

@@ -129,7 +129,7 @@
   <macro name="award">
     <choose>
       <if variable="award">
-        <text value="&lt;i class=&quot;fa fa-trophy research&quot; aria-hidden=&quot;true&quot; style=&quot;color: goldenrod;&quot;&gt;&lt;/i&gt;"/>
+        <text value="&lt;i class=&quot;fas fa-trophy fa-2x&quot; aria-hidden=&quot;true&quot; style=&quot;color: goldenrod;&quot;&gt;&lt;/i&gt;"/>
       </if>
     </choose>
   </macro>
@@ -137,7 +137,7 @@
   <macro name="nomination">
     <choose>
       <if variable="nomination">
-        <text value="&lt;i class=&quot;fa fa-trophy research&quot; aria-hidden=&quot;true&quot; style=&quot;color: silver;&quot;&gt;&lt;/i&gt;"/>
+        <text value="&lt;i class=&quot;fas fa-trophy fa-2x&quot; aria-hidden=&quot;true&quot; style=&quot;color: silver;&quot;&gt;&lt;/i&gt;"/>
       </if>
     </choose>
   </macro>

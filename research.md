@@ -14,11 +14,18 @@ and combinations thereof. Specifically my research interests are the following:
 
 #### Current work
 
-<i class="fa fa-line-chart research" aria-hidden="true"></i>
-We just stared working in the area of software analytics, in the context of the [CodeFeedr](http://codefeedr.github.io) project.
-We describe our {% cite_details GSV16 --text vision here %}. Stay tuned for more!
+<i class="fa fa-project-diagram"></i> In our
+{% cite_details HDG18 --text latest work %}, we are exploring
+how to create call graphs at the ecosystem scale. Our initial experiments
+with the Rust Cargo ecosystem are very promising.
 
-<i class="fa fa-code-fork research" aria-hidden="true"></i>I am exploring how
+<i class="fas fa-chart-line fa-2x"></i>
+We have stared working in the area of software analytics, in the context of the [CodeFeedr](http://codefeedr.github.io) project.
+We describe our {% cite_details GSV16 --text vision here %} and
+a set of case studies we are working on {% cite_details VHKBG18 --text here}.
+Stay tuned for more!
+
+<i class="fas fa-code-branch fa-2x"></i>I am exploring how
 {% cite_details GPD14 --text pull-based distributed software development %} works
 both [quantitatively](https://github.com/gousiosg/pullreqs) ({%cite_details GPD14 --text ICSE 2014 %}) and
 [qualitatively](https://github.com/gousiosg/pullreqs-survey)
@@ -32,7 +39,7 @@ Using the findings of the qualitative work, I have also co-proposed a service to
 {% cite_details VGZ15 --text prioritize pull request handling %} and a service
 to {% cite_details HG15 --text match job advertisements to developer profiles %}.
 
-<i class="fa fa-github-alt research" aria-hidden="true"></i> I actively develop and maintain a
+<i class="fab fa-github-alt fa-2x"></i> I actively develop and maintain a
 [collection of tools](https://github.com/gousiosg/github-mirror) for
 {% cite_details GS12 --text obtaining %}
 and {% cite_details G13 --text analysing %} data from Github, through the
@@ -53,7 +60,7 @@ Together with colleagues, we have documented the promises and pitfalls of doing 
 We also {% cite_details RNG16 --text investigated %} whether
 geographical and nationality biases exist among OSS developers.
 
-<i class="fa fa-simplybuilt research" aria-hidden="true"></i>
+<i class="fab fa-simplybuilt fa-2x"></i>
 I also work on analysis of Continuous Integration logs. For that, we created the [TravisTorrent](http://travistorrent.testroots.org) project
 to disseminate Travis build results in a way similar to GHTorrent. TravisTorrent
 is the dataset for the 2017
@@ -64,7 +71,7 @@ show significant (order of magnitude) differences between testing habits among p
 
 #### Past work
 
-<i class="fa fa-flask research" aria-hidden="true"></i>
+<i class="fas fa-flask fa-2x"></i>
 In the context of the [TestRoots](http://testroots.org) project, I did research
 on how developers use automated testing. Mostly working with [Moritz Beller](),
 I co-implemented a [data collection and analysis
@@ -77,7 +84,7 @@ BLPGZ16 --text ICSE-SERIP16,%} {% cite_details BGPZ15 --text FSE15 %}) that
 developers do not test as much as they think they do and do not follow TDD
 approaches.
 
-<i class="fa fa-bar-chart research" aria-hidden="true"></i>
+<i class="far chart-bar fa-2x"></i>
 I led the design and development of [Alitheia Core](http://github.com/istlab/Alitheia-Core), a
 {% cite_details GS14 --text high performance software analytics platform %}
 that works with data from software repositories. I used the platform to develop models for the
@@ -88,7 +95,7 @@ that works with data from software repositories. I used the platform to develop 
 and share data from more than
 [700 open source software repositories](http://ikaria.dmst.aueb.gr/repositories/).
 
-<i class="fa fa-stethoscope research" aria-hidden="true"></i>
+<i class="fas fa-stethoscope fa-2x"></i>
 I also proposed a
 {% cite_details GKAG06B --text platform %} for
 {% cite_details SGKLASS09 --text analysing the quality of OSS projects %} and a
@@ -141,7 +148,7 @@ the {% cite_details GAG04 --text security challenges and requirements %}
 of (then) popular component software middleware.
 
 ## Grants
-<i class="fa fa-eur research" aria-hidden="true"></i>
+<i class="fas fa-euro-sign fa-2x"></i>
 I have written the following research proposals which led to funding for
 me or for the institution I was working for at the time. I have also authored
 and co-authored several other proposals, obviously not as lucky ones :-)
@@ -174,7 +181,7 @@ Total budget &euro;1,638,000. Host: Athens University of Economics and Business.
 
 ## Projects
 
-<i class="fa fa-cog research" aria-hidden="true"></i>
+<i class="fas fa-cog fa-2x"></i>
 A list of research projects I have been actively involved with, along with a description of my role
 in them, in reverse chronological order:
 

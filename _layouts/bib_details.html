@@ -21,7 +21,7 @@ edited by {{ page.entry.editor }}
 
 {% if page.entry.url %}
 <p>
-<i class="fa fa-book fa-2x" aria-hidden="true"></i>
+<i class="fas fa-book fa-2x"></i>
 You can get a pre-print version from <a href="{{ page.entry.url }}">here</a>.
 
 {% if page.entry.doi %}
@@ -34,22 +34,22 @@ You can view the publisher's page <a href="http://dx.doi.org/{{ page.entry.doi }
 
 {% if page.entry.github %}
 <br/>
-<i class="fa fa-github fa-2x" aria-hidden="true"></i>
-See the paper's associated repository on GitHub: <a href="https://github.com/{{
+<i class="fab fa-github fa-2x"></i>
+See the paper's associated code repository: <a href="https://github.com/{{
 page.entry.github }}">{{ page.entry.github }}</a>
 {% endif %}
 </p>
 
 {% if page.entry.award %}
 <p>
-<i class="fa fa-trophy research" aria-hidden="true" style="color: goldenrod;"></i>
+<i class="fas fa-trophy fa-2x" style="color: goldenrod;"></i>
 This paper received the "{{ page.entry.award }}" award
 </p>
 {% endif %}
 
 {% if page.entry.nomination %}
 <p>
-<i class="fa fa-trophy research" aria-hidden="true" style="color: silver;"></i>
+<i class="fas fa-trophy fa-2x" style="color: silver;"></i>
 This paper received a nomination for the "{{ page.entry.nomination }}" award
 </p>
 {% endif %}

@@ -23,8 +23,9 @@ _Current_
 
 * [Niels van Kaam](https://www.linkedin.com/in/niels-van-kaam-aa731768/) (Aug
   2017): State preservation for streaming data processing.
-* [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (Feb 2018): Software
-  analytics at ING.
+* [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (Feb 2018):
+  Investigating qualitative and quantitative success factors for Rapid Releases at ING
+* Wouter van der Zwan (May 2018): Unified Call graphs for Maven
 
 _Previous_
 
@@ -56,11 +57,12 @@ GHTorrent to mine data from GitHub.
 _Current_
 
 * TI2736B (BSc, Minor): Big data processing ([2017](/courses/bigdata/))
-* TI3110TU (Minor): Algorithms and Datastructures ([2017](courses/algo-ds/))
-* EWI3615TU (Minor): 5EC project ([2017](courses/minor-project/))
+* IN4334 (MSc): Software Analytics ([2018](/courses/softwanal/))
 
 _Old_
 
+* TI3110TU (Minor): Algorithms and Data Structures ([2017](courses/algo-ds/), [Lecture notes sources](https://github.com/gousiosg/algo-ds))
+* EWI3615TU (Minor): 5EC project ([2017](courses/minor-project/))
 * TI1206 (Minor): Object-Oriented Programming, taught with Andy Zaidman
 * IN4189 (MSc): Software Re-Engineering, taught with Andy Zaidman (2013 and 2014)
 * IN4389 (MSc): Reactive Programming, taught by Erik Meijer ([2013](/courses/rx/index.html))

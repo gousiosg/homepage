@@ -3,6 +3,10 @@ layout: page
 title: Old news items
 ---
 
+* **Dec 2017** &raquo; New {%cite_details BHVG18 --text SANER paper %} on
+a quality model for Puppet.
+* **Nov 2017** &raquo; New {%cite_details BGPPAZ17 --text IEEE TSE paper %} on developer testing in the IDE.
+* **Sep 2017** &raquo; Invited to the MSR 2018 PC [CFP](https://conf.researchr.org/track/msr-2018/msr-2018-papers).
 * **Aug 2017** &raquo; I will be co-organizing the [MSR data showcase track](http://conf.researchr.org/track/msr-2018/msr-2018-papers#Data-Showcase).
 * **Jul 2017** &raquo; Enrique started as a postdoc on the CodeFeedr project.
 * **Jul 2017** &raquo; Invited to the [SANER 2018 PC](http://saner.unimol.it/restrack.php?p=Research%20Track). Checkout the [CFP](http://saner.unimol.it/restrack.php?p=Research%20Track).

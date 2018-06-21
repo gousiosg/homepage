@@ -14,18 +14,41 @@ and combinations thereof. Specifically my research interests are the following:
 
 #### Current work
 
-<i class="fa fa-project-diagram"></i> In our
+<i class="fa fa-project-diagram fa-2x"></i> In our
 {% cite_details HDG18 --text latest work %}, we are exploring
 how to create call graphs at the ecosystem scale. Our initial experiments
 with the Rust Cargo ecosystem are very promising.
 
 <i class="fas fa-chart-line fa-2x"></i>
 We have stared working in the area of software analytics, in the context of the [CodeFeedr](http://codefeedr.github.io) project.
-We describe our {% cite_details GSV16 --text vision here %} and
-a set of case studies we are working on {% cite_details VHKBG18 --text here}.
+We describe our {% cite_details GSV16 --text vision here %} and present
+a set of case studies we are working on {% cite_details VHKBG18 --text here %}.
 Stay tuned for more!
 
-<i class="fas fa-code-branch fa-2x"></i>I am exploring how
+<i class="fab fa-github-alt fa-2x"></i>
+I actively develop and maintain a
+[collection of tools](https://github.com/gousiosg/github-mirror) for {%
+cite_details GS12 --text obtaining %} and {% cite_details G13 --text analysing
+%} data from Github, through the [GHTorrent](https://ghtorrent.org) project. The
+project has been awarded the [best data project
+award](http://2014.msrconf.org/history.php) at MSR 2013, has received the
+[foundational contribution award]() at MSR 2018, and has been selected as the
+official dataset of the [MSR 2014 mining
+challenge](http://2014.msrconf.org/challenge.php).  At the moment (Jun 2018)
+[250 papers](https://scholar.google.gr/scholar?oi=bibs&hl=en&cites=11132126230347149781)
+(40% of all GitHub-related papers according to [one
+source](http://modeling-languages.com/believe-research-github-mining/)) [where
+based on it](http://ghtorrent.org/halloffame.html), more that 450 researchers
+are [using its data](http://github.com/ghtorrent/ghtorrent.org/keys.txt), GitHub
+included it in its [2014 data
+challenge](https://github.com/blog/1864-third-annual-github-data-challenge),
+while [Microsoft chose it](/bibliography/Gousit16f.html) as a data source for
+  monitoring their OSS projects.  Together with colleagues, we have documented
+  the promises and pitfalls of doing research with GHTorrent ({% cite_details
+  KGBSGD14 --text MSR14 %}, {% cite_details KGBSGD16 --text EMSE %}).
+
+<i class="fas fa-code-branch fa-2x"></i>
+I am exploring how
 {% cite_details GPD14 --text pull-based distributed software development %} works
 both [quantitatively](https://github.com/gousiosg/pullreqs) ({%cite_details GPD14 --text ICSE 2014 %}) and
 [qualitatively](https://github.com/gousiosg/pullreqs-survey)
@@ -38,25 +61,6 @@ quantitative investigation, won the
 Using the findings of the qualitative work, I have also co-proposed a service to help developers
 {% cite_details VGZ15 --text prioritize pull request handling %} and a service
 to {% cite_details HG15 --text match job advertisements to developer profiles %}.
-
-<i class="fab fa-github-alt fa-2x"></i> I actively develop and maintain a
-[collection of tools](https://github.com/gousiosg/github-mirror) for
-{% cite_details GS12 --text obtaining %}
-and {% cite_details G13 --text analysing %} data from Github, through the
-[GHTorrent](https://ghtorrent.org) project. The project has been awarded
-the [best data project award](http://2014.msrconf.org/history.php) at MSR 2013
-and has been selected as the official dataset of the
-[MSR 2014 mining challenge](http://2014.msrconf.org/challenge.php).
-At the moment (Dec 2016)
-[120 papers](https://scholar.google.gr/scholar?oi=bibs&hl=en&cites=11132126230347149781)
-(33% of all GitHub-related papers according to [one source](http://modeling-languages.com/believe-research-github-mining/))
-[where based on it](http://ghtorrent.org/halloffame.html), more that 250 researchers are
-[using its data](http://github.com/ghtorrent/ghtorrent.org/keys.txt), GitHub included it in its
-[2014 data challenge](https://github.com/blog/1864-third-annual-github-data-challenge), while
-[Microsoft chose it](/bibliography/Gousit16f.html) as a data source for monitoring their OSS projects.
-Together with colleagues, we have documented the promises and pitfalls of doing research with GHTorrent
-({% cite_details KGBSGD14 --text MSR14 %},
-{% cite_details KGBSGD16 --text EMSE %}).
 We also {% cite_details RNG16 --text investigated %} whether
 geographical and nationality biases exist among OSS developers.
 

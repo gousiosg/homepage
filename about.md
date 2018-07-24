@@ -7,19 +7,19 @@ tags: about cv
 ### Bio
 
 *Dr. Georgios Gousios* is an assistant professor at the Software Engineering
-group, Delft University of Technology. His research interests include software
-engineering, software analytics and programming languages. He works in the
-fields of distributed software development processes, software quality, software
-testing, developer productivity assessment, research infrastructures and
-software security. His research has been published in top venues (ICSE, FSE,
-EMSE, MSR) where he has received 4 best paper awards. In total, he has published
-more than 50 papers and also co-edited the ``Beautiful Architectures'' book
-(OReilly, 2009). He is the main author of the GHTorrent data collection and
-curation framework and the Alitheia Core repository mining platform.  Dr.
-Gousios holds a PhD in Empirical Software Engineering (mining software
-repositories) with distinction from the Athens University of Economics and
-Business (AUEB) and an MSc (software engineering) with distinction from the
-University of Manchester.
+Group, Delft University of Technology, where he leads the group's Software
+Analytics lab. He works in the fields of sofware ecosystems, software testing,
+distributed software development processes and research infrastructures.  His
+research has been published in top venues (ICSE, FSE, TSE), where he has
+received 4 distinguished paper awards. He is the main author of the GHTorrent
+data collection and curation framework (for which he received a foundational
+contribution award), the Alitheia Core repository mining platform and various
+widely used tools and datasets. Currently, he is leading the Unified Call Graph
+project with analyzes package repositories at a fine level of detail,  and the
+CodeFeedr project which delivers real time software analytics. Dr. Gousios holds
+a PhD with distinction in Software Engineering (mining software repositories)
+from the Athens University of Economics and Business (AUEB) and an MSc with
+distinction (software engineering) from the University of Manchester.
 
 A full CV can be provided upon request.
 

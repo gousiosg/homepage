@@ -5,17 +5,10 @@ title: Teaching
 
 ### MSc theses
 
-If you are interested in doing an MSc thesis with me, please [contact
-me](about.html). You can choose any of the following topics, or propose one that
-I can supervise, based on my [research interests](research.html).
-
-* [Community analysis for GitHub projects](/courses/msc-github-community.html)
-* [A metric of code functional-ness](/courses/msc-functionalness.html)
-* [Improving pull request usage](/courses/msc-improve-pullreq-handling.html)
-* [Evaluating the use of functional programming characteristics](/courses/msc-se-func.html)
-* [Streaming software security](/courses/msc-streaming-sec/)
-* [Streaming cascading aggregations](/courses/msc-cascading-aggregations.html)
-* [Real-time technology trends](http://www.cs.ru.nl/J.Visser/students/open-projects/) summarise theactivities of software developers across the globe into real-time technology trend lines by monitoring and aggregating the activities in code repositories, developer forums, job advertisements and more. (co-supervised with [Joost Visser](http://www.cs.ru.nl/J.Visser/))
+If you are interested to do an MSc thesis with me, please [contact
+me](about.html). You can choose any of the currently available topics [listed on
+the SERG web site](https://serg-delft.github.io/msc-projects.html), or propose
+one that I can supervise, based on my [research interests](research.html).
 
 #### Master students
 
@@ -25,7 +18,7 @@ _Current_
   2017): State preservation for streaming data processing.
 * [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (Feb 2018):
   Investigating qualitative and quantitative success factors for Rapid Releases at ING
-* Wouter van der Zwan (May 2018): Unified Call graphs for Maven
+* Wouter van der Zwan (May 2018): Unified Call graphs for Java/Maven
 
 _Previous_
 

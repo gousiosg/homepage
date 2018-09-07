@@ -3,6 +3,8 @@ layout: page
 title: Old news items
 ---
 
+* **Jan 2018** &raquo; [Moritz Beller](https://inventitech.com) started as a
+  postdoc
 * **Dec 2017** &raquo; New {%cite_details BHVG18 --text SANER paper %} on
 a quality model for Puppet.
 * **Nov 2017** &raquo; New {%cite_details BGPPAZ17 --text IEEE TSE paper %} on developer testing in the IDE.

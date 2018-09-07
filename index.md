@@ -14,17 +14,16 @@ at the BSc level. I am also [speaking](talks.html) and [blogging](/blog/).
 
 #### Latest news
 
+* **Sep 2018**&raquo;  Preprint of our ESEM 2018 paper on {%cite_details RNGH18 --text evidence of geographical bias on PR evaluation %}.
 * **May 2018**&raquo; Together with [Sarah Nadi](http://sarahnadi.org), I will be PC chair of MSR 2020.
 * **May 2018**&raquo; [Received](https://twitter.com/msrconf/status/1001379036646531072) the Foundational Contribution Award at MSR 2018 for my work on [GHTorrent](http://ghtorrent.org).
 * **May 2018**&raquo; I will be giving two technical briefings at ICSE 2018:
 one on {%cite_details G18 --text mining repositories with Apache Spark %} and
 one on {%cite_details SG18 --text using Git and Unix to efficiently mine repositories %}.
-* **Feb 2018** &raquo; Preprits for our ICSE 2018 papers on
+* **Feb 2018** &raquo; Preprints of our ICSE 2018 papers on
   {%cite_details BMG18 --text debugging reactive programs %} (main track),
   {%cite_details HDG18 --text ecosystem-wide call graphs %}, and
   {%cite_details VHKBG18 --text real-time software analytics %} (NIER track).
-* **Jan 2018** &raquo; [Moritz Beller](https://inventitech.com) started as a
-  postdoc
 
 _[Old news](oldnews.html)_
 
@@ -53,8 +52,3 @@ I have the pleasure to work with the following people:
   2017): State preservation for streaming data processing
 * [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (Feb 2018): Software
   analytics at ING.
-
-**BSc students**
-
-* [Wouter Zorgdrager](https://www.linkedin.com/in/wouter-zorgdrager-a4746512a/)
-  Development of the CodeFeedr platform

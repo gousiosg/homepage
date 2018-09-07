@@ -32,7 +32,7 @@ cite_details GS12 --text obtaining %} and {% cite_details G13 --text analysing
 %} data from Github, through the [GHTorrent](https://ghtorrent.org) project. The
 project has been awarded the [best data project
 award](http://2014.msrconf.org/history.php) at MSR 2013, has received the
-[foundational contribution award]() at MSR 2018, and has been selected as the
+[foundational contribution award](https://twitter.com/ghtorrent/status/1001204300050321409) at MSR 2018, and has been selected as the
 official dataset of the [MSR 2014 mining
 challenge](http://2014.msrconf.org/challenge.php).  At the moment (Jun 2018)
 [250 papers](https://scholar.google.gr/scholar?oi=bibs&hl=en&cites=11132126230347149781)
@@ -61,7 +61,7 @@ quantitative investigation, won the
 Using the findings of the qualitative work, I have also co-proposed a service to help developers
 {% cite_details VGZ15 --text prioritize pull request handling %} and a service
 to {% cite_details HG15 --text match job advertisements to developer profiles %}.
-We also {% cite_details RNG16 --text investigated %} whether
+We also {% cite_details RNGH18 --text investigated %} whether
 geographical and nationality biases exist among OSS developers.
 
 <i class="fab fa-simplybuilt fa-2x"></i>

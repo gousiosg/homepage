@@ -49,7 +49,8 @@ GHTorrent to mine data from GitHub.
 
 _Current_
 
-* TI2736B (BSc, Minor): Big data processing ([2017](/courses/bigdata/))
+* TI2736B (BSc, Minor): Big data processing ([2017](/courses/bigdata/2017),
+  [2018](/courses/bigdata))
 * IN4334 (MSc): Software Analytics ([2018](/courses/softwanal/))
 
 _Old_

@@ -42,15 +42,7 @@ desc "Prepare course slides"
 task :courses do
   config['courses'].each do |c|
     sh <<SCRIPT
-d=`pwd`
-mkdir -p courses/#{c[0]}
-cd #{c[1]}
-make -j 4 html
-cp index.html $d/courses/#{c[0]}/
-find lectures assignments -type f -name '*.html' | xargs -Istr cp str $d/courses/#{c[0]}/
-find lectures assignments -type f -name '*.pdf' | xargs -Istr cp str $d/courses/#{c[0]}/
-find lectures assignments -type f -name '*.ipynb'|grep -v ".ipynb_check" |xargs -Istr cp str $d/courses/#{c[0]}/
-cd $d
+./bin/build_course.sh #{c[0]} #{c[1]}
 SCRIPT
 
   end

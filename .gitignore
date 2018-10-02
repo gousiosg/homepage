@@ -9,7 +9,6 @@ plug-ins/git/test/
 maven.jks
 *.externalToolBuilders
 /.idea/
-bin/
 .metadata
 *.*~
 *.externalToolBuilders

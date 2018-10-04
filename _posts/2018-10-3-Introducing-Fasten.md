@@ -8,8 +8,7 @@ categories: research
 A popular form of software reuse is the use of Open-Source Software (OSS) libraries, hosted on centralized code repositories, such as Maven or NPM.
 Developers only need to declare dependencies to external libraries, and automated tools make them available to the workspace of the project.
 
-In the
-recent years, we have seen package management fail in spectacular ways:
+In recent years, we have seen package management fail in spectacular ways:
 
 * In the [lefpad incident](https://www.theregister.co.uk/2016/03/23/npm_left_pad_chaos/), a developer broke a significant part of the Internet
 just by removing a package from NPM.
@@ -19,12 +18,12 @@ update unnecessary.
 * A [recent study](https://queue.acm.org/detail.cfm?id=3205288) by Lauinger et al. found that 1 out of 3 top sites uses at least one library with a known vulnerability.
 
 The list goes on. Package management, and its repercussions, is a topic that
-affects the daily lives of millions of developers, but it has only received
-moderate attention from researchers.
+affects the daily lives of millions of developers and users, but it has
+only received moderate attention from researchers.
 
 Last spring, I led a group of 7 partners towards the submission of a project
-proposal to the H2020-ICT-18 call. Then, in August, we were in for a very
-pleasant surprise: the EC granted our consortium a significant amount of money
+proposal to the H2020-ICT-18 call. Then, in August, we learned that
+the European Commission granted our consortium a significant amount of money
 to make package management more intelligent!
 
 The core idea behind FASTEN is really simple: _instead of analyzing dependencies
@@ -33,14 +32,14 @@ allow us to be super precise when we are tracking dependencies, when
 we do change impact analysis, when we recommend clients to update packages etc.
 It will also open the door to new sophisticated applications, e.g. licensing compliance, dependency risk profiling and data-driven API evolution.
 
-As it is usual in those cases, while the idea sounds simple and straightforward,
+As is usual in those cases, while the idea sounds simple and straightforward,
 its practical implementation, [as we learned in our related work on
 Rust](https://pure.tudelft.nl/portal/en/publications/prazi-from-packagebased-to-precise-callbased-dependency-network-analyses(6e9d35bd-b512-4bdd-80c1-53608d2acda6.html),
-is anything but.  Static call graph generators are imprecise; modern features in
+is anything but. Static call graph generators are unsound; modern features in
 programming languages (dynamic dispatch, extensible classes) complicate static
 call graph generation; in many languages, projects need to be built before
-constructing call-graphs; the generated graphs are huge and moreover the queries
-we will need to run will bring current graph databases to their knees; and more.
+constructing call-graphs; the generated graphs are huge; the queries
+we will need to run will bring current graph databases to their knees.
 However, the accuracy benefits of creating ecosystem-level, versioned
 call-graphs outweight the drawbacks. In our preliminary Rust study, we found
 that in the case of pin-pointing vulnerable packages, accuracy can be improved

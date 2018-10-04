@@ -17,7 +17,9 @@ and combinations thereof. Specifically my research interests are the following:
 <i class="fa fa-project-diagram fa-2x"></i> In our
 {% cite_details HDG18 --text latest work %}, we are exploring
 how to create call graphs at the ecosystem scale. Our initial experiments
-with the Rust Cargo ecosystem are very promising.
+with the [Rust Cargo ecosystem](https://pure.tudelft.nl/portal/en/publications/prazi-from-packagebased-to-precise-callbased-dependency-network-analyses(6e9d35bd-b512-4bdd-80c1-53608d2acda6.html) are very promising. We obtained the H2020
+FASTEN project to make package management more intelligent. More to come
+soon!
 
 <i class="fas fa-chart-line fa-2x"></i>
 We have stared working in the area of software analytics, in the context of the [CodeFeedr](http://codefeedr.github.io) project.
@@ -88,7 +90,7 @@ BLPGZ16 --text ICSE-SERIP16,%} {% cite_details BGPZ15 --text FSE15 %}) that
 developers do not test as much as they think they do and do not follow TDD
 approaches.
 
-<i class="far chart-bar fa-2x"></i>
+<i class="fas fa-stethoscope fa-2x"></i>
 I led the design and development of [Alitheia Core](http://github.com/istlab/Alitheia-Core), a
 {% cite_details GS14 --text high performance software analytics platform %}
 that works with data from software repositories. I used the platform to develop models for the
@@ -99,7 +101,6 @@ that works with data from software repositories. I used the platform to develop 
 and share data from more than
 [700 open source software repositories](http://ikaria.dmst.aueb.gr/repositories/).
 
-<i class="fas fa-stethoscope fa-2x"></i>
 I also proposed a
 {% cite_details GKAG06B --text platform %} for
 {% cite_details SGKLASS09 --text analysing the quality of OSS projects %} and a
@@ -121,7 +122,7 @@ royalties are donated to the <a href="http://www.msf.org/"><em>Medecins Sans Fro
 
 ### Systems Software and Security
 
-I {% cite_details Gousi04-mscthesis --text ported %} [JikesRVM](http://jikesrvm.org),
+In a previous life, I {% cite_details Gousi04-mscthesis --text ported %} [JikesRVM](http://jikesrvm.org),
 a JVM written mostly in Java, to run on top of bare hardware, without support
 from an operating system. Later, I contributed patches to the JikesRVM project
 to enable support for Opensolaris, and in the context of the [Google Summer of

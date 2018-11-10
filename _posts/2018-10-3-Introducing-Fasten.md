@@ -11,7 +11,7 @@ Developers only need to declare dependencies to external libraries, and automate
 In recent years, we have seen package management fail in spectacular ways:
 
 * In the [lefpad incident](https://www.theregister.co.uk/2016/03/23/npm_left_pad_chaos/), a developer broke a significant part of the Internet
-just by removing a package from NPM.
+by just removing a package from NPM.
 * Equifax [lost $4 billion](http://time.com/money/4936732/equifaxs-massive-data-breach-has-cost-the-company-4-billion-so-far/) because they deemed a security
 update unnecessary.
 * A Linux kernel developer [engaged in a series of litigation actions](https://lwn.net/Articles/731941/) against tens of companies claiming lost revenue, due to, in his view, in-proper enforcement of GPL in a transitively derivative project.
@@ -104,7 +104,7 @@ along with the main contact point per partner (many of them are hiring 😊):
 * [Software Improvement Group](https://sig.eu), experts in software quality, [Magiel Bruntink](https://nl.linkedin.com/in/magiel-bruntink-b744b11)
 * [OW2 consortium](https://www.ow2.org), experts in OSS communities, [Cédric Thomas](https://fr.linkedin.com/in/cedricthomas)
 
-At TU Delft, we have openings for *2 PhD students* and *1 scientific
-programmer*. If you are up for a serious research challenge, with ample
+At TU Delft, we have openings for **2 PhD students** and **1 scientific
+programmer**. If you are up for a serious research challenge, with ample
 opportunity to use your hacking skills to impact everyday software
 development, [we would like to hear from you!](mailto:g.gousios@tudelft.nl)

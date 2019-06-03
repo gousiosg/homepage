@@ -14,14 +14,14 @@ one that I can supervise, based on my [research interests](research.html).
 
 _Current_
 
-* [Niels van Kaam](https://www.linkedin.com/in/niels-van-kaam-aa731768/) (Aug
-  2017): State preservation for streaming data processing.
-* [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (Feb 2018):
-  Investigating qualitative and quantitative success factors for Rapid Releases at ING
 * Wouter van der Zwan (May 2018): Unified Call graphs for Java/Maven
+* [Ernst Mulders](Dec 2018): A/B testing at  ING.
 
 _Previous_
 
+* [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (Feb 2018):
+  Releasing fast and slow: a case study of rapid releases at ING ([thesis](http://resolver.tudelft.nl/uuid:9660c5a3-6ef8-4c6a-b5cf-3994b60d754b), [FSE 2019 paper]()). Now PhD student at SERG.
+* [Niels van Kaam](https://www.linkedin.com/in/niels-van-kaam-aa731768/) ([thesis](http://resolver.tudelft.nl/uuid:ed3666f9-0aec-4f03-bf41-e0abc852d304)): Epoch alignment in stateful streams.
 * [Rik Nijessen](https://www.linkedin.com/in/rik-nijessen-6bb62b43) (2017): A Case for Deep Learning in Mining Software Repositories ([thesis](https://repository.tudelft.nl/islandora/object/uuid%3Afc0cf997-4900-435c-b213-00e5828490de)). Now at Adyen.
 * [Herman Banken](https://www.linkedin.com/in/hermanbanken/) (2017): Debugging data flows in reactive programs ([thesis](http://resolver.tudelft.nl/uuid:d37cac08-195d-4dbd-a076-e3227a756717), [RxFiddle](https://rxfiddle.net), {%cite_details BMG18 --text ICSE 2018 paper %}). Now at Q42.
 * [Yannic Smeets](https://nl.linkedin.com/in/yannic-smeets-a1030b73/en) (2015): Improving the Adoption of Dynamic Web Security Vulnerability Scanners ([thesis](www.ru.nl/publish/pages/769526/z03_yannic_smeets.pdf))
@@ -49,12 +49,12 @@ GHTorrent to mine data from GitHub.
 
 _Current_
 
-* TI2736B (BSc, Minor): Big data processing ([2017](/courses/bigdata/2017),
-  [2018](/courses/bigdata))
-* IN4334 (MSc): Software Analytics ([2018](/courses/softwanal/))
+* CSE2520 (BSc): Big data processing ([2019](/courses/bigdata))
+* IN4334 (MSc): Analytics and Machine Learning for Software Engineering ([2018](/courses/softwanal/2018), [2019](/courses/ml4se))
 
 _Old_
 
+* TI2736B (BSc, Minor): Big data processing ([2017](/courses/bigdata/2017), [2018](/courses/bigdata/2018))
 * TI3110TU (Minor): Algorithms and Data Structures ([2017](courses/algo-ds/), [Lecture notes sources](https://github.com/gousiosg/algo-ds))
 * EWI3615TU (Minor): 5EC project ([2017](courses/minor-project/))
 * TI1206 (Minor): Object-Oriented Programming, taught with Andy Zaidman

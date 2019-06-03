@@ -38,6 +38,7 @@ echo `date`: Building branch: master to $cwd/courses/$coursename
 cd $material || exit 1
 make -j 4 html 1>/dev/null || exit 1
 echo `date`: Copying files from `pwd` to $cwd/courses/$coursename
+mkdir -p $cwd/courses/$coursename || exit 1
 copy_files `pwd` $cwd/courses/$coursename
 
 if [ ! -z $old ]; then
@@ -47,10 +48,10 @@ if [ ! -z $old ]; then
   for branch in `git branch -r | grep -v "master" | cut -f2 -d'/'`; do
     echo `date`: Building branch $branch to $cwd/courses/$coursename/$branch
 
-    if [[ ! -z $(git status -s | grep -v "?? ") ]]; then
-      echo `date`: "Path $material has uncommitted changes"
-      exit 1
-    fi
+#    if [[ ! -z $(git status -s | grep -v "?? ") ]]; then
+#      echo `date`: "Path $material has uncommitted changes"
+#      exit 1
+#    fi
 
     echo `date`: Checking out branch $branch
     git checkout -b $branch origin/$branch || exit 1

@@ -50,7 +50,7 @@ GHTorrent to mine data from GitHub.
 _Current_
 
 * CSE2520 (BSc): Big data processing ([2019](/courses/bigdata))
-* IN4334 (MSc): Analytics and Machine Learning for Software Engineering ([2018](/courses/softwanal/2018), [2019](/courses/ml4se))
+* IN4334 (MSc): Analytics and Machine Learning for Software Engineering ([2018](/courses/softanalytics), [2019](/courses/ml4se))
 
 _Old_
 

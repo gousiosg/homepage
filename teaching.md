@@ -20,7 +20,7 @@ _Current_
 _Previous_
 
 * [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (Feb 2018):
-  Releasing fast and slow: a case study of rapid releases at ING ([thesis](http://resolver.tudelft.nl/uuid:9660c5a3-6ef8-4c6a-b5cf-3994b60d754b), [FSE 2019 paper]()). Now PhD student at SERG.
+  Releasing fast and slow: a case study of rapid releases at ING ([thesis](http://resolver.tudelft.nl/uuid:9660c5a3-6ef8-4c6a-b5cf-3994b60d754b), {%cite_details KRHDG19 --text FSE 2019 paper %}). Now PhD student at SERG.
 * [Niels van Kaam](https://www.linkedin.com/in/niels-van-kaam-aa731768/) ([thesis](http://resolver.tudelft.nl/uuid:ed3666f9-0aec-4f03-bf41-e0abc852d304)): Epoch alignment in stateful streams.
 * [Rik Nijessen](https://www.linkedin.com/in/rik-nijessen-6bb62b43) (2017): A Case for Deep Learning in Mining Software Repositories ([thesis](https://repository.tudelft.nl/islandora/object/uuid%3Afc0cf997-4900-435c-b213-00e5828490de)). Now at Adyen.
 * [Herman Banken](https://www.linkedin.com/in/hermanbanken/) (2017): Debugging data flows in reactive programs ([thesis](http://resolver.tudelft.nl/uuid:d37cac08-195d-4dbd-a076-e3227a756717), [RxFiddle](https://rxfiddle.net), {%cite_details BMG18 --text ICSE 2018 paper %}). Now at Q42.

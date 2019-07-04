@@ -16,17 +16,14 @@ at the BSc level and Software Analytics at the MSc level. I am also [speaking](t
 
 #### Latest news
 
+* **Jul 2019**&raquo; Preprints for our ISSTA paper on {%cite_details KDPGD19 --text static/dynamic API misuse detection %} and FSE paper on {%cite_details KRHDG19 --text rapid releases at ING %}
+* **Jun 2019**&raquo; Postdoc Moritz Beller is now on sabbatical at Facebook
+* **May 2019**&raquo; Postdoc Maria Kechagia to continue her studies at UCL.
+* **May 2019**&raquo; New PhD students: Elvan Kula (rapid releases) and Mehdi Keshani (dependency management). Welcome!
+* **Feb 2019**&raquo; Started a sabbatical at Facebook. Read about my
+  first experiences [here](https://t.co/9bX8CGwyIm)
 * **Jan 2019**&raquo; Acquired and started the [H2020 FASTEN project](http://fasten-project.eu), to make dependency management more robust.
 * **Sep 2018**&raquo;  Preprint of our ESEM 2018 paper on {%cite_details RNGH18 --text evidence of geographical bias on PR evaluation %}.
-* **May 2018**&raquo; Together with [Sarah Nadi](http://sarahnadi.org), I will be PC chair of MSR 2020.
-* **May 2018**&raquo; [Received](https://twitter.com/msrconf/status/1001379036646531072) the Foundational Contribution Award at MSR 2018 for my work on [GHTorrent](http://ghtorrent.org).
-* **May 2018**&raquo; I will be giving two technical briefings at ICSE 2018:
-one on {%cite_details G18 --text mining repositories with Apache Spark %} and
-one on {%cite_details SG18 --text using Git and Unix to efficiently mine repositories %}.
-* **Feb 2018** &raquo; Preprints of our ICSE 2018 papers on
-  {%cite_details BMG18 --text debugging reactive programs %} (main track),
-  {%cite_details HDG18 --text ecosystem-wide call graphs %}, and
-  {%cite_details VHKBG18 --text real-time software analytics %} (NIER track).
 
 _[Old news](oldnews.html)_
 
@@ -51,9 +48,10 @@ I have the pleasure to work with the following people:
 
 **PhDs**
 
-* [Joseph Hejderup](https://nl.linkedin.com/in/josephhejderup) (Feb 2017), working on dependency management.
+* [Joseph Hejderup](https://nl.linkedin.com/in/josephhejderup) (Feb 2017): Dependency management and static analysis
 * [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (May 2019): Software
   analytics at ING.
+* Mehdi Keshani (May 2019): Dependency management
 
 **Master's students**
 
@@ -62,4 +60,4 @@ I have the pleasure to work with the following people:
 
 **Developers**
 
-* [Wouter Zorgdrager](https://www.linkedin.com/in/wouter-zorgdrager-a4746512a/?originalSubdomain=nl) (Feb 2019): Developer on the FASTEN project.
+* [Wouter Zorgdrager](https://www.linkedin.com/in/wouter-zorgdrager-a4746512a/?originalSubdomain=nl) (Feb 2019): Developer on the FASTEN project

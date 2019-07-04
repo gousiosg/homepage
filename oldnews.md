@@ -3,6 +3,16 @@ layout: page
 title: Old news items
 ---
 
+* **May 2018**&raquo; Together with [Sarah Nadi](http://sarahnadi.org), I will be PC chair of MSR 2020.
+* **May 2018**&raquo; [Received](https://twitter.com/msrconf/status/1001379036646531072) the Foundational Contribution Award at MSR 2018 for my work on [GHTorrent](http://ghtorrent.org).
+* **May 2018**&raquo; I will be giving two technical briefings at ICSE 2018:
+one on {%cite_details G18 --text mining repositories with Apache Spark %} and
+one on {%cite_details SG18 --text using Git and Unix to efficiently mine repositories %}.
+* **Feb 2018** &raquo; Preprints of our ICSE 2018 papers on
+  {%cite_details BMG18 --text debugging reactive programs %} (main track),
+  {%cite_details HDG18 --text ecosystem-wide call graphs %}, and
+  {%cite_details VHKBG18 --text real-time software analytics %} (NIER track).
+
 * **Jan 2018** &raquo; [Moritz Beller](https://inventitech.com) started as a
   postdoc
 * **Dec 2017** &raquo; New {%cite_details BHVG18 --text SANER paper %} on

@@ -5,21 +5,20 @@ title: Georgios Gousios home page
 
 Welcome to my home page!
 
-_As of Feb 16, 2019 and till late Aug 2019, I will be on sabbatical at Facebook. Apologies if I am not able to handle your email quickly._
-
 I am assistant professor of software engineering at the [Software Engineering
 Research Group](http://swerl.tudelft.nl/bin/view/Main/WebHome) group, [TU
 Delft](http://www.tudelft.nl), leading the group's Software Analytics research
 direction. I do [research](research.html) in the broad area of software
 engineering. I am [teaching](teaching.html) Big Data Processing
-at the BSc level and Software Analytics at the MSc level. I am also [speaking](talks.html) and [blogging](/blog/).
+at the BSc level and Software Analytics at the MSc level.
+I am also [speaking](talks.html) and [blogging](/blog/).
 
 #### Latest news
 
 * **Jul 2019**&raquo; Preprints for our ISSTA paper on {%cite_details KDPGD19 --text static/dynamic API misuse detection %} and FSE paper on {%cite_details KRHDG19 --text rapid releases at ING %}
 * **Jun 2019**&raquo; Postdoc Moritz Beller is now on sabbatical at Facebook
 * **May 2019**&raquo; Postdoc Maria Kechagia to continue her studies at UCL.
-* **May 2019**&raquo; New PhD students: Elvan Kula (rapid releases) and Mehdi Keshani (dependency management). Welcome!
+* **May 2019**&raquo; New PhD students: Elvan Kula (software process optization) and Mehdi Keshani (dependency management). Welcome!
 * **Feb 2019**&raquo; Started a sabbatical at Facebook. Read about my
   first experiences [here](https://t.co/9bX8CGwyIm)
 * **Jan 2019**&raquo; Acquired and started the [H2020 FASTEN project](http://fasten-project.eu), to make dependency management more robust.
@@ -29,8 +28,9 @@ _[Old news](oldnews.html)_
 
 #### Current Projects
 
-_I am hiring! Are you a motivated PhD student, postdoc or scientific programmer
-that would like to [change the way developers deal with dependencies](http://fasten-project.eu)?. Then, let's talk!_
+_I am hiring! Are you a motivated PhD student, postdoc or scientific
+programmer that would like to work in my group on topics ranging from static
+analysis to machine learning for software engineering? Then, let's talk!_
 
 * [FASTEN](http://fasten-project.eu): Making software ecosystems robust by
   making package management more intelligent.
@@ -49,9 +49,8 @@ I have the pleasure to work with the following people:
 **PhDs**
 
 * [Joseph Hejderup](https://nl.linkedin.com/in/josephhejderup) (Feb 2017): Dependency management and static analysis
-* [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (May 2019): Software
-  analytics at ING.
-* Mehdi Keshani (May 2019): Dependency management
+* Mehdi Keshani (May 2019): Dependency management and static analysis
+* [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (May 2019): Software process optimization
 
 **Master's students**
 

@@ -23,9 +23,9 @@ fi
 
 copy_files() {
   cp $1/index.html $2
-  find $1/lectures $1/assignments -type f -name '*.html' | xargs -Istr cp str $2
-  find $1/lectures $1/assignments -type f -name '*.pdf' | xargs -Istr cp str $2
-  find $1/lectures $1/assignments -type f -name '*.ipynb'|grep -v ".ipynb_check" |xargs -Istr cp str $2
+  find $1/lectures $1/assignments $1/notebooks -type f -name '*.html' | xargs -Istr cp str $2
+  find $1/lectures $1/assignments $1/notebooks -type f -name '*.pdf' | xargs -Istr cp str $2
+  find $1/lectures $1/assignments $1/notebooks -type f -name '*.ipynb'|grep -v ".ipynb_check" |xargs -Istr cp str $2
 }
 
 coursename=$1
@@ -36,7 +36,7 @@ echo `date`: Building course $coursename from $material
 echo `date`: Building branch: master to $cwd/courses/$coursename
 
 cd $material || exit 1
-make -j 4 html 1>/dev/null || exit 1
+make -j 12 html 1>/dev/null || exit 1
 echo `date`: Copying files from `pwd` to $cwd/courses/$coursename
 mkdir -p $cwd/courses/$coursename || exit 1
 copy_files `pwd` $cwd/courses/$coursename
@@ -57,7 +57,7 @@ if [ ! -z $old ]; then
     git checkout -b $branch origin/$branch || exit 1
 
     make clean
-    make -j 4 html 1>/dev/null || exit 1
+    make -j 12 html 1>/dev/null || exit 1
     mkdir -p $cwd/courses/$coursename/$branch || exit 1
 
     echo `date`: Copying files from `pwd` to $cwd/courses/$branch

@@ -54,7 +54,7 @@ _Current_
 
 _Old_
 
-* TI2736B (BSc, Minor): Big data processing ([2017](/courses/bigdata/2017), [2018](/courses/bigdata/2018))
+[//]: # (* TI2736B (BSc, Minor): Big data processing ([2017](/courses/bigdata/2017), [2018](/courses/bigdata/2018)))
 * TI3110TU (Minor): Algorithms and Data Structures ([2017](courses/algo-ds/), [Lecture notes sources](https://github.com/gousiosg/algo-ds))
 * EWI3615TU (Minor): 5EC project ([2017](courses/minor-project/))
 * TI1206 (Minor): Object-Oriented Programming, taught with Andy Zaidman

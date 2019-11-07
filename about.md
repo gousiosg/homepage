@@ -9,17 +9,18 @@ tags: about cv
 *Dr. Georgios Gousios* is an assistant professor at the Software Engineering
 Group, Delft University of Technology, where he leads the group's Software
 Analytics lab. He works in the fields of sofware ecosystems, software testing,
-distributed software development processes and research infrastructures.  His
-research has been published in top venues (ICSE, FSE, TSE), where he has
-received 4 distinguished paper awards. He is the main author of the GHTorrent
-data collection and curation framework (for which he received a foundational
-contribution award), the Alitheia Core repository mining platform and various
-widely used tools and datasets. Currently, he is leading the Unified Call Graph
-project with analyzes package repositories at a fine level of detail,  and the
-CodeFeedr project which delivers real time software analytics. Dr. Gousios holds
-a PhD with distinction in Software Engineering (mining software repositories)
-from the Athens University of Economics and Business (AUEB) and an MSc with
-distinction (software engineering) from the University of Manchester.
+and machine learning for software engineering.  His research has been published
+in top venues (ICSE, FSE, TSE), where he has received 4 distinguished paper
+awards. He is the main author of the GHTorrent data collection and curation
+framework (for which he received a foundational contribution award) and various
+widely used tools and datasets. Currently, he is leading the FASTEN project,
+that aims to improve the state of dependency management, and the CodeFeedr
+project which delivers real time software analytics.
+
+Dr. Gousios holds a PhD with distinction in Software Engineering (mining
+software repositories) from the Athens University of Economics and Business
+(AUEB) and an MSc with distinction (software engineering) from the University of
+Manchester. In spring 2019, he spent a sabbatical at Facebook, Menlo Park.
 
 A full CV can be provided upon request.
 

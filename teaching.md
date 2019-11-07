@@ -16,6 +16,7 @@ _Current_
 
 * Wouter van der Zwan (May 2018): Unified Call graphs for Java/Maven
 * [Ernst Mulders](Dec 2018): A/B testing at  ING.
+* Algirdas Jokubauskas (Feb 2019): Dependency analysis at scale for Rust
 
 _Previous_
 
@@ -28,9 +29,6 @@ _Previous_
 * [Erik van der Veen](https://www.linkedin.com/in/erikvdv1) (2014): Automatic prioritization of pull requests ({% cite_details VGZ15 --text paper %}, [thesis](http://resolver.tudelft.nl/uuid:a4df21b6-708b-4c15-a601-45f986a918f5))
 * Phil Hunte: Automated data migration based on model coupled transformation ([thesis](http://resolver.tudelft.nl/uuid:b82c0906-7e76-4381-b0cd-a100ba50ccb5))
 
-#### Done, old or obsolete thesis topics
-
-* [Pagerank as a metric of code importance](/courses/msc-pagerank.html)
 * [Language ecosystem evolution](/courses/msc-lang-ecosystem.html) (by [Riivo Kikas](https://www.linkedin.com/in/riivokikas), {% cite_details KGDP17 --text MSR paper %} )
 
 ### Tutorials

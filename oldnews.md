@@ -3,6 +3,7 @@ layout: page
 title: Old news items
 ---
 
+* **Sep 2018**&raquo;  Preprint of our ESEM 2018 paper on {%cite_details RNGH18 --text evidence of geographical bias on PR evaluation %}.
 * **May 2018**&raquo; Together with [Sarah Nadi](http://sarahnadi.org), I will be PC chair of MSR 2020.
 * **May 2018**&raquo; [Received](https://twitter.com/msrconf/status/1001379036646531072) the Foundational Contribution Award at MSR 2018 for my work on [GHTorrent](http://ghtorrent.org).
 * **May 2018**&raquo; I will be giving two technical briefings at ICSE 2018:

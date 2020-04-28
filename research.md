@@ -22,10 +22,9 @@ FASTEN project to make package management more intelligent. More to come
 soon!
 
 <i class="fas fa-chart-line fa-2x"></i>
-We have stared working in the area of software analytics, in the context of the [CodeFeedr](http://codefeedr.github.io) project.
+We are working in the area of software analytics, in the context of the [CodeFeedr](http://codefeedr.github.io) project.
 We describe our {% cite_details GSV16 --text vision here %} and present
 a set of case studies we are working on {% cite_details VHKBG18 --text here %}.
-Stay tuned for more!
 
 <i class="fab fa-github-alt fa-2x"></i>
 I actively develop and maintain a

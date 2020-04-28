@@ -3,6 +3,9 @@ layout: page
 title: Old news items
 ---
 
+* **Feb 2019**&raquo; Started a sabbatical at Facebook. Read about my
+  first experiences [here](https://t.co/9bX8CGwyIm)
+* **Jan 2019**&raquo; Acquired and started the [H2020 FASTEN project](http://fasten-project.eu), to make dependency management more robust.
 * **Sep 2018**&raquo;  Preprint of our ESEM 2018 paper on {%cite_details RNGH18 --text evidence of geographical bias on PR evaluation %}.
 * **May 2018**&raquo; Together with [Sarah Nadi](http://sarahnadi.org), I will be PC chair of MSR 2020.
 * **May 2018**&raquo; [Received](https://twitter.com/msrconf/status/1001379036646531072) the Foundational Contribution Award at MSR 2018 for my work on [GHTorrent](http://ghtorrent.org).

@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Georgios Gousios
-title: IN4334 - Delft seminar on Machine Learning from Software Analytics
+title: IN4334 - Delft seminar on Machine Learning for Software Engineering
 categories: research
 ---
 
@@ -18,7 +18,7 @@ course. This led us to the interesting problem of having to select students;
 we did so by asking the students to write a motivation letter explaining their
 ML experience so far and their interest in the course. This trick motivated
 students to apply self-selection, i.e. students that were not interested in the
-course so much did not submit a reference letter. We ended up with 40+ students
+course so much did not submit a reference letter. We ended up with 30+ students
 with sufficient machine learning background.
 
 Similarly to last year, we organized the students in groups of 4. Each group had
@@ -53,8 +53,6 @@ We compare our results to the state-of-the-art results achieved by the tree2tree
 model of Chen et al, and the results as described in Nguyen et al. While our
 replication achieves a smaller accuracy than Chen et al, it still beats the
 sequence-to-sequence benchmarks by up to 10 points.
-([paper](https://drive.google.com/open?id=1Seap0JP5lkUKqHiuMCn5uugj7-Z71Anz),
-[code](https://github.com/serg-ml4se-2019/group1-code-translation))
 
 __AutoComment: Comment Generation in Java Code__
 
@@ -62,7 +60,7 @@ Commenting large code databases is crucial for code comprehension and efficient
 maintenance of a code base. Therefore, automatic code generation would be
 incredibly beneficial for both programmer and future maintainer of the code. In
 this paper, we propose a comment generator model using new state of the art
-techniques developed in the previous years, based on code2seq[1] for comment
+techniques developed in the previous years, based on code2seq for comment
 generation in Java code. With the DeepCom as the baseline, the paper focuses on
 replicating the code2seq model with added capabilities such as, predicting
 natural language (Method-1) and modified ASTs (Method-2). The results show that,
@@ -70,8 +68,7 @@ Method-2, is capable of understanding the syntactic and semantic meaning of Java
 code to generate comments automatically, but suffers from the incapability to
 generate longer and complete comments, hence leading to a poor BLEU-4 score when
 compared to the baseline.
-([paper](https://github.com/serg-ml4se-2019/group-2-mutation-testing),
-[code](https://github.com/LRNavin/AutoComments))
+([code](https://github.com/LRNavin/AutoComments))
 
 __Generating Commit Messages from Git Diffs__
 
@@ -89,14 +86,12 @@ performance dropped significantly. This demonstrates the inherent shortcoming of
 current commit message generation models, which perform well by memorizing
 certain constructs.  Future research directions might include improving diff
 embeddings and focusing on specific groups of commits.
-([paper](https://drive.google.com/open?id=191ubgIwuijiGODgwiYboJQI-_HXfMBf8),
-[code](https://github.com/serg-ml4se-2019/group4-generating-commit-messages))
+([paper](https://arxiv.org/pdf/1911.11690.pdf))
 
 __Using Distributed Representation of Code for Bug Detection__
 
 Recent advances in neural modeling for bug detection have been very promising. Specifically, using snippets of code to create continuous vectors or embeddings has been shown to be very good at method name prediction and claimed to be efficient at other tasks, such as bug detection. However, to this end, the method has not been empirically tested for the latter.
 In this work, we use the Code2Vec model of Alon et al. to evaluate it for detecting off-by-one errors in Java source code. We define bug detection as a binary classification problem and train our model on a large Java file corpus containing likely correct code. In order to properly classify incorrect code, the model needs to be trained on false examples as well. To achieve this, we create likely incorrect code by making simple mutations to the original corpus.
-Our quantitative and qualitative evaluations show that an attention-based model that uses a structural representation of code can be indeed successfully used for other tasks than method naming. ([paper](https://drive.google.com/open?id=13Gqbj6w0wJ1wNyl68kKqjyhiIeDW5rFB), [code](https://github.com/serg-ml4se-2019/group5-deep-bugs))
 
 __Code completion using Byte Pair Encoding__
 
@@ -108,8 +103,6 @@ through the abstract syntax tree (AST). We have implemented two models: an
 attention-enhanced LSTM and a pointer network, where the pointer network was
 originally introduced to solve out of vocabulary problems. We are interested to
 see if BPE can replace the need for the pointer network for code completion.
-([paper](https://drive.google.com/open?id=1ccgC0o35Qu2v9oXQRxUiyIUBZUGVLAsY),
-[code](https://github.com/serg-ml4se-2019/group6-code-completion))
 
 __DLTPy: Deep Learning Type Inference Of Python Function Signatures Using Natural Language Context__
 
@@ -127,8 +120,7 @@ language contained in comments and return expressions are beneficial to
 predicting types more accurately. DLTPy does not significantly outperform or
 underperform the previous work NL2Type for Javascript, but does show that
 similar prediction is possible for Python.
-([paper](https://drive.google.com/open?id=1nAW4hF1UxYrPzs6c4nK828b5Bm0eb3E5),
-[code](https://github.com/serg-ml4se-2019/group7-type-inferences))
+([paper](https://arxiv.org/abs/1912.00680))
 
 __Identifying Approaches to Detect Logging Opportunities in Java Source Code__
 
@@ -144,8 +136,6 @@ been used is code2vec. We conclude that a custom trained code2vec combined with
 a RFC or SVM is the most promising with a balanced accuracy of 0.71 and a recall
 of 0.48. We also conclude that a pretrained code2vec model cannot always be
 simply applied on different code context problems.
-([paper](https://drive.google.com/open?id=16tRXPFKaBvDCm_0uvG7LowmD7s_WVzrE),
-[code](https://github.com/serg-ml4se-2019/group8-logging-strategies))
 
 __Multi-label Classification for Automatic Tag Prediction in the Context of Programming Challenges__
 
@@ -158,16 +148,13 @@ paper, we focus on automating the task of tagging a programming challenge
 description using machine and deep learning methods. We observe that the deep
 learning methods implemented outperform well-known IR approaches such as tf-idf,
 thus providing a starting point for further research on the task.
-([paper](https://drive.google.com/open?id=1afuSccqDuEI9YWEljFaXcDvUKPBNDB6Y),
-[code](https://github.com/serg-ml4se-2019/group11-tagging-algorithm-problems))
+([paper](https://arxiv.org/abs/1911.12224))
 
 __Learning How to Mutate Python Source Code from Bug-Fixes__
 
 The goal was to replicate an existing paper to a similar problem. This project
 focuses on the topic of learning Python code mutants for mutation testing and
 takes [9] as a blueprint, which has researched the same topic but for Java code.
-([paper](https://drive.google.com/open?id=1wfr3TaliRWWjITVWL5nW6-LJcbkppAYv),
-[code](https://github.com/serg-ml4se-2019/group-2-mutation-testing))
 
 ### The experience
 
@@ -177,8 +164,7 @@ explaining GGNNs to us was in invaluable experience! I 've also come to
 appreciate the state of the art in the field, which is, let's just say, emerging 😉
 
 But what I 've mostly come to admire is our students. What a group! It was
-amazing to see that in less than 2 months (actually, in most cases, less than 1
-month: students 😅) students being able to fully replicate existing work, coming
+amazing to see that in less than 2 months students being able to fully replicate existing work, coming
 up with great new ideas and even write almost publication quality papers. No
 matter where they go after the course, I am sure that they will shine! I would
 hire 90% of them on the spot, if I were in the industry.

@@ -14,12 +14,12 @@ one that I can supervise, based on my [research interests](research.html).
 
 _Current_
 
-* Wouter van der Zwan (May 2018): Unified Call graphs for Java/Maven
-* [Ernst Mulders](Dec 2018): A/B testing at  ING.
+* Pradyot Patil (May 2020): Predicting cascading failures at ING
 * Algirdas Jokubauskas (Feb 2019): Dependency analysis at scale for Rust
+* Wouter van der Zwan (May 2018): Unified Call graphs for Java/Maven
 
 _Previous_
-
+* [Ernst Mulders](https://www.linkedin.com/in/ernst-mulders/) (Dec 2018): Data Driven Decisions: Validating and Supporting a Continuous Experimentation Development Environment ([thesis](https://repository.tudelft.nl/islandora/object/uuid%3A08f2c0b4-2aa8-4e12-9b58-073dcdfb4553)).
 * [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (Feb 2018):
   Releasing fast and slow: a case study of rapid releases at ING ([thesis](http://resolver.tudelft.nl/uuid:9660c5a3-6ef8-4c6a-b5cf-3994b60d754b), {%cite_details KRHDG19 --text FSE 2019 paper %}). Now PhD student at SERG.
 * [Niels van Kaam](https://www.linkedin.com/in/niels-van-kaam-aa731768/) ([thesis](http://resolver.tudelft.nl/uuid:ed3666f9-0aec-4f03-bf41-e0abc852d304)): Epoch alignment in stateful streams.

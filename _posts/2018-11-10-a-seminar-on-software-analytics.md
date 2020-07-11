@@ -14,7 +14,7 @@ course: Software Analytics.
 
 It was the first time I taught both a seminar course and Software Analytics,
 which also happens to be my [field of
-expertise](https://se.ewi.tudelft.nl/softanalytics.html). I was therefore
+expertise](https://se.ewi.tudelft.nl/research-lines/software-analytics/). I was therefore
 relatively confident about the contents, but not so much about the format. After
 lots of reading online, I 've come to the conclusion that seminars are all about
 the students reading and discussing interesting papers, with minimal teacher
@@ -33,8 +33,7 @@ of cutting edge work in the field, and iii) work on a limited replication of a p
 ### The format
 
 The **discussions** were scripted.  I compiled a list of guidelines on [how to run
-a paper
-discussion](http://gousios.org/courses/softwanal/discussing-papers.html),
+a paper discussion](http://gousios.org/courses/ml4se/2018/discussing-papers.html),
 partially
 to help the students and partially to make sure we have a common format during our
 discussions. The responsible group would announce a paper that everybody
@@ -48,7 +47,7 @@ provoking question or to move the discussion towards more fruitful paths.
 Importantly, one person of the moderating team would have to keep notes of the
 discussion.  This helped us compile extensive documentation on what went on during
 the course, which you can find linked from the [course's web
-page](http://gousios.org/courses/softwanal/).
+page](http://gousios.org/courses/ml4se/2018/).
 
 The paper discussions were meant to introduce all students to a particular
 topic; then, each group would have to go deep in each corresponding topic by
@@ -105,4 +104,4 @@ Changes I would do next year:
   perfect the literature surveys.
 
 As usual, you can find the course materials under a CC license [on my
-homepage](http://gousios.org/courses/softwanal/).
+homepage](http://gousios.org/courses/ml4se/2018/).

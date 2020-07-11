@@ -7,18 +7,21 @@ title: Teaching
 
 If you are interested to do an MSc thesis with me, please [contact
 me](about.html). You can choose any of the currently available topics [listed on
-the SERG web site](https://serg-delft.github.io/msc-projects.html), or propose
+the SERG web site](https://se.ewi.tudelft.nl/research-lines/software-analytics/index.html#msc-thesis-topics), or propose
 one that I can supervise, based on my [research interests](research.html).
 
 #### Master students
 
 _Current_
 
+* Jonathan Katzy (Jun 2020): ML for code autocompletion
+* Thomas Kolenbrander (Jun 2020): Predicting major incidents at ING
 * Pradyot Patil (May 2020): Predicting cascading failures at ING
 * Algirdas Jokubauskas (Feb 2019): Dependency analysis at scale for Rust
 * Wouter van der Zwan (May 2018): Unified Call graphs for Java/Maven
 
 _Previous_
+
 * [Ernst Mulders](https://www.linkedin.com/in/ernst-mulders/) (Dec 2018): Data Driven Decisions: Validating and Supporting a Continuous Experimentation Development Environment ([thesis](https://repository.tudelft.nl/islandora/object/uuid%3A08f2c0b4-2aa8-4e12-9b58-073dcdfb4553)).
 * [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (Feb 2018):
   Releasing fast and slow: a case study of rapid releases at ING ([thesis](http://resolver.tudelft.nl/uuid:9660c5a3-6ef8-4c6a-b5cf-3994b60d754b), {%cite_details KRHDG19 --text FSE 2019 paper %}). Now PhD student at SERG.
@@ -47,12 +50,12 @@ GHTorrent to mine data from GitHub.
 
 _Current_
 
-* CSE2520 (BSc): Big data processing ([2019](/courses/bigdata))
-* IN4334 (MSc): Analytics and Machine Learning for Software Engineering ([2018](/courses/softanalytics), [2019](/courses/ml4se))
+* CSE2520 (BSc): Big Data Processing ([2020](/courses/bigdata))
+* IN4334 (MSc): Machine Learning for Software Engineering [2020](/courses/ml4se), ([2019](/courses/ml4se/2019), [2018](/courses/ml4se/2018))
 
 _Old_
 
-[//]: # (* TI2736B (BSc, Minor): Big data processing ([2017](/courses/bigdata/2017), [2018](/courses/bigdata/2018)))
+* TI2736B/CSE2520 (BSc, Minor): Big Data Processing ([2017](/courses/bigdata/2017), [2018](/courses/bigdata/2018), [2019](/courses/bigdata/2019))
 * TI3110TU (Minor): Algorithms and Data Structures ([2017](courses/algo-ds/), [Lecture notes sources](https://github.com/gousiosg/algo-ds))
 * EWI3615TU (Minor): 5EC project ([2017](courses/minor-project/))
 * TI1206 (Minor): Object-Oriented Programming, taught with Andy Zaidman

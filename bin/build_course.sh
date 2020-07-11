@@ -21,23 +21,34 @@ if [ -z $1 ] || [ -z $2 ]; then
   usage
 fi
 
-copy_files() {
+function copy_files() {
   cp $1/index.html $2
   find $1/lectures $1/assignments $1/notebooks -type f -name '*.html' | xargs -Istr cp str $2
   find $1/lectures $1/assignments $1/notebooks -type f -name '*.pdf' | xargs -Istr cp str $2
   find $1/lectures $1/assignments $1/notebooks -type f -name '*.ipynb'|grep -v ".ipynb_check" |xargs -Istr cp str $2
 }
 
+function cleanup {
+  if [ -e .stashed ]; then
+    wd=`pwd`
+    cd $material || exit 1
+    git stash pop || exit 1
+    rm .stashed || exit 1
+    cd $wd
+    echo $0 `date`: "Restored modified content"
+  fi
+}
+
 coursename=$1
 material=$2
 cwd=`pwd`
 
-echo `date`: Building course $coursename from $material
-echo `date`: Building branch: master to $cwd/courses/$coursename
-
+echo $0 `date`: Building course $coursename from $material
+echo  $0 `date`: Building branch: master to $cwd/courses/$coursename
 cd $material || exit 1
+
 make -j 12 html 1>/dev/null || exit 1
-echo `date`: Copying files from `pwd` to $cwd/courses/$coursename
+echo $0 `date`: Copying files from `pwd` to $cwd/courses/$coursename
 mkdir -p $cwd/courses/$coursename || exit 1
 copy_files `pwd` $cwd/courses/$coursename
 
@@ -46,21 +57,29 @@ if [ ! -z $old ]; then
   git fetch origin
 
   for branch in `git branch -r | grep -v "master" | cut -f2 -d'/'`; do
-    echo `date`: Building branch $branch to $cwd/courses/$coursename/$branch
+    echo $0 `date`: Building branch $branch to $cwd/courses/$coursename/$branch
 
-#    if [[ ! -z $(git status -s | grep -v "?? ") ]]; then
-#      echo `date`: "Path $material has uncommitted changes"
-#      exit 1
-#    fi
+    # Check if there is uncommitted content in the directory
+    if [[ ! -z $(git status -s | grep -v "?? ") ]]; then
+      echo $0 `date`: "Path $material has uncommitted changes"
+      git stash && touch .stashed
+      echo $0 `date`: "Path $material, changes stashed"
+      trap cleanup EXIT
+    fi
 
-    echo `date`: Checking out branch $branch
-    git checkout -b $branch origin/$branch || exit 1
+    echo $0 `date`: Checking out branch $branch
+
+    if [ -z `git branch | grep $branch`  ]; then
+      git checkout -b $branch origin/$branch || exit 1
+    else
+      git checkout $branch || exit 1
+    fi
 
     make clean
     make -j 12 html 1>/dev/null || exit 1
     mkdir -p $cwd/courses/$coursename/$branch || exit 1
 
-    echo `date`: Copying files from `pwd` to $cwd/courses/$branch
+    echo $0 `date`: Copying files from `pwd` to $cwd/courses/$branch
     copy_files `pwd` $cwd/courses/$coursename/$branch
 
     git checkout master

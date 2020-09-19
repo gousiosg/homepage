@@ -6,7 +6,7 @@ tags: about cv
 
 ### Bio
 
-*Dr. Georgios Gousios* is an assistant professor at the Software Engineering
+*Dr. Georgios Gousios* is an associate professor at the Software Engineering
 Group, Delft University of Technology, where he leads the group's Software
 Analytics lab. He works in the fields of sofware ecosystems, software testing,
 and machine learning for software engineering.  His research has been published
@@ -26,12 +26,14 @@ A full CV can be provided upon request.
 
 ### Member of...
 
-I am a member of a number of organisatiations:
+I am currently:
 
-* [member](http://portal.acm.org/author_page.cfm?id=81351592431) of the [ACM](http://www.acm.org)
-* member of the [IEEE Computer Society](http://www.computer.org)
+* [member](https://dl.acm.org/profile/81351592431) of the [ACM](http://www.acm.org)
 
-In a previous life, I was a member of the [Technical Chamber of Greece](http://www.tee.gr), the scientific commitee of the [Greek Open Source Software Organisation](http://ellak.gr/) and a [Wikipedian](http://en.wikipedia.org/wiki/User:Gousiosg).
+In a previous life, I was a member of the [IEEE Computer Society](http://www.computer.org)
+the [Technical Chamber of Greece](http://www.tee.gr), 
+the scientific commitee of the [Greek Open Source Software Organisation](http://ellak.gr/) 
+and a [Wikipedian](http://en.wikipedia.org/wiki/User:Gousiosg). 
 
 ### Online Profile
 

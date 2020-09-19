@@ -14,9 +14,10 @@ one that I can supervise, based on my [research interests](research.html).
 
 _Current_
 
-* Jonathan Katzy (Jun 2020): ML for code autocompletion
+*  (Jun 2020): 
+* Jonathan Katzy (Sep 2020): ML for code autocompletion
 * Thomas Kolenbrander (Jun 2020): Predicting major incidents at ING
-* Pradyot Patil (May 2020): Predicting cascading failures at ING
+* Pradyot Patil (May 2020): Predicting outages by analyzing timeseries
 * Algirdas Jokubauskas (Feb 2019): Dependency analysis at scale for Rust
 * Wouter van der Zwan (May 2018): Unified Call graphs for Java/Maven
 

@@ -3,6 +3,9 @@ layout: page
 title: Old news items
 ---
 
+* **Jun 2019**&raquo; Postdoc Moritz Beller is now on sabbatical at Facebook
+* **May 2019**&raquo; Postdoc Maria Kechagia to continue her studies at UCL.
+* **May 2019**&raquo; New PhD students: Elvan Kula (software process optization) and Mehdi Keshani (dependency management). Welcome!
 * **Feb 2019**&raquo; Started a sabbatical at Facebook. Read about my
   first experiences [here](https://t.co/9bX8CGwyIm)
 * **Jan 2019**&raquo; Acquired and started the [H2020 FASTEN project](http://fasten-project.eu), to make dependency management more robust.

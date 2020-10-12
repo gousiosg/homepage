@@ -10,8 +10,8 @@ I've had / am having the privilege of (co)supervising the following PhD students
 * [Ayushi Rastogi](https://ayushirastogi.github.io) (Jul 2018), working on developer productivity (also with Arie van Deursen).
 * [Enrique Larios](https://www.linkedin.com/in/enrique-larios-vargas/) (Jul 2017 – Jul 2020). Worked on the CodeFeedr 
 project (also with SIG). Now teaching team at the Delft University of Technology.
-* [Moritz Beller](https://inventitech.com)(Jan 2018 – May 2020). Worked on software analytics. Now research engineer at Facebook.
-* [Maria Kechagia](https://mkechagia.github.io)(May 2017 – May 2019). Worked on static analysis. Now postdoc at UCL.
+* [Moritz Beller](https://inventitech.com) (Jan 2018 – May 2020). Worked on software analytics. Now research engineer at Facebook.
+* [Maria Kechagia](https://mkechagia.github.io) (May 2017 – May 2019). Worked on static analysis. Now postdoc at UCL.
 
 **PhDs**
 
@@ -19,6 +19,7 @@ project (also with SIG). Now teaching team at the Delft University of Technology
 * [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (May 2019): Software process optimization, also at ING
 * [Mehdi Keshani](https://ashkboos.github.io/MyWebsite/) (May 2019): Dependency management and static analysis
 * [Joseph Hejderup](https://nl.linkedin.com/in/josephhejderup) (Feb 2017): Dependency management and static analysis
+* [Moritz Beller](https://inventitech.com) (Jan 2014 – Dec 2018): Feedback-driven software development ([thesis](https://repository.tudelft.nl/islandora/object/uuid%3Ab2946104-2092-42bb-a1ee-3b085d110466)) (co-promotor)
 
 **Scientific Developers**
 
@@ -33,6 +34,13 @@ project (also with SIG). Now teaching team at the Delft University of Technology
 * [Riivo Kikas](https://www.linkedin.com/in/riivokikas) (Feb 2016 – Jul 2016), worked on language ecosystem evolution
 
 **Master's students**
+
+* Jonathan Katzy (Sep 2020): ML for code autocompletion
+* Thomas Kolenbrander (Jun 2020): Predicting major incidents at ING
+* Pradyot Patil (May 2020): Predicting outages by analyzing timeseries
+* Algirdas Jokubauskas (Feb 2019): Dependency analysis at scale for Rust
+* Wouter van der Zwan (May 2018): Unified Call graphs for Java/Maven
+
 
 * [Ernst Mulders](https://www.linkedin.com/in/ernst-mulders/) (Dec 2018): Data Driven Decisions: Validating and Supporting a Continuous Experimentation Development Environment ([thesis](https://repository.tudelft.nl/islandora/object/uuid%3A08f2c0b4-2aa8-4e12-9b58-073dcdfb4553)).
 * [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (Feb 2018):

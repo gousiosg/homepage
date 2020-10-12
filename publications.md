@@ -14,39 +14,40 @@ Journals
 {% bibliography --file article %}
 
 Conferences (full papers)
------------
+-------------------------
 
 {% bibliography --file inproceedings %}
 
 Conferences (short papers)
------------
+--------------------------
 
 {% bibliography --file  shortpaper %}
 
 Workshops and other conference papers
------------
+-------------------------------------
 
 {% bibliography --file inworkshop %}
 
-Book chapters
--------------
+Technical Reports and pre-prints
+--------------------------------
 
-{% bibliography --file incollection %}
+{% bibliography --file techreport %}
+
 
 Tutorials
 ---------
 
 {% bibliography --file tutorials %}
 
+Book chapters
+-------------
+
+{% bibliography --file incollection %}
+
 Theses
 ------
 
 {% bibliography --file thesis %}
-
-Technical Reports
------------------
-
-{% bibliography --file techreport %}
 
 Working papers
 --------------

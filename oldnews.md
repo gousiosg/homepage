@@ -3,6 +3,7 @@ layout: page
 title: Old news items
 ---
 
+* **Oct 2019**&raquo; Amir Mir started as new PhD student on the FASTEN project. Welcome!
 * **Oct 2019**&raquo; New visiting student [Xunhui Zhang](https://github.com/zhangxunhui) from NYDT. Welcome!
 * **Jul 2019**&raquo; Preprints for our ISSTA paper on {%cite_details KDPGD19 --text static/dynamic API misuse detection %} and FSE paper on {%cite_details KRHDG19 --text rapid releases at ING %}
 * **Jun 2019**&raquo; Postdoc Moritz Beller is now on sabbatical at Facebook

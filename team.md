@@ -28,8 +28,8 @@ project (also with SIG). Now teaching team at the Delft University of Technology
 
 **Visitors**
 
-* [Maliheh Izadi](http://ce.sharif.edu/~malizadi/) (Jan 2020): Machine learning for Software Engineering
-* [Xunhui Zhang](https://github.com/zhangxunhui) (Oct 2019): Software analytics
+* [Maliheh Izadi](http://ce.sharif.edu/~malizadi/) (Jan 2020 - Jun 2020): Machine learning for Software Engineering
+* [Xunhui Zhang](https://github.com/zhangxunhui) (Oct 2019 - Oct 2020): Software analytics
 * [Chushu Gao](https://www.linkedin.com/in/gaochushu/?originalSubdomain=nl) (Jan 2018 – Jan 2019), worked on software analytics, now at SIG
 * [Riivo Kikas](https://www.linkedin.com/in/riivokikas) (Feb 2016 – Jul 2016), worked on language ecosystem evolution
 

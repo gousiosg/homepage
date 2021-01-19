@@ -6,21 +6,25 @@ tags: about cv
 
 ### Bio
 
-*Dr. Georgios Gousios* is an associate professor at the Software Engineering
-Group, Delft University of Technology, where he leads the group's Software
-Analytics lab. He works in the fields of sofware ecosystems, software testing,
-and machine learning for software engineering.  His research has been published
-in top venues (ICSE, FSE, TSE), where he has received 4 distinguished paper
-awards. He is the main author of the GHTorrent data collection and curation
-framework (for which he received a foundational contribution award) and various
-widely used tools and datasets. Currently, he is leading the FASTEN project,
-that aims to improve the state of dependency management, and the CodeFeedr
-project which delivers real time software analytics.
+*Dr. Georgios Gousios* is a research engineer at Facebook, Menlo Park
+and an associate professor at the Software Engineering
+Group, Delft University of Technology (on leave).
+His expertise is the application of advanced program analyis, data science and
+machine learning techniques for improving developer productivity and operational
+efficiency.
+He works in the fields of dependency management, effort estimation,
+and machine learning for software engineering.  
+His research has been published multiple times
+in top venues, where he has received 4 distinguished paper
+awards. 
+He is the main author of the GHTorrent data collection and curation
+framework, the (co-)PI of the FASTEN project that brings fine-grained analysis to
+program ecosystems and various other widely used tools and datasets.
 
 Dr. Gousios holds a PhD with distinction in Software Engineering (mining
 software repositories) from the Athens University of Economics and Business
 (AUEB) and an MSc with distinction (software engineering) from the University of
-Manchester. In spring 2019, he spent a sabbatical at Facebook, Menlo Park.
+Manchester.
 
 A full CV can be provided upon request.
 

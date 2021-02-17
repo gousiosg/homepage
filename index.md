@@ -5,7 +5,7 @@ title: Georgios Gousios home page
 
 Welcome to my home page!
 
-_As of Nov 2020, I am on leave from TU Delft, working at Facebook._
+_As of Nov 2020, I am on leave from TU Delft, working as a [research engineer](https://research.fb.com/people/gousios-georgios/) at Facebook._
 
 I am associate professor of software engineering at the [Software Engineering
 Research Group](http://se.ewi.tudelft.nl) group, 

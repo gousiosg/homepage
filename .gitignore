@@ -1,3 +1,5 @@
+*~
+.jekyll-cache
 vendor
 _bibliography
 target*
@@ -20,3 +22,10 @@ maven.jks
 *.db
 _site/
 public_html
+courses/ml4se
+courses/bigdata
+courses/algo-ds
+courses/minor-project
+courses/softanalytics
+Gemfile.lock
+.bundle

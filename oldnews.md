@@ -3,6 +3,15 @@ layout: page
 title: Old news items
 ---
 
+* **Oct 2020**&raquo; Pre-prints of our [FSE 2020](https://2020.esec-fse.org/program/program-esecfse-2020) papers on 
+{%cite_details PGLC20pp --text ML-based type prediction for Python %},
+{%cite_details VATBG20pp --text library selection %} and
+{%cite_details HRMGD20pp --text questions from software engineers to data scientists %}.
+* **Sep 2020**&raquo; I have been promoted to Associate Professor.
+* **Jun 2020**&raquo; Together with [Diomidis Spinellis](https://www.spinellis.gr/index.html.var), 
+I will be co-chairing [FSE 2021](https://2021.esec-fse.org) to be held in Athens, Greece
+* **May 2020**&raquo; New papers on {%cite_details ACGZ20 --text dependency resolution progress %} and {%cite_details BSSRGA20 --text ML-based off-by-one error detection %}.
+* **Jan 2020**&raquo; New visiting student [Maliheh Izadi](http://ce.sharif.edu/~malizadi/) from Sharif University. Welcome!
 * **Oct 2019**&raquo; Amir Mir started as new PhD student on the FASTEN project. Welcome!
 * **Oct 2019**&raquo; New visiting student [Xunhui Zhang](https://github.com/zhangxunhui) from NYDT. Welcome!
 * **Jul 2019**&raquo; Preprints for our ISSTA paper on {%cite_details KDPGD19 --text static/dynamic API misuse detection %} and FSE paper on {%cite_details KRHDG19 --text rapid releases at ING %}

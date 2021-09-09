@@ -3,8 +3,8 @@ title: Publications
 layout: page
 ---
 
-Book
-----
+Books and edited volumes
+------------------------
 
 {% bibliography --file book %}
 
@@ -32,7 +32,6 @@ Technical Reports and pre-prints
 --------------------------------
 
 {% bibliography --file techreport %}
-
 
 Tutorials
 ---------

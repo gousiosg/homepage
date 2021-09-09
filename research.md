@@ -16,10 +16,12 @@ and combinations thereof. Specifically my research interests are the following:
 
 <i class="fa fa-project-diagram fa-2x"></i> In our
 {% cite_details HDG18 --text latest work %}, we are exploring
-how to create call graphs at the ecosystem scale. Our initial experiments
-with the [Rust Cargo ecosystem](https://pure.tudelft.nl/portal/en/publications/prazi-from-packagebased-to-precise-callbased-dependency-network-analyses(6e9d35bd-b512-4bdd-80c1-53608d2acda6.html) are very promising. We obtained the H2020
-FASTEN project to make package management more intelligent. More to come
-soon!
+how to improve dependency management. Our initial experiments
+with the {% cite_details HBTG21pp --text Rust ecosystems  %} are very promising. 
+I am currently co-leading the [H2020 FASTEN project](https://www.fasten-project.eu), 
+which works on making dependency management better by making package managers 
+more intelligent. 
+
 
 <i class="fas fa-chart-line fa-2x"></i>
 We are working in the area of software analytics, in the context of the [CodeFeedr](http://codefeedr.github.io) project.
@@ -65,16 +67,18 @@ to {% cite_details HG15 --text match job advertisements to developer profiles %}
 We also {% cite_details RNGH18 --text investigated %} whether
 geographical and nationality biases exist among OSS developers.
 
-<i class="fab fa-simplybuilt fa-2x"></i>
-I also work on analysis of Continuous Integration logs. For that, we created the [TravisTorrent](http://travistorrent.testroots.org) project
-to disseminate Travis build results in a way similar to GHTorrent. TravisTorrent
-is the dataset for the 2017
-[MSR mining challenge](http://2017.msrconf.org/#/challenge) (attracting
-a record number of submissions).
-Our initial results ({% cite_details BGZ16 --text PeerJ Preprint %})
-show significant (order of magnitude) differences between testing habits among programming languages, including build breakage rates and number of tests run.
-
 #### Past work
+
+<i class="fab fa-simplybuilt fa-2x"></i>
+I worked on analysing Continuous Integration logs. For that, we co-created
+the [TravisTorrent](http://travistorrent.testroots.org) project to
+disseminate Travis build results in a way similar to GHTorrent. TravisTorrent
+was the dataset for the 2017 [MSR mining
+challenge](http://2017.msrconf.org/#/challenge) (attracting a record number
+of submissions). Our results ({% cite_details BGZ17 --text MSR 2017 %})
+indicated significant (order of magnitude) differences between testing habits
+among programming languages, including build breakage rates and number of
+tests run.
 
 <i class="fas fa-flask fa-2x"></i>
 In the context of the [TestRoots](http://testroots.org) project, I did research

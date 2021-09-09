@@ -7,9 +7,9 @@ I've had / am having the privilege of (co)supervising the following PhD students
 
 **Postdocs**
 
-* [Ayushi Rastogi](https://ayushirastogi.github.io) (Jul 2018), working on developer productivity (also with Arie van Deursen).
+* [Ayushi Rastogi](https://ayushirastogi.github.io) (Jul 2018 - May 2021), working on developer productivity (also with Arie van Deursen). Now assistant professor at the University of Groningen
 * [Enrique Larios](https://www.linkedin.com/in/enrique-larios-vargas/) (Jul 2017 – Jul 2020). Worked on the CodeFeedr 
-project (also with SIG). Now teaching team at the Delft University of Technology.
+project (also with SIG). Now postdoc at the University of Victoria. 
 * [Moritz Beller](https://inventitech.com) (Jan 2018 – May 2020). Worked on software analytics. Now research engineer at Facebook.
 * [Maria Kechagia](https://mkechagia.github.io) (May 2017 – May 2019). Worked on static analysis. Now postdoc at UCL.
 
@@ -35,7 +35,6 @@ project (also with SIG). Now teaching team at the Delft University of Technology
 
 **Master's students**
 
-* Jonathan Katzy (Sep 2020): ML for code autocompletion
 * Thomas Kolenbrander (Jun 2020): Predicting major incidents at ING
 * Pradyot Patil (May 2020): Predicting outages by analyzing timeseries
 * Algirdas Jokubauskas (Feb 2019): Dependency analysis at scale for Rust

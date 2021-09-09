@@ -161,6 +161,9 @@ I have written the following research proposals which led to funding for
 me or for the institution I was working for at the time. I have also authored
 and co-authored several other proposals, obviously not as lucky ones :-)
 
+FASTEN
+: Fine-grained analysis for dependency management &euro;3,950,000. Host: TU Delft. Partners: AUEB, U Milano, SIG, Endocode, OW2. Funding agency: European Commission. 2019
+
 CodeFeedr
 : Next-gen software analytics. NWO Big Software. &euro;440,000. Host: TU Delft. Partners: [SIG](http://sig.eu). Funding agency: NWO. 2015
 

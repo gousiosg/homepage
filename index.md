@@ -24,11 +24,11 @@ I am also [speaking](talks.html) and [blogging](/blog/).
 * **Aug 2021**&raquo; ESEC/FSE 2021 was succesfuly organized in Athens, Greece.
 Watch the [introductory video](https://www.youtube.com/watch?v=gs-by8zZM24) and
  {%cite_details SGCP21 --text read the proceedings %}.
-* **Jul 2021**&raquo; {%cite_details KGDG21 --text TSE paper %} on what affects on-time deliveries in agile settings
+* **Jul 2021**&raquo; {%cite_details MNBGD21 --text TOSEM paper %} on pre-emptive conflict resolution (at Microsoft).
+* **Jul 2021**&raquo; {%cite_details KGDG21 --text TSE paper %} on what affects on-time deliveries in agile settings (at ING).
 * **Jun 2021**&raquo; {%cite_details SPGA21 --text Paper %} on ML-based off-by-one error detection.
 * **Jan 2021**&raquo; Technical report on {%cite_details HBTG21pp --text fine-grained dependency management for Rust %}. An analysis of the whole Rust ecosystem at the function call level.
 * **Jan 2021**&raquo; Technical report on {%cite_details MLPG21pp --text ML-based type prediction for Python %}. We beat the state of the art by a significant margin!
-* **Jan 2021**&raquo; Technical report on {%cite_details MNBGD21pp --text pre-emptive conflict resolution %} at Microsoft.
 * **Dec 2020**&raquo; Paper on 
 {%cite_details BG20 --text fine-grained ecosystems %} and techical report on
 our work on optimising {%cite_details MSBNGD20 --text the PR process at Microsoft %} 

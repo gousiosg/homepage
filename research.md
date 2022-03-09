@@ -7,48 +7,47 @@ and combinations thereof. Specifically my research interests are the following:
 
 * Software engineering
 * Software analytics
-* Programming languages
+* Machine learning
 * Systems software
 
 ### Software Engineering - Software Analytics
 
 #### Current work
 
-<i class="fa fa-project-diagram fa-2x"></i> In our
-{% cite_details HDG18 --text latest work %}, we are exploring
-how to improve dependency management. Our initial experiments
-with the {% cite_details HBTG21pp --text Rust ecosystems  %} are very promising. 
-I am currently co-leading the [H2020 FASTEN project](https://www.fasten-project.eu), 
-which works on making dependency management better by making package managers 
-more intelligent. 
+<i class="fas fa-robot fa-2x"></i>
+I am exploring ways to apply _machine learning on software engineering_
+problems. During my sabbatical at Facebook, I worked on type prediction
+for Python ({% cite_details PGLC20 --text TypeWriter %});
+we extended this work into
+{% cite_details MLPG21pp --text Type4Py %}
+(see also the related {% cite_details MLG21 --text ManyTypes4Py %} dataset),
+which also includes a
+[VS Code plugin](https://marketplace.visualstudio.com/items?itemName=saltud.type4py).
+We also implemented a {%cite_details IGG22pp --text Codefill %},
+a state-of-the-art beating autocompletion system for Python based on the concept of
+parallel representations of syntax and code sequences.
 
+At Facebook, I have also applied ML for timeseries to the problem of unsupervised
+crash categorization ({% cite_details YDG21pp --text KabOOM %}).
+
+<i class="fa fa-project-diagram fa-2x"></i> We are working
+to improve _dependency management_. Our initial experiments
+with the {% cite_details HBTG21pp --text Rust ecosystem  %} are very promising.
+I was the original instigator of the [H2020 FASTEN project](https://www.fasten-project.eu),
+which works on making dependency management better by making package managers
+more intelligent. Using fine grained dependency management, we are also able to
+{% cite_details HG22 --text perform safer dependency updates %}.
 
 <i class="fas fa-chart-line fa-2x"></i>
-We are working in the area of software analytics, in the context of the [CodeFeedr](http://codefeedr.github.io) project.
-We describe our {% cite_details GSV16 --text vision here %} and present
-a set of case studies we are working on {% cite_details VHKBG18 --text here %}.
-
-<i class="fab fa-github-alt fa-2x"></i>
-I actively develop and maintain a
-[collection of tools](https://github.com/gousiosg/github-mirror) for {%
-cite_details GS12 --text obtaining %} and {% cite_details G13 --text analysing
-%} data from Github, through the [GHTorrent](https://ghtorrent.org) project. The
-project has been awarded the [best data project
-award](http://2014.msrconf.org/history.php) at MSR 2013, has received the
-[foundational contribution award](https://twitter.com/ghtorrent/status/1001204300050321409) at MSR 2018, and has been selected as the
-official dataset of the [MSR 2014 mining
-challenge](http://2014.msrconf.org/challenge.php).  At the moment (Jun 2018)
-[250 papers](https://scholar.google.gr/scholar?oi=bibs&hl=en&cites=11132126230347149781)
-(40% of all GitHub-related papers according to [one
-source](http://modeling-languages.com/believe-research-github-mining/)) [where
-based on it](http://ghtorrent.org/halloffame.html), more that 450 researchers
-are [using its data](http://github.com/ghtorrent/ghtorrent.org/keys.txt), GitHub
-included it in its [2014 data
-challenge](https://github.com/blog/1864-third-annual-github-data-challenge),
-while [Microsoft chose it](/bibliography/Gousit16f.html) as a data source for
-  monitoring their OSS projects.  Together with colleagues, we have documented
-  the promises and pitfalls of doing research with GHTorrent ({% cite_details
-  KGBSGD14 --text MSR14 %}, {% cite_details KGBSGD16 --text EMSE %}).
+In the area of _software process optimization_, I am co-leading the
+[Fintech lab](https://icai.ai/ai-for-fintech-lab/)'s software analytics track.
+We are exploring how to make project planning more predicable by using machine learning.
+In our {%cite_details KRHDG19 --text initial work %}, we investigated the productivity
+effects of releasing software in smaller iterations. In
+{%cite_details KGDG21 --text follow up work %}, we built models to characterize and
+predict delays in agile development. We also
+{%cite_details KDG21 --text found %} that adding team features on task
+duration predictions improves them by 30%.
 
 <i class="fas fa-code-branch fa-2x"></i>
 I am exploring how
@@ -66,8 +65,41 @@ Using the findings of the qualitative work, I have also co-proposed a service to
 to {% cite_details HG15 --text match job advertisements to developer profiles %}.
 We also {% cite_details RNGH18 --text investigated %} whether
 geographical and nationality biases exist among OSS developers.
+More than 1000 other papers have collectively cited/used our results;
+we compose the follow up findings in a massive scale {%cite_details ZYGR21 --text replication %}
+of the {%cite_details GPD14 --text ICSE 2014 %} paper.
+
+Furthermore, we synthesize all related work in a preliminary
+{%cite_details RG21pp --text theory of software change %}.
 
 #### Past work
+
+<i class="fab fa-github-alt fa-2x"></i>
+From 2011 till 2021, I was actively developing and maintaining a
+[collection of tools](https://github.com/gousiosg/github-mirror) for {%
+cite_details GS12 --text obtaining %} and {% cite_details G13 --text analysing
+%} data from Github, through the [GHTorrent](https://ghtorrent.org) project. The
+project has been awarded the [best data project
+award](http://2014.msrconf.org/history.php) at MSR 2013, has received the
+[foundational contribution award](https://twitter.com/ghtorrent/status/1001204300050321409) at MSR 2018,
+and has been selected as the official dataset of the [MSR 2014 mining
+challenge](http://2014.msrconf.org/challenge.php).  At the moment (Jun 2018)
+[250 papers](https://scholar.google.gr/scholar?oi=bibs&hl=en&cites=11132126230347149781)
+(40% of all GitHub-related papers according to [one
+source](http://modeling-languages.com/believe-research-github-mining/)) [where
+based on it](http://ghtorrent.org/halloffame.html), more that 450 researchers
+are [using its data](http://github.com/ghtorrent/ghtorrent.org/keys.txt), GitHub
+included it in its [2014 data
+challenge](https://github.com/blog/1864-third-annual-github-data-challenge),
+while [Microsoft chose it](/bibliography/Gousit16f.html) as a data source for
+  monitoring their OSS projects.  Together with colleagues, we have documented
+  the promises and pitfalls of doing research with GHTorrent ({% cite_details
+  KGBSGD14 --text MSR14 %}, {% cite_details KGBSGD16 --text EMSE %}).
+
+The follow up [CodeFeedr](http://codefeedr.github.io) project created a platform
+for real time mining of software analytics.
+We describe our {% cite_details GSV16 --text vision here %} and present
+a set of case studies we worked on {% cite_details VHKBG18 --text here %}.
 
 <i class="fab fa-simplybuilt fa-2x"></i>
 I worked on analysing Continuous Integration logs. For that, we co-created
@@ -195,6 +227,16 @@ Total budget &euro;1,638,000. Host: Athens University of Economics and Business.
 <i class="fas fa-cog fa-2x"></i>
 A list of research projects I have been actively involved with, along with a description of my role
 in them, in reverse chronological order:
+
+[GHTorrent](http://ghtorrent.org):
+: GHTorrent created a platform to continuosly mine and share data from the Github social coding
+platform (_2011 -- 2021_). I was the lead developer and maintainer of the project.
+Code: [GHTorrent](https://github.com/gousiosg/github-mirror).
+
+[Codefeedr](http://codefeedr.org)
+: The project created a streaming software analytics infrastructure for real-time mining
+of software project repositories (_2016 -- 2020_). I was the PI and lead software designer.
+Code can be found [here](http://github.com/codefeedr).
 
 [Testroots](http://testroots.org)
 : The project investigates how developers use testing. The ultimate goal is to

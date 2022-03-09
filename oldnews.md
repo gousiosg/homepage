@@ -3,12 +3,19 @@ layout: page
 title: Old news items
 ---
 
-* **Oct 2020**&raquo; Pre-prints of our [FSE 2020](https://2020.esec-fse.org/program/program-esecfse-2020) papers on 
+* **Jun 2021**&raquo; {%cite_details SPGA21 --text Paper %} on ML-based off-by-one error detection.
+* **Jan 2021**&raquo; Technical report on {%cite_details HBTG21pp --text fine-grained dependency management for Rust %}. An analysis of the whole Rust ecosystem at the function call level.
+* **Jan 2021**&raquo; Technical report on {%cite_details MLPG21pp --text ML-based type prediction for Python %}. We beat the state of the art by a significant margin!
+* **Dec 2020**&raquo; Paper on
+{%cite_details BG20 --text fine-grained ecosystems %} and techical report on
+our work on optimising {%cite_details MSBNGD20 --text the PR process at Microsoft %}
+(covered by [Venturebeat](https://venturebeat.com/2020/12/03/microsofts-nudge-service-leverages-ai-to-speed-up-completion-of-pull-requests/)).
+* **Oct 2020**&raquo; Pre-prints of our [FSE 2020](https://2020.esec-fse.org/program/program-esecfse-2020) papers on
 {%cite_details PGLC20pp --text ML-based type prediction for Python %},
 {%cite_details VATBG20pp --text library selection %} and
 {%cite_details HRMGD20pp --text questions from software engineers to data scientists %}.
 * **Sep 2020**&raquo; I have been promoted to Associate Professor.
-* **Jun 2020**&raquo; Together with [Diomidis Spinellis](https://www.spinellis.gr/index.html.var), 
+* **Jun 2020**&raquo; Together with [Diomidis Spinellis](https://www.spinellis.gr/index.html.var),
 I will be co-chairing [FSE 2021](https://2021.esec-fse.org) to be held in Athens, Greece
 * **May 2020**&raquo; New papers on {%cite_details ACGZ20 --text dependency resolution progress %} and {%cite_details BSSRGA20 --text ML-based off-by-one error detection %}.
 * **Jan 2020**&raquo; New visiting student [Maliheh Izadi](http://ce.sharif.edu/~malizadi/) from Sharif University. Welcome!

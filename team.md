@@ -5,6 +5,15 @@ title: Team
 
 I've had / am having the privilege of (co)supervising the following PhD students, post-docs, scientific programmers and MSc students:
 
+**PhDs**
+
+* [Amir Mir](https://www.linkedin.com/in/mir93/) (Oct 2019): Dependency management and machine learning
+* [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (May 2019): Software process optimization, also at ING
+* [Mehdi Keshani](https://ashkboos.github.io/MyWebsite/) (May 2019): Dependency management and static analysis
+* [Joseph Hejderup](https://nl.linkedin.com/in/josephhejderup) (Feb 2017): Dependency management and static analysis
+
+#### Former team members
+
 **Postdocs**
 
 * [Ayushi Rastogi](https://ayushirastogi.github.io) (Jul 2018 - May 2021), working on developer productivity (also with Arie van Deursen). Now assistant professor at the University of Groningen
@@ -15,15 +24,11 @@ project (also with SIG). Now postdoc at the University of Victoria.
 
 **PhDs**
 
-* [Amir Mir](https://www.linkedin.com/in/mir93/) (Oct 2019): Dependency management and machine learning
-* [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (May 2019): Software process optimization, also at ING
-* [Mehdi Keshani](https://ashkboos.github.io/MyWebsite/) (May 2019): Dependency management and static analysis
-* [Joseph Hejderup](https://nl.linkedin.com/in/josephhejderup) (Feb 2017): Dependency management and static analysis
 * [Moritz Beller](https://inventitech.com) (Jan 2014 – Dec 2018): Feedback-driven software development ([thesis](https://repository.tudelft.nl/islandora/object/uuid%3Ab2946104-2092-42bb-a1ee-3b085d110466)) (co-promotor)
 
 **Scientific Developers**
 
-* [Wouter Zorgdrager](https://www.linkedin.com/in/wouter-zorgdrager-a4746512a/?originalSubdomain=nl) (Feb 2019), in the [FASTEN project](https://www.fasten-project.eu)
+* [Wouter Zorgdrager](https://www.linkedin.com/in/wouter-zorgdrager-a4746512a/?originalSubdomain=nl) (Feb 2019 - Nov 2021), in the [FASTEN project](https://www.fasten-project.eu)
 * [Joseph Hejderup](https://nl.linkedin.com/in/josephhejderup) (2015 – 2016) in the Pourquoi project.
 
 **Visitors**
@@ -35,12 +40,8 @@ project (also with SIG). Now postdoc at the University of Victoria.
 
 **Master's students**
 
-* Thomas Kolenbrander (Jun 2020): Predicting major incidents at ING
-* Pradyot Patil (May 2020): Predicting outages by analyzing timeseries
-* Algirdas Jokubauskas (Feb 2019): Dependency analysis at scale for Rust
-* Wouter van der Zwan (May 2018): Unified Call graphs for Java/Maven
-
-
+* [Pradyot Patil](https://www.linkedin.com/in/pradyotpatil/) (May 2020): Identifying Informative System Metrics: Predicting the predictability of time series using entropy [thesis](http://resolver.tudelft.nl/uuid:7a655689-9c0d-4d5d-aab3-365ebfea45b1)
+* [Algirdas Jokubauskas](https://www.linkedin.com/in/algirdasjokubauskas/) (Feb 2019): Investigating dependency code reuse using callgraphs [thesis](http://resolver.tudelft.nl/uuid:efcd03ba-5d12-4b97-a15f-911206db1e80)
 * [Ernst Mulders](https://www.linkedin.com/in/ernst-mulders/) (Dec 2018): Data Driven Decisions: Validating and Supporting a Continuous Experimentation Development Environment ([thesis](https://repository.tudelft.nl/islandora/object/uuid%3A08f2c0b4-2aa8-4e12-9b58-073dcdfb4553)).
 * [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (Feb 2018):
   Releasing fast and slow: a case study of rapid releases at ING ([thesis](http://resolver.tudelft.nl/uuid:9660c5a3-6ef8-4c6a-b5cf-3994b60d754b), {%cite_details KRHDG19 --text FSE 2019 paper %}). Now PhD student at SERG.

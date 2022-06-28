@@ -19,7 +19,7 @@ I am exploring ways to apply _machine learning on software engineering_
 problems. During my sabbatical at Facebook, I worked on type prediction
 for Python ({% cite_details PGLC20 --text TypeWriter %});
 we extended this work into
-{% cite_details MLPG21pp --text Type4Py %}
+{% cite_details MLPG22 --text Type4Py %}
 (see also the related {% cite_details MLG21 --text ManyTypes4Py %} dataset),
 which also includes a
 [VS Code plugin](https://marketplace.visualstudio.com/items?itemName=saltud.type4py).
@@ -32,14 +32,16 @@ crash categorization ({% cite_details YDG21pp --text KabOOM %}).
 
 <i class="fa fa-project-diagram fa-2x"></i> We are working
 to improve _dependency management_. Our initial experiments
-with the {% cite_details HBTG21pp --text Rust ecosystem  %} are very promising.
-I was the original instigator of the [H2020 FASTEN project](https://www.fasten-project.eu),
+with the {% cite_details HBTG22 --text Rust ecosystem  %} are very promising.
+I was the original primary instigator of the [H2020 FASTEN project](https://www.fasten-project.eu),
 which works on making dependency management better by making package managers
 more intelligent. Using fine grained dependency management, we are also able to
 {% cite_details HG22 --text perform safer dependency updates %}.
 
+This line of work powers our software supply chain security startup, [Endor Labs](https://www.endorlabs.com).
+
 <i class="fas fa-chart-line fa-2x"></i>
-In the area of _software process optimization_, I am co-leading the
+In the area of _software process optimization_, I was co-leading and I am currently helping out the
 [Fintech lab](https://icai.ai/ai-for-fintech-lab/)'s software analytics track.
 We are exploring how to make project planning more predicable by using machine learning.
 In our {%cite_details KRHDG19 --text initial work %}, we investigated the productivity
@@ -66,8 +68,14 @@ to {% cite_details HG15 --text match job advertisements to developer profiles %}
 We also {% cite_details RNGH18 --text investigated %} whether
 geographical and nationality biases exist among OSS developers.
 More than 1000 other papers have collectively cited/used our results;
-we compose the follow up findings in a massive scale {%cite_details ZYGR21 --text replication %}
+we compose the follow up findings in a {%cite_details ZTGR22 --text massive scale replication (TSE) %}
 of the {%cite_details GPD14 --text ICSE 2014 %} paper.
+
+Expansions of this line of work have found their way to the industry.
+{%cite_details MUBNGD22 --text Nudge %} and {%cite_details MNBGD21 --text ConE %}
+are systems deployed at Microsoft (and elsewhere) that facilitate developers
+accelerate the pull request code review process and learn which other pull requests
+may conflict with theirs.
 
 Furthermore, we synthesize all related work in a preliminary
 {%cite_details RG21pp --text theory of software change %}.

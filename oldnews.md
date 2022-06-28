@@ -3,6 +3,8 @@ layout: page
 title: Old news items
 ---
 
+* **Jul 2021**&raquo; {%cite_details MNBGD21 --text TOSEM paper %} on pre-emptive conflict resolution (at Microsoft).
+* **Jul 2021**&raquo; {%cite_details KGDG21 --text TSE paper %} on what affects on-time deliveries in agile settings (at ING).
 * **Jun 2021**&raquo; {%cite_details SPGA21 --text Paper %} on ML-based off-by-one error detection.
 * **Jan 2021**&raquo; Technical report on {%cite_details HBTG21pp --text fine-grained dependency management for Rust %}. An analysis of the whole Rust ecosystem at the function call level.
 * **Jan 2021**&raquo; Technical report on {%cite_details MLPG21pp --text ML-based type prediction for Python %}. We beat the state of the art by a significant margin!

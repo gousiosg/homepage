@@ -7,9 +7,7 @@ I've had / am having the privilege of (co)supervising the following PhD students
 
 **PhDs**
 
-* [Amir Mir](https://www.linkedin.com/in/mir93/) (Oct 2019): Dependency management and machine learning
 * [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (May 2019): Software process optimization, also at ING
-* [Mehdi Keshani](https://ashkboos.github.io/MyWebsite/) (May 2019): Dependency management and static analysis
 * [Joseph Hejderup](https://nl.linkedin.com/in/josephhejderup) (Feb 2017): Dependency management and static analysis
 
 #### Former team members
@@ -17,19 +15,22 @@ I've had / am having the privilege of (co)supervising the following PhD students
 **Postdocs**
 
 * [Ayushi Rastogi](https://ayushirastogi.github.io) (Jul 2018 - May 2021), working on developer productivity (also with Arie van Deursen). Now assistant professor at the University of Groningen
-* [Enrique Larios](https://www.linkedin.com/in/enrique-larios-vargas/) (Jul 2017 – Jul 2020). Worked on the CodeFeedr 
-project (also with SIG). Now postdoc at the University of Victoria. 
+* [Enrique Larios](https://www.linkedin.com/in/enrique-larios-vargas/) (Jul 2017 – Jul 2020). Worked on the CodeFeedr
+project (also with SIG). Now postdoc at the University of Victoria.
 * [Moritz Beller](https://inventitech.com) (Jan 2018 – May 2020). Worked on software analytics. Now research engineer at Facebook.
 * [Maria Kechagia](https://mkechagia.github.io) (May 2017 – May 2019). Worked on static analysis. Now postdoc at UCL.
 
 **PhDs**
+
+* [Mehdi Keshani](https://ashkboos.github.io/MyWebsite/) (May 2019): Dependency management and static analysis. Now supervised by Sebastian Procksh.
+* [Amir Mir](https://www.linkedin.com/in/mir93/) (Oct 2019): Dependency management and machine learning. Now supervised by Sebastian Procksh.
 
 * [Moritz Beller](https://inventitech.com) (Jan 2014 – Dec 2018): Feedback-driven software development ([thesis](https://repository.tudelft.nl/islandora/object/uuid%3Ab2946104-2092-42bb-a1ee-3b085d110466)) (co-promotor)
 
 **Scientific Developers**
 
 * [Wouter Zorgdrager](https://www.linkedin.com/in/wouter-zorgdrager-a4746512a/?originalSubdomain=nl) (Feb 2019 - Nov 2021), in the [FASTEN project](https://www.fasten-project.eu)
-* [Joseph Hejderup](https://nl.linkedin.com/in/josephhejderup) (2015 – 2016) in the Pourquoi project.
+* [Joseph Hejderup](https://nl.linkedin.com/in/josephhejderup) (2015 – 2016) on the Pourquoi project.
 
 **Visitors**
 

@@ -16,11 +16,10 @@ one that I can supervise, based on my [research interests](research.html).
 
 _Current_
 
-* CSE2520/TI2736B (BSc): Big Data Processing [2020](/courses/bigdata) ([2019](/courses/bigdata/2019), [2018](/courses/bigdata/2018), [2017](/courses/bigdata/2017))
-* IN4334 (MSc): Machine Learning for Software Engineering [2020](/courses/ml4se) ([2019](/courses/ml4se/2019), [2018](/courses/ml4se/2018))
+* IN4334 (MSc): Machine Learning for Software Engineering [2022](/courses/ml4se) ([2020](/courses/ml4se/2020), [2019](/courses/ml4se/2019), [2018](/courses/ml4se/2018))
 
 _Old_
-
+* CSE2520/TI2736B (BSc): Big Data Processing [2020](/courses/bigdata) ([2019](/courses/bigdata/2019), [2018](/courses/bigdata/2018), [2017](/courses/bigdata/2017)) Lectures now given by [Burcu Kulahcioglu Ozkan](https://burcuku.github.io/cse2520-bigdata/)
 * TI3110TU (Minor): Algorithms and Data Structures ([2017](courses/algo-ds/), [Lecture notes sources](https://github.com/gousiosg/algo-ds))
 * EWI3615TU (Minor): 5EC project ([2017](courses/minor-project/))
 * TI1206 (Minor): Object-Oriented Programming, taught with Andy Zaidman

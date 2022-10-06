@@ -22,6 +22,8 @@ I am also [speaking](talks.html), [blogging](/blog/) and [consulting](consulting
 
 #### Latest news
 
+* **Sep 2022**&raquo; {%cite_details KGS22 --text Our work%} on evaluating the impact of Software Engineering research on practice has been
+published at TSE.
 * **Jun 2022**&raquo; The {%cite_details MUBNGD22 --text Nudge%} paper, on a mechanism to accelerate code reviews on pull requests at Microsoft, has been accepted at TOSEM.
 * **May 2022**&raquo; {%cite_details ZTGR22 --text TSE paper %} We replicate and greatly expand upon our {%cite_details GPD14 --text ICSE 2014%} pull request paper, by incorporating all work that happened in the mean time. We analyze almost 12k projects!
 * **Feb 2022**&raquo; Life update: Started working as chief researcher at [Endor Labs](https://www.endorlabs.com)!

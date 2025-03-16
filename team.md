@@ -5,27 +5,26 @@ title: Team
 
 I've had / am having the privilege of (co)supervising the following PhD students, post-docs, scientific programmers and MSc students:
 
-**PhDs**
+####
 
-* [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (May 2019): Software process optimization, also at ING
-* [Joseph Hejderup](https://nl.linkedin.com/in/josephhejderup) (Feb 2017): Dependency management and static analysis
-
-#### Former team members
+#### Former team members at TU Delft
 
 **Postdocs**
 
+* [Maliheh Izadi](https://malihehizadi.github.io/PersonalWebsite/index.html) (Jan 2020 - Jan 2022). Machine learning for Software Engineering. Now assistant prof TU Delft.
 * [Ayushi Rastogi](https://ayushirastogi.github.io) (Jul 2018 - May 2021), working on developer productivity (also with Arie van Deursen). Now assistant professor at the University of Groningen
-* [Enrique Larios](https://www.linkedin.com/in/enrique-larios-vargas/) (Jul 2017 – Jul 2020). Worked on the CodeFeedr
-project (also with SIG). Now postdoc at the University of Victoria.
-* [Moritz Beller](https://inventitech.com) (Jan 2018 – May 2020). Worked on software analytics. Now research engineer at Facebook.
-* [Maria Kechagia](https://mkechagia.github.io) (May 2017 – May 2019). Worked on static analysis. Now postdoc at UCL.
+* [Enrique Larios](https://www.linkedin.com/in/enrique-larios-vargas/) (Jul 2017 – Jul 2020). Worked on the CodeFeedr project (also with SIG). Now researcher at Adyen
+* [Moritz Beller](https://inventitech.com) (Jan 2018 – May 2020). Worked on software analytics. Now research engineer at Meta.
+* [Maria Kechagia](https://mkechagia.github.io) (May 2017 – May 2019). Worked on static analysis. Now assistant prof at U of Athens.
 
 **PhDs**
 
-* [Mehdi Keshani](https://ashkboos.github.io/MyWebsite/) (May 2019): Dependency management and static analysis. Now supervised by Sebastian Procksh.
-* [Amir Mir](https://www.linkedin.com/in/mir93/) (Oct 2019): Dependency management and machine learning. Now supervised by Sebastian Procksh.
-
-* [Moritz Beller](https://inventitech.com) (Jan 2014 – Dec 2018): Feedback-driven software development ([thesis](https://repository.tudelft.nl/islandora/object/uuid%3Ab2946104-2092-42bb-a1ee-3b085d110466)) (co-promotor)
+* [Elvan Kula](https://www.linkedin.com/in/elvan-kula/) (May 2019 - Apr 2025): Software process optimization, also at ING. Now at Schiphol.
+* [Amir Mir](https://www.linkedin.com/in/mir93/) (Oct 2019 -- Feb 2025) (w/ Sebastian Proksch): Dependency management and machine learning.
+* [Joseph Hejderup](https://nl.linkedin.com/in/josephhejderup) (Feb 2017 -- May 2024): Dependency management and static analysis. Now at Endor Labs.
+* [Chandra Madilla](https://www.linkedin.com/in/cmaddila/) (Dec 2019 -- Dec 2022): Large application scale tools. Now at Meta.
+* [Moritz Beller](https://inventitech.com) (Jan 2014 – Dec 2018): Feedback-driven software development ([thesis](https://repository.tudelft.nl/islandora/object/uuid%3Ab2946104-2092-42bb-a1ee-3b085d110466)) (co-promotor, Andy Zaidman main promotor). Now at Meta.
+* [Mehdi Keshani](https://ashkboos.github.io/MyWebsite/) (May 2019 - Sep 2024) (promotor years 1,2): Dependency management and static analysis.
 
 **Scientific Developers**
 

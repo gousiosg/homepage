@@ -5,8 +5,8 @@ title: Georgios Gousios home page
 
 Welcome to my home page!
 
-I am head of research at [Endor Labs](https://www.endorlabs.com), where I am helping to make
-software supply chains more secure.
+I am head of research at [Endor Labs](https://www.endorlabs.com),
+where I am helping make software supply chains more secure.
 Before that, I was associate professor of software engineering at the
 [Software Engineering Research Group](http://se.ewi.tudelft.nl) group,
 [Delft University of Technology](http://www.tudelft.nl),
@@ -36,17 +36,3 @@ and {%cite_details IGG22 --text Codefill %}, for ML-based autocompletion, both f
 
 _[Old news](oldnews.html)_
 
-#### Current Projects
-
-* [FASTEN](http://fasten-project.eu): Making software ecosystems robust by
-  making package management more intelligent. Former PI, now advisor.
-* [AI4Fintech](https://se.ewi.tudelft.nl/ai4fintech/index.html): Making
-  large software-based organizations more efficient. Led the
-  [software analytics](https://se.ewi.tudelft.nl/ai4fintech/tracks/01_software_analytics.html) track.
-
-
-At the TU Delft, I have the pleasure of working closely with the following people ([alumni](team.html)):
-
-* [Joseph Hejderup](https://nl.linkedin.com/in/josephhejderup): Dependency management and static analysis
-* [Maliheh Izadi](https://malihehizadi.github.io/PersonalWebsite/index.html): Machine learning for Software Engineering
-* [Elvan Kula](https://www.linkedin.com/in/elvan-kula/): Software process optimization, also at ING

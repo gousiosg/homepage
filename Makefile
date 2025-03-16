@@ -51,10 +51,13 @@ docker-build: check_deps bib #courses
 	@docker build -t gousiosg/website .
 
 # Build the website
-build: docker-build check_deps bib #courses
+build: check_deps bib #courses
 	@echo "Building the website"
-	@docker run -p 4000:4000 gousiosg/website
+	@docker run -v $(shell pwd):/site gousiosg/website
 
+web: build
+	# run python3 -m http.server 8000 on _site
+	@python3 -m http.server 8000 -d _site
 # Clean up
 clean:
 	@echo "Cleaning up"

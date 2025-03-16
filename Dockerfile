@@ -17,9 +17,6 @@ RUN bundle install
 # Copy the rest of the application
 COPY . .
 
-# Expose default Jekyll port
-EXPOSE 4000
-
 # Command to run when container starts
 CMD ["bundle", "exec", "jekyll", "build"]
 # CMD ["/bin/bash"]

@@ -7,16 +7,16 @@ Welcome to my home page!
 
 I am head of research at [Endor Labs](https://www.endorlabs.com), where I am helping to make
 software supply chains more secure.
-I am also part-time associate professor of software engineering at the
+Before that, I was associate professor of software engineering at the
 [Software Engineering Research Group](http://se.ewi.tudelft.nl) group,
-[Delft University of Technology](http://www.tudelft.nl).
-Before that, I was [researcher at Facebook](https://research.facebook.com/people/).
+[Delft University of Technology](http://www.tudelft.nl),
+and [researcher at Facebook](https://research.facebook.com/people/).
 
 I do [research](research.html) in the broader fields of
 [Software Analytics](https://se.ewi.tudelft.nl/research-lines/software-analytics/),
 [Machine Learning for Software Engineering](https://se.ewi.tudelft.nl/research-lines/ml4se/)
 and Dependency Management.
-I was/am [teaching](teaching.html) Big Data Processing
+I [taught](teaching.html) Big Data Processing
 at the BSc level and Machine Learning for SE at the MSc level.
 I am also [speaking](talks.html), [blogging](/blog/) and [consulting](consulting.html).
 

@@ -9,7 +9,7 @@ markdown: kramdown
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Georgios Gousios home page
+title : Georgios Gousios's home page
 tagline:
 author :
   name : Georgios Gousios
@@ -19,7 +19,7 @@ author :
 
 homedir: /Users/gousiosg
 
-production_url : http://www.gousios.gr
+production_url : http://www.gousios.org
 
 courses:
   bigdata: /Users/gousiosg/Documents/course-material/bigdata

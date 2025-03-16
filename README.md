@@ -4,10 +4,21 @@ This is the source code to my homepage.
 
 ## Build instuctions
 
-To build the home page do the following:
+To build the docker container:
 
-* `gem install jekyll jekyll-scholar`
-* `easy_install pygments`
+* `docker build .`
+
+To debug:
+
+```bash
+docker run -p 4000:4000 -v $(pwd):/site  -it --name homepage homepage
+```
+
+To build the web site:
+
+```bash
+
+```
 
 The `jekyll-scholar` plugin is configured to read its publication database
 from the `_bibliography/all.bib` file, therefore it must be created prior

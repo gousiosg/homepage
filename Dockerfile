@@ -3,7 +3,9 @@ FROM ruby:3.0
 # Install dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
-    vim
+    vim \
+    rsync \
+    openssh-client
 
 # Set working directory
 WORKDIR /site
@@ -16,6 +18,9 @@ RUN bundle install
 
 # Copy the rest of the application
 COPY . .
+
+# Make deployment script executable
+RUN chmod +x docker-deploy.sh sync.sh
 
 # Command to run when container starts
 CMD ["bundle", "exec", "jekyll", "build"]

@@ -11,7 +11,7 @@ SCHOLAR_BIBLIOGRAPHY := $(shell yq '.scholar.bibliography' _config.yml)
 COURSE_LIST := $(shell yq '.courses | to_entries | .[] | .key + ":" + .value' _config.yml)
 
 # Default target
-.PHONY: check_deps all bib courses clean
+.PHONY: check_deps all bib courses clean docker-build build web deploy
 
 all: build
 
@@ -19,8 +19,6 @@ all: build
 check_deps:
 	@echo "Checking dependencies..."
 	@which yq > /dev/null 2>&1 || (echo "yq not found. Installing with Homebrew..." && brew install yq)
-	@echo "All dependencies are installed."
-	# check if docker is installed
 	@which docker > /dev/null 2>&1 || (echo "docker not found. Please install docker and try again." && exit 1)
 	@echo "All dependencies are installed."
 
@@ -55,13 +53,18 @@ build: check_deps bib #courses
 	@echo "Building the website"
 	@docker run -v $(shell pwd):/site gousiosg/website
 
-web: build
-	# run python3 -m http.server 8000 on _site
-	@python3 -m http.server 8000 -d _site
+# Build and deploy entirely within Docker (requires SSH keys)
+deploy: docker-build
+	@echo "Deploying website"
+	@docker run -v $(shell pwd):/site \
+		-v $(HOME)/.ssh:/root/.ssh:ro \
+		-v $(HOME)/.ssh/known_hosts:/root/.ssh/known_hosts:ro \
+		gousiosg/website bash -c "chmod +x docker-deploy.sh && ./docker-deploy.sh"
+
 # Clean up
 clean:
 	@echo "Cleaning up"
 	@rm -rf _site
 	@rm -rf courses/atse
-	@rm -f $(SCHOLAR_BIBLIOGRAPHY)
+	@rm -f $(SCHOLAR_SOURCE)/$(SCHOLAR_BIBLIOGRAPHY)
 	@find . -name "*~" -delete

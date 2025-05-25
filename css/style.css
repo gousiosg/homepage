@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: #eee;
     padding-top: 70px;
@@ -6,6 +10,8 @@ body {
     font-variant: normal;
     font-size: 16px;
     line-height: 1.65;
+    display: flex;
+    flex-direction: column;
 }
 
 .container>footer {
@@ -42,12 +48,21 @@ dt {
 }
 
 
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 .content {
     background-color: #fff;
     padding: 20px;
     margin: 0 -20px;
     border-radius: 0 0 6px 6px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .page-header {
@@ -124,4 +139,19 @@ dt {
     .linkicon {
         font-size: 20px;
     }
+}
+
+/* Additional specific rule for pre elements in content */
+.content pre {
+    background-color: #a4a2a2 !important;
+    padding: 10px !important;
+    border-radius: 4px !important;
+    border: 1px solid #ddd !important;
+    overflow-x: auto !important;
+}
+
+/* Make the row fill the full height of the content */
+.content .row {
+    flex: 1;
+    min-height: 100%;
 }

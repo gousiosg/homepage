@@ -2,6 +2,13 @@
 
 This is the source code to my homepage.
 
+## Dependencies
+
+The build system requires:
+- `yq` - YAML processor (automatically installed via Homebrew if missing)
+- `docker` - Container runtime
+- Configuration values are read from `_config.yml`
+
 ## Build instructions
 
 ### Using Make (Recommended)
@@ -9,21 +16,26 @@ This is the source code to my homepage.
 The project includes a Makefile with several convenient targets:
 
 ```bash
-# Build the website using Docker
+# Check for dependencies (yq and docker)
+make check_deps
+
+# Generate bibliography file from _bibliography/*.bib files
+make bib
+
+# Prepare course slides
+make courses
+
+# Build the docker image
 make docker-build
+
+# Build the website using Docker
 make build
 
-# Start a local web server to preview the site
-make web
-
-# Deploy the website (after building)
+# Deploy the website (builds docker image and deploys with SSH keys)
 make deploy
 
-# Build and deploy in one step using Docker
-make docker-deploy
-
-# Build and deploy entirely within Docker (requires SSH keys)
-make docker-deploy-with-ssh
+# Clean up generated files
+make clean
 ```
 
 ### Manual Docker commands
@@ -47,22 +59,24 @@ docker run -v $(pwd):/site gousiosg/website
 ```
 
 The `jekyll-scholar` plugin is configured to read its publication database
-from the `_bibliography/all.bib` file, therefore it must be created prior
-to running `jekyll`
+from the `_bibliography/all.bib` file. The Makefile automatically generates
+this file by combining all `.bib` files found in the `_bibliography/` directory
+when running `make bib` or `make build`.
 
 ## Deploying
 
-### Option 1: Build locally, deploy from host
+### Using Make (Recommended)
 ```bash
-make docker-deploy
+make deploy
 ```
 
-### Option 2: Build and deploy entirely within Docker
-```bash
-make docker-deploy-with-ssh
-```
+This command will:
+1. Check dependencies
+2. Generate bibliography files
+3. Build the Docker image
+4. Deploy the website using SSH keys (requires SSH keys to be configured)
 
-### Option 3: Manual deployment
+### Manual deployment
 ```bash
 jekyll build
 rsync -av _site/* gousiosg@192.168.1.166:~/gousios.gr/

@@ -33,7 +33,7 @@ and a [Wikipedian](http://en.wikipedia.org/wiki/User:Gousiosg).
 
 ### Online Profile
 
-I try to maintain a number of online profiles. When I can, I do connect
+I try to maintain a low online profile. When I can, I do connect
 them and allow the one to update the other. Unfortunately, it seems
 that with today's information hungry online services it is hard to
 maintain a low profile if you want to stay relevant. Here is a list of

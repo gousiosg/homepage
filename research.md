@@ -56,6 +56,8 @@ effects of releasing software in smaller iterations. In
 predict delays in agile development. We also
 {%cite_details KDG21 --text found %} that adding team features on task
 duration predictions improves them by 30%.
+In {%cite_details KDG24 --text follow up work}, we investigated how to automatically generate sprint plans
+through optimization and machine learning --- and won the best paper award at ASE 2024!
 
 <i class="fas fa-code-branch fa-2x"></i>
 I explored how

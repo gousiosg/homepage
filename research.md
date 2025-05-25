@@ -6,17 +6,29 @@ I am genuinely interested in any topic that has to do with systems and software,
 and combinations thereof. Specifically my research interests are the following:
 
 * Software engineering
-* Software analytics
+* Program analysis
 * Machine learning
 * Systems software
 
-### Software Engineering - Software Analytics
+### Software Engineering -- Program analysis
 
 #### Current work
 
+<i class="fa fa-project-diagram fa-2x"></i> I am working to secure _software supply chains_.
+Our idea to apply lightweight static analysis, in the form of callgraphs,
+to model code interactions and incrementalize analysis kickstarted
+the _vulnerability reachability_ discussion.
+We started working on this domain since 2017, with our first prototypes analyzing
+a significant portion of the {% cite_details HBTG22 --text Rust ecosystem %} came out in 2018.
+I was the original instigator and PI of the [H2020 FASTEN project](https://www.fasten-project.eu),
+which made fundamental contributions in applying static analysis to software supply chain issues.
+Using callgraphs, we are also able to {% cite_details HG22 --text perform safer dependency updates %}.
+
+This line of work is at the core of our software supply chain security startup, [Endor Labs](https://www.endorlabs.com).
+
 <i class="fas fa-robot fa-2x"></i>
 I am exploring ways to apply _machine learning on software engineering_
-problems. During my sabbatical at Facebook, I worked on type prediction
+problems. During my sabbatical at Facebook in 2019, I worked on type prediction
 for Python ({% cite_details PGLC20 --text TypeWriter %});
 we extended this work into
 {% cite_details MLPG22 --text Type4Py %}
@@ -27,32 +39,28 @@ We also implemented a {%cite_details IGG22pp --text Codefill %},
 a state-of-the-art beating autocompletion system for Python based on the concept of
 parallel representations of syntax and code sequences.
 
-At Facebook, I have also applied ML for timeseries to the problem of unsupervised
+At Facebook, I have also applied ML on timeseries to the problem of unsupervised
 crash categorization ({% cite_details YDG21pp --text KabOOM %}).
 
-<i class="fa fa-project-diagram fa-2x"></i> We are working
-to improve _dependency management_. Our initial experiments
-with the {% cite_details HBTG22 --text Rust ecosystem  %} are very promising.
-I was the original primary instigator of the [H2020 FASTEN project](https://www.fasten-project.eu),
-which works on making dependency management better by making package managers
-more intelligent. Using fine grained dependency management, we are also able to
-{% cite_details HG22 --text perform safer dependency updates %}.
+We are currently exploring agentic workflows for dataflow analysis, stay tuned for more!
 
-This line of work powers our software supply chain security startup, [Endor Labs](https://www.endorlabs.com).
+#### Past work
 
 <i class="fas fa-chart-line fa-2x"></i>
-In the area of _software process optimization_, I was co-leading and I am currently helping out the
-[Fintech lab](https://icai.ai/ai-for-fintech-lab/)'s software analytics track.
-We are exploring how to make project planning more predicable by using machine learning.
+In the area of _software process optimization_, I was helping out the
+TUDelft/ING [Fintech lab](https://icai.ai/ai-for-fintech-lab/)'s software analytics track.
+We explored how to make project planning more predicable using machine learning.
 In our {%cite_details KRHDG19 --text initial work %}, we investigated the productivity
 effects of releasing software in smaller iterations. In
 {%cite_details KGDG21 --text follow up work %}, we built models to characterize and
 predict delays in agile development. We also
 {%cite_details KDG21 --text found %} that adding team features on task
 duration predictions improves them by 30%.
+In {%cite_details KDG24 --text follow up work}, we investigated how to automatically generate sprint plans
+through optimization and machine learning --- and won the best paper award at ASE 2024!
 
 <i class="fas fa-code-branch fa-2x"></i>
-I am exploring how
+I explored how
 {% cite_details GPD14 --text pull-based distributed software development %} works
 both [quantitatively](https://github.com/gousiosg/pullreqs) ({%cite_details GPD14 --text ICSE 2014 %}) and
 [qualitatively](https://github.com/gousiosg/pullreqs-survey)
@@ -67,7 +75,7 @@ Using the findings of the qualitative work, I have also co-proposed a service to
 to {% cite_details HG15 --text match job advertisements to developer profiles %}.
 We also {% cite_details RNGH18 --text investigated %} whether
 geographical and nationality biases exist among OSS developers.
-More than 1000 other papers have collectively cited/used our results;
+More than 2000 other papers have collectively cited/used our results;
 we compose the follow up findings in a {%cite_details ZTGR22 --text massive scale replication (TSE) %}
 of the {%cite_details GPD14 --text ICSE 2014 %} paper.
 
@@ -79,8 +87,6 @@ may conflict with theirs.
 
 Furthermore, we synthesize all related work in a preliminary
 {%cite_details RG21pp --text theory of software change %}.
-
-#### Past work
 
 <i class="fab fa-github-alt fa-2x"></i>
 From 2011 till 2021, I was actively developing and maintaining a
@@ -235,6 +241,13 @@ Total budget &euro;1,638,000. Host: Athens University of Economics and Business.
 <i class="fas fa-cog fa-2x"></i>
 A list of research projects I have been actively involved with, along with a description of my role
 in them, in reverse chronological order:
+
+[FASTEN](http://fasten-project.eu)
+: Making software ecosystems robust by making package management more intelligent. Original PI.
+
+[AI4Fintech](https://se.ewi.tudelft.nl/ai4fintech/index.html)
+: Making large software-based organizations more efficient.
+Led the [software analytics](https://se.ewi.tudelft.nl/ai4fintech/tracks/01_software_analytics.html) track.
 
 [GHTorrent](http://ghtorrent.org):
 : GHTorrent created a platform to continuosly mine and share data from the Github social coding

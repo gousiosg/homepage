@@ -3,22 +3,22 @@ layout: page
 title: Teaching
 ---
 
-### MSc theses
+### MSc theses --- Internships
 
-If you are interested to do an MSc thesis with me, please [contact
-me](about.html). You can choose any of the currently available topics [listed on
-the SERG web site](https://se.ewi.tudelft.nl/research-lines/software-analytics/index.html#msc-thesis-topics), or propose
-one that I can supervise, based on my [research interests](research.html).
+At Endor Labs, we are always open for smart and hardworking students that would like to spend
+sometime with us. If you are interested to do an MSc thesis or an internship,
+take a look at my [research interests](research.html),
+and if those match yours, [contact me](about.html).
 
 ### Courses
 
+In the past, I was actively involved in designing and teaching educational material.
+I like teaching a lot: If you would like me to give a lecture at your course,
+don't hesitate to ask: I will most hapilly oblidge!
+
 #### At the TU Delft
 
-_Current_
-
 * IN4334 (MSc): Machine Learning for Software Engineering [2022](/courses/ml4se) ([2020](/courses/ml4se/2020), [2019](/courses/ml4se/2019), [2018](/courses/ml4se/2018))
-
-_Old_
 * CSE2520/TI2736B (BSc): Big Data Processing [2020](/courses/bigdata) ([2019](/courses/bigdata/2019), [2018](/courses/bigdata/2018), [2017](/courses/bigdata/2017)) Lectures now given by [Burcu Kulahcioglu Ozkan](https://burcuku.github.io/cse2520-bigdata/)
 * TI3110TU (Minor): Algorithms and Data Structures ([2017](courses/algo-ds/), [Lecture notes sources](https://github.com/gousiosg/algo-ds))
 * EWI3615TU (Minor): 5EC project ([2017](courses/minor-project/))

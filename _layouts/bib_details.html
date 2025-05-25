@@ -66,6 +66,7 @@ This paper received a nomination for the "{{ page.entry.nomination }}" award
 <pre>
 {{ page.entry.bibtex }}
 </pre>
+
 {% if page.entry.slideshareembed %}
 <h4>Presentation</h4>
 
@@ -81,25 +82,5 @@ This paper received a nomination for the "{{ page.entry.nomination }}" award
 </div>
 {% endif %}
 
-{% if page.entry.url %}
 
-<h4>The paper</h4>
-<div style="width: 100%;margin-left:auto;margin-right:auto;">
-<iframe id="viewer" src = "/Viewer.js/#{{page.entry.url}}" width='724'
-  height='1000' allowfullscreen webkitallowfullscreen></iframe>
-</div>
-{% endif %}
-</div>
-<div class="col-md-2">
-  <!-- AddThis Button BEGIN -->
-    <div class="addthis_toolbox addthis_counter_style">
-      <a class="addthis_button_facebook_like"></a><br/>
-      <a class="addthis_button_tweet"></a> <br/>
-      <a class="addthis_button_google_plusone"></a>
-      <a class="addthis_button_compact"></a>
-    </div>
-    <script type="text/javascript"
-      src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50b3d354431ac7e5"></script>
-    <!-- AddThis Button END -->
-  </div>
 </div>

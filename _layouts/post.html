@@ -10,20 +10,21 @@ layout: default
   <div class="col-md-9">
     {{ content }}
     <hr>
-    <div class="pagination">
-      <ul>
+    <nav aria-label="Blog post navigation">
+      <ul class="pagination">
         {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+        <li class="page-item"><a class="page-link" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
         {% else %}
-        <li class="prev disabled"><a>&larr; Previous</a></li>
+        <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">&larr; Previous</a></li>
         {% endif %}
-        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+        <li class="page-item"><a class="page-link" href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
         {% if page.next %}
-        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+        <li class="page-item"><a class="page-link" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
         {% else %}
-        <li class="next disabled"><a>Next &rarr;</a> {% endif %}
+        <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Next &rarr;</a></li>
+        {% endif %}
       </ul>
-    </div>
+    </nav>
     <hr>
     <div id="disqus_thread"></div>
     <script type="text/javascript">
@@ -54,7 +55,7 @@ layout: default
       {% endfor %}
     </ul>
     {% endunless %}
-    
+
   </div>
 </div>
 

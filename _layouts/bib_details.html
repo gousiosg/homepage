@@ -85,21 +85,252 @@ This paper received a nomination for the "{{ page.entry.nomination }}" award
 
 <h4>The paper</h4>
 <div style="width: 100%;margin-left:auto;margin-right:auto;">
-<iframe id="viewer" src = "/Viewer.js/#{{page.entry.url}}" width='724'
-  height='1000' allowfullscreen webkitallowfullscreen></iframe>
-</div>
-{% endif %}
-</div>
-<div class="col-md-2">
-  <!-- AddThis Button BEGIN -->
-    <div class="addthis_toolbox addthis_counter_style">
-      <a class="addthis_button_facebook_like"></a><br/>
-      <a class="addthis_button_tweet"></a> <br/>
-      <a class="addthis_button_google_plusone"></a>
-      <a class="addthis_button_compact"></a>
+  <!-- Modern PDF.js Viewer -->
+  <div id="pdf-viewer-container" style="border: 1px solid #ccc; border-radius: 4px; overflow: hidden;">
+    <!-- Toolbar -->
+    <div id="pdf-toolbar" style="background: #f8f9fa; padding: 8px; border-bottom: 1px solid #dee2e6; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+      <button id="prev-page" class="btn btn-sm btn-outline-secondary" disabled>
+        <i class="fas fa-chevron-left"></i> Previous
+      </button>
+      <span id="page-info" style="margin: 0 10px; font-size: 14px;">
+        Page <span id="page-num">1</span> of <span id="page-count">-</span>
+      </span>
+      <button id="next-page" class="btn btn-sm btn-outline-secondary" disabled>
+        Next <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <div style="margin-left: auto; display: flex; align-items: center; gap: 10px;">
+        <button id="zoom-out" class="btn btn-sm btn-outline-secondary">
+          <i class="fas fa-search-minus"></i>
+        </button>
+        <span id="zoom-level" style="font-size: 14px; min-width: 50px; text-align: center;">100%</span>
+        <button id="zoom-in" class="btn btn-sm btn-outline-secondary">
+          <i class="fas fa-search-plus"></i>
+        </button>
+
+        <button id="fit-width" class="btn btn-sm btn-outline-secondary" title="Fit to width">
+          <i class="fas fa-arrows-alt-h"></i>
+        </button>
+
+        <a href="{{ page.entry.url }}" target="_blank" class="btn btn-sm btn-outline-primary" title="Open in new tab">
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
     </div>
-    <script type="text/javascript"
-      src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50b3d354431ac7e5"></script>
-    <!-- AddThis Button END -->
+
+    <!-- PDF Canvas Container -->
+    <div id="pdf-canvas-container" style="overflow: auto; height: 600px; background: #525659; display: flex; justify-content: center; align-items: flex-start; padding: 20px;">
+      <canvas id="pdf-canvas" style="box-shadow: 0 4px 8px rgba(0,0,0,0.3); background: white;"></canvas>
+    </div>
+
+    <!-- Loading indicator -->
+    <div id="pdf-loading" style="display: flex; justify-content: center; align-items: center; height: 600px; background: #f8f9fa;">
+      <div class="text-center">
+        <div class="spinner-border text-primary" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <p class="mt-2 text-muted">Loading PDF...</p>
+      </div>
+    </div>
+
+    <!-- Error message -->
+    <div id="pdf-error" style="display: none; padding: 40px; text-align: center; background: #f8f9fa;">
+      <div class="alert alert-warning">
+        <i class="fas fa-exclamation-triangle"></i>
+        <strong>Unable to load PDF</strong><br>
+        <a href="{{ page.entry.url }}" target="_blank" class="btn btn-primary mt-2">
+          <i class="fas fa-download"></i> Download PDF instead
+        </a>
+      </div>
+    </div>
   </div>
+</div>
+
+<!-- PDF.js Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.9.155/pdf.min.mjs" type="module"></script>
+
+<script type="module">
+// Modern PDF.js implementation
+import * as pdfjsLib from 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.9.155/pdf.min.mjs';
+
+// Configure PDF.js worker
+pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.9.155/pdf.worker.min.mjs';
+
+class ModernPDFViewer {
+  constructor(url) {
+    this.url = url;
+    this.pdfDoc = null;
+    this.pageNum = 1;
+    this.pageRendering = false;
+    this.pageNumPending = null;
+    this.scale = 1.2;
+    this.canvas = document.getElementById('pdf-canvas');
+    this.ctx = this.canvas.getContext('2d');
+
+    this.initializeElements();
+    this.bindEvents();
+    this.loadPDF();
+  }
+
+  initializeElements() {
+    this.loadingDiv = document.getElementById('pdf-loading');
+    this.errorDiv = document.getElementById('pdf-error');
+    this.canvasContainer = document.getElementById('pdf-canvas-container');
+    this.toolbar = document.getElementById('pdf-toolbar');
+    this.pageNumSpan = document.getElementById('page-num');
+    this.pageCountSpan = document.getElementById('page-count');
+    this.zoomLevelSpan = document.getElementById('zoom-level');
+    this.prevButton = document.getElementById('prev-page');
+    this.nextButton = document.getElementById('next-page');
+  }
+
+  bindEvents() {
+    document.getElementById('prev-page').addEventListener('click', () => this.onPrevPage());
+    document.getElementById('next-page').addEventListener('click', () => this.onNextPage());
+    document.getElementById('zoom-in').addEventListener('click', () => this.zoomIn());
+    document.getElementById('zoom-out').addEventListener('click', () => this.zoomOut());
+    document.getElementById('fit-width').addEventListener('click', () => this.fitToWidth());
+  }
+
+  async loadPDF() {
+    try {
+      this.showLoading();
+
+      const loadingTask = pdfjsLib.getDocument({
+        url: this.url,
+        cMapUrl: 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.9.155/cmaps/',
+        cMapPacked: true,
+      });
+
+      this.pdfDoc = await loadingTask.promise;
+      this.pageCountSpan.textContent = this.pdfDoc.numPages;
+
+      this.hideLoading();
+      this.showViewer();
+      this.renderPage(this.pageNum);
+      this.updateButtons();
+
+    } catch (error) {
+      console.error('Error loading PDF:', error);
+      this.showError();
+    }
+  }
+
+  async renderPage(num) {
+    if (this.pageRendering) {
+      this.pageNumPending = num;
+      return;
+    }
+
+    this.pageRendering = true;
+
+    try {
+      const page = await this.pdfDoc.getPage(num);
+      const viewport = page.getViewport({ scale: this.scale });
+
+      this.canvas.height = viewport.height;
+      this.canvas.width = viewport.width;
+
+      const renderContext = {
+        canvasContext: this.ctx,
+        viewport: viewport
+      };
+
+      await page.render(renderContext).promise;
+
+      this.pageRendering = false;
+
+      if (this.pageNumPending !== null) {
+        this.renderPage(this.pageNumPending);
+        this.pageNumPending = null;
+      }
+
+      this.pageNum = num;
+      this.pageNumSpan.textContent = num;
+      this.updateZoomDisplay();
+
+    } catch (error) {
+      console.error('Error rendering page:', error);
+      this.pageRendering = false;
+    }
+  }
+
+  onPrevPage() {
+    if (this.pageNum <= 1) return;
+    this.pageNum--;
+    this.renderPage(this.pageNum);
+    this.updateButtons();
+  }
+
+  onNextPage() {
+    if (this.pageNum >= this.pdfDoc.numPages) return;
+    this.pageNum++;
+    this.renderPage(this.pageNum);
+    this.updateButtons();
+  }
+
+  zoomIn() {
+    this.scale *= 1.2;
+    this.renderPage(this.pageNum);
+  }
+
+  zoomOut() {
+    this.scale /= 1.2;
+    this.renderPage(this.pageNum);
+  }
+
+  fitToWidth() {
+    const containerWidth = this.canvasContainer.clientWidth - 40; // Account for padding
+    if (this.pdfDoc) {
+      this.pdfDoc.getPage(this.pageNum).then(page => {
+        const viewport = page.getViewport({ scale: 1 });
+        this.scale = containerWidth / viewport.width;
+        this.renderPage(this.pageNum);
+      });
+    }
+  }
+
+  updateButtons() {
+    this.prevButton.disabled = this.pageNum <= 1;
+    this.nextButton.disabled = this.pageNum >= this.pdfDoc.numPages;
+  }
+
+  updateZoomDisplay() {
+    this.zoomLevelSpan.textContent = Math.round(this.scale * 100) + '%';
+  }
+
+  showLoading() {
+    this.loadingDiv.style.display = 'flex';
+    this.canvasContainer.style.display = 'none';
+    this.toolbar.style.display = 'none';
+    this.errorDiv.style.display = 'none';
+  }
+
+  hideLoading() {
+    this.loadingDiv.style.display = 'none';
+  }
+
+  showViewer() {
+    this.canvasContainer.style.display = 'flex';
+    this.toolbar.style.display = 'flex';
+  }
+
+  showError() {
+    this.loadingDiv.style.display = 'none';
+    this.canvasContainer.style.display = 'none';
+    this.toolbar.style.display = 'none';
+    this.errorDiv.style.display = 'block';
+  }
+}
+
+// Initialize the PDF viewer
+document.addEventListener('DOMContentLoaded', function() {
+  const pdfUrl = '{{ page.entry.url }}';
+  if (pdfUrl) {
+    new ModernPDFViewer(pdfUrl);
+  }
+});
+</script>
+
+{% endif %}
 </div>

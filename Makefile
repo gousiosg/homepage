@@ -49,7 +49,7 @@ docker-build: check_deps bib #courses
 	@docker build -t gousiosg/website .
 
 # Build the website
-build: check_deps bib #courses
+build: docker-build check_deps bib #courses
 	@echo "Building the website"
 	@docker run -v $(shell pwd):/site gousiosg/website
 

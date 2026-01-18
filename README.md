@@ -79,7 +79,7 @@ This command will:
 ### Manual deployment
 ```bash
 jekyll build
-rsync -av _site/* gousiosg@192.168.1.166:~/gousios.gr/
+rsync -av _site/* gousiosg@192.168.1.76:~/gousios.gr/
 ```
 
 ## License

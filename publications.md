@@ -28,6 +28,11 @@ Workshops and other conference papers
 
 {% bibliography --file inworkshop %}
 
+Patents
+-------
+
+{% bibliography --file patents %}
+
 Technical Reports and pre-prints
 --------------------------------
 

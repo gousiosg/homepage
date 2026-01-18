@@ -22,11 +22,15 @@ I am also [speaking](talks.html), [blogging](/blog/) and [consulting](consulting
 
 #### Latest news
 
+* **Jan 2026**&raquo; Keynote at Lorentz center workshop on software ecosystems.
+* **Dec 2025**&raquo; Paper on {%cite_details GHOMHMD26 --text C/C++ SCA %} accepted at ICSE-SEIP 2026.
+* **Oct/Nov 2025**&raquo; Awarded patents on {%cite_details GDHOSS25 --text detecting copied AI-generated code %} and {%cite_details PSGHH25 --text impact analysis of dependency updates %}.
+* **Sep 2025**&raquo; Paper on {%cite_details ASGZM26 --text Python/C call bridge discovery %} accepted at ICSE 2026.
 * **Apr 2025**&raquo; Student Elvan Kula graduates with a PhD!
 * **Apr 2025**&raquo; Endor Labs receives [96M in Series B](https://www.linkedin.com/posts/gousiosg_today-is-a-big-day-at-endor-labs-not-only-activity-7320816376359649282-A2cY) funding.
 * **Mar 2025**&raquo; Life update: Quit part time job at TU Delft.
 * **Feb 2025**&raquo; Student Amir Mir graduates with a PhD!
-* **Oct 2024**&raquo; {%cite_details KDG24 --text Our work%} on automated sprint planning won the best paper award at ASE 2024!
+* **Oct 2024**&raquo; {%cite_details KDG24 --text Our work%} on automated sprint planning won the best paper award at ASE 2024.
 * **May 2024**&raquo; Student Joseph Hejderup [graduates with a PhD](https://www.linkedin.com/posts/josephhejderup_phddefense-milestone-kudos-activity-7191719985432444928-tTm1)!
 * **Jan 2024**&raquo; {%cite_details KGP23 --text Our work%} on stitching callgraphs has been published at the Empirical Software Engineering journal.
 
